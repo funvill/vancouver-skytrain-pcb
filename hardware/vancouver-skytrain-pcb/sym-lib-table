@@ -1,5 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "XL-1010RGBC-WS2812B")(type "KiCad")(uri "${KIPRJMOD}/XL-1010RGBC-WS2812B.kicad_sym")(options "")(descr ""))
   (lib (name "vancouver-skytrain-pcb")(type "KiCad")(uri "${KIPRJMOD}/vancouver-skytrain-pcb.kicad_sym")(options "")(descr ""))
 )

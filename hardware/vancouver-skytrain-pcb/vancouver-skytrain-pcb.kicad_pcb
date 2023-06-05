@@ -1021,7 +1021,7 @@
     (property "ki_keywords" "mounting hole")
     (path "/e4069050-5e10-46e4-8a21-76bf7b395ab4")
     (attr exclude_from_pos_files)
-    (fp_text reference "H2" (at 0 -4.2) (layer "F.SilkS")
+    (fp_text reference "H2" (at 0 -4.2) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 83e515e1-e0df-47f8-94c9-297d48c3a2c6)
     )
@@ -2233,7 +2233,7 @@
     (property "ki_keywords" "mounting hole")
     (path "/6fdd847e-1a01-49c6-b4bc-cd55e0369312")
     (attr exclude_from_pos_files)
-    (fp_text reference "H3" (at 0 -4.2) (layer "F.SilkS")
+    (fp_text reference "H3" (at 0 -4.2) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f326372a-ef79-4a59-a867-afa18839c76d)
     )
@@ -6092,7 +6092,7 @@
     (property "ki_keywords" "mounting hole")
     (path "/972f8b67-d65f-4f61-8c2c-2e577c608bfb")
     (attr exclude_from_pos_files)
-    (fp_text reference "H4" (at 0 -4.2) (layer "F.SilkS")
+    (fp_text reference "H4" (at 0 -4.2) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2fe03b66-0bee-49b9-8fd2-c8f0578aea24)
     )
@@ -6739,7 +6739,7 @@
     (property "ki_keywords" "mounting hole")
     (path "/c46b047d-c366-40e3-a14d-b6050c1fd830")
     (attr exclude_from_pos_files)
-    (fp_text reference "H1" (at 0 -4.2) (layer "F.SilkS")
+    (fp_text reference "H1" (at 0 -4.2) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 7f991359-387f-4301-ab51-3bc6c18dc42e)
     )
