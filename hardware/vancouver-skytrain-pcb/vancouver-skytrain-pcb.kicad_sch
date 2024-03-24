@@ -195,7 +195,7 @@
 					)
 				)
 			)
-			(property "Value" "TestPoint"
+			(property "Value" "TestPoint"			
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -893,319 +893,6 @@
 						)
 					)
 					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Connector_Generic:Conn_01x08"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x08"
-				(at 0 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x08_1_1"
-				(rectangle
-					(start -1.27 -10.033)
-					(end 0 -10.287)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 7.747)
-					(end 0 7.493)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 8.89)
-					(end 1.27 -11.43)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 7.62 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -10.16 0)
-					(length 3.81)
-					(name "Pin_8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -7788,8 +7475,16 @@
 		(uuid "0750f7fd-7fbf-4b7f-98cd-a624129fba80")
 	)
 	(no_connect
+		(at 48.26 53.34)
+		(uuid "104f4a1b-1415-4df8-9738-4a21dee94b59")
+	)
+	(no_connect
 		(at 48.26 50.8)
 		(uuid "12efe47c-64fb-4122-a810-2c583a945d3a")
+	)
+	(no_connect
+		(at 48.26 60.96)
+		(uuid "1abaceda-b914-4125-98d2-00e3cb427c8f")
 	)
 	(no_connect
 		(at 48.26 68.58)
@@ -7800,12 +7495,28 @@
 		(uuid "3fa01557-1561-4b6d-b1f9-e68fbd96a8a7")
 	)
 	(no_connect
+		(at 48.26 55.88)
+		(uuid "4fddef5b-65f4-4073-9c82-93823927c892")
+	)
+	(no_connect
 		(at 17.78 33.02)
 		(uuid "72d143d8-1168-4cb8-ab24-bc0e2211e9c9")
 	)
 	(no_connect
+		(at 48.26 40.64)
+		(uuid "7b498772-4953-47d2-9c9f-a211174c6cb8")
+	)
+	(no_connect
 		(at 48.26 86.36)
 		(uuid "8aba3c4a-4266-4b8b-837d-f6547c45f069")
+	)
+	(no_connect
+		(at 48.26 66.04)
+		(uuid "92280d97-187d-4c23-abfd-7f5e0e31ee0f")
+	)
+	(no_connect
+		(at 48.26 58.42)
+		(uuid "928fc192-7cfa-4b10-961f-2a4be67209e0")
 	)
 	(no_connect
 		(at 48.26 43.18)
@@ -7814,6 +7525,10 @@
 	(no_connect
 		(at 48.26 76.2)
 		(uuid "9db11b81-2835-42fc-b92e-35df33168f9f")
+	)
+	(no_connect
+		(at 48.26 63.5)
+		(uuid "a41a57fb-798f-437d-9f1a-4c287e2800a5")
 	)
 	(no_connect
 		(at 17.78 35.56)
@@ -7830,6 +7545,10 @@
 	(no_connect
 		(at 48.26 78.74)
 		(uuid "f5a46ffd-8283-41dd-bb3b-392b672b3ba0")
+	)
+	(no_connect
+		(at 48.26 38.1)
+		(uuid "f6e3acda-458f-412a-a551-390f5f50751e")
 	)
 	(no_connect
 		(at 48.26 81.28)
@@ -13910,28 +13629,6 @@
 		)
 		(uuid "f58d38df-28c2-45e7-a6bb-0486e5545de7")
 	)
-	(global_label "Pin29"
-		(shape input)
-		(at 80.01 62.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0a6dd01f-8b9a-4595-8b9f-0d1ece77e2e9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LEDS_CANADA_LINE_SOUTH_TO_NORTH"
 		(shape input)
 		(at 74.93 293.37 180)
@@ -13998,28 +13695,6 @@
 			)
 		)
 	)
-	(global_label "Pin33"
-		(shape input)
-		(at 48.26 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "29b584b2-a306-4757-af5c-67a014604fde")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LED_IN"
 		(shape input)
 		(at 58.42 101.6 180)
@@ -14064,72 +13739,6 @@
 			)
 		)
 	)
-	(global_label "Pin27"
-		(shape input)
-		(at 48.26 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "40a62c6a-5f1f-4a02-a10f-5f444ad2a3e2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin28"
-		(shape input)
-		(at 48.26 55.88 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "44290b8e-8288-4a74-8f9b-feb63ef151ea")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin33"
-		(shape input)
-		(at 80.01 69.85 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4503e1bc-2d7f-41af-b450-5d57889607f6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LEDS_CANADA_LINE_NORTH_TO_SOUTH"
 		(shape input)
 		(at 76.2 331.47 180)
@@ -14165,72 +13774,6 @@
 		(uuid "4acf4b44-f849-46a4-aae9-3e244f36209b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 41.9679 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin36"
-		(shape input)
-		(at 80.01 72.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "50dd6c27-f5d9-4957-bd4f-73713bb298e6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin28"
-		(shape input)
-		(at 80.01 59.69 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "55e79a1b-4845-400a-9b60-b15efa4a3ab5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin27"
-		(shape input)
-		(at 80.01 57.15 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5cf0e0dc-e9d4-4e4e-8f44-d9bf62fa65fe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14306,72 +13849,6 @@
 			)
 		)
 	)
-	(global_label "Pin29"
-		(shape input)
-		(at 48.26 40.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "64337f04-97d8-4514-98f4-edc9fce65d92")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin30"
-		(shape input)
-		(at 48.26 58.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6b40fdd2-4dc2-4d62-b18b-caa887abf696")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin31"
-		(shape input)
-		(at 80.01 67.31 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6e02f51d-a9ba-490e-b47c-e5af0a370926")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "LEDS_MILLENNIUM_LINE_EAST_TO_WEST"
 		(shape input)
 		(at 76.2 209.55 180)
@@ -14434,72 +13911,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin26"
-		(shape input)
-		(at 48.26 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8e1ca62a-6362-4cde-bd93-597c814c8ca0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin36"
-		(shape input)
-		(at 48.26 66.04 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "97fbbb2b-48a9-49af-8a02-269eb9f2f1b1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin30"
-		(shape input)
-		(at 80.01 64.77 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "980d7d39-c8da-4b04-a497-4bda5ffcbae0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -14658,50 +14069,6 @@
 			)
 		)
 	)
-	(global_label "Pin31"
-		(shape input)
-		(at 48.26 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dcc47fef-36a9-4999-b285-05063aeecde0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.688 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "Pin26"
-		(shape input)
-		(at 80.01 54.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f4c21a81-b167-4f8e-9eff-b9fdbdd0a83e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.582 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 208.28 247.65 0)
@@ -14810,6 +14177,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 263.398 210.058 90)
 			(effects
@@ -15112,6 +14489,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 217.678 331.978 90)
 			(effects
@@ -15464,6 +14851,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 202.438 331.978 90)
 			(effects
@@ -15531,6 +14928,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 202.438 168.148 90)
 			(effects
@@ -15882,6 +15289,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 187.198 293.878 90)
 			(effects
@@ -16179,94 +15596,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x08")
-		(at 85.09 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0b262cf9-e774-457e-875c-f291143efaff")
-		(property "Reference" "J4"
-			(at 87.63 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x09"
-			(at 87.63 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 85.09 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 85.09 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "60699ba3-1e12-42c5-b3c6-214dc8f3acef")
-		)
-		(pin "6"
-			(uuid "c0bc937c-7cbc-4ad7-9d12-770baf6109a3")
-		)
-		(pin "2"
-			(uuid "b6ce19b2-b41d-4b98-b072-b0e7085a9525")
-		)
-		(pin "1"
-			(uuid "01151806-205a-45de-9be7-180100dd4b24")
-		)
-		(pin "8"
-			(uuid "22b713fa-a763-4d2d-9baf-b2e87b552471")
-		)
-		(pin "7"
-			(uuid "296e2adc-b6c5-4e74-9ba3-c5fcde75a3db")
-		)
-		(pin "4"
-			(uuid "04d53cfa-8777-4870-a809-2998ea2df9ff")
-		)
-		(pin "5"
-			(uuid "d896958a-3d0a-40e6-b4c8-880b1e1b508a")
-		)
-		(instances
-			(project "vancouver-skytrain-pcb"
-				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 116.84 167.64 0)
 		(unit 1)
@@ -16476,6 +15805,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 431.038 168.148 90)
 			(effects
@@ -16543,6 +15882,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 80.518 168.148 90)
 			(effects
@@ -16610,6 +15959,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 415.798 210.058 90)
 			(effects
@@ -16869,6 +16228,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 248.158 210.058 90)
 			(effects
@@ -16936,6 +16305,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 263.398 168.148 90)
 			(effects
@@ -17176,6 +16555,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 80.518 248.158 90)
 			(effects
@@ -17537,6 +16926,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 248.158 248.158 90)
 			(effects
@@ -17604,6 +17003,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 232.918 168.148 90)
 			(effects
@@ -17875,6 +17284,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 414.528 127.508 90)
 			(effects
@@ -18013,6 +17432,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 263.398 293.878 90)
 			(effects
@@ -18182,6 +17611,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 293.878 293.878 90)
 			(effects
@@ -18392,6 +17831,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 126.238 168.148 90)
 			(effects
@@ -18861,6 +18310,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 117.475 73.025 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dc188e6b-17e4-47d5-99d2-4975327038fd")
 		)
@@ -18990,6 +18448,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 385.318 248.158 90)
 			(effects
@@ -19057,6 +18525,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 385.318 210.058 90)
 			(effects
@@ -19460,6 +18938,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 110.998 248.158 90)
 			(effects
@@ -19527,6 +19015,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 95.758 248.158 90)
 			(effects
@@ -19978,6 +19476,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 109.728 127.508 90)
 			(effects
@@ -20147,6 +19655,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 370.078 168.148 90)
 			(effects
@@ -20586,6 +20104,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 202.438 210.058 90)
 			(effects
@@ -20840,6 +20368,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 262.128 127.508 90)
 			(effects
@@ -21009,6 +20547,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 232.918 331.978 90)
 			(effects
@@ -21076,6 +20624,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 171.958 168.148 90)
 			(effects
@@ -21971,6 +21529,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 126.238 293.878 90)
 			(effects
@@ -22877,6 +22445,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 187.198 210.058 90)
 			(effects
@@ -23297,6 +22875,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 309.118 210.058 90)
 			(effects
@@ -23364,6 +22952,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 323.088 127.508 90)
 			(effects
@@ -23696,6 +23294,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 277.368 127.508 90)
 			(effects
@@ -23763,6 +23371,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 338.328 127.508 90)
 			(effects
@@ -23830,6 +23448,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 217.678 168.148 90)
 			(effects
@@ -23999,6 +23627,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 140.208 127.508 90)
 			(effects
@@ -24208,6 +23846,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 171.958 248.158 90)
 			(effects
@@ -24851,6 +24499,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 309.118 168.148 90)
 			(effects
@@ -25494,6 +25152,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 248.158 293.878 90)
 			(effects
@@ -25734,6 +25402,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 216.408 127.508 90)
 			(effects
@@ -25903,6 +25581,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 217.678 248.158 90)
 			(effects
@@ -26366,6 +26054,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 324.358 168.148 90)
 			(effects
@@ -26727,6 +26425,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 141.478 210.058 90)
 			(effects
@@ -26794,6 +26502,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 232.918 210.058 90)
 			(effects
@@ -27065,6 +26783,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 170.688 127.508 90)
 			(effects
@@ -27324,6 +27052,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 309.118 293.878 90)
 			(effects
@@ -27926,6 +27664,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 155.448 127.508 90)
 			(effects
@@ -28408,6 +28156,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 278.638 248.158 90)
 			(effects
@@ -28565,6 +28323,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 292.608 127.508 90)
 			(effects
@@ -28794,6 +28562,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 95.758 210.058 90)
 			(effects
@@ -28861,6 +28639,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 278.638 331.978 90)
 			(effects
@@ -29390,6 +29178,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 171.958 293.878 90)
 			(effects
@@ -29457,6 +29255,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 324.358 210.058 90)
 			(effects
@@ -29806,6 +29614,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 278.638 293.878 90)
 			(effects
@@ -30167,6 +29985,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 185.928 127.508 90)
 			(effects
@@ -30588,6 +30416,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 354.838 210.058 90)
 			(effects
@@ -30787,6 +30625,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 311.15 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "DNP"
 			(at 311.15 50.8 0)
 			(effects
 				(font
@@ -32152,6 +31999,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 246.888 127.508 90)
 			(effects
@@ -32219,6 +32076,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 354.838 248.158 90)
 			(effects
@@ -32286,6 +32153,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 187.198 331.978 90)
 			(effects
@@ -32353,6 +32230,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 400.558 210.058 90)
 			(effects
@@ -32522,6 +32409,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 110.998 168.148 90)
 			(effects
@@ -32589,6 +32486,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 187.198 248.158 90)
 			(effects
@@ -32817,6 +32724,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 156.718 168.148 90)
 			(effects
@@ -33077,6 +32994,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 126.238 331.978 90)
 			(effects
@@ -33216,6 +33143,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 124.968 127.508 90)
 			(effects
@@ -33558,6 +33495,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 141.478 168.148 90)
 			(effects
@@ -33625,6 +33572,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 263.398 331.978 90)
 			(effects
@@ -33692,6 +33649,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 400.558 168.148 90)
 			(effects
@@ -33759,6 +33726,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 248.158 331.978 90)
 			(effects
@@ -34018,6 +33995,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 293.878 168.148 90)
 			(effects
@@ -34367,6 +34354,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 339.598 168.148 90)
 			(effects
@@ -34595,6 +34592,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 217.678 210.058 90)
 			(effects
@@ -34662,6 +34669,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 94.488 127.508 90)
 			(effects
@@ -34698,7 +34715,7 @@
 				)
 				(hide yes)
 			)
-		)
+		)		
 		(pin "1"
 			(uuid "5742e5e0-3c2b-4c56-ac14-c0f5c8ce4a5e")
 		)
@@ -35085,6 +35102,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 171.958 210.058 90)
 			(effects
@@ -35332,6 +35359,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 324.358 248.158 90)
 			(effects
@@ -35501,6 +35538,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 156.718 293.878 90)
 			(effects
@@ -35568,6 +35615,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 156.718 331.978 90)
 			(effects
@@ -35827,6 +35884,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 80.518 331.978 90)
 			(effects
@@ -36158,6 +36225,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 293.878 248.158 90)
 			(effects
@@ -36315,6 +36392,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 293.878 331.978 90)
 			(effects
@@ -36509,6 +36596,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 311.15 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "vancouver-skytrain-pcb"
 				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
@@ -36638,6 +36734,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 339.598 248.158 90)
 			(effects
@@ -36897,6 +37003,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 415.798 248.158 90)
 			(effects
@@ -37815,6 +37931,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 400.558 248.158 90)
 			(effects
@@ -38871,6 +38997,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 293.878 210.058 90)
 			(effects
@@ -39099,6 +39235,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 339.598 210.058 90)
 			(effects
@@ -39358,6 +39504,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 201.168 127.508 90)
 			(effects
@@ -39600,6 +39756,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 141.478 293.878 90)
 			(effects
@@ -40650,6 +40816,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 80.518 367.538 90)
 			(effects
@@ -40904,6 +41080,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 384.048 127.508 90)
 			(effects
@@ -41144,6 +41330,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 202.438 248.158 90)
 			(effects
@@ -41654,6 +41850,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 110.998 210.058 90)
 			(effects
@@ -42235,6 +42441,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 110.998 331.978 90)
 			(effects
@@ -42302,6 +42518,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 141.478 331.978 90)
 			(effects
@@ -42369,6 +42595,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 231.648 127.508 90)
 			(effects
@@ -42508,6 +42744,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 278.638 168.148 90)
 			(effects
@@ -43143,6 +43389,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 110.998 293.878 90)
 			(effects
@@ -43210,6 +43466,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 248.158 168.148 90)
 			(effects
@@ -43596,6 +43862,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 64.77 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "37fee12c-8f46-45ac-8987-219c00843471")
 		)
@@ -43740,6 +44015,15 @@
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 259.08 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "DNP"
+			(at 259.08 57.15 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -44519,6 +44803,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 311.15 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "vancouver-skytrain-pcb"
 				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
@@ -44546,6 +44839,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 156.718 248.158 90)
 			(effects
@@ -44715,6 +45018,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 217.678 293.878 90)
 			(effects
@@ -46292,6 +46605,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 370.078 248.158 90)
 			(effects
@@ -46532,6 +46855,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 232.918 293.878 90)
 			(effects
@@ -46599,6 +46932,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 368.808 127.508 90)
 			(effects
@@ -46930,6 +47273,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 141.478 248.158 90)
 			(effects
@@ -47201,6 +47554,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 370.078 210.058 90)
 			(effects
@@ -47358,6 +47721,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 399.288 127.508 90)
 			(effects
@@ -47922,6 +48295,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 187.198 168.148 90)
 			(effects
@@ -48577,6 +48960,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 278.638 210.058 90)
 			(effects
@@ -48644,6 +49037,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 202.438 293.878 90)
 			(effects
@@ -48711,6 +49114,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 309.118 248.158 90)
 			(effects
@@ -48778,6 +49191,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 429.768 127.508 90)
 			(effects
@@ -49037,6 +49460,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 80.518 210.058 90)
 			(effects
@@ -49194,6 +49627,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 354.838 168.148 90)
 			(effects
@@ -49363,6 +49806,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 95.758 168.148 90)
 			(effects
@@ -49965,6 +50418,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 231.14 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "da215b1a-1d22-4f20-b09d-6c284473e492")
 		)
@@ -50027,6 +50489,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 311.15 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "DNP"
 			(at 311.15 43.18 0)
 			(effects
 				(font
@@ -50752,6 +51223,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 309.118 331.978 90)
 			(effects
@@ -51262,6 +51743,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 126.238 248.158 90)
 			(effects
@@ -51509,6 +52000,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 126.238 210.058 90)
 			(effects
@@ -51666,6 +52167,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 95.758 331.978 90)
 			(effects
@@ -52040,6 +52551,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 156.718 210.058 90)
 			(effects
@@ -52280,6 +52801,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 307.848 127.508 90)
 			(effects
@@ -52522,6 +53053,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 415.798 168.148 90)
 			(effects
@@ -52589,6 +53130,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 80.518 293.878 90)
 			(effects
@@ -52775,6 +53326,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 236.855 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "DNP"
 			(at 236.855 29.21 0)
 			(effects
 				(font
@@ -53187,6 +53747,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 95.758 293.878 90)
 			(effects
@@ -53254,6 +53824,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 232.918 248.158 90)
 			(effects
@@ -53321,6 +53901,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 385.318 168.148 90)
 			(effects
@@ -53388,6 +53978,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 263.398 248.158 90)
 			(effects
@@ -53557,6 +54157,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 171.958 331.978 90)
 			(effects
@@ -53624,6 +54234,16 @@
 				(justify left)
 			)
 		)
+		(property "LCSC" "DNP"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		
 		(property "Value" "TestPoint"
 			(at 353.568 127.508 90)
 			(effects
