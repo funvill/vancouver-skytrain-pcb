@@ -180,6 +180,108 @@
 				)
 			)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016) hide)
@@ -4004,6 +4106,12 @@
 		)
 	)
 	(junction
+		(at 306.07 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "014df10b-2f9b-42ea-bc7a-c58f3bc93c09")
+	)
+	(junction
 		(at 345.44 227.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4016,10 +4124,28 @@
 		(uuid "01f7bd95-1a0b-49c2-b858-dbfd72130683")
 	)
 	(junction
+		(at 139.7 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "020c9eb6-48f2-46ee-be3d-bbca74a1081a")
+	)
+	(junction
 		(at 101.6 270.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "02180ec8-bbd5-4903-8d15-053c4f62533c")
+	)
+	(junction
+		(at 353.06 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02287b13-ecc8-47db-9810-74e07f4d7c92")
+	)
+	(junction
+		(at 93.98 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "025a0075-2444-46b4-8692-36103db041a9")
 	)
 	(junction
 		(at 147.32 349.25)
@@ -4040,10 +4166,22 @@
 		(uuid "03f0b181-e727-4f7d-8e95-629983558aa2")
 	)
 	(junction
+		(at 261.62 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04cbf1f4-5653-4d79-8985-3cc91d5327ff")
+	)
+	(junction
 		(at 86.36 285.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04d55bb5-ec49-4c2e-9d05-06edd68f961a")
+	)
+	(junction
+		(at 337.82 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05073753-7623-4f69-a39b-d26c4d15f559")
 	)
 	(junction
 		(at 360.68 265.43)
@@ -4056,6 +4194,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "057e238d-ea18-48fc-96ca-4fb569184ba2")
+	)
+	(junction
+		(at 414.02 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05880212-097d-49a5-b59a-45465480f8c0")
+	)
+	(junction
+		(at 292.1 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05aa7536-a7fb-4d32-9e66-ed4f3a830029")
 	)
 	(junction
 		(at 116.84 265.43)
@@ -4082,6 +4232,18 @@
 		(uuid "087bd1b6-609a-4f80-8052-8bc6ade3de99")
 	)
 	(junction
+		(at 168.91 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "089040bc-4800-4d88-bc24-306fef6ebd3c")
+	)
+	(junction
+		(at 231.14 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08ee7962-99f5-4257-bdae-f7996ab8eca6")
+	)
+	(junction
 		(at 330.2 240.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4092,6 +4254,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a71bf45-e65a-44f0-828a-a54fb24841c1")
+	)
+	(junction
+		(at 276.86 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bc128a2-0893-4c76-b5e7-8d07e4827a5b")
 	)
 	(junction
 		(at 162.56 300.99)
@@ -4130,6 +4298,12 @@
 		(uuid "0e694fe5-f8b9-42a5-9861-d477c88e26e2")
 	)
 	(junction
+		(at 214.63 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e7e5b35-bfb4-40da-8f5c-03d486342bdf")
+	)
+	(junction
 		(at 269.24 300.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4142,16 +4316,40 @@
 		(uuid "0f856859-2bc3-4b92-9813-c3fc273f46e9")
 	)
 	(junction
+		(at 246.38 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ffa64de-19eb-4900-b01b-c6422a578aca")
+	)
+	(junction
+		(at 322.58 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11c782f5-beaa-4eb8-84d0-798a7a2db29b")
+	)
+	(junction
 		(at 344.17 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12858419-ef11-4c73-a204-6584e7ae5e3b")
 	)
 	(junction
+		(at 215.9 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "130ac76b-8d96-441e-a062-5f25af2649fe")
+	)
+	(junction
 		(at 132.08 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "132cd1b8-89a4-46fe-a78b-26f40b6b31c2")
+	)
+	(junction
+		(at 414.02 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13b66d62-80f0-4777-a3a5-468491a7fe09")
 	)
 	(junction
 		(at 147.32 201.93)
@@ -4196,6 +4394,12 @@
 		(uuid "17341a3f-1f81-4684-98a4-6d90d522075b")
 	)
 	(junction
+		(at 185.42 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17cae5e9-3c74-41fd-b730-ca3cae6df3f1")
+	)
+	(junction
 		(at 86.36 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4218,6 +4422,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1984c674-5a6e-440c-b387-74405d44967d")
+	)
+	(junction
+		(at 383.54 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19ff65a4-f2c3-4d59-9a11-27393a2d047a")
 	)
 	(junction
 		(at 208.28 339.09)
@@ -4244,6 +4454,12 @@
 		(uuid "1d3d1398-8ab1-45b6-b6ce-717fc9c6fe7f")
 	)
 	(junction
+		(at 337.82 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d58cd62-f492-4cba-9e66-a76a696a85d6")
+	)
+	(junction
 		(at 147.32 240.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4260,6 +4476,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1dbd615a-95cf-4342-bc69-cb03bbab59ea")
+	)
+	(junction
+		(at 109.22 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1debd2e6-a336-4421-8f86-b109b0f17719")
 	)
 	(junction
 		(at 86.36 270.51)
@@ -4320,6 +4542,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "227375f2-01f1-4dfd-8aac-db5c24f5ce98")
+	)
+	(junction
+		(at 322.58 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "22744223-55fc-462e-ba3d-dc745cfd8a39")
 	)
 	(junction
 		(at 176.53 144.78)
@@ -4406,6 +4634,12 @@
 		(uuid "2787a446-40c8-4c14-a1cc-32ba55e16809")
 	)
 	(junction
+		(at 231.14 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27e5b3d1-a583-441c-8877-ddb8e61cd407")
+	)
+	(junction
 		(at 254 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4430,6 +4664,12 @@
 		(uuid "2b149312-8dcb-4f2a-b97f-8b16bedb3790")
 	)
 	(junction
+		(at 124.46 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b7b4aee-298e-4491-bf8a-ba786d961638")
+	)
+	(junction
 		(at 252.73 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4448,6 +4688,24 @@
 		(uuid "2e3a26b9-d8e2-42a8-8dc4-adc8e137b632")
 	)
 	(junction
+		(at 261.62 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ec11891-31f3-4a81-a399-e8297109869b")
+	)
+	(junction
+		(at 261.62 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ed45670-d746-4027-80b6-be1b39dc5cbc")
+	)
+	(junction
+		(at 109.22 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f19f354-fb5d-470f-99f7-2657df511182")
+	)
+	(junction
 		(at 223.52 227.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4458,6 +4716,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2fb86189-5484-4684-9de3-768f2b36061a")
+	)
+	(junction
+		(at 231.14 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fd0c6e5-76a3-4d1c-8e9c-e9d32c20a91c")
 	)
 	(junction
 		(at 345.44 201.93)
@@ -4496,6 +4760,12 @@
 		(uuid "32c13997-403f-4f78-a30b-b06167d45b95")
 	)
 	(junction
+		(at 260.35 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32c3b1d9-fd76-4b96-9380-1874a4d431c6")
+	)
+	(junction
 		(at 132.08 311.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4512,6 +4782,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33fd860f-7848-40e4-9c39-89ed7a287e21")
+	)
+	(junction
+		(at 78.74 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "344b49dd-9c57-4b9f-b792-691109eaa83a")
 	)
 	(junction
 		(at 101.6 190.5)
@@ -4542,6 +4818,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35b4f013-ce23-47c1-9c66-c2ed920e0a43")
+	)
+	(junction
+		(at 246.38 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "36e88734-c602-4367-9a6c-f7e64b9bf3ce")
 	)
 	(junction
 		(at 254 185.42)
@@ -4584,6 +4866,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "39902fa7-e8fc-430f-9f1e-795e453fe573")
+	)
+	(junction
+		(at 154.94 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "39c0081f-b8fc-4d60-8281-df17dd675718")
+	)
+	(junction
+		(at 307.34 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a5d0137-4b04-4da6-acef-413390b51278")
 	)
 	(junction
 		(at 162.56 227.33)
@@ -4700,6 +4994,12 @@
 		(uuid "43f42444-f570-430c-8925-4c5fc3e76103")
 	)
 	(junction
+		(at 109.22 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "440419ba-8a75-4584-918e-65cc863619b5")
+	)
+	(junction
 		(at 420.37 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4724,6 +5024,12 @@
 		(uuid "45d49449-7f2a-4769-9506-50a32e9808de")
 	)
 	(junction
+		(at 231.14 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4608f2ec-82d1-4e6c-a4dd-86cd8b14f85f")
+	)
+	(junction
 		(at 391.16 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4734,6 +5040,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46958dbd-37d4-49e5-8c1c-a58ce15758b9")
+	)
+	(junction
+		(at 124.46 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "478f38e8-2bef-4bf0-b469-15352b62620b")
 	)
 	(junction
 		(at 238.76 217.17)
@@ -4764,6 +5076,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "48fbd96d-cbdf-41e6-92a9-7b4dd1e9e307")
+	)
+	(junction
+		(at 275.59 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4986f929-081f-4145-998e-f640fc09ee24")
 	)
 	(junction
 		(at 147.32 160.02)
@@ -4802,6 +5120,18 @@
 		(uuid "4aba16db-f245-467f-b537-88d0f13a8be9")
 	)
 	(junction
+		(at 78.74 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4af1309a-6d60-44aa-a349-58ad6e6e138c")
+	)
+	(junction
+		(at 351.79 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b3fcaaa-b6cf-4eb5-9013-65dc0a7d0540")
+	)
+	(junction
 		(at 360.68 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4812,6 +5142,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4bb15b4c-d7d1-4a64-95cd-afede66beebe")
+	)
+	(junction
+		(at 246.38 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4bd5c701-dc59-4b25-9dbe-a355c3804656")
 	)
 	(junction
 		(at 299.72 265.43)
@@ -4832,6 +5168,12 @@
 		(uuid "4ccc1c51-81d8-44aa-8bd2-fbf0987abb0d")
 	)
 	(junction
+		(at 139.7 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cec3273-aa13-4e68-bd07-eccb54f0f9af")
+	)
+	(junction
 		(at 147.32 354.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4842,6 +5184,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4e8a7974-b785-4765-9a24-ad75f5fdfee4")
+	)
+	(junction
+		(at 321.31 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4eab8f55-273f-4ba2-9457-b36ce737fc79")
 	)
 	(junction
 		(at 405.13 149.86)
@@ -4862,16 +5210,40 @@
 		(uuid "4f5f4547-62c0-4a15-a7fe-ea6d475fed3b")
 	)
 	(junction
+		(at 200.66 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4fa1e104-af73-4d73-abb7-cc6a3b781e1b")
+	)
+	(junction
 		(at 117.475 36.195)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4fae19ac-fdb6-4c2e-b6eb-86f4329ac9dd")
 	)
 	(junction
+		(at 215.9 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "501ac23d-6ef8-40ea-8ee1-008031f2710b")
+	)
+	(junction
+		(at 185.42 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50549533-33fd-489d-8579-833ac4eb8241")
+	)
+	(junction
 		(at 146.05 149.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "50c3024a-7fce-4b89-9bab-877b991dea41")
+	)
+	(junction
+		(at 215.9 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50dc1727-dbf5-4b04-9338-b3ef1b8685c9")
 	)
 	(junction
 		(at 147.32 175.26)
@@ -4910,6 +5282,12 @@
 		(uuid "54e4038d-dd48-4080-afbd-a7b67612adbf")
 	)
 	(junction
+		(at 292.1 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "550bac96-631b-4119-a5a0-8091c0b90819")
+	)
+	(junction
 		(at 375.92 270.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4938,6 +5316,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56e2bc43-5cef-4a50-a748-38e70fde5d73")
+	)
+	(junction
+		(at 397.51 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56f64918-fddf-4333-8d14-2869c940d06f")
 	)
 	(junction
 		(at 238.76 285.75)
@@ -4976,6 +5360,18 @@
 		(uuid "5a92ce73-6983-43ad-b2d0-71970bcacad6")
 	)
 	(junction
+		(at 231.14 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5abe080a-49ce-42ec-839e-3e74539c82af")
+	)
+	(junction
+		(at 78.74 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b32ea2f-69fd-4663-8374-6c3dc0830c58")
+	)
+	(junction
 		(at 116.84 354.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4994,6 +5390,12 @@
 		(uuid "5c91a25a-2ef8-4ac6-a45e-0d23977dde59")
 	)
 	(junction
+		(at 353.06 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c9dc509-1d89-43f1-8a77-f8d972095c57")
+	)
+	(junction
 		(at 238.76 323.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5004,6 +5406,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5d0b374f-7541-457f-b0d9-6255a7913873")
+	)
+	(junction
+		(at 153.67 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d3c7538-488a-4bf3-a6e7-6537ecbc66a6")
 	)
 	(junction
 		(at 222.25 149.86)
@@ -5030,6 +5438,12 @@
 		(uuid "5fcb73dc-4b37-400d-b303-9b76c840804a")
 	)
 	(junction
+		(at 427.99 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5fe8ae25-b25a-4eaa-ae54-4adf20d3357d")
+	)
+	(junction
 		(at 132.08 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5054,6 +5468,12 @@
 		(uuid "61926692-0a49-4158-9931-d568f9e22144")
 	)
 	(junction
+		(at 292.1 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6203af8c-e226-4033-a06c-931977fe5823")
+	)
+	(junction
 		(at 223.52 255.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5064,6 +5484,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "628c5b24-2b8d-44de-a01f-1cb5e122881b")
+	)
+	(junction
+		(at 412.75 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62ba5ddd-4e29-4fad-a048-5f6965b1e01c")
 	)
 	(junction
 		(at 115.57 119.38)
@@ -5120,6 +5546,12 @@
 		(uuid "65ff54d3-28d5-41fe-a008-a19cf8e48e64")
 	)
 	(junction
+		(at 123.19 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "66524fa8-0344-49fc-a397-b33426030086")
+	)
+	(junction
 		(at 147.955 36.195)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5162,6 +5594,12 @@
 		(uuid "69c1fd1d-1e06-43b9-ac64-366098630480")
 	)
 	(junction
+		(at 276.86 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b274ca9-2648-4533-b6b3-19b272fa3171")
+	)
+	(junction
 		(at 269.24 316.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5192,10 +5630,22 @@
 		(uuid "6d0e6b05-ced0-430a-bc2e-ed44e598a1b2")
 	)
 	(junction
+		(at 307.34 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d561936-0867-4b6e-848f-5ea52482cba3")
+	)
+	(junction
 		(at 345.44 270.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d587dd9-13f0-47c7-9319-57017f6e45db")
+	)
+	(junction
+		(at 139.7 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d9142ac-dc31-4b9e-8f2c-3179b1d9ff2f")
 	)
 	(junction
 		(at 284.48 175.26)
@@ -5204,10 +5654,22 @@
 		(uuid "6e4c44d8-8766-4ad7-a8bb-f7a696a481ac")
 	)
 	(junction
+		(at 368.3 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6e5af5de-384b-4881-bd1a-8a371059bd34")
+	)
+	(junction
 		(at 345.44 232.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f34287e-7786-4b73-aeea-c57d69bcde82")
+	)
+	(junction
+		(at 200.66 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6fb01769-548a-45a7-9ec5-aa98783c8cde")
 	)
 	(junction
 		(at 223.52 311.15)
@@ -5232,6 +5694,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "719f6de7-1acf-4a66-9535-c2bd78971ab6")
+	)
+	(junction
+		(at 93.98 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71c27f8a-da79-468f-9c88-fefc10170338")
 	)
 	(junction
 		(at 406.4 240.03)
@@ -5342,6 +5810,12 @@
 		(uuid "796c489d-76f8-4ae0-bc3d-2d29d80d4200")
 	)
 	(junction
+		(at 368.3 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a02ea19-eccf-4ba4-a260-ac87a4b151ef")
+	)
+	(junction
 		(at 405.13 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5390,6 +5864,12 @@
 		(uuid "7d258670-c408-4c8e-bea2-381694ffb770")
 	)
 	(junction
+		(at 276.86 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d7bdd0c-d620-4314-9496-75867d9b2d31")
+	)
+	(junction
 		(at 299.72 300.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5430,6 +5910,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7eb683d9-9447-4c3b-a337-24c970f77aea")
+	)
+	(junction
+		(at 229.87 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ebf82b8-b9ce-4203-b67b-c0fb8490fce5")
 	)
 	(junction
 		(at 86.36 185.42)
@@ -5480,6 +5966,12 @@
 		(uuid "81f32af1-e674-4220-b843-67cea31f7401")
 	)
 	(junction
+		(at 93.98 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8237860f-30f1-473a-b730-229fa0705149")
+	)
+	(junction
 		(at 86.36 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5496,6 +5988,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82b36d60-16c0-4b74-94d3-8a01fbfa1f73")
+	)
+	(junction
+		(at 185.42 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8383536e-3dbd-432c-ba2c-164c8c693e96")
 	)
 	(junction
 		(at 191.77 149.86)
@@ -5522,16 +6020,40 @@
 		(uuid "84078a40-57ee-40ce-a284-ce8b49764d04")
 	)
 	(junction
+		(at 292.1 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8442d9df-b654-4a17-a048-bc3a15ece576")
+	)
+	(junction
 		(at 375.92 240.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "848ffc45-fc7c-49ce-8224-5927249633aa")
 	)
 	(junction
+		(at 184.15 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8527e0d0-394b-47d3-a788-15c15e6e39ed")
+	)
+	(junction
+		(at 398.78 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85fb175e-9fce-4032-b4ed-67f6d752fc64")
+	)
+	(junction
 		(at 116.84 316.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "875d81c4-6b21-44b2-bad0-9d8f5790b81f")
+	)
+	(junction
+		(at 246.38 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "887de9ce-4b65-4b89-82cf-02d53f3a08f0")
 	)
 	(junction
 		(at 299.72 323.85)
@@ -5564,6 +6086,12 @@
 		(uuid "8bef9e32-389f-414f-9a2b-0cda89ab213c")
 	)
 	(junction
+		(at 276.86 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c64f99f-4d78-4183-96af-5961dd05a4f4")
+	)
+	(junction
 		(at 193.04 227.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5594,10 +6122,22 @@
 		(uuid "8f72ab6b-bbc0-4f6a-91e1-f005c64a0ab5")
 	)
 	(junction
+		(at 200.66 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f7a6351-f0b2-45e1-ad6e-6ed40fbfcc48")
+	)
+	(junction
 		(at 374.65 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f98d0b3-dffd-4e40-9ff5-f9ecc0713310")
+	)
+	(junction
+		(at 200.66 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "901b8a19-556d-436d-b132-4dce404a512b")
 	)
 	(junction
 		(at 252.73 134.62)
@@ -5648,10 +6188,34 @@
 		(uuid "93394ba2-8f48-4576-b339-0fea72276ad5")
 	)
 	(junction
+		(at 139.7 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93a75772-d64e-4c59-80ed-c20202ee3e32")
+	)
+	(junction
+		(at 307.34 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93bbfa82-498c-417b-800d-0cfbc5649404")
+	)
+	(junction
+		(at 199.39 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93e0112a-9ed4-4f50-af13-a8fa0c1eb3ef")
+	)
+	(junction
 		(at 207.01 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "94367e89-689c-4009-9c35-8b4c99fb9c79")
+	)
+	(junction
+		(at 398.78 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94984e04-e0a0-419b-86a8-66431170a813")
 	)
 	(junction
 		(at 269.24 240.03)
@@ -5664,6 +6228,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "950e5104-87b4-4642-82ef-f8be3019c290")
+	)
+	(junction
+		(at 290.83 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "95101ded-b5c4-4244-9333-d14790988bc0")
 	)
 	(junction
 		(at 406.4 185.42)
@@ -5780,6 +6350,12 @@
 		(uuid "9acae5c3-6b1e-4066-8a3c-8296e05d7d77")
 	)
 	(junction
+		(at 138.43 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9b2ca552-b36e-44c0-9e1a-777d9f6f21e8")
+	)
+	(junction
 		(at 254 300.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5816,6 +6392,12 @@
 		(uuid "9ce8fcd8-7d0b-41e1-b7c4-0f37e9e972ef")
 	)
 	(junction
+		(at 337.82 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d0e7726-f472-425e-bde4-718b89b4b0fe")
+	)
+	(junction
 		(at 86.36 300.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5826,6 +6408,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d871c14-a85c-4d20-ba73-cab581d2b179")
+	)
+	(junction
+		(at 414.02 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9daa152a-94d8-4049-a939-d98d2f7e2524")
 	)
 	(junction
 		(at 130.81 134.62)
@@ -5876,6 +6464,12 @@
 		(uuid "9f4e097d-9747-4340-aaf1-ea2f2a0e4cde")
 	)
 	(junction
+		(at 185.42 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f55623f-cd7e-4957-982d-5bf3dafab4f6")
+	)
+	(junction
 		(at 162.56 232.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5894,10 +6488,22 @@
 		(uuid "9fbfc4ef-d028-4ee2-9bb1-e3cd87d18004")
 	)
 	(junction
+		(at 200.66 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a077b6ba-954d-48db-a881-01d146c0abc3")
+	)
+	(junction
 		(at 86.36 316.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0cf1c18-b19a-494a-9ea8-28840c481c65")
+	)
+	(junction
+		(at 109.22 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0e7f4d1-1628-40d8-9059-d49f7be83251")
 	)
 	(junction
 		(at 208.28 316.23)
@@ -5942,10 +6548,22 @@
 		(uuid "a3356a44-5886-4314-a7eb-6f50ad58d4bc")
 	)
 	(junction
+		(at 170.18 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3788529-f7ab-4cbe-8a4c-80d4f296e8c4")
+	)
+	(junction
 		(at 284.48 316.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4c72b41-ec5d-4e18-9c45-aca7177c0ad1")
+	)
+	(junction
+		(at 382.27 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6349974-54e8-4283-a621-baf763d8c6d2")
 	)
 	(junction
 		(at 162.56 270.51)
@@ -6008,6 +6626,12 @@
 		(uuid "a96c8a8f-ac6d-4c88-9427-ecd4c89837da")
 	)
 	(junction
+		(at 124.46 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9c7d3aa-27f7-4457-9429-549e0b1be076")
+	)
+	(junction
 		(at 284.48 255.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6018,6 +6642,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa010117-20d1-4466-b07e-b895cd0695e2")
+	)
+	(junction
+		(at 78.74 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa7b277c-1e18-4f59-acd2-2819cb07890d")
 	)
 	(junction
 		(at 162.56 217.17)
@@ -6078,6 +6708,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b06e7d81-5b31-4cc6-947b-c1dd86b30c84")
+	)
+	(junction
+		(at 336.55 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1d074bb-5a2f-4a1d-83ff-5dfa352dc27c")
 	)
 	(junction
 		(at 269.24 265.43)
@@ -6158,10 +6794,22 @@
 		(uuid "b677af98-7a0d-4e2d-9aae-70e2f1e4fc83")
 	)
 	(junction
+		(at 353.06 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b70aba1d-b1d7-4a21-916c-0b420dc39ec5")
+	)
+	(junction
 		(at 147.32 227.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b73188e1-d97c-4a86-8288-d17b5f9df7ce")
+	)
+	(junction
+		(at 124.46 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b867856b-e80f-411e-8d5e-17ebac1b2809")
 	)
 	(junction
 		(at 177.8 190.5)
@@ -6230,6 +6878,12 @@
 		(uuid "be35f5ad-761c-4b63-ac5c-393bce277a81")
 	)
 	(junction
+		(at 292.1 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf118a96-589f-4c50-9fce-b7c622e7ceca")
+	)
+	(junction
 		(at 284.48 311.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6254,10 +6908,28 @@
 		(uuid "bfde3918-6344-4a0e-84ca-16abec442c2a")
 	)
 	(junction
+		(at 109.22 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bff4228b-1a2e-4885-90ec-6ff59f8eb5af")
+	)
+	(junction
 		(at 86.36 217.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0033202-b05c-4224-a611-23a6fe082b21")
+	)
+	(junction
+		(at 246.38 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0183c67-ccf4-461b-8a0e-f4014cb25a6b")
+	)
+	(junction
+		(at 154.94 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c043aed3-6266-425d-88e0-daa51c53c13a")
 	)
 	(junction
 		(at 162.56 265.43)
@@ -6282,6 +6954,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c1004296-078e-420a-abec-592d70bb4122")
+	)
+	(junction
+		(at 170.18 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c11d2837-594e-41b1-9b36-66c24f13a454")
+	)
+	(junction
+		(at 78.74 367.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c12efe51-fa8d-4789-951a-148701552972")
+	)
+	(junction
+		(at 383.54 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c152d91c-6ab5-4225-b54b-fc5491e1a4c4")
 	)
 	(junction
 		(at 177.8 217.17)
@@ -6314,6 +7004,18 @@
 		(uuid "c5ee1879-fc56-4893-85ea-e25c226bec1e")
 	)
 	(junction
+		(at 154.94 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c638e05f-6cb0-4d55-8710-3b27d626b670")
+	)
+	(junction
+		(at 154.94 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c6e42cdb-a498-43cc-b5d4-94ad20897fd7")
+	)
+	(junction
 		(at 147.32 265.43)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6324,6 +7026,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c8176e84-54cc-4033-9c05-daefa2e6005d")
+	)
+	(junction
+		(at 383.54 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8194cd7-8b03-4480-8f80-fbcdb3edb43e")
+	)
+	(junction
+		(at 429.26 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c8ba5bbf-dd17-4b2d-9eca-0ead5768ff96")
 	)
 	(junction
 		(at 147.32 339.09)
@@ -6342,6 +7056,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c9fbd3a3-8833-4f87-974b-ce324ff76730")
+	)
+	(junction
+		(at 367.03 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca53f401-3d70-43ec-9200-9209b3d875c2")
 	)
 	(junction
 		(at 85.09 134.62)
@@ -6366,6 +7086,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cc3be6ec-2721-41e9-a132-51b5892c00d1")
+	)
+	(junction
+		(at 245.11 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc7e4984-224f-400d-a52c-40a5181def3c")
 	)
 	(junction
 		(at 193.04 339.09)
@@ -6458,6 +7184,18 @@
 		(uuid "d343190d-e59c-4579-a978-cc210d0d006d")
 	)
 	(junction
+		(at 93.98 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d354e03d-a94d-4ef3-bc23-c66408db3e98")
+	)
+	(junction
+		(at 92.71 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d57a8b4d-3daf-460e-9cbc-6fb6a14a9a29")
+	)
+	(junction
 		(at 314.96 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6468,6 +7206,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d6613153-21f3-4b02-90e6-713a8f0f8dd5")
+	)
+	(junction
+		(at 322.58 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d6f88d9a-2e0c-4f1c-93b3-354fd4d5260c")
 	)
 	(junction
 		(at 116.84 270.51)
@@ -6542,6 +7286,12 @@
 		(uuid "dc042dce-6bb2-4293-b658-52142f7bfbb2")
 	)
 	(junction
+		(at 215.9 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dc5ed543-c2e6-4c22-8bce-b51ddc774a1f")
+	)
+	(junction
 		(at 238.76 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6558,6 +7308,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd432e76-4b06-42d1-943c-9dba2f6a9edf")
+	)
+	(junction
+		(at 93.98 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de6f45f1-533f-4b3f-92f3-bc1aff5c1525")
+	)
+	(junction
+		(at 170.18 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dea23a0d-6cb8-4a80-a7d3-efb7a9b03a04")
 	)
 	(junction
 		(at 193.04 300.99)
@@ -6582,6 +7344,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dfb9a739-70c1-4502-a0d8-0b72e88d98ea")
+	)
+	(junction
+		(at 307.34 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0d35204-10d9-4f83-8a2c-87f059418f70")
 	)
 	(junction
 		(at 101.6 354.33)
@@ -6632,6 +7400,12 @@
 		(uuid "e27abd4e-ce23-434a-8834-cdd2a941133e")
 	)
 	(junction
+		(at 139.7 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2917c46-fb8d-404b-944f-3baa79aec93b")
+	)
+	(junction
 		(at 284.48 349.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6656,10 +7430,22 @@
 		(uuid "e5dca2c6-094d-44de-b871-c36bc416aeba")
 	)
 	(junction
+		(at 276.86 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6b9c128-42b0-4412-a570-911b7ad13cf2")
+	)
+	(junction
 		(at 223.52 349.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e6c5d4a4-c29e-4c39-ad9b-4f0ab82ed5a6")
+	)
+	(junction
+		(at 261.62 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e71fd4f1-b3cb-4b42-829b-6a9db40b4a9d")
 	)
 	(junction
 		(at 269.24 349.25)
@@ -6698,6 +7484,12 @@
 		(uuid "ea8d4d0b-a978-4092-9ac3-1bb5151185c2")
 	)
 	(junction
+		(at 368.3 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eaba3500-d820-4e8c-9d67-2f4743cebaf8")
+	)
+	(junction
 		(at 132.08 227.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6708,6 +7500,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb0d3136-8de2-495b-82a9-9033ae5689a8")
+	)
+	(junction
+		(at 215.9 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb79f8e7-1f59-4180-9301-d6e3a7a753f0")
 	)
 	(junction
 		(at 162.56 349.25)
@@ -6734,6 +7532,12 @@
 		(uuid "ec8c18dd-47d0-4c5f-b14c-49fc80204cfa")
 	)
 	(junction
+		(at 170.18 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecf9f689-59ab-4591-b832-1c2f40374462")
+	)
+	(junction
 		(at 208.28 255.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6758,6 +7562,18 @@
 		(uuid "ef5d6de4-6f03-4303-8828-8f51e6367735")
 	)
 	(junction
+		(at 78.74 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef94a0ef-7ed7-4cab-a1b9-a5d53bfc83a6")
+	)
+	(junction
+		(at 170.18 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ef971d6f-8db3-47cc-b9dd-e14e396305cf")
+	)
+	(junction
 		(at 328.93 144.78)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6774,6 +7590,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f01fa962-7352-45b0-af5b-8524d92d1c5f")
+	)
+	(junction
+		(at 154.94 247.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f04180a3-9b2f-41ca-8009-c54785fb0996")
+	)
+	(junction
+		(at 398.78 209.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f10cbda7-9e26-485f-a55b-4abd36c27750")
 	)
 	(junction
 		(at 147.32 300.99)
@@ -6824,6 +7652,12 @@
 		(uuid "f53eedeb-8adf-471b-9930-7279bf586c6b")
 	)
 	(junction
+		(at 307.34 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7223412-9015-47b7-b164-febac4db735a")
+	)
+	(junction
 		(at 238.76 201.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6846,6 +7680,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7b23347-9b84-4944-b241-8559bbcbab3e")
+	)
+	(junction
+		(at 185.42 331.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f80abd8d-e7fa-4342-8908-f204cf68a849")
+	)
+	(junction
+		(at 124.46 167.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8756302-de6f-4f6d-99a7-64ce2ee0187c")
+	)
+	(junction
+		(at 261.62 293.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa330452-5587-4516-867b-a219321b1aa6")
 	)
 	(junction
 		(at 360.68 270.51)
@@ -6918,6 +7770,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ffc11f9d-d784-4d6e-aa56-7ff391d426a5")
+	)
+	(junction
+		(at 107.95 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fff53219-6a02-40d5-a136-34f5fa2cc134")
 	)
 	(junction
 		(at 284.48 323.85)
@@ -7650,6 +8508,16 @@
 			(type default)
 		)
 		(uuid "1ecd710d-e281-4bf0-9ec3-7d74c53a8192")
+	)
+	(wire
+		(pts
+			(xy 77.47 367.03) (xy 78.74 367.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f436ffc-ecfa-4356-9c9f-bbae22d6012c")
 	)
 	(wire
 		(pts
@@ -8983,6 +9851,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 167.64) (xy 78.74 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "602fdf05-edb1-4429-a644-855b6406219c")
+	)
+	(wire
+		(pts
 			(xy 116.84 285.75) (xy 132.08 285.75)
 		)
 		(stroke
@@ -9300,6 +10178,16 @@
 			(type default)
 		)
 		(uuid "6bf71cd1-37e4-4c93-bb81-b7a87565ab9c")
+	)
+	(wire
+		(pts
+			(xy 76.2 331.47) (xy 78.74 331.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c326bbd-7cd0-43d9-ac26-3a2a1dd1a0a4")
 	)
 	(wire
 		(pts
@@ -10810,6 +11698,16 @@
 			(type default)
 		)
 		(uuid "b45ffb45-a7a6-4676-baf9-cce114675a28")
+	)
+	(wire
+		(pts
+			(xy 74.93 293.37) (xy 78.74 293.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b49eaee8-fb41-40b7-841d-3ab58cac36ed")
 	)
 	(wire
 		(pts
@@ -12433,6 +13331,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 247.65) (xy 78.74 247.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa5e6930-5292-404a-b1f6-79ed067955c2")
+	)
+	(wire
+		(pts
 			(xy 252.73 149.86) (xy 267.97 149.86)
 		)
 		(stroke
@@ -12450,6 +13358,16 @@
 			(type default)
 		)
 		(uuid "faf64091-c444-4290-b038-a3bd569e0e5d")
+	)
+	(wire
+		(pts
+			(xy 76.2 209.55) (xy 78.74 209.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb53e0ff-8dbc-4dd4-baf3-860f06bbed70")
 	)
 	(wire
 		(pts
@@ -13016,7 +13934,7 @@
 	)
 	(global_label "LEDS_CANADA_LINE_SOUTH_TO_NORTH"
 		(shape input)
-		(at 78.74 293.37 180)
+		(at 74.93 293.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13026,7 +13944,7 @@
 		)
 		(uuid "0d1209a6-b0c6-4ff7-9471-352f75e3d17d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.3951 293.37 0)
+			(at 36.5851 293.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13214,7 +14132,7 @@
 	)
 	(global_label "LEDS_CANADA_LINE_NORTH_TO_SOUTH"
 		(shape input)
-		(at 78.74 331.47 180)
+		(at 76.2 331.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13224,7 +14142,7 @@
 		)
 		(uuid "49533979-3920-4b81-bbb4-485c42e81457")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 40.3951 331.47 0)
+			(at 37.8551 331.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13236,7 +14154,7 @@
 	)
 	(global_label "LEDS_EXPO_LINE_WEST_TO_EAST"
 		(shape input)
-		(at 78.74 167.64 180)
+		(at 74.93 167.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13246,7 +14164,7 @@
 		)
 		(uuid "4acf4b44-f849-46a4-aae9-3e244f36209b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.7779 167.64 0)
+			(at 41.9679 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13456,7 +14374,7 @@
 	)
 	(global_label "LEDS_MILLENNIUM_LINE_EAST_TO_WEST"
 		(shape input)
-		(at 78.74 209.55 180)
+		(at 76.2 209.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13466,7 +14384,7 @@
 		)
 		(uuid "745b5c7a-af85-4123-9dce-0f0d2d018278")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.4278 209.55 0)
+			(at 36.8878 209.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13478,7 +14396,7 @@
 	)
 	(global_label "LEDS_SEA_BUS"
 		(shape input)
-		(at 78.74 367.03 180)
+		(at 77.47 367.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13488,7 +14406,7 @@
 		)
 		(uuid "782f94c3-425d-463a-b56c-46f2c708ad15")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.9853 367.03 0)
+			(at 60.7153 367.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13698,7 +14616,7 @@
 	)
 	(global_label "LEDS_MILLENNIUM_LINE_WEST_TO_EAST"
 		(shape input)
-		(at 78.74 247.65 180)
+		(at 73.66 247.65 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -13708,7 +14626,7 @@
 		)
 		(uuid "c6527548-2cc6-4cde-8462-05f09398e820")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.4278 247.65 0)
+			(at 34.3478 247.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13869,6 +14787,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 261.62 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00816ce7-05f3-4f04-bd8c-72e34fa72724")
+		(property "Reference" "TP60"
+			(at 259.08 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 263.398 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 266.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 261.62 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f5d2dc83-9cc7-4efc-bd99-87a891c46c28")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP60")
 					(unit 1)
 				)
 			)
@@ -14104,6 +15089,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 215.9 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "022339f8-df00-489b-93b4-6269737176e7")
+		(property "Reference" "TP119"
+			(at 213.36 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 217.678 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 220.98 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 215.9 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e94a397e-9287-4ead-b331-4e2760fa2d7c")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP119")
 					(unit 1)
 				)
 			)
@@ -14395,6 +15447,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 200.66 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "059954fb-7466-4835-8405-c3a044cef194")
+		(property "Reference" "TP118"
+			(at 198.12 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 202.438 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 205.74 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 200.66 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "16df5798-e46b-4d87-bd9d-0a548d60c2d6")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 200.66 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "062430c3-a413-40dc-b272-64565f97d5e1")
+		(property "Reference" "TP32"
+			(at 198.12 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 202.438 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 205.74 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 200.66 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9550464e-0fc0-4431-93c2-58ae871ab233")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 359.41 127 0)
 		(unit 1)
@@ -14673,6 +15859,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08302e74-4530-497e-8686-d1a37e7d280d")
+		(property "Reference" "TP101"
+			(at 182.88 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 187.198 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 190.5 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 185.42 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3628ddc2-87d0-47bc-881e-d30d4c25f9cf")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP101")
 					(unit 1)
 				)
 			)
@@ -15206,6 +16459,207 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 429.26 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dc9be01-0179-4fdb-93fa-312ab5e6f16c")
+		(property "Reference" "TP47"
+			(at 426.72 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 431.038 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 434.34 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 434.34 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 429.26 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9b449b88-a2ac-480e-ac31-87bf974eb744")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0de8d35a-56ff-4ab6-8de7-914023335134")
+		(property "Reference" "TP24"
+			(at 76.2 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.518 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 83.82 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "013dc3ed-61e1-46fe-b10a-b62d167630d2")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 414.02 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f0051d1-7c62-4acd-a14b-32d902ff8ad8")
+		(property "Reference" "TP70"
+			(at 411.48 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 415.798 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 419.1 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 419.1 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 414.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "472e9901-bea1-427b-8a87-08e310831e42")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 406.4 187.96 0)
 		(unit 1)
@@ -15398,6 +16852,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10a07104-c49f-4f60-aad0-753cc193f4b1")
+		(property "Reference" "TP59"
+			(at 243.84 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 248.158 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 251.46 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 246.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c9619ba-2915-469d-826e-f1321b56b45a")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP59")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 261.62 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10b9d388-134e-4bfb-b552-c1b4619b96d6")
+		(property "Reference" "TP36"
+			(at 259.08 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 263.398 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 266.7 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 261.62 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a67b3ee-0c0a-4f7e-ba0e-dfbe735ab68b")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 76.2 97.79 0)
 		(unit 1)
@@ -15565,6 +17153,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12ffb4a8-88b5-450e-9092-b891493e17b2")
+		(property "Reference" "TP71"
+			(at 76.2 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.518 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 83.82 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "521123a2-e63e-43c3-8be2-09a3569708de")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP71")
 					(unit 1)
 				)
 			)
@@ -15865,6 +17520,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1668d807-5a5c-4066-8efe-19656c1628de")
+		(property "Reference" "TP82"
+			(at 243.84 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 248.158 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 251.46 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 246.38 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd9d65e3-2e11-4a36-8ddb-3c46d5fdada2")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1a81f69d-23f9-4e9b-b486-5310d9366007")
+		(property "Reference" "TP34"
+			(at 228.6 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.918 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 236.22 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4326e110-0084-4fba-9271-ca76044e62f8")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 299.72 267.97 0)
 		(unit 1)
@@ -16069,6 +17858,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 412.75 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d996257-f98b-4078-8d07-ab3952371f09")
+		(property "Reference" "TP22"
+			(at 410.21 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 414.528 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 417.83 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 417.83 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 412.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c0117362-1a6b-472a-bce7-7d0939152983")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 117.475 36.195 0)
 		(unit 1)
@@ -16134,6 +17990,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 261.62 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e133cdd-8aa2-4c5e-83c5-6e80b91c1922")
+		(property "Reference" "TP106"
+			(at 259.08 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 263.398 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 266.7 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 261.62 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c647564-4bb7-4554-b388-d2436744393f")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP106")
 					(unit 1)
 				)
 			)
@@ -16236,6 +18159,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 292.1 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e8e43f0-3cd6-44cd-9e51-0f4a78cb98f6")
+		(property "Reference" "TP108"
+			(at 289.56 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 293.878 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 297.18 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 292.1 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "741949b6-b8aa-42da-b373-759221114897")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP108")
 					(unit 1)
 				)
 			)
@@ -16379,6 +18369,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 124.46 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f8de1d5-5e59-45dc-b9c7-5bcca6569864")
+		(property "Reference" "TP27"
+			(at 121.92 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 126.238 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 129.54 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 124.46 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b68d4c1-f6f9-4e33-af39-b23d9a503abc")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP27")
 					(unit 1)
 				)
 			)
@@ -16916,6 +18973,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 383.54 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "22ef0c76-ffea-45c0-98ba-63f9d41dd78c")
+		(property "Reference" "TP91"
+			(at 381 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 385.318 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 388.62 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 388.62 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 383.54 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbc6eae3-8072-48ef-8e75-be47ed23a295")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 383.54 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2356afd7-765d-4b50-b21d-1f5639aa9c4a")
+		(property "Reference" "TP68"
+			(at 381 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 385.318 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 388.62 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 388.62 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 383.54 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fe6dd1d-d15c-43d7-9eaf-3bdaac13ee94")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 76.2 232.41 270)
 		(unit 1)
@@ -17246,6 +19437,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 109.22 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "25de9575-5023-4368-87a1-a36a077603d5")
+		(property "Reference" "TP73"
+			(at 106.68 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 110.998 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 114.3 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 109.22 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b0caff3-3e71-44cc-8418-430db238cadb")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 93.98 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "263270e4-b74a-4a95-b958-b0cddc95df25")
+		(property "Reference" "TP72"
+			(at 91.44 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 95.758 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 99.06 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 93.98 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac474f87-b747-47f8-8954-bfefdd43c800")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP72")
 					(unit 1)
 				)
 			)
@@ -17636,6 +19961,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 107.95 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28861c5c-2da0-40fa-bed8-4804fb387509")
+		(property "Reference" "TP2"
+			(at 106.172 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 109.728 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 113.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 107.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "89faed5b-7655-468b-9706-b684b321a790")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 284.48 187.96 0)
 		(unit 1)
@@ -17732,6 +20124,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.3 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "299035d7-8951-4352-89ed-568a9aa47d92")
+		(property "Reference" "TP43"
+			(at 365.76 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 370.078 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 373.38 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 373.38 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.3 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35da4516-23e9-4166-adf4-b053036daaca")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP43")
 					(unit 1)
 				)
 			)
@@ -18110,6 +20569,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 200.66 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d408225-a356-4267-86c8-34c4964f6066")
+		(property "Reference" "TP56"
+			(at 198.12 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 202.438 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 205.74 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 200.66 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ef272e0-e894-4771-a240-733e53ea9b90")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 345.44 267.97 0)
 		(unit 1)
@@ -18297,6 +20823,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 260.35 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "307cf008-cc15-4727-a442-262b3bff6cb7")
+		(property "Reference" "TP12"
+			(at 258.572 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 262.128 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 265.43 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 265.43 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 260.35 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "399cd380-a2cf-40d5-8703-2ba4c76bba3e")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 254 229.87 0)
 		(unit 1)
@@ -18393,6 +20986,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3171aa1d-e0a5-4048-89f8-5b2c8eaf27c6")
+		(property "Reference" "TP120"
+			(at 228.6 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.918 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 236.22 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83c55221-0e71-4215-875d-d7f0638582ae")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP120")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 170.18 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31b34bf6-2b19-4008-a469-f6dd2c2ba009")
+		(property "Reference" "TP30"
+			(at 167.64 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 171.958 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 175.26 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 170.18 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6672665d-74c7-4a70-9e1b-b9018eeb7774")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP30")
 					(unit 1)
 				)
 			)
@@ -19221,6 +21948,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 124.46 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "398ec341-7143-48fb-bf30-04842e82045d")
+		(property "Reference" "TP97"
+			(at 121.92 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 126.238 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 129.54 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 124.46 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1375618-cce7-4722-bca0-5eed5e1b1d96")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP97")
 					(unit 1)
 				)
 			)
@@ -20066,6 +22860,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4106794a-124c-469e-8092-1ffe71d00eba")
+		(property "Reference" "TP55"
+			(at 182.88 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 187.198 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 190.5 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 185.42 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c1a832dd-c357-4bf5-895e-cc0603590024")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 421.64 209.55 0)
 		(unit 1)
@@ -20419,6 +23280,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 307.34 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "429cdf80-c4c6-4d26-aa60-083ad68f9594")
+		(property "Reference" "TP63"
+			(at 304.8 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 309.118 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 312.42 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 307.34 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f8041d4-68d0-4063-9b29-4623fe093142")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 321.31 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "44109d99-34df-44a8-b51c-fec9363e9350")
+		(property "Reference" "TP16"
+			(at 318.77 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 323.088 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 326.39 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 326.39 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 321.31 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ccd6e70-c764-4b47-9951-9b6d398e6629")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 191.77 127 0)
 		(unit 1)
@@ -20684,6 +23679,207 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 275.59 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46d9ea56-907c-4e82-a138-8183e3483275")
+		(property "Reference" "TP13"
+			(at 273.05 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 277.368 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 280.67 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 280.67 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 275.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce0de7ab-cf7a-476d-8bc4-8c3907b74b02")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 336.55 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "46dcb671-8f4a-4c45-a036-4c08c10b0ad3")
+		(property "Reference" "TP17"
+			(at 334.01 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 338.328 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 341.63 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 341.63 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 336.55 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a078e4bf-3b46-4e86-8cba-d4354891f46e")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 215.9 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47065056-1457-4a3b-8663-4d9ed5488b0b")
+		(property "Reference" "TP33"
+			(at 213.36 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 217.678 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 220.98 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 215.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0321e39-03fc-46a5-8cfd-b2818282d0a7")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 330.2 187.96 0)
 		(unit 1)
@@ -20780,6 +23976,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 138.43 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47c0e858-6bd2-4560-a6b8-add6591daf53")
+		(property "Reference" "TP4"
+			(at 136.652 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 140.208 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 143.51 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 138.43 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "833a10b8-b477-44e5-ba4f-acce86b0d9e3")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -20922,6 +24185,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 170.18 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "487541ea-24d2-4e2e-9e0f-0121663818f9")
+		(property "Reference" "TP77"
+			(at 167.64 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 171.958 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 175.26 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 170.18 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2037d2ac-a400-4f6f-85a6-eec28c61ce1a")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP77")
 					(unit 1)
 				)
 			)
@@ -21504,6 +24834,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 307.34 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b21bcaa-7bb2-4f93-8f0f-8aefbe78837f")
+		(property "Reference" "TP39"
+			(at 304.8 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 309.118 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 312.42 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 307.34 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "521559e5-a385-4267-b1ab-03a424d96491")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 375.92 247.65 0)
 		(unit 1)
@@ -22080,6 +25477,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4d0e998c-cc13-4399-a114-f4201ab47d16")
+		(property "Reference" "TP105"
+			(at 243.84 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 248.158 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 251.46 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 246.38 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d8cfb53-591f-4a35-bca3-17e5e2973e47")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 54.61 99.06 0)
 		(unit 1)
@@ -22253,6 +25717,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 214.63 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ee32357-4e35-4dc3-be7a-3aaf4d6571d6")
+		(property "Reference" "TP9"
+			(at 212.852 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 216.408 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 219.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 219.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 214.63 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1898c7e4-209e-40e8-8f0e-4430816a767c")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 269.24 313.69 0)
 		(unit 1)
@@ -22349,6 +25880,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 215.9 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ff95fbd-c389-4906-a038-0b02b01a864b")
+		(property "Reference" "TP80"
+			(at 213.36 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 217.678 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 220.98 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 215.9 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69a9b9a9-d164-4654-bc30-770e25804804")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP80")
 					(unit 1)
 				)
 			)
@@ -22751,6 +26349,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 322.58 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "533ea3f3-9193-4f10-9046-da7c745d2752")
+		(property "Reference" "TP40"
+			(at 320.04 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 324.358 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 327.66 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 327.66 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 322.58 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "590f23e1-ba4b-4167-9a01-9050d529de1a")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 223.52 229.87 0)
 		(unit 1)
@@ -23045,6 +26710,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 139.7 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55a667b0-ad86-4de3-9c15-7435fb5e856c")
+		(property "Reference" "TP52"
+			(at 137.16 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 141.478 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 144.78 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 139.7 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea2e6b8f-5e83-471c-92de-6b7a70a85920")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5646e2db-a736-4e1b-96ad-73f252f45790")
+		(property "Reference" "TP58"
+			(at 228.6 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.918 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 236.22 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea9b4bda-6beb-4825-b916-c8562abeff12")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 435.61 147.32 0)
 		(unit 1)
@@ -23249,6 +27048,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 168.91 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "593a4165-0e22-40b1-9968-f6598c43b9bf")
+		(property "Reference" "TP6"
+			(at 167.132 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 170.688 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 173.99 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 168.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "baef8f1e-6b3b-4620-89e3-1243f7a1db78")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 421.64 267.97 0)
 		(unit 1)
@@ -23435,6 +27301,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 307.34 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59ea1d0e-ecef-4b2a-ad4c-ef11e6791b48")
+		(property "Reference" "TP109"
+			(at 304.8 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 309.118 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 312.42 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 307.34 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a32250d3-d649-4b81-a4f8-b78b41e4b38f")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP109")
 					(unit 1)
 				)
 			)
@@ -23976,6 +27909,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 153.67 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5cf94334-a5fd-454f-9c28-f0041d124f5b")
+		(property "Reference" "TP5"
+			(at 151.892 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 155.448 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 153.67 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdd925a2-6465-4a6e-9507-d90e02df3fd4")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 273.05 74.93 0)
 		(unit 1)
@@ -24391,6 +28391,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 276.86 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5eff6f2d-6837-4866-9d50-61a9b2f1683e")
+		(property "Reference" "TP84"
+			(at 274.32 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 278.638 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 281.94 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 276.86 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "373eb756-efee-4b5f-9ca5-2ca6079b49f4")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP84")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 436.88 167.64 0)
 		(unit 1)
@@ -24475,6 +28542,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 290.83 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fc514ec-427e-46f9-9669-b78260101a95")
+		(property "Reference" "TP14"
+			(at 288.29 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 292.608 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 295.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 295.91 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 290.83 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8393d1cc-687c-4fb2-8122-cfc4ee09eeb0")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -24637,6 +28771,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 93.98 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "63561a54-04be-4333-ac3a-098fc46e99c6")
+		(property "Reference" "TP49"
+			(at 91.44 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 95.758 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 99.06 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 93.98 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "673343ab-4dbd-4a23-adc1-7307803f6709")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 276.86 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "63f0dab2-9afe-48e8-8f41-792b445a8f7d")
+		(property "Reference" "TP123"
+			(at 274.32 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 278.638 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 281.94 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 276.86 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4306084-4aab-4c26-a19d-2821e0e40471")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP123")
 					(unit 1)
 				)
 			)
@@ -25105,6 +29373,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 170.18 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "66ba5527-e3c6-4760-b253-cdceacc48ce6")
+		(property "Reference" "TP100"
+			(at 167.64 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 171.958 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 175.26 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 170.18 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6eb3677b-49f0-42b5-9f2e-11e0cd247264")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 322.58 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "671592a6-7cd3-44f3-8b1e-d8c31b864d88")
+		(property "Reference" "TP64"
+			(at 320.04 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 324.358 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 327.66 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 327.66 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 322.58 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c66a64c4-a095-4c5a-9180-208d5ffa703f")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 406.4 247.65 0)
 		(unit 1)
@@ -25381,6 +29783,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 276.86 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "69f11478-1409-4b3e-b8dd-7e8b959f6e9f")
+		(property "Reference" "TP107"
+			(at 274.32 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 278.638 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 281.94 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 276.86 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "798eb82a-fae1-48d0-bd84-ca13162cb0da")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP107")
 					(unit 1)
 				)
 			)
@@ -25675,6 +30144,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 184.15 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c1ea08a-3dcb-4254-9e3a-9f78ecc6e8d6")
+		(property "Reference" "TP7"
+			(at 182.372 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 185.928 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 189.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 184.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "477586c0-5eca-4b36-8e73-206bd08f3803")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -26029,6 +30565,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 353.06 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ebe17ed-ee1d-4a0d-99a9-09621563719f")
+		(property "Reference" "TP66"
+			(at 350.52 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 354.838 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 358.14 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 358.14 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 353.06 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c15a7ed-bfb9-4797-b338-1340748449b0")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP66")
 					(unit 1)
 				)
 			)
@@ -27532,6 +32135,274 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 245.11 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7a6e39aa-3890-431f-ac1a-4ccd8af8a689")
+		(property "Reference" "TP11"
+			(at 243.332 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 246.888 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 250.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 245.11 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d04da6ab-3118-4f54-b920-801dc9adb9da")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 353.06 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bc63252-6227-4ced-bc66-00678935871e")
+		(property "Reference" "TP89"
+			(at 350.52 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 354.838 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 358.14 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 358.14 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 353.06 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a95a354-cc35-460e-a9f1-2574acebd34c")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c2d6f60-2bd3-4e6c-9054-e5138e186a56")
+		(property "Reference" "TP117"
+			(at 182.88 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 187.198 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 190.5 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 185.42 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cd31468-28b9-450c-8302-bce63635cb59")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP117")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 398.78 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c729bed-e351-4701-9a98-ddf3e0c3f26f")
+		(property "Reference" "TP69"
+			(at 396.24 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 400.558 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 403.86 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 403.86 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 398.78 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14219552-62b6-489e-92b1-bcf57cf1eef4")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 237.49 147.32 0)
 		(unit 1)
@@ -27628,6 +32499,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 109.22 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7df6eda3-c8e1-4585-87ad-e01751ee3c01")
+		(property "Reference" "TP26"
+			(at 106.68 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 110.998 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 114.3 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 109.22 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07e62d9d-07d7-435b-a5d8-2d363e7153e3")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e094453-df1e-4d26-8084-be2ab01a17a5")
+		(property "Reference" "TP78"
+			(at 182.88 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 187.198 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 190.5 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 185.42 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "525e89ba-6d0d-427c-8bb4-ad4aaa6c302e")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP78")
 					(unit 1)
 				)
 			)
@@ -27789,6 +32794,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 154.94 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fbc9308-fe69-4471-967b-e5a95636d405")
+		(property "Reference" "TP29"
+			(at 152.4 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 156.718 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 160.02 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 154.94 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc2a437e-31a0-4884-b624-85747816f97d")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP29")
 					(unit 1)
 				)
 			)
@@ -27988,6 +33060,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 124.46 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81d2a2df-d87a-4055-871c-9184cab113f0")
+		(property "Reference" "TP113"
+			(at 121.92 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 126.238 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 129.54 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 124.46 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8070142-46d6-4d9b-b022-b8db428567a5")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP113")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 80.01 201.93 90)
 		(unit 1)
@@ -28054,6 +33193,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 123.19 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8229519f-258c-4ea9-bf5e-2f91b15e42c4")
+		(property "Reference" "TP3"
+			(at 121.412 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 124.968 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 128.27 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 123.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4447f756-fc37-44f7-b2c6-e88977e8e2e1")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -28335,6 +33541,274 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 139.7 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85c82e2d-a39e-4dbc-85b2-d534f101395e")
+		(property "Reference" "TP28"
+			(at 137.16 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 141.478 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 144.78 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 139.7 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e369890-7e0b-41a4-ae0d-83e46a5d0348")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 261.62 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85da2e80-4f4b-4c3f-81c1-625f896df0e0")
+		(property "Reference" "TP122"
+			(at 259.08 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 263.398 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 266.7 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 261.62 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b31e0d91-bab2-46a0-baf4-01740475d5ce")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP122")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 398.78 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "868c276e-709a-4d4b-92f6-8866c3ecd975")
+		(property "Reference" "TP45"
+			(at 396.24 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 400.558 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 403.86 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 403.86 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 398.78 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67af64cf-3e6c-4cfc-845e-0aeaa8bee173")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "86c89b2e-70fd-4023-876d-8004d2af947a")
+		(property "Reference" "TP121"
+			(at 243.84 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 248.158 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 251.46 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 246.38 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "077b6878-cfee-4b18-9f00-59ae022aa2b1")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 269.24 293.37 0)
 		(unit 1)
@@ -28521,6 +33995,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 292.1 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8859932c-0a8c-48ca-9cf0-0c1e912ed26f")
+		(property "Reference" "TP38"
+			(at 289.56 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 293.878 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 297.18 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 292.1 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "18f53e64-b042-4993-9c3d-766e307cf0e7")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP38")
 					(unit 1)
 				)
 			)
@@ -28809,6 +34350,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 337.82 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a26d99d-4889-4a35-accd-b7385d7574c7")
+		(property "Reference" "TP41"
+			(at 335.28 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 339.598 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 342.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 337.82 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35ede331-5ad6-42da-8913-d1f2c35389d9")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 299.72 167.64 0)
 		(unit 1)
@@ -28964,6 +34572,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 215.9 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8b2b4138-e01b-4f5a-bfac-b30fb0ac24e9")
+		(property "Reference" "TP57"
+			(at 213.36 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 217.678 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 220.98 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 215.9 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43fffa8b-be71-43eb-940e-c3d3766f38a2")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 92.71 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c21fcc6-2d2e-46fc-b698-e4da681b53a9")
+		(property "Reference" "TP1"
+			(at 90.932 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 94.488 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 97.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 92.71 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5742e5e0-3c2b-4c56-ac14-c0f5c8ce4a5e")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -29326,6 +35068,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 170.18 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e5a62fd-9b12-4868-a843-5dde62238fc7")
+		(property "Reference" "TP54"
+			(at 167.64 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 171.958 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 175.26 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 170.18 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28fa6714-c185-47ea-bb8d-4929328f3855")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP54")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 223.52 247.65 0)
 		(unit 1)
@@ -29506,6 +35315,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 322.58 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8ef7cfd1-a3bd-4b87-bbbe-50e1c9d73367")
+		(property "Reference" "TP87"
+			(at 320.04 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 324.358 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 327.66 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 327.66 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 322.58 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "407bc085-f756-4ef1-9588-8b9126c30e86")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 314.96 187.96 0)
 		(unit 1)
@@ -29602,6 +35478,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 154.94 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92f0201e-abca-4295-99a8-8e552e3bde97")
+		(property "Reference" "TP99"
+			(at 152.4 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 156.718 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 160.02 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 154.94 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ae7f563-3186-403e-a4a4-e5da47ff89fa")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP99")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 154.94 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "931b0759-cff3-4824-bbb4-bcabf6a428b2")
+		(property "Reference" "TP115"
+			(at 152.4 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 156.718 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 160.02 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 154.94 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9b0e330-04df-43fc-a777-25704312b9d9")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP115")
 					(unit 1)
 				)
 			)
@@ -29794,6 +35804,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9520036b-66ef-49a7-afc6-876ca6f58d79")
+		(property "Reference" "TP110"
+			(at 76.2 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.518 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 83.82 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29d92945-8e8e-4a8c-927d-9e3cc32ab19b")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP110")
 					(unit 1)
 				)
 			)
@@ -30064,6 +36141,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 292.1 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96227cf8-1ae3-49b3-92a0-bed045866b50")
+		(property "Reference" "TP85"
+			(at 289.56 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 293.878 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 297.18 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 292.1 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "71cd6763-0652-4c9b-a4dd-e9f0a6a0fb5b")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP85")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 375.92 167.64 0)
 		(unit 1)
@@ -30148,6 +36292,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 292.1 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96e27887-30fa-4226-8ea9-5897ace4395a")
+		(property "Reference" "TP124"
+			(at 289.56 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 293.878 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 297.18 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 292.1 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "032bb0b6-29f5-46d4-8a96-37d4674bd1cf")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP124")
 					(unit 1)
 				)
 			)
@@ -30410,6 +36621,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 337.82 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98063855-4c58-4d30-9409-95b42f39e35e")
+		(property "Reference" "TP88"
+			(at 335.28 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 339.598 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 342.9 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 337.82 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f384057e-9606-4af2-823a-46822ad3cc77")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 238.76 313.69 0)
 		(unit 1)
@@ -30596,6 +36874,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 414.02 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a864997-2964-4260-b515-c2816b398606")
+		(property "Reference" "TP93"
+			(at 411.48 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 415.798 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 419.1 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 419.1 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 414.02 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f926d881-d548-4ab9-ac55-45e413f3e07e")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP93")
 					(unit 1)
 				)
 			)
@@ -31447,6 +37792,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 398.78 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9f2ffbdb-2dcc-4183-8e42-142ab76ef33a")
+		(property "Reference" "TP92"
+			(at 396.24 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 400.558 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 403.86 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 403.86 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 398.78 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad559f7e-54eb-45ee-90f3-86c37f198ea2")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP92")
 					(unit 1)
 				)
 			)
@@ -32442,6 +38854,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 292.1 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4ec7e19-94a3-41a2-8900-93f22949af6f")
+		(property "Reference" "TP62"
+			(at 289.56 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 293.878 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 297.18 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 297.18 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 292.1 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a9c6b0a-b1aa-4af2-bd7e-5cfee8d4dc6f")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 375.92 209.55 0)
 		(unit 1)
@@ -32597,6 +39076,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 337.82 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a5fca8fa-b927-48f8-a27b-6b146cbf9a2a")
+		(property "Reference" "TP65"
+			(at 335.28 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 339.598 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 342.9 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 342.9 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 337.82 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67b396d7-b17d-4fbd-b474-abca202f53bb")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP65")
 					(unit 1)
 				)
 			)
@@ -32795,6 +39341,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 199.39 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6d2b248-1537-4ebe-9c12-54726c9fb3c0")
+		(property "Reference" "TP8"
+			(at 197.612 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 201.168 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 204.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 199.39 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e95bc8e-c32b-4353-b6b9-462134b1bd34")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 231.775 24.13 270)
 		(unit 1)
@@ -32964,6 +39577,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 139.7 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a871d4f5-da1a-46c8-a361-29aac23cd54b")
+		(property "Reference" "TP98"
+			(at 137.16 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 141.478 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 144.78 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 139.7 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4804193a-518c-46b5-a5ae-8dbfba78c381")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP98")
 					(unit 1)
 				)
 			)
@@ -33953,6 +40633,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 367.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afbd9607-1e09-417b-89b1-8a8ff4a7d0c6")
+		(property "Reference" "TP126"
+			(at 76.2 361.696 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.518 367.538 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 83.82 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 367.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dca1ee99-4bd3-44f9-86c7-8f01a721c062")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP126")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 375.92 187.96 0)
 		(unit 1)
@@ -34140,6 +40887,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 382.27 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b125f0f9-976d-4956-a7c2-7627c2f3f2a4")
+		(property "Reference" "TP20"
+			(at 379.73 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 384.048 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 387.35 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 387.35 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 382.27 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e07534cd-2d8c-42a6-91c1-883d5f14f356")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 80.01 300.99 270)
 		(unit 1)
@@ -34307,6 +41121,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 200.66 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b4630152-1bff-4ade-afdd-b213c552da3d")
+		(property "Reference" "TP79"
+			(at 198.12 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 202.438 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 205.74 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 200.66 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7161ac7a-2742-4ab7-9862-60c1282ba070")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP79")
 					(unit 1)
 				)
 			)
@@ -34750,6 +41631,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 109.22 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b62b2c84-27c9-40a1-b59d-49e7ecd7b821")
+		(property "Reference" "TP50"
+			(at 106.68 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 110.998 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 114.3 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 109.22 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc19a6ea-cd2a-4fba-951d-b75a245ccb4e")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP50")
 					(unit 1)
 				)
 			)
@@ -35270,6 +42218,207 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 109.22 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8166567-bd78-4f72-8381-dbcabdf6ab34")
+		(property "Reference" "TP112"
+			(at 106.68 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 110.998 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 114.3 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 109.22 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b6076b24-ca1b-4edd-b141-1b70a5ed8e74")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP112")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 139.7 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8570bd0-62ca-4d9e-b965-4386e8138b69")
+		(property "Reference" "TP114"
+			(at 137.16 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 141.478 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 144.78 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 139.7 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0716a2b4-780d-461c-bfc3-4707e03d2b17")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP114")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 229.87 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b8802cc1-40a7-42d4-881c-4747c1270d5b")
+		(property "Reference" "TP10"
+			(at 228.092 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 231.648 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 234.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 234.95 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 229.87 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d6102cf-48da-4cee-8780-cf8a02f9af14")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 76.2 185.42 90)
 		(unit 1)
@@ -35336,6 +42485,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 276.86 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "baa05273-c0a3-447f-a40f-32f22c4aed5a")
+		(property "Reference" "TP37"
+			(at 274.32 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 278.638 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 281.94 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 276.86 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19a23568-8015-46b2-920d-a62820947749")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP37")
 					(unit 1)
 				)
 			)
@@ -35904,6 +43120,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 109.22 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bedbbd36-fc04-4e46-8b37-df34949fa57e")
+		(property "Reference" "TP96"
+			(at 106.68 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 110.998 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 114.3 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 109.22 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b184a991-5321-42c9-955a-93260835a5db")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP96")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "befd237b-10b4-4415-b5fc-6220c47553b2")
+		(property "Reference" "TP35"
+			(at 243.84 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 248.158 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 251.46 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 246.38 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae9eb518-eded-43c3-8ed6-640cc65fcf1d")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP35")
 					(unit 1)
 				)
 			)
@@ -37179,6 +44529,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 154.94 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4b333b5-6a2e-4921-b4f4-b3bcbcb26005")
+		(property "Reference" "TP76"
+			(at 152.4 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 156.718 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 160.02 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 154.94 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3962148-6599-4f43-b7bc-d9586aeb61d3")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP76")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 162.56 351.79 0)
 		(unit 1)
@@ -37275,6 +44692,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 215.9 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4d9b373-9121-4104-a450-7ddb12a11680")
+		(property "Reference" "TP103"
+			(at 213.36 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 217.678 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 220.98 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 215.9 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50594ce1-19bc-4d00-9ed7-bf9e1b0b787b")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP103")
 					(unit 1)
 				)
 			)
@@ -38791,6 +46275,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.3 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd3cc730-f8e9-4d9e-877d-0d703ba8d253")
+		(property "Reference" "TP90"
+			(at 365.76 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 370.078 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 373.38 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 373.38 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.3 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3cbd595-c9c5-441d-b178-81c3b909508c")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP90")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 74.93 149.86 270)
 		(unit 1)
@@ -38958,6 +46509,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d04342be-a41a-4b23-aad1-37f67905285d")
+		(property "Reference" "TP104"
+			(at 228.6 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.918 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 236.22 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdaaa944-602f-46dc-897e-5769f4724db3")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 367.03 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d04deeef-7051-48cd-a604-96354ce6622c")
+		(property "Reference" "TP19"
+			(at 364.49 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 368.808 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 372.11 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 372.11 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 367.03 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bcbe8e3-5eec-4876-9501-b48e2b0315b7")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP19")
 					(unit 1)
 				)
 			)
@@ -39228,6 +46913,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 139.7 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d136e52d-eec4-4a6e-bebb-82a9e13ec47c")
+		(property "Reference" "TP75"
+			(at 137.16 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 141.478 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 144.78 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 139.7 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b58072f-1a6b-4406-85e1-f2ec7523b3ad")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP75")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 193.04 313.69 0)
 		(unit 1)
@@ -39432,6 +47184,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 368.3 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d23714a9-4d2c-46b7-a74b-7be4568edf73")
+		(property "Reference" "TP67"
+			(at 365.76 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 370.078 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 373.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 373.38 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 368.3 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67119737-f830-473e-bbf7-dc26825017c4")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 314.96 331.47 0)
 		(unit 1)
@@ -39516,6 +47335,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 397.51 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d41a1455-8e58-490d-963b-cf28d7d5b743")
+		(property "Reference" "TP21"
+			(at 394.97 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 399.288 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 402.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 402.59 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 397.51 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "996aaa6f-14a1-468a-84b7-b39275fafd6d")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -40013,6 +47899,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 185.42 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7df9055-0a04-49ac-a1dd-5d8ee7da9d34")
+		(property "Reference" "TP31"
+			(at 182.88 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 187.198 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 190.5 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 185.42 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83e188ae-af0b-450d-9e0c-ad34109a1404")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP31")
 					(unit 1)
 				)
 			)
@@ -40607,6 +48560,274 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 276.86 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd28a140-90cb-426a-8f59-f5e27e750d52")
+		(property "Reference" "TP61"
+			(at 274.32 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 278.638 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 281.94 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 276.86 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb0f15ef-c40e-4eb9-8360-a03a99f16266")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 200.66 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd7cb9dd-7a50-4a55-83aa-93551e760afb")
+		(property "Reference" "TP102"
+			(at 198.12 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 202.438 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 205.74 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 200.66 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55119b5c-c001-4dec-8c4b-fc35d9fa381d")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 307.34 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de0e5b89-f355-4555-91de-74be22f44a80")
+		(property "Reference" "TP86"
+			(at 304.8 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 309.118 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 312.42 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 307.34 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "49c169c6-81b9-4aaa-912f-9e44d92c38ef")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP86")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 427.99 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de44013f-399e-41fd-8967-0b1a97cdb9f0")
+		(property "Reference" "TP23"
+			(at 425.45 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 429.768 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 433.07 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 433.07 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 427.99 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e003c5ac-03a1-4a03-a5d1-f480018f24aa")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 176.53 147.32 0)
 		(unit 1)
@@ -40799,6 +49020,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e05f1a36-3a76-4809-9eca-85b6a9fd2d27")
+		(property "Reference" "TP48"
+			(at 76.2 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.518 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 83.82 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f9e8e324-851a-4f8e-947a-67270a91fdcb")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 374.65 127 0)
 		(unit 1)
@@ -40883,6 +49171,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 353.06 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e0a10d29-b09e-40da-a5b4-d7ab85d4fafb")
+		(property "Reference" "TP42"
+			(at 350.52 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 354.838 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 358.14 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 358.14 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 353.06 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a25a269e-e9d5-46f0-b234-d553318dd376")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP42")
 					(unit 1)
 				)
 			)
@@ -40985,6 +49340,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 93.98 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e10809b8-5e78-4ddd-b8e8-44ed36bd4dbc")
+		(property "Reference" "TP25"
+			(at 91.44 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 95.758 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 99.06 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 93.98 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11ff433e-e745-49ac-bac4-a8501b19883c")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP25")
 					(unit 1)
 				)
 			)
@@ -42313,6 +50735,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 307.34 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e6b24d07-57ac-4ea9-8bfb-c5c1f80d8876")
+		(property "Reference" "TP125"
+			(at 304.8 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 309.118 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 312.42 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 312.42 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 307.34 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a7e1911-4c31-449b-ba9b-96fef3c9de50")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 76.2 316.23 270)
 		(unit 1)
@@ -42756,6 +51245,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 124.46 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec07c9da-e2f6-4b71-b944-7a53f51e6388")
+		(property "Reference" "TP74"
+			(at 121.92 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 126.238 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 129.54 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 124.46 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "85bcb0d9-c09f-40a6-85ac-626b4ec52a15")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 254 331.47 0)
 		(unit 1)
@@ -42936,6 +51492,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 124.46 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee9f66cb-894c-4c7a-b302-b94b8338bc6d")
+		(property "Reference" "TP51"
+			(at 121.92 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 126.238 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 129.54 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 129.54 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 124.46 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e1f3d87-6300-45ed-869c-c7c3c1d406d3")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "vancouver-skytrain-pcb:XL-1010RGBC-WS2812B")
 		(at 284.48 247.65 0)
 		(unit 1)
@@ -43020,6 +51643,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "DAY1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 93.98 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0ef1338-74b2-43a6-ade5-79d6eacc26fd")
+		(property "Reference" "TP111"
+			(at 91.44 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 95.758 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 99.06 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 93.98 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5d4fb75-f5b9-43b8-81b4-980214302556")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP111")
 					(unit 1)
 				)
 			)
@@ -43333,6 +52023,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 154.94 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4303951-991d-496b-bbb4-033acf39892d")
+		(property "Reference" "TP53"
+			(at 152.4 204.216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 156.718 210.058 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 160.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 154.94 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d2312549-88d9-4419-bd9c-ac55453ae1ec")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 76.2 354.33 270)
 		(unit 1)
@@ -43500,6 +52257,73 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 306.07 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f6377eca-1e3b-49b2-aad2-56e8aa0cb084")
+		(property "Reference" "TP15"
+			(at 303.53 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 307.848 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 311.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 311.15 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 306.07 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "baaa9af5-35b2-4cf3-87c4-2009ad61efed")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -43675,6 +52499,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 414.02 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8821272-f2ae-42ad-90d1-74e2e7be3a0c")
+		(property "Reference" "TP46"
+			(at 411.48 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 415.798 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 419.1 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 419.1 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 414.02 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12355916-a024-494f-b179-46e45e3ee6a6")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 78.74 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8fee745-626a-4fa7-9571-7020f3c743da")
+		(property "Reference" "TP94"
+			(at 76.2 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 80.518 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 83.82 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 78.74 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a927fb7b-1b4d-4d1d-973e-d5a689548954")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP94")
 					(unit 1)
 				)
 			)
@@ -44212,6 +53170,274 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 93.98 293.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fb9cbe22-9a5d-406f-a127-bbf6c4fce1b6")
+		(property "Reference" "TP95"
+			(at 91.44 288.036 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 95.758 293.878 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 99.06 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 99.06 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 93.98 293.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24642d81-f7ed-4a19-b8e6-9d05f9ed5736")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP95")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 231.14 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fcfe694a-ce3c-4f81-b53c-c61238edbba9")
+		(property "Reference" "TP81"
+			(at 228.6 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 232.918 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 236.22 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 231.14 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d341499b-4e04-4761-8cd7-616f286b5db8")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP81")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 383.54 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fdb3fb01-e743-4f19-9ce3-0300c22ae756")
+		(property "Reference" "TP44"
+			(at 381 162.306 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 385.318 168.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 388.62 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 388.62 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 383.54 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c34e4e59-c42d-42e2-b3b9-2c64e267b3da")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 261.62 247.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fe0b5b6c-d2db-409e-b82d-3ac286c76d51")
+		(property "Reference" "TP83"
+			(at 259.08 242.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 263.398 248.158 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 266.7 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 261.62 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "17ff19a9-4914-4fdd-b323-16c23c48fd4d")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "jlcpcb-basic-capacitor-0402:1uF,25V,X5R ")
 		(at 193.04 267.97 0)
 		(unit 1)
@@ -44308,6 +53534,140 @@
 			(project "EveryDayCalendarSingleMonth"
 				(path "/9dba08e4-9ede-4cf2-8c00-344ecdbc2a13"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 170.18 331.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "feecb107-7451-4464-b299-650f72059573")
+		(property "Reference" "TP116"
+			(at 167.64 326.136 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 171.958 331.978 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 175.26 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 170.18 331.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc35423d-04ab-4077-a946-b62224ed4fed")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP116")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 351.79 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fef738b9-3f3e-4366-be8f-85e6af269260")
+		(property "Reference" "TP18"
+			(at 349.25 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 353.568 127.508 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "SWS-Library:SWS-Testpoint-Bug-1mm"
+			(at 356.87 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 356.87 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 351.79 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e619a9d-3df4-4bcd-b193-1d48bbb3ec8f")
+		)
+		(instances
+			(project "vancouver-skytrain-pcb"
+				(path "/0cad854d-2895-4fd1-a7f2-6fc6ed4fed45"
+					(reference "TP18")
 					(unit 1)
 				)
 			)

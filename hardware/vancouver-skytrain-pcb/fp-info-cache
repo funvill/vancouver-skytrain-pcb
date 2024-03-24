@@ -1,4 +1,4 @@
-23138539359256043
+23145384382382044
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87205,6 +87205,34 @@ rotary encoder
 0
 7
 6
+SWS-Library
+SWS-TestPoint-Bug
+
+
+0
+1
+1
+SWS-Library
+SWS-TestPoint_BUG_THTPad_D1.0mm_Drill0.5mm
+THT pad as test Point, diameter 1.0mm, hole diameter 0.5mm
+test point THT pad
+0
+1
+1
+SWS-Library
+SWS-TestPoint_Pad_D2.5mm
+SMD pad as test Point, diameter 2.5mm
+test point SMD pad
+0
+1
+1
+SWS-Library
+SWS-Testpoint-Bug-1mm
+
+
+0
+1
+1
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
