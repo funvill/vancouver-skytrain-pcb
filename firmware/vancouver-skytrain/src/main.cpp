@@ -10,14 +10,14 @@ const uint32_t BAUD_RATE = 115200;
 // the version is shown in the serial prompt and the web page.
 const uint8_t BUILD_NUMBER = 2;
 
-const uint16_t NUM_LEDS = 126;
+const uint16_t NUM_LEDS = 130;
 CRGB leds[NUM_LEDS];
 
 #define BRIGHTNESS 32
 
 // How many trains are on each line
 const int TRAIN_COUNT = 1;
-const int BASE_TRAIN_PROGRESS_SPEED = 200;
+const int BASE_TRAIN_PROGRESS_SPEED = 1000;
 
 const int lineExpoNorthStationCount = 20;
 static int lineExpoNorthStationOffset[TRAIN_COUNT];
@@ -255,33 +255,33 @@ void loop()
     flipTheStatusLED();
   }
 
-  EVERY_N_MILLISECONDS_I(DEMO_EXPO_NORTH, BASE_TRAIN_PROGRESS_SPEED )
+  EVERY_N_MILLISECONDS_I(DEMO_EXPO_NORTH, BASE_TRAIN_PROGRESS_SPEED + 100 )
   {
     ProgressDemoTrain(lineExpoNorthStationOffset, lineExpoNorthStationCount);
   }
-  EVERY_N_MILLISECONDS_I(DEMO_EXPO_SOUTH, BASE_TRAIN_PROGRESS_SPEED)
+  EVERY_N_MILLISECONDS_I(DEMO_EXPO_SOUTH, BASE_TRAIN_PROGRESS_SPEED + 120)
   {
     ProgressDemoTrain(lineExpoSouthStationOffset, lineExpoSouthStationCount);
   }
-  EVERY_N_MILLISECONDS_I(DEMO_MILLENNIUM_EAST_WEST, BASE_TRAIN_PROGRESS_SPEED)
+  EVERY_N_MILLISECONDS_I(DEMO_MILLENNIUM_EAST_WEST, BASE_TRAIN_PROGRESS_SPEED + 150)
   {
     ProgressDemoTrain(lineMillenniumEastWestStationOffset, lineMillenniumEastWestStationCount);
   }
-  EVERY_N_MILLISECONDS_I(DEMO_MILLENNIUM_WEST_EAST, BASE_TRAIN_PROGRESS_SPEED )
+  EVERY_N_MILLISECONDS_I(DEMO_MILLENNIUM_WEST_EAST, BASE_TRAIN_PROGRESS_SPEED + 170 )
   {
     ProgressDemoTrain(lineMillenniumWestEastStationOffset, lineMillenniumWestEastStationCount);
   }
-  EVERY_N_MILLISECONDS_I(DEMO_CANADA_LINE_SOUTH_TO_NORTH, BASE_TRAIN_PROGRESS_SPEED )
+  EVERY_N_MILLISECONDS_I(DEMO_CANADA_LINE_SOUTH_TO_NORTH, BASE_TRAIN_PROGRESS_SPEED + 250 )
   {
     ProgressDemoTrain(lineCanadaLineSouthNorthStationOffset, lineCanadaLineSouthNorthStationCount);
   }
-  EVERY_N_MILLISECONDS_I(DEMO_CANADA_LINE_NORTH_TO_SOUTH, BASE_TRAIN_PROGRESS_SPEED )
+  EVERY_N_MILLISECONDS_I(DEMO_CANADA_LINE_NORTH_TO_SOUTH, BASE_TRAIN_PROGRESS_SPEED + 270 )
   {
     ProgressDemoTrain(lineCanadaLineNorthSouthStationOffset, lineCanadaLineNorthSouthStationCount);
   }
 
   static bool seabusEnabled = true;
-  EVERY_N_MILLISECONDS_I(DEMO_SEA_BUS, BASE_TRAIN_PROGRESS_SPEED + 1000 )
+  EVERY_N_MILLISECONDS_I(DEMO_SEA_BUS, BASE_TRAIN_PROGRESS_SPEED )
   {
     seabusEnabled = !seabusEnabled;
   }
@@ -305,6 +305,9 @@ void loop()
       if( seabusEnabled )
       {
         leds[LINE_SEABUS_LED_INDEX] = CRGB::Purple;
+      } else {
+        // 19, // North - Waterfront
+        leds[19] = CRGB::Purple;
       }
     }
   }
