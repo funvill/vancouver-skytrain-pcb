@@ -1,4 +1,4 @@
-23145384382382044
+23148808848754569
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -87206,33 +87206,47 @@ rotary encoder
 7
 6
 SWS-Library
-SWS-TestPoint-Bug
+C_0402_1005Metric
+Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+SWS-Library
+C_0603_1608Metric
+Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+capacitor
+0
+2
+2
+SWS-Library
+SWS-TestPoint-Bug-SM-10mm
 
 
 0
 1
 1
 SWS-Library
-SWS-TestPoint_BUG_THTPad_D1.0mm_Drill0.5mm
-THT pad as test Point, diameter 1.0mm, hole diameter 0.5mm
-test point THT pad
-0
-1
-1
-SWS-Library
-SWS-TestPoint_Pad_D2.5mm
+SWS-TestPoint_Bug-SM-Pad_D2.5mm
 SMD pad as test Point, diameter 2.5mm
 test point SMD pad
 0
 1
 1
 SWS-Library
-SWS-Testpoint-Bug-1mm
+SWS-Testpoint-Bug-SM-2.4mm
 
 
 0
 1
 1
+SWS-Library
+XL-1010RGBC-WS2812B
+RGB LED, SMD, 0404, 1x1x1.65mm, https://datasheet.lcsc.com/lcsc/2301111010_XINGLIGHT-XL-1010RGBC-WS2812B_C5349953.pdf
+LED RGB ARGB 
+0
+4
+4
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf

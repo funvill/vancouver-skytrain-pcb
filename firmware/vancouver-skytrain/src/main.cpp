@@ -1,14 +1,14 @@
 #include <Arduino.h>
 #include "FastLED.h"
-#include <WiFi.h>
+
 
 const int PIN_LED_STATUS = 13; // IO-13 or pin 16
-const int PIN_LED = 14;        // 14;           // IO-14 or pin 13
+const int PIN_LED_TRAIN = D7;        // 14;           // IO-14 or pin 13
 const uint32_t BAUD_RATE = 115200;
 
 // The build version is shown on the loading screen.
 // the version is shown in the serial prompt and the web page.
-const uint8_t BUILD_NUMBER = 2;
+const uint8_t BUILD_NUMBER = 3;
 
 const uint16_t NUM_LEDS = 130;
 CRGB leds[NUM_LEDS];
@@ -16,7 +16,7 @@ CRGB leds[NUM_LEDS];
 #define BRIGHTNESS 32
 
 // How many trains are on each line
-const int TRAIN_COUNT = 1;
+const int TRAIN_COUNT = 2;
 const int BASE_TRAIN_PROGRESS_SPEED = 1000;
 
 const int lineExpoNorthStationCount = 20;
@@ -184,12 +184,12 @@ void flipTheStatusLED()
   digitalWrite(PIN_LED_STATUS, statusLEDState);
 }
 
-void SetTrainStartingPosition(const int stationCount, const int trainCount, int *lineRedTrainOffset)
+void SetTrainStartingPosition(const int stationCount, const int trainCount, int *lineTrainOffset)
 {
   // Set the starting position of the train
   for (int i = 0; i < trainCount; i++)
   {
-    lineRedTrainOffset[i] = (stationCount / trainCount) * i;
+    lineTrainOffset[i] = (stationCount / trainCount) * i;
   }
 }
 
@@ -208,7 +208,7 @@ void setup()
   Serial.println("Vancouver PCB Map v" + String(BUILD_NUMBER));
 
   // Configure the LEDs
-  FastLED.addLeds<NEOPIXEL, PIN_LED>(leds, NUM_LEDS);
+  FastLED.addLeds<NEOPIXEL, PIN_LED_TRAIN>(leds, NUM_LEDS);
   FastLED.setBrightness(BRIGHTNESS);
 
   SetTrainStartingPosition(lineExpoNorthStationCount, TRAIN_COUNT, lineExpoNorthStationOffset);
@@ -286,9 +286,9 @@ void loop()
     seabusEnabled = !seabusEnabled;
   }
 
-  EVERY_N_MILLISECONDS_I(FADE, 20)
+  EVERY_N_MILLISECONDS_I(FADE, 10)
   {
-    fadeToBlackBy(leds, NUM_LEDS, 50);
+    fadeToBlackBy(leds, NUM_LEDS, 10);
 
     // Draw the trains
     for (int i = 0; i < TRAIN_COUNT; i++)
@@ -296,7 +296,7 @@ void loop()
       leds[LINE_EXPO_NORTH_OFFSET_TO_LED_INDEX[lineExpoNorthStationOffset[i]]] = CRGB::Red;
       leds[LINE_EXPO_SOUTH_OFFSET_TO_LED_INDEX[lineExpoSouthStationOffset[i]]] = CRGB::Orange ;
 
-      leds[LINE_MILLENNIUM_EAST_WEST_OFFSET_TO_LED_INDEX[lineMillenniumEastWestStationOffset[i]]] = CRGB::Aqua ;
+      leds[LINE_MILLENNIUM_EAST_WEST_OFFSET_TO_LED_INDEX[lineMillenniumEastWestStationOffset[i]]] = CRGB::LightBlue ;
       leds[LINE_MILLENNIUM_WEST_EAST_OFFSET_TO_LED_INDEX[lineMillenniumWestEastStationOffset[i]]] = CRGB::Blue ;
 
       leds[LINE_CANADA_LINE_SOUTH_TO_NORTH_OFFSET_TO_LED_INDEX[lineCanadaLineSouthNorthStationOffset[i]]] = CRGB::Yellow ;
