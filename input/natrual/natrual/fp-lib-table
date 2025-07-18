@@ -1,4 +1,0 @@
-
-(fp_lib_table
-  (lib (name "map")(type KiCad)(uri "$(KIPRJMOD)/map.pretty")(options "")(descr ""))
-)

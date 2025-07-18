@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "vancouver-skytrain-pcb.pretty")(type "KiCad")(uri "${KIPRJMOD}/vancouver-skytrain-pcb.pretty")(options "")(descr ""))
+)

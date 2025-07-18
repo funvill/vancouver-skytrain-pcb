@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "vancouver-skytrain-pcb")(type "KiCad")(uri "${KIPRJMOD}/vancouver-skytrain-pcb.kicad_sym")(options "")(descr ""))
+)
