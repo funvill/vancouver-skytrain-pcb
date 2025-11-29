@@ -1,0 +1,8 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "map3")(type "KiCad")(uri "$(KIPRJMOD)/map3.pretty")(options "")(descr ""))
+  (lib (name "C5349954-led")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/C5349954-led/C5349954.pretty")(options "")(descr ""))
+  (lib (name "C318884-button")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/C318884-button/C318884.pretty")(options "")(descr ""))
+  (lib (name "C17888-resistor_0_1206")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/C17888-resistor_0_1206/C17888.pretty")(options "")(descr ""))
+  (lib (name "Seeed Studio XIAO")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/Seeed Studio XIAO")(options "")(descr ""))
+)
