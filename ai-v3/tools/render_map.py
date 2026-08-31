@@ -35,11 +35,15 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
     for g in city.geo:
         pts = [(x * scale, y * scale) for x, y in g["points"]]
         if g["type"] in ("water", "lake"):
-            s.append(f'<polygon points="{_fmt(pts)}" fill="#0a2333"/>')
+            s.append(f'<polygon points="{_fmt(pts)}" fill="#0a2333" '
+                     f'stroke="#3d5a6e" stroke-width="0.15"/>')
         elif g["type"] == "river":
             s.append(f'<polyline points="{_fmt(pts)}" fill="none" '
                      f'stroke="#0a2333" stroke-width="{g.get("width", 2.5)}" '
                      f'stroke-linejoin="round"/>')
+        elif g["type"] == "park":
+            s.append(f'<polygon points="{_fmt(pts)}" fill="#12331c" '
+                     f'stroke="#3f6647" stroke-width="0.15"/>')
         else:  # island / land outline: white silk outline
             s.append(f'<polygon points="{_fmt(pts)}" fill="none" '
                      f'stroke="#666" stroke-width="0.2"/>')

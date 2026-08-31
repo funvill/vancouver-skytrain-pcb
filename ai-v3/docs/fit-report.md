@@ -2,7 +2,17 @@
 
 **Question:** does the iconic map with all 68 station names fit on a 100 × 100 mm board?
 
-**Answer: No — as expected. Full station names need ≥ 120 mm. Recommended board: 135 × 135 mm.**
+**Answer: No — as expected. Full station names need ≥ 120 mm.**
+
+> **DECISION (user, 2026-08-30): board is 150 × 150 mm**, map extended west to cover the
+> Point Grey peninsula. The layout was re-tuned for 150 mm (network shifted 5 mm east for
+> the peninsula, Surrey leg turns south at Bakerview, Coquitlam branch stepped down-left)
+> and now checks **0 collisions with full names at 1.2 mm text**. Geography added: sea
+> outline (Burrard Inlet + Port Moody arm + English Bay + Georgia Strait), False Creek,
+> Fraser River, Sea Island and Lulu Island outlines, and parks (Stanley, Pacific Spirit,
+> Queen Elizabeth, Central, Green Timbers, Burnaby Lake, Lafarge Lake).
+> On the physical board: water = soldermask-opening or copper-pour treatment, parks =
+> silkscreen hatch — final layer mapping is chosen in the artwork-export task.
 
 ## Method
 
