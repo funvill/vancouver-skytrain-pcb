@@ -31,9 +31,12 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
     # board (black soldermask)
     s.append(f'<rect x="0" y="0" width="{size}" height="{size}" rx="4" '
              f'fill="#161616"/>')
-    # geography
-    for g in city.geo:
-        pts = [(x * scale, y * scale) for x, y in g["points"]]
+    # geography (repelled from LED pads + inset from the board edge - the
+    # same adjusted shapes that go on copper, so preview == physical board)
+    avoid_pts = [(st.x * scale, st.y * scale)
+                for st in list(city.stations.values()) + city.extras]
+    for g in citymap.prepared_geo(city, scale, avoid_pts):
+        pts = g["points"]
         if g["type"] in ("water", "lake"):
             s.append(f'<polygon points="{_fmt(pts)}" fill="#0a2333" '
                      f'stroke="#3d5a6e" stroke-width="0.15"/>')
@@ -76,7 +79,7 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
                  f'stroke="{ring}" stroke-width="0.35"{dash}/>')
     # labels (white silk)
     for st in list(city.stations.values()) + city.extras:
-        text = st.short if use_short else st.name
+        text = citymap.display_name(st, use_short)
         lx = st.x * scale + st.label["dx"]
         ly = st.y * scale + st.label["dy"]
         anchor = st.label["anchor"]

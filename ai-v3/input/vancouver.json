@@ -285,7 +285,13 @@
       "name": "Production Way–University",
       "short": "Production Way",
       "x": 74,
-      "y": 37
+      "y": 37,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.8,
+        "dy": 0.4
+      }
     },
     "scott-road": {
       "name": "Scott Road",
@@ -593,8 +599,8 @@
       "y": 29,
       "label": {
         "angle": 0,
-        "anchor": "start",
-        "dx": 1.8,
+        "anchor": "end",
+        "dx": -1.8,
         "dy": 0.6
       }
     },
@@ -929,19 +935,27 @@
     {
       "name": "fraser-river",
       "type": "river",
-      "width": 2.5,
+      "width": 1.4,
       "points": [
         [
           0,
-          52.5
+          60
         ],
         [
-          60,
-          52.5
+          42,
+          60
         ],
         [
-          98,
-          75
+          58,
+          64
+        ],
+        [
+          70,
+          70
+        ],
+        [
+          100,
+          88
         ]
       ]
     },

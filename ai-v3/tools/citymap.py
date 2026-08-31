@@ -14,7 +14,7 @@ DEFAULT_LABEL = {"angle": -45, "anchor": "start", "dx": 0.9, "dy": -0.9}
 
 # Stroke-font metrics (KiCad-like): average advance per char and total box
 # height (ascenders + descenders) as multiples of the nominal text height.
-CHAR_W = 0.70
+CHAR_W = 0.85  # calibrated against KiCad's stroke font + a safety margin
 BOX_H = 1.25
 DESCENT = 0.25
 
@@ -90,12 +90,22 @@ def is_octilinear(p1, p2, tol=0.01):
     return (abs(dx) < tol or abs(dy) < tol or abs(abs(dx) - abs(dy)) < tol)
 
 
+LONG_NAME_THRESHOLD = 24  # names longer than this always use the short form,
+                          # even in "full name" mode - see fit-report.md
+
+
+def display_name(st, use_short=False):
+    if use_short or len(st.name) > LONG_NAME_THRESHOLD:
+        return st.short
+    return st.name
+
+
 def label_box(st, text_h, scale=1.0, use_short=False):
     """Rotated-rectangle polygon [(x,y)*4] of a station's label, in board mm.
 
     Station coords scale with the board; text height and label offset do not.
     """
-    text = st.short if use_short else st.name
+    text = display_name(st, use_short)
     w = max(1.0, len(text) * CHAR_W * text_h)
     ang = math.radians(st.label["angle"])
     d = (math.cos(ang), math.sin(ang))
@@ -126,6 +136,123 @@ def seg_rect(p1, p2, half_w):
 def circle_rect(cx, cy, r):
     return [(cx - r, cy - r), (cx + r, cy - r), (cx + r, cy + r),
             (cx - r, cy + r)]
+
+
+def densify(points, closed, max_seg):
+    """Insert extra vertices so no edge is longer than max_seg."""
+    out = []
+    n = len(points)
+    edges = n if closed else n - 1
+    for i in range(edges):
+        a, b = points[i], points[(i + 1) % n]
+        length = math.hypot(b[0] - a[0], b[1] - a[1])
+        steps = max(1, int(math.ceil(length / max_seg)))
+        for s in range(steps):
+            t = s / steps
+            out.append((a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t))
+    if not closed:
+        out.append(points[-1])
+    return out
+
+
+def repel(points, avoid_pts, keepout):
+    """Push each vertex away from any avoid point closer than keepout.
+
+    Used to keep water/land art (copper or silkscreen) clear of LED pads:
+    run densify() first so long edges get intermediate vertices too, or a
+    near miss in the middle of an edge won't be caught.
+    """
+    out = []
+    for (x, y) in points:
+        px = py = 0.0
+        for (ax, ay) in avoid_pts:
+            dx, dy = x - ax, y - ay
+            d = math.hypot(dx, dy)
+            if 0 < d < keepout:
+                f = (keepout - d) / d
+                px += dx * f
+                py += dy * f
+        out.append((x + px, y + py))
+    return out
+
+
+def simplify(points, tol):
+    """Ramer-Douglas-Peucker: drop points that don't bend the line by more
+    than `tol`. Runs after densify()+repel() on open polylines (rivers) so
+    a long, mostly-straight edge doesn't turn into dozens of tiny render
+    segments just because densify had to check it for LED proximity."""
+    if len(points) < 3:
+        return points
+    def seg_dist(p, a, b):
+        ax, ay = a; bx, by = b; px, py = p
+        dx, dy = bx - ax, by - ay
+        if dx == dy == 0:
+            return math.hypot(px - ax, py - ay)
+        t = max(0, min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy)))
+        return math.hypot(px - (ax + t * dx), py - (ay + t * dy))
+    def rdp(pts):
+        a, b = pts[0], pts[-1]
+        idx, dmax = -1, tol
+        for i in range(1, len(pts) - 1):
+            d = seg_dist(pts[i], a, b)
+            if d > dmax:
+                idx, dmax = i, d
+        if idx == -1:
+            return [a, b]
+        return rdp(pts[:idx + 1])[:-1] + rdp(pts[idx:])
+    return rdp(points)
+
+
+def clamp_to_board(points, board_mm, margin):
+    """Keep vertices at least `margin` inside the board outline - needed
+    where art is meant to touch the coastline/canvas edge (bleeds off the
+    top of the map) but copper still needs edge clearance."""
+    return [(min(max(x, margin), board_mm - margin),
+             min(max(y, margin), board_mm - margin)) for x, y in points]
+
+
+def prepared_geo(city, scale, avoid_pts, water_keepout=2.8, land_keepout=1.3,
+                 edge_margin=1.0, densify_step=1.5):
+    """Every geo shape from the city file, scaled to board mm and adjusted
+    to clear LED pads and the board edge. Same output feeds the SVG
+    preview, the collision checker, and the PCB art exporter, so what you
+    see in the preview is exactly what ends up on copper."""
+    board_mm = city.canvas_mm * scale
+    out = []
+    for g in city.geo:
+        pts = [(x * scale, y * scale) for x, y in g["points"]]
+        closed = g["type"] != "river"
+        if g["type"] == "river":
+            keepout = water_keepout + g.get("width", 2.5) * scale / 2
+        elif g["type"] in ("water", "lake"):
+            keepout = water_keepout
+        else:
+            keepout = land_keepout
+        pts = densify(pts, closed, densify_step)
+        pts = repel(pts, avoid_pts, keepout)
+        pts = clamp_to_board(pts, board_mm, edge_margin)
+        if not closed:
+            pts = simplify(pts, tol=0.15)
+        out.append({**g, "points": pts, "_prepared": True})
+    return out
+
+
+def point_seg_dist(p, a, b):
+    ax, ay = a; bx, by = b; px, py = p
+    dx, dy = bx - ax, by - ay
+    if dx == dy == 0:
+        return math.hypot(px - ax, py - ay)
+    t = max(0, min(1, ((px - ax) * dx + (py - ay) * dy) / (dx * dx + dy * dy)))
+    return math.hypot(px - (ax + t * dx), py - (ay + t * dy))
+
+
+def poly_point_min_dist(poly, p, closed=True):
+    """Distance from p to the nearest edge of poly (its boundary, not just
+    its vertices - the closest approach is often mid-edge)."""
+    n = len(poly)
+    edges = n if closed else n - 1
+    return min(point_seg_dist(p, poly[i], poly[(i + 1) % n])
+              for i in range(edges))
 
 
 def _project(poly, axis):

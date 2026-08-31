@@ -1,5 +1,5 @@
 (kicad_pcb
-			(version 20241229)
+															(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(general
@@ -19756,5 +19756,1217 @@
 			(type default)
 		)
 		(layer "Edge.Cuts")
+	)
+	(gr_poly
+		(pts
+			(xy 1.000 3.750) (xy 1.500 3.750) (xy 3.000 3.750) (xy 4.500 3.750) (xy 6.000 3.750) (xy 7.500 3.750) (xy 9.000 3.750) (xy 10.500 3.750) (xy 12.000 3.750) (xy 13.500 3.750) (xy 15.000 3.750) (xy 16.500 3.750) (xy 18.000 3.750) (xy 19.500 3.750) (xy 21.000 3.750) (xy 22.500 3.750) (xy 24.000 3.750) (xy 25.500 3.750) (xy 27.000 3.750) (xy 28.500 3.750) (xy 30.000 3.750) (xy 31.500 3.750) (xy 33.000 3.750) (xy 34.500 3.750) (xy 36.000 3.750) (xy 37.500 3.750) (xy 39.000 3.750) (xy 40.500 3.750) (xy 42.000 3.750) (xy 43.500 3.750) (xy 45.000 3.750) (xy 46.500 3.750) (xy 48.000 3.750) (xy 49.500 3.750) (xy 51.000 3.750) (xy 52.500 3.750) (xy 54.000 3.750) (xy 55.500 3.750) (xy 57.000 3.750) (xy 58.500 3.750) (xy 60.000 3.750) (xy 61.500 3.750) (xy 63.000 3.750) (xy 64.500 3.750) (xy 66.000 3.750) (xy 67.500 3.750) (xy 69.000 3.750) (xy 70.500 3.750) (xy 72.000 3.750) (xy 73.500 3.750) (xy 75.000 3.750) (xy 76.500 3.750) (xy 78.000 3.750) (xy 79.500 3.750) (xy 81.000 3.750) (xy 82.500 3.750) (xy 84.000 3.750) (xy 85.500 3.750) (xy 87.000 3.750) (xy 88.500 3.750) (xy 90.000 3.750) (xy 91.500 3.750) (xy 93.000 3.750) (xy 94.500 3.750) (xy 96.000 3.750) (xy 97.500 3.750) (xy 99.000 3.750) (xy 100.500 3.750) (xy 102.000 3.750) (xy 103.500 3.750) (xy 105.000 3.750) (xy 106.500 3.750) (xy 108.000 3.750) (xy 109.500 3.750) (xy 111.000 3.750) (xy 112.500 3.750) (xy 114.000 3.750) (xy 115.500 3.750) (xy 117.000 3.750) (xy 118.500 3.750) (xy 120.000 3.750) (xy 121.500 3.750) (xy 123.000 3.750) (xy 124.500 3.750) (xy 126.000 3.750) (xy 127.500 3.750) (xy 129.000 3.750) (xy 130.500 3.750) (xy 132.000 3.750) (xy 133.500 3.750) (xy 135.000 3.750) (xy 136.500 3.750) (xy 138.000 3.750) (xy 139.500 3.750) (xy 141.000 3.750) (xy 142.500 3.750) (xy 144.000 3.750) (xy 145.500 3.750) (xy 147.000 3.750) (xy 148.500 3.750) (xy 149.000 3.750) (xy 149.000 5.000) (xy 149.000 6.250) (xy 149.000 7.500) (xy 148.750 8.000) (xy 147.500 8.500) (xy 146.250 9.000) (xy 145.000 9.500) (xy 143.750 10.000) (xy 142.500 10.500) (xy 141.600 11.550) (xy 140.700 12.600) (xy 139.800 13.650) (xy 138.900 14.700) (xy 138.000 15.750) (xy 137.100 16.800) (xy 136.200 17.850) (xy 135.300 18.900) (xy 134.400 19.950) (xy 133.500 21.000) (xy 132.250 21.750) (xy 131.000 22.500) (xy 129.750 23.250) (xy 128.500 24.000) (xy 127.250 24.750) (xy 126.000 25.500) (xy 124.875 24.750) (xy 123.750 24.000) (xy 122.625 23.250) (xy 121.500 22.500) (xy 120.375 21.750) (xy 119.250 21.000) (xy 118.125 20.250) (xy 117.000 19.500) (xy 115.615 19.038) (xy 114.231 18.577) (xy 112.846 18.115) (xy 111.462 17.654) (xy 110.077 17.192) (xy 108.692 16.731) (xy 107.308 16.269) (xy 105.923 15.808) (xy 104.538 15.346) (xy 103.154 14.885) (xy 101.769 14.423) (xy 100.385 13.962) (xy 99.000 13.500) (xy 97.636 13.091) (xy 96.273 12.682) (xy 94.909 12.273) (xy 93.545 11.864) (xy 92.182 11.455) (xy 90.818 11.045) (xy 89.455 10.636) (xy 88.091 10.227) (xy 86.727 9.818) (xy 85.364 9.409) (xy 84.000 9.000) (xy 82.625 8.875) (xy 81.250 8.750) (xy 79.875 8.625) (xy 78.500 8.500) (xy 77.125 8.375) (xy 75.750 8.250) (xy 74.375 8.125) (xy 73.000 8.000) (xy 71.625 7.875) (xy 70.250 7.750) (xy 68.875 7.625) (xy 67.500 7.500) (xy 66.000 7.500) (xy 64.500 7.500) (xy 63.000 7.500) (xy 61.500 7.500) (xy 60.000 7.500) (xy 58.500 7.500) (xy 57.000 7.500) (xy 55.500 7.500) (xy 54.000 7.500) (xy 52.500 7.500) (xy 51.500 8.500) (xy 50.500 9.500) (xy 49.500 10.500) (xy 48.500 11.500) (xy 47.500 12.500) (xy 46.500 13.500) (xy 45.000 13.500) (xy 43.500 13.500) (xy 42.000 13.500) (xy 40.500 13.500) (xy 39.000 13.500) (xy 37.980 13.020) (xy 36.000 12.200) (xy 34.020 13.020) (xy 33.000 13.500) (xy 31.500 13.500) (xy 30.000 13.500) (xy 28.500 13.500) (xy 27.600 12.600) (xy 26.700 11.700) (xy 25.800 10.800) (xy 24.900 9.900) (xy 24.000 9.000) (xy 23.400 10.200) (xy 22.800 11.400) (xy 22.200 12.600) (xy 21.600 13.800) (xy 21.000 15.000) (xy 19.714 15.429) (xy 18.429 15.857) (xy 17.143 16.286) (xy 15.857 16.714) (xy 14.571 17.143) (xy 13.286 17.571) (xy 12.000 18.000) (xy 10.750 18.250) (xy 9.500 18.500) (xy 8.250 18.750) (xy 7.000 19.000) (xy 5.750 19.250) (xy 4.500 19.500) (xy 3.375 19.875) (xy 2.250 20.250) (xy 1.125 20.625) (xy 1.000 21.000) (xy 1.000 19.562) (xy 1.000 18.125) (xy 1.000 16.688) (xy 1.000 15.250) (xy 1.000 13.812) (xy 1.000 12.375) (xy 1.000 10.938) (xy 1.000 9.500) (xy 1.000 8.062) (xy 1.000 6.625) (xy 1.000 5.188)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "81326d75-d3d6-5234-b4b0-ba9b1fdac7db")
+	)
+	(gr_poly
+		(pts
+			(xy 1.000 3.750) (xy 1.500 3.750) (xy 3.000 3.750) (xy 4.500 3.750) (xy 6.000 3.750) (xy 7.500 3.750) (xy 9.000 3.750) (xy 10.500 3.750) (xy 12.000 3.750) (xy 13.500 3.750) (xy 15.000 3.750) (xy 16.500 3.750) (xy 18.000 3.750) (xy 19.500 3.750) (xy 21.000 3.750) (xy 22.500 3.750) (xy 24.000 3.750) (xy 25.500 3.750) (xy 27.000 3.750) (xy 28.500 3.750) (xy 30.000 3.750) (xy 31.500 3.750) (xy 33.000 3.750) (xy 34.500 3.750) (xy 36.000 3.750) (xy 37.500 3.750) (xy 39.000 3.750) (xy 40.500 3.750) (xy 42.000 3.750) (xy 43.500 3.750) (xy 45.000 3.750) (xy 46.500 3.750) (xy 48.000 3.750) (xy 49.500 3.750) (xy 51.000 3.750) (xy 52.500 3.750) (xy 54.000 3.750) (xy 55.500 3.750) (xy 57.000 3.750) (xy 58.500 3.750) (xy 60.000 3.750) (xy 61.500 3.750) (xy 63.000 3.750) (xy 64.500 3.750) (xy 66.000 3.750) (xy 67.500 3.750) (xy 69.000 3.750) (xy 70.500 3.750) (xy 72.000 3.750) (xy 73.500 3.750) (xy 75.000 3.750) (xy 76.500 3.750) (xy 78.000 3.750) (xy 79.500 3.750) (xy 81.000 3.750) (xy 82.500 3.750) (xy 84.000 3.750) (xy 85.500 3.750) (xy 87.000 3.750) (xy 88.500 3.750) (xy 90.000 3.750) (xy 91.500 3.750) (xy 93.000 3.750) (xy 94.500 3.750) (xy 96.000 3.750) (xy 97.500 3.750) (xy 99.000 3.750) (xy 100.500 3.750) (xy 102.000 3.750) (xy 103.500 3.750) (xy 105.000 3.750) (xy 106.500 3.750) (xy 108.000 3.750) (xy 109.500 3.750) (xy 111.000 3.750) (xy 112.500 3.750) (xy 114.000 3.750) (xy 115.500 3.750) (xy 117.000 3.750) (xy 118.500 3.750) (xy 120.000 3.750) (xy 121.500 3.750) (xy 123.000 3.750) (xy 124.500 3.750) (xy 126.000 3.750) (xy 127.500 3.750) (xy 129.000 3.750) (xy 130.500 3.750) (xy 132.000 3.750) (xy 133.500 3.750) (xy 135.000 3.750) (xy 136.500 3.750) (xy 138.000 3.750) (xy 139.500 3.750) (xy 141.000 3.750) (xy 142.500 3.750) (xy 144.000 3.750) (xy 145.500 3.750) (xy 147.000 3.750) (xy 148.500 3.750) (xy 149.000 3.750) (xy 149.000 5.000) (xy 149.000 6.250) (xy 149.000 7.500) (xy 148.750 8.000) (xy 147.500 8.500) (xy 146.250 9.000) (xy 145.000 9.500) (xy 143.750 10.000) (xy 142.500 10.500) (xy 141.600 11.550) (xy 140.700 12.600) (xy 139.800 13.650) (xy 138.900 14.700) (xy 138.000 15.750) (xy 137.100 16.800) (xy 136.200 17.850) (xy 135.300 18.900) (xy 134.400 19.950) (xy 133.500 21.000) (xy 132.250 21.750) (xy 131.000 22.500) (xy 129.750 23.250) (xy 128.500 24.000) (xy 127.250 24.750) (xy 126.000 25.500) (xy 124.875 24.750) (xy 123.750 24.000) (xy 122.625 23.250) (xy 121.500 22.500) (xy 120.375 21.750) (xy 119.250 21.000) (xy 118.125 20.250) (xy 117.000 19.500) (xy 115.615 19.038) (xy 114.231 18.577) (xy 112.846 18.115) (xy 111.462 17.654) (xy 110.077 17.192) (xy 108.692 16.731) (xy 107.308 16.269) (xy 105.923 15.808) (xy 104.538 15.346) (xy 103.154 14.885) (xy 101.769 14.423) (xy 100.385 13.962) (xy 99.000 13.500) (xy 97.636 13.091) (xy 96.273 12.682) (xy 94.909 12.273) (xy 93.545 11.864) (xy 92.182 11.455) (xy 90.818 11.045) (xy 89.455 10.636) (xy 88.091 10.227) (xy 86.727 9.818) (xy 85.364 9.409) (xy 84.000 9.000) (xy 82.625 8.875) (xy 81.250 8.750) (xy 79.875 8.625) (xy 78.500 8.500) (xy 77.125 8.375) (xy 75.750 8.250) (xy 74.375 8.125) (xy 73.000 8.000) (xy 71.625 7.875) (xy 70.250 7.750) (xy 68.875 7.625) (xy 67.500 7.500) (xy 66.000 7.500) (xy 64.500 7.500) (xy 63.000 7.500) (xy 61.500 7.500) (xy 60.000 7.500) (xy 58.500 7.500) (xy 57.000 7.500) (xy 55.500 7.500) (xy 54.000 7.500) (xy 52.500 7.500) (xy 51.500 8.500) (xy 50.500 9.500) (xy 49.500 10.500) (xy 48.500 11.500) (xy 47.500 12.500) (xy 46.500 13.500) (xy 45.000 13.500) (xy 43.500 13.500) (xy 42.000 13.500) (xy 40.500 13.500) (xy 39.000 13.500) (xy 37.980 13.020) (xy 36.000 12.200) (xy 34.020 13.020) (xy 33.000 13.500) (xy 31.500 13.500) (xy 30.000 13.500) (xy 28.500 13.500) (xy 27.600 12.600) (xy 26.700 11.700) (xy 25.800 10.800) (xy 24.900 9.900) (xy 24.000 9.000) (xy 23.400 10.200) (xy 22.800 11.400) (xy 22.200 12.600) (xy 21.600 13.800) (xy 21.000 15.000) (xy 19.714 15.429) (xy 18.429 15.857) (xy 17.143 16.286) (xy 15.857 16.714) (xy 14.571 17.143) (xy 13.286 17.571) (xy 12.000 18.000) (xy 10.750 18.250) (xy 9.500 18.500) (xy 8.250 18.750) (xy 7.000 19.000) (xy 5.750 19.250) (xy 4.500 19.500) (xy 3.375 19.875) (xy 2.250 20.250) (xy 1.125 20.625) (xy 1.000 21.000) (xy 1.000 19.562) (xy 1.000 18.125) (xy 1.000 16.688) (xy 1.000 15.250) (xy 1.000 13.812) (xy 1.000 12.375) (xy 1.000 10.938) (xy 1.000 9.500) (xy 1.000 8.062) (xy 1.000 6.625) (xy 1.000 5.188)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "71786a3f-a629-5373-a1f4-6726e917c9de")
+	)
+	(gr_poly
+		(pts
+			(xy 21.750 17.250) (xy 22.636 18.341) (xy 23.523 19.432) (xy 24.409 20.523) (xy 25.295 21.614) (xy 26.182 22.705) (xy 27.068 23.795) (xy 27.955 24.886) (xy 28.841 25.977) (xy 29.727 27.068) (xy 30.614 28.159) (xy 31.500 29.250) (xy 32.786 29.893) (xy 33.302 30.749) (xy 34.659 32.458) (xy 36.932 32.640) (xy 37.929 32.464) (xy 39.214 33.107) (xy 40.500 33.750) (xy 41.786 34.393) (xy 43.071 35.036) (xy 44.357 35.679) (xy 45.643 36.321) (xy 46.929 36.964) (xy 48.214 37.607) (xy 49.500 38.250) (xy 48.500 39.000) (xy 47.500 39.750) (xy 46.500 40.500) (xy 45.214 39.857) (xy 43.929 39.214) (xy 42.643 38.571) (xy 41.357 37.929) (xy 40.071 37.286) (xy 38.786 36.643) (xy 37.980 35.520) (xy 36.243 34.711) (xy 34.875 34.688) (xy 33.562 34.031) (xy 32.250 33.375) (xy 30.938 32.719) (xy 29.625 32.062) (xy 28.312 31.406) (xy 27.000 30.750) (xy 26.375 29.625) (xy 25.750 28.500) (xy 25.125 27.375) (xy 24.500 26.250) (xy 23.875 25.125) (xy 23.250 24.000) (xy 22.950 22.650) (xy 22.650 21.300) (xy 22.350 19.950) (xy 22.050 18.600)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "01d13222-e530-5ad6-b71b-f44ccc55f886")
+	)
+	(gr_poly
+		(pts
+			(xy 21.750 17.250) (xy 22.636 18.341) (xy 23.523 19.432) (xy 24.409 20.523) (xy 25.295 21.614) (xy 26.182 22.705) (xy 27.068 23.795) (xy 27.955 24.886) (xy 28.841 25.977) (xy 29.727 27.068) (xy 30.614 28.159) (xy 31.500 29.250) (xy 32.786 29.893) (xy 33.302 30.749) (xy 34.659 32.458) (xy 36.932 32.640) (xy 37.929 32.464) (xy 39.214 33.107) (xy 40.500 33.750) (xy 41.786 34.393) (xy 43.071 35.036) (xy 44.357 35.679) (xy 45.643 36.321) (xy 46.929 36.964) (xy 48.214 37.607) (xy 49.500 38.250) (xy 48.500 39.000) (xy 47.500 39.750) (xy 46.500 40.500) (xy 45.214 39.857) (xy 43.929 39.214) (xy 42.643 38.571) (xy 41.357 37.929) (xy 40.071 37.286) (xy 38.786 36.643) (xy 37.980 35.520) (xy 36.243 34.711) (xy 34.875 34.688) (xy 33.562 34.031) (xy 32.250 33.375) (xy 30.938 32.719) (xy 29.625 32.062) (xy 28.312 31.406) (xy 27.000 30.750) (xy 26.375 29.625) (xy 25.750 28.500) (xy 25.125 27.375) (xy 24.500 26.250) (xy 23.875 25.125) (xy 23.250 24.000) (xy 22.950 22.650) (xy 22.650 21.300) (xy 22.350 19.950) (xy 22.050 18.600)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "85c650ba-f255-58af-8c2e-5e56303ededc")
+	)
+	(gr_poly
+		(pts
+			(xy 1.000 91.050) (xy 23.500 91.050) (xy 23.500 88.950) (xy 1.000 88.950)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "ca9d405b-6dcd-5ee9-a611-837c0daa0c46")
+	)
+	(gr_poly
+		(pts
+			(xy 1.000 91.050) (xy 23.500 91.050) (xy 23.500 88.950) (xy 1.000 88.950)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "ece2b469-da28-51bf-b007-48f23638b19d")
+	)
+	(gr_poly
+		(pts
+			(xy 23.824 91.203) (xy 25.714 88.580) (xy 24.011 87.352) (xy 22.120 89.976)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "3852fefa-2292-5ec7-a3f3-905dfc4a1e47")
+	)
+	(gr_poly
+		(pts
+			(xy 23.824 91.203) (xy 25.714 88.580) (xy 24.011 87.352) (xy 22.120 89.976)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "bf96275d-b0fd-5090-be59-d4b120be6a06")
+	)
+	(gr_poly
+		(pts
+			(xy 61.775 90.776) (xy 87.715 97.261) (xy 88.225 95.224) (xy 62.285 88.739)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "2a222f64-f616-5f8b-abf1-1ff0195010a0")
+	)
+	(gr_poly
+		(pts
+			(xy 61.775 90.776) (xy 87.715 97.261) (xy 88.225 95.224) (xy 62.285 88.739)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "e7848c46-1959-500e-8296-5d52a8e2b9b9")
+	)
+	(gr_poly
+		(pts
+			(xy 85.636 96.492) (xy 105.425 106.386) (xy 106.364 104.508) (xy 86.575 94.614)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "5cb5074d-f897-5e73-808c-bd854285d476")
+	)
+	(gr_poly
+		(pts
+			(xy 85.636 96.492) (xy 105.425 106.386) (xy 106.364 104.508) (xy 86.575 94.614)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "87ce27aa-8ba4-5d5c-9293-edfe79d3c6ba")
+	)
+	(gr_poly
+		(pts
+			(xy 103.602 105.386) (xy 137.460 125.701) (xy 138.541 123.900) (xy 104.683 103.585)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "7ca70795-efcd-5412-9dd3-7850f268e919")
+	)
+	(gr_poly
+		(pts
+			(xy 103.602 105.386) (xy 137.460 125.701) (xy 138.541 123.900) (xy 104.683 103.585)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "609ab585-043e-50a4-92f6-c59a0435fddd")
+	)
+	(gr_poly
+		(pts
+			(xy 136.606 123.452) (xy 135.925 126.210) (xy 137.964 126.714) (xy 138.644 123.955)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "4222794e-6ea4-5e99-87cc-49e19249a03d")
+	)
+	(gr_poly
+		(pts
+			(xy 136.606 123.452) (xy 135.925 126.210) (xy 137.964 126.714) (xy 138.644 123.955)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "ee632877-aff7-578b-bc8e-4b94d14a3b3b")
+	)
+	(gr_poly
+		(pts
+			(xy 143.711 130.257) (xy 145.408 128.458) (xy 143.880 127.017) (xy 142.183 128.816)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "e1377ca5-4273-52be-a994-d151dce08a47")
+	)
+	(gr_poly
+		(pts
+			(xy 143.711 130.257) (xy 145.408 128.458) (xy 143.880 127.017) (xy 142.183 128.816)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "eeafbae9-ed0c-5f70-95bc-9676865dbe4e")
+	)
+	(gr_poly
+		(pts
+			(xy 142.565 128.870) (xy 149.000 132.639) (xy 149.000 130.823) (xy 143.621 127.054)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "1ae87b8b-bf5a-5fb4-ab9b-04df52e75b47")
+	)
+	(gr_poly
+		(pts
+			(xy 142.565 128.870) (xy 149.000 132.639) (xy 149.000 130.823) (xy 143.621 127.054)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "d3300dd6-ce78-5fd5-ba4d-23b88e669cec")
+	)
+	(gr_poly
+		(pts
+			(xy 147.382 130.656) (xy 148.363 133.302) (xy 149.000 132.573) (xy 149.000 129.926)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "052028f3-39c6-5b89-ad49-c23baad2b6df")
+	)
+	(gr_poly
+		(pts
+			(xy 147.382 130.656) (xy 148.363 133.302) (xy 149.000 132.573) (xy 149.000 129.926)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "da0a721d-653e-5672-b1cf-889d8b4b417d")
+	)
+	(gr_poly
+		(pts
+			(xy 91.500 49.500) (xy 92.812 49.594) (xy 94.125 49.688) (xy 95.438 49.781) (xy 96.750 49.875) (xy 98.062 49.969) (xy 99.375 50.062) (xy 100.688 50.156) (xy 102.000 50.250) (xy 101.250 51.188) (xy 100.500 52.125) (xy 99.750 53.062) (xy 99.000 54.000) (xy 97.714 53.786) (xy 96.429 53.571) (xy 95.143 53.357) (xy 93.857 53.143) (xy 92.571 52.929) (xy 91.286 52.714) (xy 90.000 52.500) (xy 90.500 51.500) (xy 91.000 50.500)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "d3c73ab1-95b7-531f-a882-f5897709e3b8")
+	)
+	(gr_poly
+		(pts
+			(xy 91.500 49.500) (xy 92.812 49.594) (xy 94.125 49.688) (xy 95.438 49.781) (xy 96.750 49.875) (xy 98.062 49.969) (xy 99.375 50.062) (xy 100.688 50.156) (xy 102.000 50.250) (xy 101.250 51.188) (xy 100.500 52.125) (xy 99.750 53.062) (xy 99.000 54.000) (xy 97.714 53.786) (xy 96.429 53.571) (xy 95.143 53.357) (xy 93.857 53.143) (xy 92.571 52.929) (xy 91.286 52.714) (xy 90.000 52.500) (xy 90.500 51.500) (xy 91.000 50.500)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "36f83c85-9bb7-5299-a93d-e997b6ae2b84")
+	)
+	(gr_poly
+		(pts
+			(xy 140.250 27.000) (xy 141.750 27.000) (xy 143.250 27.000) (xy 144.750 27.000) (xy 144.750 28.250) (xy 144.750 29.500) (xy 144.750 30.750) (xy 143.250 30.750) (xy 141.750 30.750) (xy 140.250 30.750) (xy 140.250 29.500) (xy 140.250 28.250)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "f25311bc-990f-56b2-bc2b-945de46fc45f")
+	)
+	(gr_poly
+		(pts
+			(xy 140.250 27.000) (xy 141.750 27.000) (xy 143.250 27.000) (xy 144.750 27.000) (xy 144.750 28.250) (xy 144.750 29.500) (xy 144.750 30.750) (xy 143.250 30.750) (xy 141.750 30.750) (xy 140.250 30.750) (xy 140.250 29.500) (xy 140.250 28.250)
+		)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Mask")
+		(uuid "82e6b0fc-eb6a-57f2-9014-c4555c0ae2a3")
+	)
+	(gr_poly
+		(pts
+			(xy 13.500 84.750) (xy 14.893 84.911) (xy 16.286 85.071) (xy 17.679 85.232) (xy 19.071 85.393) (xy 20.464 85.554) (xy 21.857 85.714) (xy 23.250 85.875) (xy 24.643 86.036) (xy 26.036 86.196) (xy 27.429 86.357) (xy 28.821 86.518) (xy 30.214 86.679) (xy 32.221 85.918) (xy 33.000 87.000) (xy 33.375 88.125) (xy 33.750 89.250) (xy 34.125 90.375) (xy 34.500 91.500) (xy 33.450 92.550) (xy 32.400 93.600) (xy 31.350 94.650) (xy 30.300 95.700) (xy 29.250 96.750) (xy 28.200 97.800) (xy 27.150 98.850) (xy 26.100 99.900) (xy 25.050 100.950) (xy 24.000 102.000) (xy 22.688 101.812) (xy 21.375 101.625) (xy 20.062 101.438) (xy 18.750 101.250) (xy 17.438 101.062) (xy 16.125 100.875) (xy 14.812 100.688) (xy 13.500 100.500) (xy 13.500 99.068) (xy 13.500 97.636) (xy 13.500 96.205) (xy 13.500 94.773) (xy 13.500 93.341) (xy 13.500 91.909) (xy 13.500 90.477) (xy 13.500 89.045) (xy 13.500 87.614) (xy 13.500 86.182)
+		)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "ebf06820-52ab-51bf-bcc6-f9a6d4bf525d")
+	)
+	(gr_poly
+		(pts
+			(xy 33.000 95.250) (xy 34.375 95.562) (xy 35.750 95.875) (xy 37.125 96.188) (xy 38.500 96.500) (xy 39.875 96.812) (xy 41.250 97.125) (xy 42.625 97.438) (xy 44.000 97.750) (xy 45.375 98.062) (xy 46.750 98.375) (xy 48.125 98.688) (xy 49.500 99.000) (xy 49.667 100.333) (xy 49.833 101.667) (xy 50.000 103.000) (xy 50.167 104.333) (xy 50.333 105.667) (xy 50.500 107.000) (xy 50.667 108.333) (xy 50.833 109.667) (xy 51.000 111.000) (xy 49.950 111.900) (xy 48.900 112.800) (xy 47.850 113.700) (xy 46.800 114.600) (xy 45.750 115.500) (xy 44.700 116.400) (xy 43.650 117.300) (xy 42.600 118.200) (xy 41.550 119.100) (xy 40.500 120.000) (xy 39.375 119.250) (xy 38.250 118.500) (xy 37.125 117.750) (xy 36.000 117.000) (xy 34.875 116.250) (xy 33.750 115.500) (xy 32.625 114.750) (xy 31.500 114.000) (xy 31.615 112.558) (xy 31.731 111.115) (xy 31.846 109.673) (xy 31.962 108.231) (xy 32.077 106.788) (xy 32.192 105.346) (xy 32.308 103.904) (xy 32.423 102.462) (xy 32.538 101.019) (xy 32.654 99.577) (xy 32.769 98.135) (xy 32.885 96.692)
+		)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "85b65859-46bf-5372-b490-7aee8397048f")
+	)
+	(gr_poly
+		(pts
+			(xy 22.500 8.250) (xy 23.700 8.400) (xy 24.900 8.550) (xy 26.100 8.700) (xy 27.300 8.850) (xy 28.500 9.000) (xy 28.875 10.125) (xy 29.250 11.250) (xy 29.625 12.375) (xy 30.000 13.500) (xy 28.800 13.650) (xy 27.600 13.800) (xy 26.400 13.950) (xy 25.200 14.100) (xy 24.000 14.250) (xy 22.875 13.500) (xy 21.750 12.750) (xy 20.625 12.000) (xy 19.500 11.250) (xy 20.500 10.250) (xy 21.500 9.250)
+		)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "667b495f-dcec-5fed-a1a4-8ca562bebc7b")
+	)
+	(gr_poly
+		(pts
+			(xy 1.000 22.500) (xy 1.286 22.393) (xy 2.571 22.286) (xy 3.857 22.179) (xy 5.143 22.071) (xy 6.429 21.964) (xy 7.714 21.857) (xy 9.000 21.750) (xy 10.000 22.500) (xy 11.000 23.250) (xy 12.000 24.000) (xy 10.875 24.938) (xy 9.750 25.875) (xy 8.625 26.812) (xy 7.500 27.750) (xy 6.250 27.875) (xy 5.000 28.000) (xy 3.750 28.125) (xy 2.500 28.250) (xy 1.250 28.375) (xy 1.000 28.500) (xy 1.000 27.000) (xy 1.000 25.500) (xy 1.000 24.000)
+		)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "df31fe99-e63a-52b4-b377-57112d7e61ef")
+	)
+	(gr_poly
+		(pts
+			(xy 42.000 57.000) (xy 43.312 57.000) (xy 44.625 57.000) (xy 45.938 57.000) (xy 47.250 57.000) (xy 47.250 58.312) (xy 47.250 59.625) (xy 47.250 60.938) (xy 47.250 62.250) (xy 45.938 62.250) (xy 44.625 62.250) (xy 43.312 62.250) (xy 42.000 62.250) (xy 42.000 60.938) (xy 42.000 59.625) (xy 42.000 58.312)
+		)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "476382f3-2d24-527e-a2f0-ddf91d793ef4")
+	)
+	(gr_poly
+		(pts
+			(xy 81.000 66.000) (xy 82.500 66.000) (xy 84.000 66.000) (xy 85.500 66.000) (xy 87.000 66.000) (xy 87.000 67.350) (xy 87.000 68.700) (xy 87.000 70.050) (xy 87.000 71.400) (xy 87.000 72.750) (xy 85.500 72.750) (xy 84.000 72.750) (xy 82.500 72.750) (xy 81.000 72.750) (xy 81.000 71.400) (xy 81.000 70.050) (xy 81.000 68.700) (xy 81.000 67.350)
+		)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "40590abe-6856-503b-b382-c99c2001baa1")
+	)
+	(gr_poly
+		(pts
+			(xy 132.000 102.000) (xy 133.500 102.000) (xy 135.000 102.000) (xy 136.500 102.000) (xy 138.000 102.000) (xy 139.500 102.000) (xy 139.500 103.500) (xy 139.500 105.000) (xy 139.500 106.500) (xy 139.500 108.000) (xy 138.000 108.000) (xy 136.500 108.000) (xy 135.000 108.000) (xy 133.500 108.000) (xy 132.000 108.000) (xy 132.000 106.500) (xy 132.000 105.000) (xy 132.000 103.500)
+		)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "c2363f1f-137e-51da-ac60-d2fe67ae1fe2")
+	)
+	(gr_text "Waterfront"
+		(at 34.400 15.400 0.0)
+		(layer "F.SilkS")
+		(uuid "d8b94e87-4067-5a82-9d90-bff9a1870d33")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Burrard"
+		(at 41.400 18.600 45.0)
+		(layer "F.SilkS")
+		(uuid "717a19f9-4f2a-5eee-a5b2-609bbf36334b")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Granville"
+		(at 45.900 23.100 45.0)
+		(layer "F.SilkS")
+		(uuid "07090498-11b8-5c41-b41e-bc2473196520")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Stadium–Chinatown"
+		(at 50.400 27.600 45.0)
+		(layer "F.SilkS")
+		(uuid "7af0aff5-370d-5d6d-9fcd-fcde9ef470e4")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Main St–Science World"
+		(at 54.900 32.100 45.0)
+		(layer "F.SilkS")
+		(uuid "d661d464-d90b-50ea-81a5-5713e95bb948")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Commercial–Broadway"
+		(at 66.900 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "cc85f1b8-d212-5205-b91c-f51ef7ccf7b2")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Nanaimo"
+		(at 69.600 50.400 45.0)
+		(layer "F.SilkS")
+		(uuid "3b6eeac9-cc54-5b9f-bbcd-320af1a7c9b5")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "29th Avenue"
+		(at 74.100 54.900 45.0)
+		(layer "F.SilkS")
+		(uuid "8a5c2853-a99f-55a2-8cbc-071359a32055")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Joyce–Collingwood"
+		(at 78.600 59.400 45.0)
+		(layer "F.SilkS")
+		(uuid "57f755d0-c3ac-5be1-8f27-3b47d644c213")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Patterson"
+		(at 83.100 63.900 45.0)
+		(layer "F.SilkS")
+		(uuid "eb369fe3-7684-55ad-bf49-1687cf6a4765")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Metrotown"
+		(at 89.400 66.600 45.0)
+		(layer "F.SilkS")
+		(uuid "23981977-18d6-5e51-8925-fbf1b11bae47")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Royal Oak"
+		(at 93.900 71.100 45.0)
+		(layer "F.SilkS")
+		(uuid "6bb3be71-6282-5cec-bc71-a382145d2a2f")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Edmonds"
+		(at 98.400 75.600 45.0)
+		(layer "F.SilkS")
+		(uuid "b5061558-7657-54dd-9a91-c13da3647ae9")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "22nd Street"
+		(at 102.900 80.100 45.0)
+		(layer "F.SilkS")
+		(uuid "aa46e292-f4b7-5450-bdc5-a1b581a31c32")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "New Westminster"
+		(at 105.600 86.400 45.0)
+		(layer "F.SilkS")
+		(uuid "bb9dd6de-9bda-5c5d-99cb-db0170d14ee8")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Columbia"
+		(at 110.100 90.900 45.0)
+		(layer "F.SilkS")
+		(uuid "38b857e4-c6d1-5661-b40a-9129c28e3830")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Sapperton"
+		(at 117.300 85.900 0.0)
+		(layer "F.SilkS")
+		(uuid "5635552a-727e-5f45-b870-049c1e4f58a8")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Braid"
+		(at 117.300 81.400 0.0)
+		(layer "F.SilkS")
+		(uuid "488270ca-f9e7-5ac7-abdc-3cc1b4fde29a")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Lougheed Town Centre"
+		(at 117.300 60.600 0.0)
+		(layer "F.SilkS")
+		(uuid "937b5ef2-e225-543b-9a17-d5163fbfc4a7")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Production Way"
+		(at 109.200 55.900 0.0)
+		(layer "F.SilkS")
+		(uuid "76a5fe57-0910-5ffc-9437-14aed4878cda")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Scott Road"
+		(at 113.850 94.650 45.0)
+		(layer "F.SilkS")
+		(uuid "712c1103-c6bc-5ee2-8232-33804d8a7242")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Gateway"
+		(at 117.600 98.400 45.0)
+		(layer "F.SilkS")
+		(uuid "000b350e-1b29-588b-9441-582ae442cd67")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Surrey Central"
+		(at 121.350 102.150 45.0)
+		(layer "F.SilkS")
+		(uuid "e597f3df-3159-5608-aa65-d6b1fad0ee6d")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "King George"
+		(at 125.100 105.900 45.0)
+		(layer "F.SilkS")
+		(uuid "0bfcabcf-5b06-5ae7-82e1-4d8564907604")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Green Timbers"
+		(at 128.850 109.650 45.0)
+		(layer "F.SilkS")
+		(uuid "bfbcf53a-7909-53d6-8414-cd382041e786")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "152 Street"
+		(at 132.600 113.400 45.0)
+		(layer "F.SilkS")
+		(uuid "779c6c09-4d73-5f25-a910-f2f33ae19cd3")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Fleetwood"
+		(at 138.150 115.350 45.0)
+		(layer "F.SilkS")
+		(uuid "010e6dae-3071-52f4-b6cf-b92532f48848")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Bakerview"
+		(at 139.400 120.400 0.0)
+		(layer "F.SilkS")
+		(uuid "9322061d-19b5-5013-a641-f37e50a71ed8")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Hillcrest"
+		(at 139.400 126.400 0.0)
+		(layer "F.SilkS")
+		(uuid "77cd887e-c9f0-5b0e-9de2-d0dd96ce6f64")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Clayton"
+		(at 139.400 132.400 0.0)
+		(layer "F.SilkS")
+		(uuid "afde5b2f-ec7d-52ff-bb8a-ea94e5be6e5b")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Willowbrook"
+		(at 139.400 138.400 0.0)
+		(layer "F.SilkS")
+		(uuid "9aef7a84-a0d6-5192-b792-b64dcd1abc40")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Langley City Centre"
+		(at 139.400 144.400 0.0)
+		(layer "F.SilkS")
+		(uuid "4df7d29b-b24a-52b0-b862-fc882c55bc2c")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Arbutus"
+		(at 14.400 45.900 315.0)
+		(layer "F.SilkS")
+		(uuid "171889a3-09a8-5160-a01b-7879778b9a5c")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "South Granville"
+		(at 20.400 45.900 315.0)
+		(layer "F.SilkS")
+		(uuid "05f4df87-9b8f-5e01-845c-53fce6ddaba0")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Oak–VGH"
+		(at 26.400 45.900 315.0)
+		(layer "F.SilkS")
+		(uuid "a7b25bf7-6b31-58e8-96c9-9aa73899804c")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Broadway–City Hall"
+		(at 36.900 45.900 315.0)
+		(layer "F.SilkS")
+		(uuid "c148010b-b930-5ea2-a3ba-1ec3ed7f3b13")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Mount Pleasant"
+		(at 42.900 45.900 315.0)
+		(layer "F.SilkS")
+		(uuid "9705995d-e970-548e-8e16-e43bb02ef375")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Gt Northern Way"
+		(at 48.900 45.900 315.0)
+		(layer "F.SilkS")
+		(uuid "b6e6d085-d0f3-5c02-9e44-62aba4714686")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "VCC–Clark"
+		(at 54.900 45.900 315.0)
+		(layer "F.SilkS")
+		(uuid "78447ea4-93e3-561c-94b6-bcd4a7005dd3")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Renfrew"
+		(at 72.900 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "90794a35-dac0-5d87-8be5-c4245cb3a304")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Rupert"
+		(at 77.655 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "0e9158a4-f91a-5c7f-8c53-23d6fe55d11f")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Gilmore"
+		(at 82.395 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "1dfae718-f6ce-51f1-a4e5-059d9d8cf657")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Brentwood Town Centre"
+		(at 87.150 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "49ed88f9-bc38-586b-a275-2b31b1a303f0")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Holdom"
+		(at 91.905 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "cc14003c-37c7-5b66-93c8-853b34761daa")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Sperling–Burnaby Lake"
+		(at 96.645 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "8cdc05ab-8a39-5363-9bfd-3eaa63b9bd8a")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Lake City Way"
+		(at 101.400 44.100 45.0)
+		(layer "F.SilkS")
+		(uuid "5a3b6e6f-976b-5b5f-aef5-dc98fb5de304")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Burquitlam"
+		(at 120.300 57.600 0.0)
+		(layer "F.SilkS")
+		(uuid "7a8e34ea-73c0-5d74-89a8-a7e3bd988069")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Moody Centre"
+		(at 124.800 53.100 0.0)
+		(layer "F.SilkS")
+		(uuid "2b5a7ca4-def7-5b1c-8cde-feda71f16033")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Inlet Centre"
+		(at 129.300 48.600 0.0)
+		(layer "F.SilkS")
+		(uuid "f1e79b0e-fef6-5109-8102-cfa87d788619")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Coquitlam Central"
+		(at 130.200 44.100 0.0)
+		(layer "F.SilkS")
+		(uuid "570f3d86-6557-5e06-9d58-d1006aeb6be6")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Lincoln"
+		(at 138.300 39.600 0.0)
+		(layer "F.SilkS")
+		(uuid "2a4385bb-8a4d-5028-a00b-ccc526bde066")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Lafarge Lake–Douglas"
+		(at 139.200 35.100 0.0)
+		(layer "F.SilkS")
+		(uuid "d3536ba0-dfff-5af2-beae-7d710811a6c8")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Vancouver City Centre"
+		(at 34.400 22.900 0.0)
+		(layer "F.SilkS")
+		(uuid "ea303f2b-28b8-5245-ac03-318686e10b9b")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Yaletown–Roundhouse"
+		(at 34.400 30.400 0.0)
+		(layer "F.SilkS")
+		(uuid "59061ab3-3bae-5918-8057-472f658f5d15")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Olympic Village"
+		(at 34.400 37.900 0.0)
+		(layer "F.SilkS")
+		(uuid "47291ed4-8959-543f-902a-90b6028f6f1e")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "King Edward"
+		(at 36.900 53.400 315.0)
+		(layer "F.SilkS")
+		(uuid "539920f0-7304-503d-9c22-7bc9f871ebbe")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Oakridge–41st Avenue"
+		(at 34.400 60.400 0.0)
+		(layer "F.SilkS")
+		(uuid "ce7f6bea-b7eb-55a7-8342-db523a359913")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Langara–49th Avenue"
+		(at 34.400 67.900 0.0)
+		(layer "F.SilkS")
+		(uuid "23ef7eb9-833c-5a15-bb88-a9839903fb6a")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Marine Drive"
+		(at 34.400 75.400 0.0)
+		(layer "F.SilkS")
+		(uuid "9cad6e3f-cae2-52f6-bc41-6350b21526eb")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Bridgeport"
+		(at 34.400 82.900 0.0)
+		(layer "F.SilkS")
+		(uuid "2e90f5c3-b86e-513d-9a86-c13e8748c200")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Templeton"
+		(at 29.900 87.400 0.0)
+		(layer "F.SilkS")
+		(uuid "66c581da-77eb-5912-ab37-8e14ffdfceab")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Sea Island Centre"
+		(at 25.400 91.900 0.0)
+		(layer "F.SilkS")
+		(uuid "954200ef-a904-5869-ae11-0a4dfd8ff12e")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "YVR–Airport"
+		(at 20.900 96.400 0.0)
+		(layer "F.SilkS")
+		(uuid "a6ec7858-58c0-52d5-9e99-be7c576a7ae6")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify right)
+		)
+	)
+	(gr_text "Capstan"
+		(at 37.600 90.400 0.0)
+		(layer "F.SilkS")
+		(uuid "52299da4-4e88-54ab-97df-e2305b794cf4")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Aberdeen"
+		(at 37.600 97.900 0.0)
+		(layer "F.SilkS")
+		(uuid "70997644-34bd-5998-87ec-a9e364998ed9")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Lansdowne"
+		(at 37.600 105.400 0.0)
+		(layer "F.SilkS")
+		(uuid "b9528689-cf78-533f-aa9f-fcb42e5560a2")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "Richmond–Brighouse"
+		(at 37.600 112.900 0.0)
+		(layer "F.SilkS")
+		(uuid "93c835d1-3201-566b-b945-c1c3a98c5790")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
+	)
+	(gr_text "SeaBus"
+		(at 43.600 9.400 0.0)
+		(layer "F.SilkS")
+		(uuid "0a736fa9-4881-56eb-abb5-a267362c96c1")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+			)
+			(justify left)
+		)
 	)
 )

@@ -34,6 +34,8 @@ def find_collisions(city, scale=1.0, text_h=1.2, use_short=False):
     segs = [(lid, (p1[0] * scale, p1[1] * scale),
              (p2[0] * scale, p2[1] * scale), a, b)
             for lid, p1, p2, a, b in citymap.segments(city)]
+    avoid_pts = [(st.x * scale, st.y * scale) for st in all_st]
+    geo = citymap.prepared_geo(city, scale, avoid_pts)
     out = []
 
     ids = [st.id for st in all_st]
@@ -63,6 +65,14 @@ def find_collisions(city, scale=1.0, text_h=1.2, use_short=False):
             rect = citymap.seg_rect(p1, p2, LINE_HALF_W)
             if citymap.polys_intersect(box, rect):
                 out.append(Collision("label-line", sid, f"{lid}:{a}-{b}", box))
+        # label vs land/water shapes (park + island outlines matter most -
+        # a label sitting on a filled water/exposed-copper area is also
+        # flagged so it can be moved deliberately, not by accident)
+        for g in geo:
+            if g["type"] == "river":
+                continue
+            if citymap.polys_intersect(box, g["points"]):
+                out.append(Collision("label-geo", sid, g["name"], box))
     return out
 
 
