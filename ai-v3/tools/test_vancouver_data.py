@@ -67,6 +67,22 @@ def main():
                 errors.append(f"LEDs '{pts[i][0]}' and '{pts[j][0]}' only "
                               f"{d:.2f}mm apart")
 
+    # Chain + export invariants
+    import export_placement as ep
+    chain = ep.load_chain(DATA, city)  # raises if incomplete/dupes
+    rows = ep.led_rows(city, chain, 1.5)
+    if len(rows) != EXPECTED_LEDS:
+        errors.append(f"led_rows: {len(rows)} != {EXPECTED_LEDS}")
+    if [r[1] for r in rows[:2]] != ["LED1", "LED2"]:
+        errors.append("led_rows: refs must start LED1, LED2, ...")
+    for name, route in ep.routes(city):
+        for sid in route:
+            if sid not in chain:
+                errors.append(f"route {name}: '{sid}' not in chain")
+    n_routes = len(ep.routes(city))
+    if n_routes != 6:  # expo x2 branches, millennium, canada x2, seabus
+        errors.append(f"expected 6 firmware routes, got {n_routes}")
+
     # SAT self-test
     a = [(0, 0), (2, 0), (2, 2), (0, 2)]
     b = [(1, 1), (3, 1), (3, 3), (1, 3)]

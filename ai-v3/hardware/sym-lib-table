@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "C5349954-LED")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/C5349954-led/C5349954.kicad_sym")(options "")(descr ""))
+  (lib (name "C318884-button")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/C318884-button/C318884.kicad_sym")(options "")(descr ""))
+  (lib (name "Seeed_Studio_XIAO")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/Seeed Studio XIAO/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
+  (lib (name "C17888-resistor_0_1206")(type "KiCad")(uri "C:/Users/funvill/Documents/git/London-Underground-PCB/hardware/C17888-resistor_0_1206/C17888.kicad_sym")(options "")(descr ""))
+)
