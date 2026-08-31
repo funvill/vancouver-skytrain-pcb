@@ -1,5 +1,5 @@
 ** Drc report for vancouver-skytrain-pcb.kicad_pcb **
-** Created on 2026-08-31T12:05:50-0700 **
+** Created on 2026-08-31T13:51:43-0700 **
 
 ** Found 506 DRC violations **
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
@@ -941,9 +941,6 @@
     @(28.6850 mm, 32.0500 mm): PCB text 'Yaletown' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(31.4000 mm, 38.2750 mm): PCB text 'Olympic Village' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
     @(32.7700 mm, 53.4600 mm): PCB text 'King Edward' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
@@ -1167,6 +1164,9 @@
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(32.2400 mm, 75.6950 mm): Segment of LED60 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(33.7600 mm, 73.6650 mm): Segment of LED60 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(110.5950 mm, 56.7450 mm): Segment on F.Silkscreen

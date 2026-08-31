@@ -18,32 +18,16 @@ MARGIN = 4.0  # must match build_vancouver_json.py's MARGIN
 SCALE = (100 - 2 * MARGIN) / PAGE_W  # uniform, matches build_vancouver_json.py
 
 
-def canvas_to_pdf(cx, cy):
-    return ((cx - MARGIN) / SCALE, (cy - MARGIN) / SCALE)
-
-
-# The source PDF only details the coastline near stations - west of the
-# Cambie corridor (Point Grey / English Bay / Georgia Strait, no stations
-# there) it's just flat land colour, leaving the board's left edge landlocked
-# for a stretch. Real Vancouver has open water the whole way down that
-# coast, so patch a strip in to connect the two traced water pieces along
-# the left margin instead of leaving a gap.
-west_strip = box(*canvas_to_pdf(4, 16), *canvas_to_pdf(13, 50))
-
-# The first version of that patch just paved straight over Point Grey (the
-# real UBC/Kitsilano peninsula, which pokes out into English Bay right at
-# Arbutus's latitude) with a flat rectangle of water, clipping it off at
-# the board edge. Carve a rounded cape shape back out of the patch - not
-# traced (no station sits on it to anchor a trace to), but a real,
-# well-known landform, not an invented one.
-peninsula_canvas = [
-    (13.2, 25.5), (10.5, 24.3), (7.8, 25.2), (5.3, 27.7), (4.4, 31.0),
-    (5.1, 34.4), (7.6, 36.7), (10.4, 37.2), (13.2, 35.9),
-]
-peninsula = Polygon([canvas_to_pdf(x, y) for x, y in peninsula_canvas])
-west_strip = west_strip.difference(peninsula)
-
-water = unary_union([water, west_strip])
+# Two earlier passes tried to patch extra water down the whole left edge,
+# assuming the gap between the top (English Bay) and bottom (Sea Island)
+# traced water was a tracing gap to fill. Re-checking the source PDF
+# directly: it isn't a gap - that whole middle band (Vancouver City
+# Centre down through Marine Drive) really is solid land colour all the
+# way to the page edge in the original map, no coastline drawn there at
+# all (west of the Cambie corridor is off the detail this map bothers
+# with). Both patches, including the invented "Point Grey peninsula",
+# were fixing a mismatch with the PDF that didn't exist. Left as a pure
+# trace: water = page minus every traced land polygon, nothing added.
 water = water.simplify(2.0, preserve_topology=True)
 
 
