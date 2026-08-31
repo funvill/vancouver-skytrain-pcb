@@ -211,8 +211,8 @@ def clamp_to_board(points, board_mm, margin):
              min(max(y, margin), board_mm - margin)) for x, y in points]
 
 
-def prepared_geo(city, scale, avoid_pts, water_keepout=2.8, land_keepout=1.3,
-                 edge_margin=1.0, densify_step=1.5):
+def prepared_geo(city, scale, avoid_pts, water_keepout=2.0, land_keepout=1.0,
+                 edge_margin=2.5, densify_step=2.0):
     """Every geo shape from the city file, scaled to board mm and adjusted
     to clear LED pads and the board edge. Same output feeds the SVG
     preview, the collision checker, and the PCB art exporter, so what you
@@ -232,7 +232,7 @@ def prepared_geo(city, scale, avoid_pts, water_keepout=2.8, land_keepout=1.3,
         pts = repel(pts, avoid_pts, keepout)
         pts = clamp_to_board(pts, board_mm, edge_margin)
         if not closed:
-            pts = simplify(pts, tol=0.15)
+            pts = simplify(pts, tol=0.4)
         out.append({**g, "points": pts, "_prepared": True})
     return out
 
@@ -253,6 +253,51 @@ def poly_point_min_dist(poly, p, closed=True):
     edges = n if closed else n - 1
     return min(point_seg_dist(p, poly[i], poly[(i + 1) % n])
               for i in range(edges))
+
+
+def point_in_polygon(p, poly):
+    """Ray-casting point-in-polygon test. Correct for concave polygons,
+    unlike polys_intersect() (SAT), which requires convex shapes - use
+    this for anything tested against a coastline/river outline."""
+    x, y = p
+    inside = False
+    n = len(poly)
+    x1, y1 = poly[-1]
+    for x2, y2 in poly:
+        if (y1 > y) != (y2 > y):
+            xin = x1 + (y - y1) * (x2 - x1) / (y2 - y1)
+            if x < xin:
+                inside = not inside
+        x1, y1 = x2, y2
+    return inside
+
+
+def segs_intersect(p1, p2, p3, p4):
+    def orient(a, b, c):
+        v = (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])
+        return 0 if abs(v) < 1e-9 else (1 if v > 0 else -1)
+    o1, o2 = orient(p1, p2, p3), orient(p1, p2, p4)
+    o3, o4 = orient(p3, p4, p1), orient(p3, p4, p2)
+    return o1 != o2 and o3 != o4
+
+
+def box_poly_overlap(box, poly, closed=True):
+    """True if the (small, convex) box overlaps the (possibly large,
+    concave) poly - any box corner inside poly, any poly vertex inside
+    box, or any edge of one crossing an edge of the other."""
+    if any(point_in_polygon(c, poly) for c in box):
+        return True
+    if any(point_in_polygon(v, box) for v in poly):
+        return True
+    n = len(poly)
+    edges = n if closed else n - 1
+    for i in range(4):
+        a, b = box[i], box[(i + 1) % 4]
+        for j in range(edges):
+            c, d = poly[j], poly[(j + 1) % n]
+            if segs_intersect(a, b, c, d):
+                return True
+    return False
 
 
 def _project(poly, axis):

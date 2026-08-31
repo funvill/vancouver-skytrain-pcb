@@ -11,6 +11,22 @@ Copied from the v2 project, then rewritten by the pipeline:
 - **Station labels + land/water art** (F.SilkS text, F.Cu/F.Mask water,
   F.SilkS land outlines) generated directly into the board by
   `tools/export_art.py` — no Inkscape/svg2shenzhen step needed. See below.
+- The coastline in `ai-v3/input/vancouver.json`'s `geo` list is hand-authored
+  to resemble Vancouver's real geography (Burrard Inlet with the Port Moody
+  arm, the downtown peninsula, False Creek between the Canada Line and
+  Broadway corridor, the Fraser River's islands) at the level of detail v1's
+  natural map used — not the coarse first-pass shapes from earlier in this
+  project. Render `tools/render_board.py` output before touching `geo`
+  again, so you're comparing against the current look, not an old shape.
+
+**Render the board as images** (KiCad 9's built-in 3D renderer, top-down):
+
+```
+python render_board.py ../hardware/vancouver-skytrain-pcb.kicad_pcb ../test-results
+```
+
+Writes `board-top.png` and `board-bottom.png`. Pass `--kicad-cli` if
+`kicad-cli.exe` isn't at the default `C:\Program Files\KiCad\9.0\bin\`.
 
 Regenerate placements after any layout change:
 

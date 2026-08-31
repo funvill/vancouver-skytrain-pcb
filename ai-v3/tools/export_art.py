@@ -41,7 +41,7 @@ RIVER_MITRE = 1.0  # extra length added at each river segment end, to close gaps
 # Any river rectangle whose corner still ends up under this floor is
 # dropped rather than emitted too close to call safe; the gap reads as a
 # bridge crossing, which is accurate anyway.
-RIVER_SAFE_FLOOR = 2.6
+RIVER_SAFE_FLOOR = 1.5
 
 
 def art_uuid(key):
@@ -99,7 +99,7 @@ def water_blocks(city, scale, geo=None):
                 a = (p1[0] - ux, p1[1] - uy)
                 b = (p2[0] + ux, p2[1] + uy)
                 rect = citymap.seg_rect(a, b, half)
-                rect = citymap.clamp_to_board(rect, city.canvas_mm * scale, 1.0)
+                rect = citymap.clamp_to_board(rect, city.canvas_mm * scale, 2.5)
                 closest = min(citymap.poly_point_min_dist(rect, pt)
                              for pt in avoid)
                 if closest < RIVER_SAFE_FLOOR:

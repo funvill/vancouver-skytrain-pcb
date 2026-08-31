@@ -71,7 +71,7 @@ def find_collisions(city, scale=1.0, text_h=1.2, use_short=False):
         for g in geo:
             if g["type"] == "river":
                 continue
-            if citymap.polys_intersect(box, g["points"]):
+            if citymap.box_poly_overlap(box, g["points"]):
                 out.append(Collision("label-geo", sid, g["name"], box))
     return out
 

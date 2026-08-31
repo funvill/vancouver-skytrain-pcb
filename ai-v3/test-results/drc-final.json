@@ -1,7 +1,7 @@
 ** Drc report for vancouver-skytrain-pcb.kicad_pcb **
-** Created on 2026-08-30T22:09:43-0700 **
+** Created on 2026-08-30T23:42:39-0700 **
 
-** Found 380 DRC violations **
+** Found 396 DRC violations **
 [shorting_items]: Items shorting two nets (nets BUTTON_03 and +5V)
     Local override; error
     @(67.0000 mm, 77.5400 mm): Pad 3 [BUTTON_03] of U1 on B.Cu
@@ -21,19 +21,35 @@
 [shorting_items]: Items shorting two nets (nets GND and )
     Local override; error
     @(41.2500 mm, 9.4500 mm): Pad 1 [GND] of LED1 on F.Cu
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
 [shorting_items]: Items shorting two nets (nets  and Net-(LED1-DI))
     Local override; error
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(42.7500 mm, 9.4500 mm): Pad 2 [Net-(LED1-DI)] of LED1 on F.Cu
-[shorting_items]: Items shorting two nets (nets +5V and )
+[shorting_items]: Items shorting two nets (nets  and +5V)
     Local override; error
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(42.7500 mm, 8.5500 mm): Pad 3 [+5V] of LED1 on F.Cu
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
-[shorting_items]: Items shorting two nets (nets Net-(LED1-DO) and )
+[shorting_items]: Items shorting two nets (nets  and Net-(LED1-DO))
     Local override; error
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(41.2500 mm, 8.5500 mm): Pad 4 [Net-(LED1-DO)] of LED1 on F.Cu
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+[shorting_items]: Items shorting two nets (nets  and GND)
+    Local override; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
+[shorting_items]: Items shorting two nets (nets  and Net-(LED55-DO))
+    Local override; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(36.7500 mm, 37.9500 mm): Pad 2 [Net-(LED55-DO)] of LED56 on F.Cu
+[shorting_items]: Items shorting two nets (nets  and +5V)
+    Local override; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(36.7500 mm, 37.0500 mm): Pad 3 [+5V] of LED56 on F.Cu
+[shorting_items]: Items shorting two nets (nets  and Net-(LED56-DO))
+    Local override; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(35.2500 mm, 37.0500 mm): Pad 4 [Net-(LED56-DO)] of LED56 on F.Cu
 [courtyards_overlap]: Courtyards overlap
     Rule: board setup constraints courtyard; error
     @(75.0000 mm, 75.0000 mm): Footprint U1
@@ -44,36 +60,68 @@
     @(67.8000 mm, 75.4000 mm): Footprint +5V
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(41.2500 mm, 9.4500 mm): Pad 1 [GND] of LED1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(42.7500 mm, 9.4500 mm): Pad 2 [Net-(LED1-DI)] of LED1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(42.7500 mm, 8.5500 mm): Pad 3 [+5V] of LED1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(41.2500 mm, 8.5500 mm): Pad 4 [Net-(LED1-DO)] of LED1 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon on F.Mask
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon on F.Mask
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon on F.Mask
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon on F.Mask
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon on F.Mask
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon on F.Mask
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(1.0000 mm, 3.7500 mm): Polygon on F.Mask
-    @(1.0000 mm, 3.7500 mm): Polygon [<no net>] on F.Cu
+    @(2.5000 mm, 2.5000 mm): Polygon on F.Mask
+    @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(36.7500 mm, 37.9500 mm): Pad 2 [Net-(LED55-DO)] of LED56 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(36.7500 mm, 37.0500 mm): Pad 3 [+5V] of LED56 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(35.2500 mm, 37.0500 mm): Pad 4 [Net-(LED56-DO)] of LED56 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
+    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(69.7500 mm, 49.9500 mm): Pad 1 [GND] of LED8 on F.Cu
@@ -228,12 +276,12 @@
     @(36.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED65 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(131.2500 mm, 43.9500 mm): Pad 1 [GND] of LED37 on F.Cu
-    @(131.2500 mm, 43.0500 mm): Pad 4 [Net-(LED37-DO)] of LED37 on F.Cu
+    @(126.7500 mm, 43.9500 mm): Pad 1 [GND] of LED37 on F.Cu
+    @(126.7500 mm, 43.0500 mm): Pad 4 [Net-(LED37-DO)] of LED37 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(132.7500 mm, 43.9500 mm): Pad 2 [Net-(LED36-DO)] of LED37 on F.Cu
-    @(132.7500 mm, 43.0500 mm): Pad 3 [+5V] of LED37 on F.Cu
+    @(128.2500 mm, 43.9500 mm): Pad 2 [Net-(LED36-DO)] of LED37 on F.Cu
+    @(128.2500 mm, 43.0500 mm): Pad 3 [+5V] of LED37 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(35.2500 mm, 30.4500 mm): Pad 1 [GND] of LED55 on F.Cu
@@ -388,12 +436,12 @@
     @(141.7500 mm, 125.5500 mm): Pad 3 [+5V] of LED26 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(140.2500 mm, 34.9500 mm): Pad 1 [GND] of LED39 on F.Cu
-    @(140.2500 mm, 34.0500 mm): Pad 4 [Net-(LED39-DO)] of LED39 on F.Cu
+    @(135.7500 mm, 34.9500 mm): Pad 1 [GND] of LED39 on F.Cu
+    @(135.7500 mm, 34.0500 mm): Pad 4 [Net-(LED39-DO)] of LED39 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(141.7500 mm, 34.9500 mm): Pad 2 [Net-(LED38-DO)] of LED39 on F.Cu
-    @(141.7500 mm, 34.0500 mm): Pad 3 [+5V] of LED39 on F.Cu
+    @(137.2500 mm, 34.9500 mm): Pad 2 [Net-(LED38-DO)] of LED39 on F.Cu
+    @(137.2500 mm, 34.0500 mm): Pad 3 [+5V] of LED39 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(35.2500 mm, 97.9500 mm): Pad 1 [GND] of LED66 on F.Cu
@@ -572,12 +620,12 @@
     @(134.2500 mm, 112.0500 mm): Pad 3 [+5V] of LED23 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(135.7500 mm, 39.4500 mm): Pad 1 [GND] of LED38 on F.Cu
-    @(135.7500 mm, 38.5500 mm): Pad 4 [Net-(LED38-DO)] of LED38 on F.Cu
+    @(131.2500 mm, 39.4500 mm): Pad 1 [GND] of LED38 on F.Cu
+    @(131.2500 mm, 38.5500 mm): Pad 4 [Net-(LED38-DO)] of LED38 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(137.2500 mm, 39.4500 mm): Pad 2 [Net-(LED37-DO)] of LED38 on F.Cu
-    @(137.2500 mm, 38.5500 mm): Pad 3 [+5V] of LED38 on F.Cu
+    @(132.7500 mm, 39.4500 mm): Pad 2 [Net-(LED37-DO)] of LED38 on F.Cu
+    @(132.7500 mm, 38.5500 mm): Pad 3 [+5V] of LED38 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(101.2500 mm, 81.4500 mm): Pad 1 [GND] of LED15 on F.Cu
@@ -660,13 +708,19 @@
     @(68.2382 mm, 84.4156 mm): Reference field of U1
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(13.5000 mm, 84.7500 mm): Polygon on F.Silkscreen
+    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(22.5000 mm, 8.2500 mm): Polygon on F.Silkscreen
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(41.4000 mm, 18.6000 mm): PCB text 'Burrard' on F.Silkscreen
+    @(21.0000 mm, 5.2500 mm): Polygon on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(2.5000 mm, 46.5000 mm): Polygon on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(117.7500 mm, 33.7500 mm): Polygon on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(105.6000 mm, 86.4000 mm): PCB text 'New Westminster' on F.Silkscreen
@@ -675,22 +729,7 @@
     @(117.6000 mm, 98.4000 mm): PCB text 'Gateway' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(121.3500 mm, 102.1500 mm): PCB text 'Surrey Central' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(125.1000 mm, 105.9000 mm): PCB text 'King George' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(128.8500 mm, 109.6500 mm): PCB text 'Green Timbers' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
     @(132.6000 mm, 113.4000 mm): PCB text '152 Street' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(139.4000 mm, 120.4000 mm): PCB text 'Bakerview' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(139.4000 mm, 126.4000 mm): PCB text 'Hillcrest' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(20.4000 mm, 45.9000 mm): PCB text 'South Granville' on F.Silkscreen
@@ -705,10 +744,13 @@
     @(54.9000 mm, 45.9000 mm): PCB text 'VCC–Clark' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(34.4000 mm, 22.9000 mm): PCB text 'Vancouver City Centre' on F.Silkscreen
+    @(134.7000 mm, 33.5000 mm): PCB text 'Lafarge Lake–Douglas' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(34.4000 mm, 30.4000 mm): PCB text 'Yaletown–Roundhouse' on F.Silkscreen
+    @(34.4000 mm, 37.9000 mm): PCB text 'Olympic Village' on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(34.4000 mm, 82.9000 mm): PCB text 'Bridgeport' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(29.9000 mm, 87.4000 mm): PCB text 'Templeton' on F.Silkscreen
@@ -900,13 +942,13 @@
     @(34.5000 mm, 90.0300 mm): Circle of LED65 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(131.2400 mm, 44.5100 mm): Segment of LED37 on F.Silkscreen
+    @(126.7400 mm, 44.5100 mm): Segment of LED37 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(132.7600 mm, 42.4800 mm): Segment of LED37 on F.Silkscreen
+    @(128.2600 mm, 42.4800 mm): Segment of LED37 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(130.5000 mm, 43.5300 mm): Circle of LED37 on F.Silkscreen
+    @(126.0000 mm, 43.5300 mm): Circle of LED37 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(35.2400 mm, 31.0100 mm): Segment of LED55 on F.Silkscreen
@@ -1092,13 +1134,13 @@
     @(-16.5078 mm, 40.1600 mm): Segment of ROW1 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(140.2400 mm, 35.5100 mm): Segment of LED39 on F.Silkscreen
+    @(135.7400 mm, 35.5100 mm): Segment of LED39 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(141.7600 mm, 33.4800 mm): Segment of LED39 on F.Silkscreen
+    @(137.2600 mm, 33.4800 mm): Segment of LED39 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(139.5000 mm, 34.5300 mm): Circle of LED39 on F.Silkscreen
+    @(135.0000 mm, 34.5300 mm): Circle of LED39 on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(35.2400 mm, 98.5100 mm): Segment of LED66 on F.Silkscreen
@@ -1255,34 +1297,56 @@
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(96.5050 mm, 43.9800 mm): Segment of LED41 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(94.2450 mm, 45.0300 mm): Circle of LED41 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(-16.5078 mm, 43.3800 mm): Segment of ROW3 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(87.0000 mm, 67.5300 mm): Circle of LED12 on F.Silkscreen
-    @(81.0000 mm, 66.0000 mm): Polygon on F.Silkscreen
+    @(91.5000 mm, 72.0300 mm): Circle of LED13 on F.Silkscreen
+    @(84.7500 mm, 69.0000 mm): Polygon on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(81.0000 mm, 66.0000 mm): Polygon on F.Silkscreen
-    @(83.1000 mm, 63.9000 mm): PCB text 'Patterson' on F.Silkscreen
+    @(117.7500 mm, 33.7500 mm): Polygon on F.Silkscreen
+    @(134.7000 mm, 33.5000 mm): PCB text 'Lafarge Lake–Douglas' on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(33.0000 mm, 95.2500 mm): Polygon on F.Silkscreen
-    @(37.6000 mm, 112.9000 mm): PCB text 'Richmond–Brighouse' on F.Silkscreen
+    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
+    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(34.4000 mm, 82.9000 mm): PCB text 'Bridgeport' on F.Silkscreen
+    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(37.6000 mm, 90.4000 mm): PCB text 'Capstan' on F.Silkscreen
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(37.6000 mm, 97.9000 mm): PCB text 'Aberdeen' on F.Silkscreen
-    @(33.0000 mm, 95.2500 mm): Polygon on F.Silkscreen
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(20.9000 mm, 96.4000 mm): PCB text 'YVR–Airport' on F.Silkscreen
-    @(13.5000 mm, 84.7500 mm): Polygon on F.Silkscreen
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(37.6000 mm, 105.4000 mm): PCB text 'Lansdowne' on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(25.4000 mm, 91.9000 mm): PCB text 'Sea Island Centre' on F.Silkscreen
-    @(13.5000 mm, 84.7500 mm): Polygon on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(13.5000 mm, 84.7500 mm): Polygon on F.Silkscreen
-    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(37.6000 mm, 112.9000 mm): PCB text 'Richmond–Brighouse' on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(42.0000 mm, 57.0000 mm): Polygon on F.Silkscreen
@@ -1347,24 +1411,24 @@
     @(-15.9200 mm, 51.6200 mm): Pad 2 [+5V] of ROW7 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(20.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED52 on F.Cu
     @(14.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED53 on F.Cu
-    @(20.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED52 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(23.2500 mm, 95.5500 mm): Pad 3 [+5V] of LED64 on F.Cu
+    @(27.7500 mm, 91.0500 mm): Pad 3 [+5V] of LED63 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(26.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED51 on F.Cu
     @(20.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED52 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(26.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED51 on F.Cu
-    @(36.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED50 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(27.7500 mm, 91.0500 mm): Pad 3 [+5V] of LED63 on F.Cu
-    @(23.2500 mm, 95.5500 mm): Pad 3 [+5V] of LED64 on F.Cu
+    @(32.2500 mm, 86.5500 mm): Pad 3 [+5V] of LED62 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(32.2500 mm, 86.5500 mm): Pad 3 [+5V] of LED62 on F.Cu
-    @(27.7500 mm, 91.0500 mm): Pad 3 [+5V] of LED63 on F.Cu
+    @(36.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED65 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(32.2500 mm, 86.5500 mm): Pad 3 [+5V] of LED62 on F.Cu
@@ -1388,39 +1452,35 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(36.7500 mm, 37.0500 mm): Pad 3 [+5V] of LED56 on F.Cu
+    @(36.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED50 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(36.7500 mm, 37.0500 mm): Pad 3 [+5V] of LED56 on F.Cu
     @(36.7500 mm, 29.5500 mm): Pad 3 [+5V] of LED55 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(36.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED50 on F.Cu
-    @(42.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED49 on F.Cu
+    @(36.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED57 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(36.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED50 on F.Cu
-    @(36.7500 mm, 37.0500 mm): Pad 3 [+5V] of LED56 on F.Cu
+    @(26.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED51 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(36.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED57 on F.Cu
-    @(36.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED50 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(36.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED57 on F.Cu
     @(36.7500 mm, 59.5500 mm): Pad 3 [+5V] of LED58 on F.Cu
+    @(36.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED57 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(36.7500 mm, 74.5500 mm): Pad 3 [+5V] of LED60 on F.Cu
     @(36.7500 mm, 67.0500 mm): Pad 3 [+5V] of LED59 on F.Cu
-    @(36.7500 mm, 74.5500 mm): Pad 3 [+5V] of LED60 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(36.7500 mm, 74.5500 mm): Pad 3 [+5V] of LED60 on F.Cu
     @(36.7500 mm, 82.0500 mm): Pad 3 [+5V] of LED61 on F.Cu
+    @(36.7500 mm, 74.5500 mm): Pad 3 [+5V] of LED60 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(36.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED65 on F.Cu
-    @(32.2500 mm, 86.5500 mm): Pad 3 [+5V] of LED62 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
     @(36.7500 mm, 97.0500 mm): Pad 3 [+5V] of LED66 on F.Cu
-    @(36.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED65 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(36.7500 mm, 97.0500 mm): Pad 3 [+5V] of LED66 on F.Cu
@@ -1432,10 +1492,6 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(41.2500 mm, 19.0500 mm): Pad 3 [+5V] of LED3 on F.Cu
-    @(45.7500 mm, 23.5500 mm): Pad 3 [+5V] of LED4 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(41.2500 mm, 19.0500 mm): Pad 3 [+5V] of LED3 on F.Cu
     @(36.7500 mm, 14.5500 mm): Pad 3 [+5V] of LED2 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
@@ -1443,16 +1499,24 @@
     @(36.7500 mm, 14.5500 mm): Pad 3 [+5V] of LED2 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(48.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED48 on F.Cu
     @(42.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED49 on F.Cu
+    @(36.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED50 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(50.2500 mm, 28.0500 mm): Pad 3 [+5V] of LED5 on F.Cu
+    @(42.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED49 on F.Cu
+    @(48.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED48 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(45.7500 mm, 23.5500 mm): Pad 3 [+5V] of LED4 on F.Cu
+    @(50.2500 mm, 28.0500 mm): Pad 3 [+5V] of LED5 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(54.7500 mm, 32.5500 mm): Pad 3 [+5V] of LED6 on F.Cu
+    @(45.7500 mm, 23.5500 mm): Pad 3 [+5V] of LED4 on F.Cu
+    @(41.2500 mm, 19.0500 mm): Pad 3 [+5V] of LED3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(50.2500 mm, 28.0500 mm): Pad 3 [+5V] of LED5 on F.Cu
+    @(54.7500 mm, 32.5500 mm): Pad 3 [+5V] of LED6 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(54.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED47 on F.Cu
@@ -1460,91 +1524,95 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(66.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED7 on F.Cu
+    @(72.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED46 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(66.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED7 on F.Cu
     @(54.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED47 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(71.2500 mm, 49.0500 mm): Pad 3 [+5V] of LED8 on F.Cu
+    @(75.7500 mm, 53.5500 mm): Pad 3 [+5V] of LED9 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(72.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED46 on F.Cu
+    @(71.2500 mm, 49.0500 mm): Pad 3 [+5V] of LED8 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(75.7500 mm, 53.5500 mm): Pad 3 [+5V] of LED9 on F.Cu
+    @(80.2500 mm, 58.0500 mm): Pad 3 [+5V] of LED10 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(77.5050 mm, 44.5500 mm): Pad 3 [+5V] of LED45 on F.Cu
+    @(72.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED46 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(80.2500 mm, 58.0500 mm): Pad 3 [+5V] of LED10 on F.Cu
+    @(84.7500 mm, 62.5500 mm): Pad 3 [+5V] of LED11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(82.2450 mm, 44.5500 mm): Pad 3 [+5V] of LED44 on F.Cu
+    @(77.5050 mm, 44.5500 mm): Pad 3 [+5V] of LED45 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(83.1650 mm, 82.6200 mm): Pad 14 [+5V] of U1 on B.Cu
+    @(93.7500 mm, 71.5500 mm): Pad 3 [+5V] of LED13 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(83.1650 mm, 82.6200 mm): Pad 14 [+5V] of U1 on B.Cu
     @(67.8000 mm, 75.4000 mm): Pad 1 [+5V] of +5V on B.Cu
-    @(83.1650 mm, 82.6200 mm): Pad 14 [+5V] of U1 on B.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(71.2500 mm, 49.0500 mm): Pad 3 [+5V] of LED8 on F.Cu
-    @(75.7500 mm, 53.5500 mm): Pad 3 [+5V] of LED9 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(72.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED46 on F.Cu
-    @(71.2500 mm, 49.0500 mm): Pad 3 [+5V] of LED8 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(72.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED46 on F.Cu
-    @(66.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED7 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(77.5050 mm, 44.5500 mm): Pad 3 [+5V] of LED45 on F.Cu
-    @(72.7500 mm, 44.5500 mm): Pad 3 [+5V] of LED46 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(80.2500 mm, 58.0500 mm): Pad 3 [+5V] of LED10 on F.Cu
-    @(75.7500 mm, 53.5500 mm): Pad 3 [+5V] of LED9 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(82.2450 mm, 44.5500 mm): Pad 3 [+5V] of LED44 on F.Cu
-    @(77.5050 mm, 44.5500 mm): Pad 3 [+5V] of LED45 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(82.2450 mm, 44.5500 mm): Pad 3 [+5V] of LED44 on F.Cu
-    @(87.0000 mm, 44.5500 mm): Pad 3 [+5V] of LED43 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(84.7500 mm, 62.5500 mm): Pad 3 [+5V] of LED11 on F.Cu
-    @(80.2500 mm, 58.0500 mm): Pad 3 [+5V] of LED10 on F.Cu
+    @(89.2500 mm, 67.0500 mm): Pad 3 [+5V] of LED12 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(87.0000 mm, 44.5500 mm): Pad 3 [+5V] of LED43 on F.Cu
     @(91.7550 mm, 44.5500 mm): Pad 3 [+5V] of LED42 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(89.2500 mm, 67.0500 mm): Pad 3 [+5V] of LED12 on F.Cu
-    @(84.7500 mm, 62.5500 mm): Pad 3 [+5V] of LED11 on F.Cu
+    @(87.0000 mm, 44.5500 mm): Pad 3 [+5V] of LED43 on F.Cu
+    @(82.2450 mm, 44.5500 mm): Pad 3 [+5V] of LED44 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(89.2500 mm, 67.0500 mm): Pad 3 [+5V] of LED12 on F.Cu
     @(93.7500 mm, 71.5500 mm): Pad 3 [+5V] of LED13 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.7550 mm, 44.5500 mm): Pad 3 [+5V] of LED42 on F.Cu
+    @(96.4950 mm, 44.5500 mm): Pad 3 [+5V] of LED41 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(93.7500 mm, 71.5500 mm): Pad 3 [+5V] of LED13 on F.Cu
     @(98.2500 mm, 76.0500 mm): Pad 3 [+5V] of LED14 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(93.7500 mm, 71.5500 mm): Pad 3 [+5V] of LED13 on F.Cu
-    @(83.1650 mm, 82.6200 mm): Pad 14 [+5V] of U1 on B.Cu
+    @(96.4950 mm, 44.5500 mm): Pad 3 [+5V] of LED41 on F.Cu
+    @(101.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED40 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(96.4950 mm, 44.5500 mm): Pad 3 [+5V] of LED41 on F.Cu
-    @(91.7550 mm, 44.5500 mm): Pad 3 [+5V] of LED42 on F.Cu
+    @(98.2500 mm, 76.0500 mm): Pad 3 [+5V] of LED14 on F.Cu
+    @(102.7500 mm, 80.5500 mm): Pad 3 [+5V] of LED15 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(101.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED40 on F.Cu
-    @(96.4950 mm, 44.5500 mm): Pad 3 [+5V] of LED41 on F.Cu
+    @(111.7500 mm, 55.0500 mm): Pad 3 [+5V] of LED33 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(102.7500 mm, 80.5500 mm): Pad 3 [+5V] of LED15 on F.Cu
-    @(98.2500 mm, 76.0500 mm): Pad 3 [+5V] of LED14 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
     @(107.2500 mm, 85.0500 mm): Pad 3 [+5V] of LED16 on F.Cu
-    @(111.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED17 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(107.2500 mm, 85.0500 mm): Pad 3 [+5V] of LED16 on F.Cu
-    @(102.7500 mm, 80.5500 mm): Pad 3 [+5V] of LED15 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(111.7500 mm, 55.0500 mm): Pad 3 [+5V] of LED33 on F.Cu
-    @(101.2500 mm, 44.5500 mm): Pad 3 [+5V] of LED40 on F.Cu
+    @(116.2500 mm, 59.5500 mm): Pad 3 [+5V] of LED32 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(111.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED17 on F.Cu
     @(115.5000 mm, 93.3000 mm): Pad 3 [+5V] of LED18 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED17 on F.Cu
+    @(107.2500 mm, 85.0500 mm): Pad 3 [+5V] of LED16 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(111.7500 mm, 89.5500 mm): Pad 3 [+5V] of LED17 on F.Cu
@@ -1556,59 +1624,55 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(116.2500 mm, 59.5500 mm): Pad 3 [+5V] of LED32 on F.Cu
-    @(111.7500 mm, 55.0500 mm): Pad 3 [+5V] of LED33 on F.Cu
+    @(119.2500 mm, 56.5500 mm): Pad 3 [+5V] of LED34 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(116.2500 mm, 85.0500 mm): Pad 3 [+5V] of LED30 on F.Cu
     @(116.2500 mm, 80.5500 mm): Pad 3 [+5V] of LED31 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(119.2500 mm, 56.5500 mm): Pad 3 [+5V] of LED34 on F.Cu
-    @(116.2500 mm, 59.5500 mm): Pad 3 [+5V] of LED32 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(119.2500 mm, 56.5500 mm): Pad 3 [+5V] of LED34 on F.Cu
-    @(123.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED35 on F.Cu
+    @(116.2500 mm, 85.0500 mm): Pad 3 [+5V] of LED30 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(123.0000 mm, 100.8000 mm): Pad 3 [+5V] of LED20 on F.Cu
     @(119.2500 mm, 97.0500 mm): Pad 3 [+5V] of LED19 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(123.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED35 on F.Cu
-    @(128.2500 mm, 47.5500 mm): Pad 3 [+5V] of LED36 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(126.7500 mm, 104.5500 mm): Pad 3 [+5V] of LED21 on F.Cu
     @(123.0000 mm, 100.8000 mm): Pad 3 [+5V] of LED20 on F.Cu
+    @(126.7500 mm, 104.5500 mm): Pad 3 [+5V] of LED21 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(123.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED35 on F.Cu
+    @(119.2500 mm, 56.5500 mm): Pad 3 [+5V] of LED34 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(128.2500 mm, 43.0500 mm): Pad 3 [+5V] of LED37 on F.Cu
+    @(132.7500 mm, 38.5500 mm): Pad 3 [+5V] of LED38 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(128.2500 mm, 47.5500 mm): Pad 3 [+5V] of LED36 on F.Cu
-    @(132.7500 mm, 43.0500 mm): Pad 3 [+5V] of LED37 on F.Cu
+    @(128.2500 mm, 43.0500 mm): Pad 3 [+5V] of LED37 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(130.5000 mm, 108.3000 mm): Pad 3 [+5V] of LED22 on F.Cu
-    @(134.2500 mm, 112.0500 mm): Pad 3 [+5V] of LED23 on F.Cu
+    @(128.2500 mm, 47.5500 mm): Pad 3 [+5V] of LED36 on F.Cu
+    @(123.7500 mm, 52.0500 mm): Pad 3 [+5V] of LED35 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(130.5000 mm, 108.3000 mm): Pad 3 [+5V] of LED22 on F.Cu
     @(126.7500 mm, 104.5500 mm): Pad 3 [+5V] of LED21 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(132.7500 mm, 43.0500 mm): Pad 3 [+5V] of LED37 on F.Cu
-    @(137.2500 mm, 38.5500 mm): Pad 3 [+5V] of LED38 on F.Cu
+    @(132.7500 mm, 38.5500 mm): Pad 3 [+5V] of LED38 on F.Cu
+    @(137.2500 mm, 34.0500 mm): Pad 3 [+5V] of LED39 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(134.2500 mm, 112.0500 mm): Pad 3 [+5V] of LED23 on F.Cu
+    @(130.5000 mm, 108.3000 mm): Pad 3 [+5V] of LED22 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(138.0000 mm, 115.8000 mm): Pad 3 [+5V] of LED24 on F.Cu
+    @(134.2500 mm, 112.0500 mm): Pad 3 [+5V] of LED23 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(141.7500 mm, 34.0500 mm): Pad 3 [+5V] of LED39 on F.Cu
-    @(137.2500 mm, 38.5500 mm): Pad 3 [+5V] of LED38 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
+    @(138.0000 mm, 115.8000 mm): Pad 3 [+5V] of LED24 on F.Cu
     @(141.7500 mm, 119.5500 mm): Pad 3 [+5V] of LED25 on F.Cu
-    @(138.0000 mm, 115.8000 mm): Pad 3 [+5V] of LED24 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(141.7500 mm, 125.5500 mm): Pad 3 [+5V] of LED26 on F.Cu
@@ -1663,6 +1727,10 @@
     @(18.7500 mm, 45.4500 mm): Pad 1 [GND] of LED52 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(24.7500 mm, 45.4500 mm): Pad 1 [GND] of LED51 on F.Cu
+    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(26.2500 mm, 91.9500 mm): Pad 1 [GND] of LED63 on F.Cu
     @(30.7500 mm, 87.4500 mm): Pad 1 [GND] of LED62 on F.Cu
 [unconnected_items]: Missing connection between items
@@ -1671,68 +1739,72 @@
     @(21.7500 mm, 96.4500 mm): Pad 1 [GND] of LED64 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(30.7500 mm, 87.4500 mm): Pad 1 [GND] of LED62 on F.Cu
-    @(35.2500 mm, 82.9500 mm): Pad 1 [GND] of LED61 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 22.9500 mm): Pad 1 [GND] of LED54 on F.Cu
-    @(39.7500 mm, 19.9500 mm): Pad 1 [GND] of LED3 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 30.4500 mm): Pad 1 [GND] of LED55 on F.Cu
-    @(35.2500 mm, 22.9500 mm): Pad 1 [GND] of LED54 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
-    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
-    @(35.2500 mm, 30.4500 mm): Pad 1 [GND] of LED55 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
-    @(24.7500 mm, 45.4500 mm): Pad 1 [GND] of LED51 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 52.9500 mm): Pad 1 [GND] of LED57 on F.Cu
-    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 60.4500 mm): Pad 1 [GND] of LED58 on F.Cu
-    @(35.2500 mm, 67.9500 mm): Pad 1 [GND] of LED59 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 60.4500 mm): Pad 1 [GND] of LED58 on F.Cu
-    @(35.2500 mm, 52.9500 mm): Pad 1 [GND] of LED57 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 67.9500 mm): Pad 1 [GND] of LED59 on F.Cu
-    @(35.2500 mm, 75.4500 mm): Pad 1 [GND] of LED60 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 75.4500 mm): Pad 1 [GND] of LED60 on F.Cu
-    @(35.2500 mm, 82.9500 mm): Pad 1 [GND] of LED61 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 90.4500 mm): Pad 1 [GND] of LED65 on F.Cu
-    @(30.7500 mm, 87.4500 mm): Pad 1 [GND] of LED62 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 90.4500 mm): Pad 1 [GND] of LED65 on F.Cu
-    @(35.2500 mm, 97.9500 mm): Pad 1 [GND] of LED66 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 97.9500 mm): Pad 1 [GND] of LED66 on F.Cu
-    @(35.2500 mm, 105.4500 mm): Pad 1 [GND] of LED67 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(35.2500 mm, 112.9500 mm): Pad 1 [GND] of LED68 on F.Cu
-    @(35.2500 mm, 105.4500 mm): Pad 1 [GND] of LED67 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(39.7500 mm, 19.9500 mm): Pad 1 [GND] of LED3 on F.Cu
     @(35.2500 mm, 15.4500 mm): Pad 1 [GND] of LED2 on F.Cu
+    @(39.7500 mm, 19.9500 mm): Pad 1 [GND] of LED3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 22.9500 mm): Pad 1 [GND] of LED54 on F.Cu
+    @(35.2500 mm, 30.4500 mm): Pad 1 [GND] of LED55 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 30.4500 mm): Pad 1 [GND] of LED55 on F.Cu
+    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
+    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
+    @(41.2500 mm, 45.4500 mm): Pad 1 [GND] of LED49 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
+    @(35.2500 mm, 52.9500 mm): Pad 1 [GND] of LED57 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 60.4500 mm): Pad 1 [GND] of LED58 on F.Cu
+    @(35.2500 mm, 52.9500 mm): Pad 1 [GND] of LED57 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 67.9500 mm): Pad 1 [GND] of LED59 on F.Cu
+    @(35.2500 mm, 75.4500 mm): Pad 1 [GND] of LED60 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 67.9500 mm): Pad 1 [GND] of LED59 on F.Cu
+    @(35.2500 mm, 60.4500 mm): Pad 1 [GND] of LED58 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 75.4500 mm): Pad 1 [GND] of LED60 on F.Cu
+    @(35.2500 mm, 82.9500 mm): Pad 1 [GND] of LED61 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 82.9500 mm): Pad 1 [GND] of LED61 on F.Cu
+    @(30.7500 mm, 87.4500 mm): Pad 1 [GND] of LED62 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 90.4500 mm): Pad 1 [GND] of LED65 on F.Cu
+    @(30.7500 mm, 87.4500 mm): Pad 1 [GND] of LED62 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 90.4500 mm): Pad 1 [GND] of LED65 on F.Cu
+    @(35.2500 mm, 97.9500 mm): Pad 1 [GND] of LED66 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 90.4500 mm): Pad 1 [GND] of LED65 on F.Cu
+    @(54.0000 mm, 88.8500 mm): Pad 4 [GND] of SW2 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 97.9500 mm): Pad 1 [GND] of LED66 on F.Cu
+    @(35.2500 mm, 105.4500 mm): Pad 1 [GND] of LED67 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(35.2500 mm, 105.4500 mm): Pad 1 [GND] of LED67 on F.Cu
+    @(35.2500 mm, 112.9500 mm): Pad 1 [GND] of LED68 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(39.7500 mm, 19.9500 mm): Pad 1 [GND] of LED3 on F.Cu
+    @(35.2500 mm, 22.9500 mm): Pad 1 [GND] of LED54 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(41.2500 mm, 9.4500 mm): Pad 1 [GND] of LED1 on F.Cu
@@ -1740,7 +1812,7 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(41.2500 mm, 45.4500 mm): Pad 1 [GND] of LED49 on F.Cu
-    @(35.2500 mm, 45.4500 mm): Pad 1 [GND] of LED50 on F.Cu
+    @(47.2500 mm, 45.4500 mm): Pad 1 [GND] of LED48 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(44.2500 mm, 24.4500 mm): Pad 1 [GND] of LED4 on F.Cu
@@ -1748,27 +1820,23 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(47.2500 mm, 45.4500 mm): Pad 1 [GND] of LED48 on F.Cu
-    @(41.2500 mm, 45.4500 mm): Pad 1 [GND] of LED49 on F.Cu
+    @(53.2500 mm, 45.4500 mm): Pad 1 [GND] of LED47 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(47.2500 mm, 45.4500 mm): Pad 1 [GND] of LED48 on F.Cu
-    @(53.2500 mm, 45.4500 mm): Pad 1 [GND] of LED47 on F.Cu
+    @(48.7500 mm, 28.9500 mm): Pad 1 [GND] of LED5 on F.Cu
+    @(53.2500 mm, 33.4500 mm): Pad 1 [GND] of LED6 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(48.7500 mm, 28.9500 mm): Pad 1 [GND] of LED5 on F.Cu
     @(44.2500 mm, 24.4500 mm): Pad 1 [GND] of LED4 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(53.2500 mm, 33.4500 mm): Pad 1 [GND] of LED6 on F.Cu
-    @(48.7500 mm, 28.9500 mm): Pad 1 [GND] of LED5 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
     @(54.0000 mm, 64.8500 mm): Pad 4 [GND] of SW1 on B.Cu
     @(60.0000 mm, 64.8500 mm): Pad 3 [GND] of SW1 on B.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(54.0000 mm, 88.8500 mm): Pad 4 [GND] of SW2 on B.Cu
-    @(35.2500 mm, 90.4500 mm): Pad 1 [GND] of LED65 on F.Cu
+    @(60.0000 mm, 64.8500 mm): Pad 3 [GND] of SW1 on B.Cu
+    @(67.8000 mm, 70.4000 mm): Pad 1 [GND] of GND on B.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(60.0000 mm, 88.8500 mm): Pad 3 [GND] of SW2 on B.Cu
@@ -1776,35 +1844,27 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(65.2500 mm, 45.4500 mm): Pad 1 [GND] of LED7 on F.Cu
+    @(71.2500 mm, 45.4500 mm): Pad 1 [GND] of LED46 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(65.2500 mm, 45.4500 mm): Pad 1 [GND] of LED7 on F.Cu
     @(53.2500 mm, 45.4500 mm): Pad 1 [GND] of LED47 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(67.8000 mm, 70.4000 mm): Pad 1 [GND] of GND on B.Cu
-    @(60.0000 mm, 64.8500 mm): Pad 3 [GND] of SW1 on B.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(67.8000 mm, 70.4000 mm): Pad 1 [GND] of GND on B.Cu
     @(78.7500 mm, 58.9500 mm): Pad 1 [GND] of LED10 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(69.7500 mm, 49.9500 mm): Pad 1 [GND] of LED8 on F.Cu
+    @(71.2500 mm, 45.4500 mm): Pad 1 [GND] of LED46 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(74.2500 mm, 54.4500 mm): Pad 1 [GND] of LED9 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(71.2500 mm, 45.4500 mm): Pad 1 [GND] of LED46 on F.Cu
     @(69.7500 mm, 49.9500 mm): Pad 1 [GND] of LED8 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(71.2500 mm, 45.4500 mm): Pad 1 [GND] of LED46 on F.Cu
-    @(65.2500 mm, 45.4500 mm): Pad 1 [GND] of LED7 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(76.0050 mm, 45.4500 mm): Pad 1 [GND] of LED45 on F.Cu
     @(71.2500 mm, 45.4500 mm): Pad 1 [GND] of LED46 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(78.7500 mm, 58.9500 mm): Pad 1 [GND] of LED10 on F.Cu
-    @(83.2500 mm, 63.4500 mm): Pad 1 [GND] of LED11 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(78.7500 mm, 58.9500 mm): Pad 1 [GND] of LED10 on F.Cu
@@ -1815,40 +1875,44 @@
     @(76.0050 mm, 45.4500 mm): Pad 1 [GND] of LED45 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(80.7450 mm, 45.4500 mm): Pad 1 [GND] of LED44 on F.Cu
-    @(85.5000 mm, 45.4500 mm): Pad 1 [GND] of LED43 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(83.1650 mm, 80.0800 mm): Pad 13 [GND] of U1 on B.Cu
-    @(90.0000 mm, 88.8500 mm): Pad 4 [GND] of SW4 on B.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
     @(83.2500 mm, 63.4500 mm): Pad 1 [GND] of LED11 on F.Cu
-    @(87.7500 mm, 67.9500 mm): Pad 1 [GND] of LED12 on F.Cu
+    @(78.7500 mm, 58.9500 mm): Pad 1 [GND] of LED10 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(85.5000 mm, 45.4500 mm): Pad 1 [GND] of LED43 on F.Cu
     @(90.2550 mm, 45.4500 mm): Pad 1 [GND] of LED42 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(87.7500 mm, 67.9500 mm): Pad 1 [GND] of LED12 on F.Cu
-    @(90.0000 mm, 64.8500 mm): Pad 4 [GND] of SW3 on B.Cu
+    @(85.5000 mm, 45.4500 mm): Pad 1 [GND] of LED43 on F.Cu
+    @(80.7450 mm, 45.4500 mm): Pad 1 [GND] of LED44 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(87.7500 mm, 67.9500 mm): Pad 1 [GND] of LED12 on F.Cu
-    @(92.2500 mm, 72.4500 mm): Pad 1 [GND] of LED13 on F.Cu
+    @(83.2500 mm, 63.4500 mm): Pad 1 [GND] of LED11 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.0000 mm, 64.8500 mm): Pad 4 [GND] of SW3 on B.Cu
+    @(87.7500 mm, 67.9500 mm): Pad 1 [GND] of LED12 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(90.0000 mm, 88.8500 mm): Pad 4 [GND] of SW4 on B.Cu
     @(96.0000 mm, 88.8500 mm): Pad 3 [GND] of SW4 on B.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(90.0000 mm, 88.8500 mm): Pad 4 [GND] of SW4 on B.Cu
+    @(83.1650 mm, 80.0800 mm): Pad 13 [GND] of U1 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(90.2550 mm, 45.4500 mm): Pad 1 [GND] of LED42 on F.Cu
+    @(94.9950 mm, 45.4500 mm): Pad 1 [GND] of LED41 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(92.2500 mm, 72.4500 mm): Pad 1 [GND] of LED13 on F.Cu
     @(96.7500 mm, 76.9500 mm): Pad 1 [GND] of LED14 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(94.9950 mm, 45.4500 mm): Pad 1 [GND] of LED41 on F.Cu
-    @(90.2550 mm, 45.4500 mm): Pad 1 [GND] of LED42 on F.Cu
+    @(92.2500 mm, 72.4500 mm): Pad 1 [GND] of LED13 on F.Cu
+    @(87.7500 mm, 67.9500 mm): Pad 1 [GND] of LED12 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(94.9950 mm, 45.4500 mm): Pad 1 [GND] of LED41 on F.Cu
@@ -1859,88 +1923,88 @@
     @(90.0000 mm, 64.8500 mm): Pad 4 [GND] of SW3 on B.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(101.2500 mm, 81.4500 mm): Pad 1 [GND] of LED15 on F.Cu
-    @(96.7500 mm, 76.9500 mm): Pad 1 [GND] of LED14 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(101.2500 mm, 81.4500 mm): Pad 1 [GND] of LED15 on F.Cu
     @(96.0000 mm, 88.8500 mm): Pad 3 [GND] of SW4 on B.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(105.7500 mm, 85.9500 mm): Pad 1 [GND] of LED16 on F.Cu
-    @(110.2500 mm, 90.4500 mm): Pad 1 [GND] of LED17 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(105.7500 mm, 85.9500 mm): Pad 1 [GND] of LED16 on F.Cu
     @(101.2500 mm, 81.4500 mm): Pad 1 [GND] of LED15 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(110.2500 mm, 55.9500 mm): Pad 1 [GND] of LED33 on F.Cu
+    @(96.7500 mm, 76.9500 mm): Pad 1 [GND] of LED14 on F.Cu
+    @(101.2500 mm, 81.4500 mm): Pad 1 [GND] of LED15 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(99.7500 mm, 45.4500 mm): Pad 1 [GND] of LED40 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(110.2500 mm, 90.4500 mm): Pad 1 [GND] of LED17 on F.Cu
-    @(114.0000 mm, 94.2000 mm): Pad 1 [GND] of LED18 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(114.0000 mm, 94.2000 mm): Pad 1 [GND] of LED18 on F.Cu
-    @(117.7500 mm, 97.9500 mm): Pad 1 [GND] of LED19 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(114.7500 mm, 60.4500 mm): Pad 1 [GND] of LED32 on F.Cu
-    @(117.7500 mm, 57.4500 mm): Pad 1 [GND] of LED34 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(114.7500 mm, 60.4500 mm): Pad 1 [GND] of LED32 on F.Cu
     @(110.2500 mm, 55.9500 mm): Pad 1 [GND] of LED33 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(114.7500 mm, 81.4500 mm): Pad 1 [GND] of LED31 on F.Cu
+    @(101.2500 mm, 81.4500 mm): Pad 1 [GND] of LED15 on F.Cu
+    @(105.7500 mm, 85.9500 mm): Pad 1 [GND] of LED16 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.2500 mm, 55.9500 mm): Pad 1 [GND] of LED33 on F.Cu
+    @(114.7500 mm, 60.4500 mm): Pad 1 [GND] of LED32 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.2500 mm, 90.4500 mm): Pad 1 [GND] of LED17 on F.Cu
+    @(105.7500 mm, 85.9500 mm): Pad 1 [GND] of LED16 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.2500 mm, 90.4500 mm): Pad 1 [GND] of LED17 on F.Cu
     @(114.7500 mm, 85.9500 mm): Pad 1 [GND] of LED30 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(114.7500 mm, 85.9500 mm): Pad 1 [GND] of LED30 on F.Cu
+    @(114.0000 mm, 94.2000 mm): Pad 1 [GND] of LED18 on F.Cu
     @(110.2500 mm, 90.4500 mm): Pad 1 [GND] of LED17 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(114.7500 mm, 60.4500 mm): Pad 1 [GND] of LED32 on F.Cu
     @(117.7500 mm, 57.4500 mm): Pad 1 [GND] of LED34 on F.Cu
-    @(122.2500 mm, 52.9500 mm): Pad 1 [GND] of LED35 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(121.5000 mm, 101.7000 mm): Pad 1 [GND] of LED20 on F.Cu
-    @(125.2500 mm, 105.4500 mm): Pad 1 [GND] of LED21 on F.Cu
+    @(114.7500 mm, 85.9500 mm): Pad 1 [GND] of LED30 on F.Cu
+    @(114.7500 mm, 81.4500 mm): Pad 1 [GND] of LED31 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(117.7500 mm, 97.9500 mm): Pad 1 [GND] of LED19 on F.Cu
+    @(114.0000 mm, 94.2000 mm): Pad 1 [GND] of LED18 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(121.5000 mm, 101.7000 mm): Pad 1 [GND] of LED20 on F.Cu
     @(117.7500 mm, 97.9500 mm): Pad 1 [GND] of LED19 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
+    @(122.2500 mm, 52.9500 mm): Pad 1 [GND] of LED35 on F.Cu
+    @(117.7500 mm, 57.4500 mm): Pad 1 [GND] of LED34 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(125.2500 mm, 105.4500 mm): Pad 1 [GND] of LED21 on F.Cu
+    @(121.5000 mm, 101.7000 mm): Pad 1 [GND] of LED20 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
     @(125.2500 mm, 105.4500 mm): Pad 1 [GND] of LED21 on F.Cu
     @(129.0000 mm, 109.2000 mm): Pad 1 [GND] of LED22 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(126.7500 mm, 43.9500 mm): Pad 1 [GND] of LED37 on F.Cu
+    @(126.7500 mm, 48.4500 mm): Pad 1 [GND] of LED36 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(126.7500 mm, 48.4500 mm): Pad 1 [GND] of LED36 on F.Cu
     @(122.2500 mm, 52.9500 mm): Pad 1 [GND] of LED35 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(131.2500 mm, 43.9500 mm): Pad 1 [GND] of LED37 on F.Cu
-    @(135.7500 mm, 39.4500 mm): Pad 1 [GND] of LED38 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(131.2500 mm, 43.9500 mm): Pad 1 [GND] of LED37 on F.Cu
-    @(126.7500 mm, 48.4500 mm): Pad 1 [GND] of LED36 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(132.7500 mm, 112.9500 mm): Pad 1 [GND] of LED23 on F.Cu
     @(129.0000 mm, 109.2000 mm): Pad 1 [GND] of LED22 on F.Cu
+    @(132.7500 mm, 112.9500 mm): Pad 1 [GND] of LED23 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(131.2500 mm, 39.4500 mm): Pad 1 [GND] of LED38 on F.Cu
+    @(126.7500 mm, 43.9500 mm): Pad 1 [GND] of LED37 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(135.7500 mm, 34.9500 mm): Pad 1 [GND] of LED39 on F.Cu
+    @(131.2500 mm, 39.4500 mm): Pad 1 [GND] of LED38 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(136.5000 mm, 116.7000 mm): Pad 1 [GND] of LED24 on F.Cu
     @(132.7500 mm, 112.9500 mm): Pad 1 [GND] of LED23 on F.Cu
-[unconnected_items]: Missing connection between items
-    Local override; error
-    @(140.2500 mm, 34.9500 mm): Pad 1 [GND] of LED39 on F.Cu
-    @(135.7500 mm, 39.4500 mm): Pad 1 [GND] of LED38 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(140.2500 mm, 120.4500 mm): Pad 1 [GND] of LED25 on F.Cu
@@ -2096,19 +2160,19 @@
 [unconnected_items]: Missing connection between items
     Local override; error
     @(126.7500 mm, 47.5500 mm): Pad 4 [Net-(LED36-DO)] of LED36 on F.Cu
-    @(132.7500 mm, 43.9500 mm): Pad 2 [Net-(LED36-DO)] of LED37 on F.Cu
+    @(128.2500 mm, 43.9500 mm): Pad 2 [Net-(LED36-DO)] of LED37 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(131.2500 mm, 43.0500 mm): Pad 4 [Net-(LED37-DO)] of LED37 on F.Cu
-    @(137.2500 mm, 39.4500 mm): Pad 2 [Net-(LED37-DO)] of LED38 on F.Cu
+    @(126.7500 mm, 43.0500 mm): Pad 4 [Net-(LED37-DO)] of LED37 on F.Cu
+    @(132.7500 mm, 39.4500 mm): Pad 2 [Net-(LED37-DO)] of LED38 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
-    @(135.7500 mm, 38.5500 mm): Pad 4 [Net-(LED38-DO)] of LED38 on F.Cu
-    @(141.7500 mm, 34.9500 mm): Pad 2 [Net-(LED38-DO)] of LED39 on F.Cu
+    @(131.2500 mm, 38.5500 mm): Pad 4 [Net-(LED38-DO)] of LED38 on F.Cu
+    @(137.2500 mm, 34.9500 mm): Pad 2 [Net-(LED38-DO)] of LED39 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(101.2500 mm, 45.4500 mm): Pad 2 [Net-(LED39-DO)] of LED40 on F.Cu
-    @(140.2500 mm, 34.0500 mm): Pad 4 [Net-(LED39-DO)] of LED39 on F.Cu
+    @(135.7500 mm, 34.0500 mm): Pad 4 [Net-(LED39-DO)] of LED39 on F.Cu
 [unconnected_items]: Missing connection between items
     Local override; error
     @(20.2500 mm, 45.4500 mm): Pad 2 [Net-(LED51-DO)] of LED52 on F.Cu

@@ -34,10 +34,10 @@ index,ref,station,name,x_mm,y_mm,rotation
 32,LED33,production-way,Production Way–University,111.0,55.5,0
 33,LED34,burquitlam,Burquitlam,118.5,57.0,45
 34,LED35,moody-centre,Moody Centre,123.0,52.5,45
-35,LED36,inlet-centre,Inlet Centre,127.5,48.0,45
-36,LED37,coquitlam-central,Coquitlam Central,132.0,43.5,45
-37,LED38,lincoln,Lincoln,136.5,39.0,45
-38,LED39,lafarge,Lafarge Lake–Douglas,141.0,34.5,180
+35,LED36,inlet-centre,Inlet Centre,127.5,48.0,90
+36,LED37,coquitlam-central,Coquitlam Central,127.5,43.5,45
+37,LED38,lincoln,Lincoln,132.0,39.0,45
+38,LED39,lafarge,Lafarge Lake–Douglas,136.5,34.5,180
 39,LED40,lake-city-way,Lake City Way,100.5,45.0,180
 40,LED41,sperling,Sperling–Burnaby Lake,95.745,45.0,180
 41,LED42,holdom,Holdom,91.005,45.0,180
