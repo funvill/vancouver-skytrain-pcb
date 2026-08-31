@@ -44,13 +44,26 @@ idempotent: it tracks every block it writes in
 writing fresh ones, so re-running after an edit to `vancouver.json` never
 leaves stale or duplicated art behind.
 
-## Station labels + land/water art
+## Station labels, route lines, and land/water art
 
-`export_art.py` writes three kinds of native KiCad graphics directly into
-the `.kicad_pcb` (not through svg2shenzhen — that path is for hand-drawn
-art; ours is generated straight from the same station/geo data as
-everything else):
+`export_art.py` writes native KiCad graphics directly into the `.kicad_pcb`
+(not through svg2shenzhen — that path is for hand-drawn art; ours is
+generated straight from the same station/geo data as everything else),
+styled after TransLink's own "Future Rapid Transit Network" map — one water
+colour, filled parks, labelled rivers/municipalities, and a distinct look
+for future/under-construction line segments:
 
+- **Route lines** (`route_blocks`) — every line segment from
+  `vancouver.json`'s `lines` as an F.SilkS `gr_line`, 1.0 mm wide. A segment
+  with either endpoint `future: true` (Broadway Extension, Surrey–Langley
+  Extension) is drawn as real **dashed segments** (`dash_points()`) instead
+  of one solid line — matching the reference map's "future line" styling.
+  Important: KiCad's `(stroke (type dash))` line-*style* property is an
+  **editor display hint only** — it does not survive to plotted/fab output
+  (SVG export, 3D render, gerbers all flatten it to solid), confirmed by
+  testing both here. A genuinely dashed silkscreen line has to be built
+  from literal short solid segments with real gaps, which is what
+  `dash_points()` does.
 - **Station names** — `gr_text` on F.SilkS, same position/rotation math as
   the SVG preview (`citymap.label_box`). Names longer than 24 characters
   automatically fall back to their `short` form (only "Great Northern
@@ -62,9 +75,19 @@ everything else):
   black board — the same technique v1 used
   (`v1/input/natrual/natrual/map.kicad_pcb`), generated instead of
   hand-drawn.
-- **Land** (parks, islands) — thin F.SilkS **outline only, no fill**: the
-  board substrate itself *is* the land, so these just need a boundary to
-  read against the black board.
+- **Land — islands**: thin F.SilkS outline only, no fill (the board
+  substrate itself *is* the land, so these just need a boundary).
+  **Land — parks**: outline *plus* a 45° diagonal hatch fill
+  (`citymap.hatch_fill()`, 1.6 mm spacing) — the single-ink silkscreen
+  stand-in for the reference map's solid green park colour. `hatch_fill()`
+  is a general scan-line polygon fill (even-odd rule, works on concave
+  shapes) so it's reusable for any future city's parks too.
+- **Annotations** (`annotation_blocks`) — small F.SilkS text for
+  municipality names (VANCOUVER, BURNABY, SURREY, RICHMOND, COQUITLAM) and
+  river labels (NORTH ARM FRASER RIVER, SOUTH ARM FRASER RIVER, ENGLISH
+  BAY, BURRARD INLET), driven by `vancouver.json`'s `annotations` list —
+  the equivalent of the reference map's grey place names printed over the
+  water/land.
 
 ### Keeping copper art DRC-clean: `citymap.prepared_geo`
 

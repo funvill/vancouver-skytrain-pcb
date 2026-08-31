@@ -56,17 +56,47 @@ def poly_block(kind, points, layer, fill, key, width=0.1):
             f"(uuid \"{art_uuid(key)}\")\n\t)")
 
 
-def text_block(text, x, y, angle, anchor, layer, key):
+def line_block(p1, p2, layer, key, width=1.0):
+    return (f"(gr_line\n\t\t(start {p1[0]:.3f} {p1[1]:.3f})\n\t\t"
+            f"(end {p2[0]:.3f} {p2[1]:.3f})\n\t\t(stroke\n\t\t\t"
+            f"(width {width})\n\t\t\t(type solid)\n\t\t)\n\t\t"
+            f"(layer \"{layer}\")\n\t\t(uuid \"{art_uuid(key)}\")\n\t)")
+
+
+def dash_points(p1, p2, dash=2.2, gap=1.4):
+    """(a, b) endpoint pairs for real physical dashes along p1->p2 - a
+    stroke "line style" of dash/dot is a KiCad editor display hint only
+    and is dropped on plot/fab/3D-render output, so a genuinely dashed
+    silkscreen line has to be built from real solid segments with gaps."""
+    ln = math.hypot(p2[0] - p1[0], p2[1] - p1[1])
+    if ln < 1e-6:
+        return []
+    ux, uy = (p2[0] - p1[0]) / ln, (p2[1] - p1[1]) / ln
+    period = dash + gap
+    out = []
+    d = 0.0
+    while d < ln:
+        a = (p1[0] + ux * d, p1[1] + uy * d)
+        end = min(d + dash, ln)
+        b = (p1[0] + ux * end, p1[1] + uy * end)
+        out.append((a, b))
+        d += period
+    return out
+
+
+def text_block(text, x, y, angle, anchor, layer, key, size=None):
     justify = ""
     if anchor == "start":
         justify = "\n\t\t\t(justify left)"
     elif anchor == "end":
         justify = "\n\t\t\t(justify right)"
     text = text.replace('"', "'")
+    h = size if size is not None else TEXT_H
+    thickness = max(0.12, h * (TEXT_THICKNESS / TEXT_H))
     return (f'(gr_text "{text}"\n\t\t(at {x:.3f} {y:.3f} {angle % 360:.1f})\n'
             f'\t\t(layer "{layer}")\n\t\t(uuid "{art_uuid(key)}")\n\t\t'
-            f'(effects\n\t\t\t(font\n\t\t\t\t(size {TEXT_H} {TEXT_H})\n'
-            f'\t\t\t\t(thickness {TEXT_THICKNESS})\n\t\t\t){justify}\n\t\t)\n\t)')
+            f'(effects\n\t\t\t(font\n\t\t\t\t(size {h} {h})\n'
+            f'\t\t\t\t(thickness {thickness:.3f})\n\t\t\t){justify}\n\t\t)\n\t)')
 
 
 def avoid_points(city, scale):
@@ -118,16 +148,60 @@ def water_blocks(city, scale, geo=None):
     return blocks
 
 
+PARK_HATCH_SPACING = 1.6  # mm between hatch lines, matched to the 150mm board
+
+
 def land_outline_blocks(city, scale, geo=None):
-    """Islands and parks as thin white silkscreen outlines only (no fill -
-    the board substrate itself is the land)."""
+    """Islands: thin white silkscreen outline only (no fill - the board
+    substrate itself is the land). Parks: outline + a diagonal hatch fill,
+    the single-ink stand-in for the reference map's solid green park areas
+    (see TransLink's Future Rapid Transit Network map)."""
     geo = geo if geo is not None else citymap.prepared_geo(
         city, scale, avoid_points(city, scale))
     blocks = []
     for g in geo:
-        if g["type"] in ("island", "park"):
-            blocks.append(poly_block("gr_poly", g["points"], "F.SilkS",
-                                     False, f"land:{g['name']}", width=0.15))
+        if g["type"] not in ("island", "park"):
+            continue
+        blocks.append(poly_block("gr_poly", g["points"], "F.SilkS", False,
+                                 f"land:{g['name']}", width=0.15))
+        if g["type"] == "park":
+            hatch = citymap.hatch_fill(g["points"], PARK_HATCH_SPACING)
+            for i, (a, b) in enumerate(hatch):
+                blocks.append(line_block(a, b, "F.SilkS",
+                                         f"hatch:{g['name']}:{i}", width=0.12))
+    return blocks
+
+
+def route_blocks(city, scale):
+    """The transit lines themselves, as F.SilkS strokes between adjacent
+    stations - solid for the current network, dashed for segments not
+    built yet (either endpoint has future=true), mirroring how the
+    official map distinguishes future lines from the current network."""
+    blocks = []
+    for i, (line_id, p1, p2, a, b) in enumerate(citymap.segments(city)):
+        future = city.stations[a].future or city.stations[b].future
+        p1s = (p1[0] * scale, p1[1] * scale)
+        p2s = (p2[0] * scale, p2[1] * scale)
+        if future:
+            for j, (da, db) in enumerate(dash_points(p1s, p2s)):
+                blocks.append(line_block(da, db, "F.SilkS",
+                                         f"route:{i}:{a}:{b}:{j}", width=1.0))
+        else:
+            blocks.append(line_block(p1s, p2s, "F.SilkS",
+                                     f"route:{i}:{a}:{b}", width=1.0))
+    return blocks
+
+
+def annotation_blocks(city, scale):
+    """River/municipality context labels (vancouver.json's "annotations"
+    list) - the equivalent of the reference map's small gray place names
+    and "NORTH ARM FRASER RIVER" style water labels."""
+    blocks = []
+    for i, a in enumerate(city.annotations):
+        x, y = a["x"] * scale, a["y"] * scale
+        blocks.append(text_block(a["text"], x, y, a.get("angle", 0), "start",
+                                 "F.SilkS", f"annotation:{i}:{a['text']}",
+                                 size=a.get("size", 1.4)))
     return blocks
 
 
@@ -163,9 +237,11 @@ def main():
     city = citymap.load(args.data)
     geo = citymap.prepared_geo(city, args.scale, avoid_points(city, args.scale))
     water = water_blocks(city, args.scale, geo)
+    routes = route_blocks(city, args.scale)
     land = land_outline_blocks(city, args.scale, geo)
     labels = label_blocks(city, args.scale)
-    blocks = water + land + labels
+    annotations = annotation_blocks(city, args.scale)
+    blocks = water + routes + land + labels + annotations
     new_uuids = set()
     for b in blocks:
         new_uuids.add(b[b.index('(uuid "') + 7: b.index('"', b.index('(uuid "') + 7)])
@@ -185,8 +261,9 @@ def main():
     save_manifest(manifest_path, new_uuids)
     print(f"removed {len(top_blocks) - len(kept)} stale art block(s), "
           f"wrote {len(blocks)} art block(s) "
-          f"({len(water)} water, {len(land)} land outline, "
-          f"{len(labels)} labels)")
+          f"({len(water)} water, {len(routes)} route segments, "
+          f"{len(land)} land outline/hatch, {len(labels)} labels, "
+          f"{len(annotations)} annotations)")
 
 
 if __name__ == "__main__":

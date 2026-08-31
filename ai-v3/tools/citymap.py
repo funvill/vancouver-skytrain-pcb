@@ -47,6 +47,7 @@ class City:
     stations: dict  # id -> Station
     extras: list    # list of Station (SeaBus etc.)
     geo: list       # raw geo dicts
+    annotations: list = field(default_factory=list)  # river/municipality labels
 
 
 def load(path):
@@ -69,7 +70,7 @@ def load(path):
         extras.append(Station(id=e["id"], name=e["name"], x=e["x"], y=e["y"],
                               short=e.get("short", e["name"]), label=label))
     return City(raw["city"], raw["canvas_mm"], lines, stations, extras,
-                raw.get("geo", []))
+                raw.get("geo", []), raw.get("annotations", []))
 
 
 def led_count(city):
@@ -253,6 +254,41 @@ def poly_point_min_dist(poly, p, closed=True):
     edges = n if closed else n - 1
     return min(point_seg_dist(p, poly[i], poly[(i + 1) % n])
               for i in range(edges))
+
+
+def hatch_fill(poly, spacing, angle_deg=45, closed=True):
+    """Parallel scan-line hatch segments filling `poly` (even-odd rule, so
+    concave shapes work too). Returns a list of (p1, p2) segment pairs -
+    the single-ink-silkscreen stand-in for a filled color area (parks).
+    """
+    ang = math.radians(angle_deg)
+    ux, uy = math.cos(ang), math.sin(ang)   # hatch line direction
+    nx, ny = -uy, ux                        # scan axis (perpendicular)
+    proj = [x * nx + y * ny for x, y in poly]
+    lo, hi = min(proj), max(proj)
+    n = len(poly)
+    edges = n if closed else n - 1
+    segs = []
+    k = math.floor(lo / spacing)
+    d = k * spacing
+    while d <= hi:
+        hits = []
+        for i in range(edges):
+            (x1, y1), (x2, y2) = poly[i], poly[(i + 1) % n]
+            p1n, p2n = x1 * nx + y1 * ny, x2 * nx + y2 * ny
+            if p1n == p2n:
+                continue
+            if min(p1n, p2n) <= d <= max(p1n, p2n):
+                t = (d - p1n) / (p2n - p1n)
+                hx, hy = x1 + t * (x2 - x1), y1 + t * (y2 - y1)
+                hits.append((hx * ux + hy * uy, hx, hy))
+        hits.sort()
+        for i in range(0, len(hits) - 1, 2):
+            a, b = hits[i], hits[i + 1]
+            if b[0] - a[0] > 1e-6:  # drop degenerate corner-grazing hits
+                segs.append(((a[1], a[2]), (b[1], b[2])))
+        d += spacing
+    return segs
 
 
 def point_in_polygon(p, poly):

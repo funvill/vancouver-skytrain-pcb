@@ -1403,5 +1403,70 @@
     "aberdeen",
     "lansdowne",
     "richmond-brighouse"
+  ],
+  "annotations": [
+    {
+      "text": "VANCOUVER",
+      "x": 4,
+      "y": 44,
+      "angle": 0,
+      "size": 2.0
+    },
+    {
+      "text": "BURNABY",
+      "x": 47,
+      "y": 51,
+      "angle": 0,
+      "size": 2.0
+    },
+    {
+      "text": "SURREY",
+      "x": 82,
+      "y": 83,
+      "angle": 0,
+      "size": 2.0
+    },
+    {
+      "text": "RICHMOND",
+      "x": 27.5,
+      "y": 62,
+      "angle": -45,
+      "size": 1.6
+    },
+    {
+      "text": "COQUITLAM",
+      "x": 76,
+      "y": 20,
+      "angle": 0,
+      "size": 1.6
+    },
+    {
+      "text": "NORTH ARM FRASER RIVER",
+      "x": 1,
+      "y": 56.3,
+      "angle": -1,
+      "size": 1.3
+    },
+    {
+      "text": "SOUTH ARM FRASER RIVER",
+      "x": 12,
+      "y": 81.3,
+      "angle": -8,
+      "size": 1.3
+    },
+    {
+      "text": "ENGLISH BAY",
+      "x": 1,
+      "y": 12,
+      "angle": 0,
+      "size": 1.5
+    },
+    {
+      "text": "BURRARD INLET",
+      "x": 55,
+      "y": 5,
+      "angle": 0,
+      "size": 1.6
+    }
   ]
 }
