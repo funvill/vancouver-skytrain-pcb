@@ -2,6 +2,7 @@
 (station_coords_final.py's STATIONS table below) and PDF-traced geo
 shapes (geo_canvas.json). Run once; output is hand-reviewed afterward."""
 import json
+import math
 
 PAGE_W, PAGE_H = 514.8, 406.99
 
@@ -92,15 +93,32 @@ def get(sid):
 
 CANVAS_XY = {sid: c(*xy) for sid, xy in PDF_XY.items()}
 
-vcc = CANVAS_XY["vcc-clark"]
+# The Broadway corridor (the real Millennium trunk VCC-Clark..Lake City Way,
+# plus its future westward extension to Arbutus) is one straight street in
+# reality - keep it a single flat line on the board too, at the y of
+# Broadway-City Hall (its interchange point with the Canada Line, which
+# stays wherever the Canada Line column puts it). The real-traced portion
+# is already flat in the source PDF; this just re-levels the whole row to
+# the interchange's y instead of letting it slope down toward it.
 bch = CANVAS_XY["broadway-city-hall"]
-step1 = ((bch[0] - vcc[0]) / 3, (bch[1] - vcc[1]) / 3)
-CANVAS_XY["great-northern-way"] = (round(vcc[0] + step1[0], 2), round(vcc[1] + step1[1], 2))
-CANVAS_XY["mount-pleasant"] = (round(vcc[0] + 2 * step1[0], 2), round(vcc[1] + 2 * step1[1], 2))
-step2 = step1  # continue the same per-step delta past Broadway-City Hall
-CANVAS_XY["oak-vgh"] = (round(bch[0] + step2[0], 2), round(bch[1] + step2[1], 2))
-CANVAS_XY["south-granville"] = (round(bch[0] + 2 * step2[0], 2), round(bch[1] + 2 * step2[1], 2))
-CANVAS_XY["arbutus"] = (round(bch[0] + 3 * step2[0], 2), round(bch[1] + 3 * step2[1], 2))
+broadway_row = ["renfrew", "rupert", "gilmore", "brentwood", "holdom",
+                "sperling", "lake-city-way"]
+for sid in broadway_row:
+    CANVAS_XY[sid] = (CANVAS_XY[sid][0], bch[1])
+
+vcc = CANVAS_XY["vcc-clark"]
+CANVAS_XY["vcc-clark"] = (vcc[0], bch[1])
+# Arbutus..VCC-Clark is one continuous 6-gap sequence centred on
+# Broadway-City Hall (a real, traced, fixed point on the Canada Line
+# column) at gap 3 and VCC-Clark (also real/fixed) at gap 6 - a single
+# step size keeps every gap equal instead of two independently-anchored
+# half-chains that can overlap.
+step_x = (vcc[0] - bch[0]) / 3
+CANVAS_XY["mount-pleasant"] = (round(bch[0] + step_x, 2), bch[1])
+CANVAS_XY["great-northern-way"] = (round(bch[0] + 2 * step_x, 2), bch[1])
+CANVAS_XY["oak-vgh"] = (round(bch[0] - step_x, 2), bch[1])
+CANVAS_XY["south-granville"] = (round(bch[0] - 2 * step_x, 2), bch[1])
+CANVAS_XY["arbutus"] = (round(bch[0] - 3 * step_x, 2), bch[1])
 
 kg = CANVAS_XY["king-george"]
 diag = [(2.1, 2.1)] * 4
@@ -115,8 +133,57 @@ for sid, (dx, dy) in zip(langley_ext, vert):
     pt = (round(pt[0] + dx, 2), round(pt[1] + dy, 2))
     CANVAS_XY[sid] = pt
 
+def point_in_ring(x, y, ring):
+    inside = False
+    x1, y1 = ring[-1]
+    for x2, y2 in ring:
+        if (y1 > y) != (y2 > y):
+            xin = x1 + (y - y1) * (x2 - x1) / (y2 - y1)
+            if x < xin:
+                inside = not inside
+        x1, y1 = x2, y2
+    return inside
+
+
 wf = CANVAS_XY["waterfront"]
-CANVAS_XY["seabus"] = (wf[0], max(MARGIN, wf[1] - 8.0))  # north of Waterfront, unlabelled on this PDF
+br = CANVAS_XY["burrard"]
+water_ring = json.load(open("geo_canvas.json", encoding="utf-8"))["water"][0]
+# SeaBus sits right at Waterfront in real life; the board needs it visibly
+# separate and on the land side of the traced coast (not floating in the
+# water fill), so grid-search for the closest land point that clears a
+# safe LED pitch from both Waterfront and Burrard.
+MIN_D = 3.0
+best = None
+x0, x1 = int((wf[0] - 6) * 5), int((wf[0] + 2) * 5)
+y0, y1 = int((wf[1] - 8) * 5), int((wf[1] + 6) * 5)
+for xi in range(x0, x1):
+    for yi in range(y0, y1):
+        x, y = xi / 5, yi / 5
+        if point_in_ring(x, y, water_ring):
+            continue
+        dwf = math.hypot(x - wf[0], y - wf[1])
+        dbr = math.hypot(x - br[0], y - br[1])
+        if dwf >= MIN_D and dbr >= MIN_D:
+            score = dwf + dbr
+            if best is None or score < best[0]:
+                best = (score, x, y)
+CANVAS_XY["seabus"] = (round(best[1], 2), round(best[2], 2))
+
+# Waterfront/Burrard/Granville trace closer together in the real map than
+# a 2.5mm LED pitch can physically be soldered (~2.4mm as traced) - spread
+# them apart by a fixed physical margin, keeping their real line direction
+# exactly (this is the one place real proportions are knowingly broken,
+# and only by the minimum needed to be buildable).
+wf, br, gr = CANVAS_XY["waterfront"], CANVAS_XY["burrard"], CANVAS_XY["granville"]
+def push(a, b, min_d=2.8):
+    d = math.hypot(b[0] - a[0], b[1] - a[1])
+    if d >= min_d:
+        return b
+    ux, uy = (b[0] - a[0]) / d, (b[1] - a[1]) / d
+    return (round(a[0] + ux * min_d, 2), round(a[1] + uy * min_d, 2))
+br = push(wf, br)
+gr = push(br, gr)
+CANVAS_XY["burrard"], CANVAS_XY["granville"] = br, gr
 
 for sid, (x, y) in CANVAS_XY.items():
     if sid in d["stations"]:

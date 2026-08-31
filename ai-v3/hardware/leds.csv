@@ -1,8 +1,8 @@
 index,ref,station,name,x_mm,y_mm,rotation
-0,LED1,seabus,SeaBus,36.27,6.33,270
+0,LED1,seabus,SeaBus,31.8,19.8,0
 1,LED2,waterfront,Waterfront,36.27,18.33,270
-2,LED3,burrard,Burrard,35.805,22.515,270
-3,LED4,granville,Granville,35.325,26.685,315
+2,LED3,burrard,Burrard,35.805,22.5,270
+3,LED4,granville,Granville,35.325,26.67,315
 4,LED5,stadium,Stadium–Chinatown,41.205,30.87,315
 5,LED6,main-street,Main Street–Science World,46.965,36.27,315
 6,LED7,commercial-broadway,Commercial–Broadway,52.71,41.655,270
@@ -38,20 +38,20 @@ index,ref,station,name,x_mm,y_mm,rotation
 36,LED37,coquitlam-central,Coquitlam Central,138.135,28.23,45
 37,LED38,lincoln,Lincoln,141.585,21.555,90
 38,LED39,lafarge,Lafarge Lake–Douglas,141.585,15.735,225
-39,LED40,lake-city-way,Lake City Way,102.105,41.655,180
-40,LED41,sperling,Sperling–Burnaby Lake,95.025,41.655,180
-41,LED42,holdom,Holdom,87.975,41.655,180
-42,LED43,brentwood,Brentwood Town Centre,80.925,41.655,180
-43,LED44,gilmore,Gilmore,73.875,41.655,180
-44,LED45,rupert,Rupert,66.825,41.655,180
-45,LED46,renfrew,Renfrew,59.775,41.655,180
-46,LED47,vcc-clark,VCC–Clark,45.645,41.655,180
-47,LED48,great-northern-way,Great Northern Way–Emily Carr,41.43,42.855,180
-48,LED49,mount-pleasant,Mount Pleasant,37.215,44.04,180
+39,LED40,lake-city-way,Lake City Way,102.105,45.24,180
+40,LED41,sperling,Sperling–Burnaby Lake,95.025,45.24,180
+41,LED42,holdom,Holdom,87.975,45.24,180
+42,LED43,brentwood,Brentwood Town Centre,80.925,45.24,180
+43,LED44,gilmore,Gilmore,73.875,45.24,180
+44,LED45,rupert,Rupert,66.825,45.24,180
+45,LED46,renfrew,Renfrew,59.775,45.24,180
+46,LED47,vcc-clark,VCC–Clark,45.645,45.24,180
+47,LED48,great-northern-way,Great Northern Way–Emily Carr,41.43,45.24,180
+48,LED49,mount-pleasant,Mount Pleasant,37.215,45.24,180
 49,LED50,broadway-city-hall,Broadway–City Hall,33.0,45.24,180
-50,LED51,oak-vgh,Oak–VGH,28.785,46.44,180
-51,LED52,south-granville,South Granville,24.57,47.625,180
-52,LED53,arbutus,Arbutus,20.355,48.825,90
+50,LED51,oak-vgh,Oak–VGH,28.785,45.24,180
+51,LED52,south-granville,South Granville,24.57,45.24,180
+52,LED53,arbutus,Arbutus,20.355,45.24,45
 53,LED54,vancouver-city-centre,Vancouver City Centre,29.13,25.485,270
 54,LED55,yaletown,Yaletown–Roundhouse,30.285,31.65,315
 55,LED56,olympic-village,Olympic Village,33.0,37.875,270

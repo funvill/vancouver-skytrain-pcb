@@ -13,10 +13,24 @@ land_union = unary_union(land_polys)
 
 board = box(0, 0, PAGE_W, PAGE_H)
 water = board.difference(land_union)
-water = water.simplify(2.0, preserve_topology=True)
 
 MARGIN = 4.0  # must match build_vancouver_json.py's MARGIN
 SCALE = (100 - 2 * MARGIN) / PAGE_W  # uniform, matches build_vancouver_json.py
+
+
+def canvas_to_pdf(cx, cy):
+    return ((cx - MARGIN) / SCALE, (cy - MARGIN) / SCALE)
+
+
+# The source PDF only details the coastline near stations - west of the
+# Cambie corridor (Point Grey / English Bay / Georgia Strait, no stations
+# there) it's just flat land colour, leaving the board's left edge landlocked
+# for a stretch. Real Vancouver has open water the whole way down that
+# coast, so patch a strip in to connect the two traced water pieces along
+# the left margin instead of leaving a gap.
+west_strip = box(*canvas_to_pdf(4, 18), *canvas_to_pdf(12, 48))
+water = unary_union([water, west_strip])
+water = water.simplify(2.0, preserve_topology=True)
 
 
 def scale(pt):

@@ -23,8 +23,14 @@ def offset_for(angle, anchor, mag=1.8):
     return round(dx, 2), round(dy, 2)
 
 
+def find_station(city, sid):
+    if sid in city.stations:
+        return city.stations[sid]
+    return next(e for e in city.extras if e.id == sid)
+
+
 def best_label(city, sid, current_others_count):
-    st = city.stations[sid]
+    st = find_station(city, sid)
     orig = dict(st.label)
     best = None
     # angles outside [-90, 90] render the glyphs upside-down/mirrored in
