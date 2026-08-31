@@ -88,6 +88,20 @@ def main():
     pos.update({"SW1": (c - 18, c - 12), "SW2": (c - 18, c + 12),
                 "SW3": (c + 18, c - 12), "SW4": (c + 18, c + 12)})
 
+    # Three test points (GND / +5V / LED_IN) are hand-placed leftovers from
+    # v2's original 100x82.9mm layout, positioned relative to U1's old
+    # off-centre spot - they never moved when U1 got recentred for the
+    # 150mm board, landing inside its courtyard. Reference-only matching
+    # can't fix them (there's a second, unrelated "+5V" test point
+    # elsewhere on the board), so key these three by uuid and place them
+    # just outside the XIAO courtyard (half-width 8.835mm) on its left,
+    # clear of both the courtyard and the SW1/SW2 buttons at c-18.
+    uuid_pos = {
+        "3b08c00e-5e5e-4e28-8a48-1b276cc8aedb": (c - 12, c - 4.6),   # GND
+        "46ba156a-b5f9-49b6-8fde-9be163fb3450": (c - 12, c + 0.4),  # +5V
+        "9d44b3cc-bb74-4bbe-a707-82358cea217e": (c - 12, c - 14.8),  # LED_IN
+    }
+
     with open(args.pcb, encoding="utf-8") as f:
         text = f.read()
     header, blocks, footer = split_top_blocks(text)
@@ -98,6 +112,13 @@ def main():
             if '(layer "Edge.Cuts")' in b:
                 continue  # drop old outline
         if b.startswith("(footprint"):
+            um = re.search(r'\(uuid "([^"]+)"\)', b)
+            if um and um.group(1) in uuid_pos:
+                x, y = uuid_pos[um.group(1)]
+                b = set_position(b, x, y)
+                moved += 1
+                kept.append(b)
+                continue
             m = re.search(r'\(property "Reference" "([^"]+)"', b)
             if m and m.group(1) in pos:
                 x, y = pos[m.group(1)]

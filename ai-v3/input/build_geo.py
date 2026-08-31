@@ -28,7 +28,21 @@ def canvas_to_pdf(cx, cy):
 # for a stretch. Real Vancouver has open water the whole way down that
 # coast, so patch a strip in to connect the two traced water pieces along
 # the left margin instead of leaving a gap.
-west_strip = box(*canvas_to_pdf(4, 18), *canvas_to_pdf(12, 48))
+west_strip = box(*canvas_to_pdf(4, 16), *canvas_to_pdf(13, 50))
+
+# The first version of that patch just paved straight over Point Grey (the
+# real UBC/Kitsilano peninsula, which pokes out into English Bay right at
+# Arbutus's latitude) with a flat rectangle of water, clipping it off at
+# the board edge. Carve a rounded cape shape back out of the patch - not
+# traced (no station sits on it to anchor a trace to), but a real,
+# well-known landform, not an invented one.
+peninsula_canvas = [
+    (13.2, 25.5), (10.5, 24.3), (7.8, 25.2), (5.3, 27.7), (4.4, 31.0),
+    (5.1, 34.4), (7.6, 36.7), (10.4, 37.2), (13.2, 35.9),
+]
+peninsula = Polygon([canvas_to_pdf(x, y) for x, y in peninsula_canvas])
+west_strip = west_strip.difference(peninsula)
+
 water = unary_union([water, west_strip])
 water = water.simplify(2.0, preserve_topology=True)
 
