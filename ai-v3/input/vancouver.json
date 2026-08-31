@@ -118,7 +118,7 @@
     "waterfront": {
       "name": "Waterfront",
       "x": 24.18,
-      "y": 14.4,
+      "y": 12.22,
       "interchange": true,
       "label": {
         "angle": 0,
@@ -129,8 +129,8 @@
     },
     "burrard": {
       "name": "Burrard",
-      "x": 23.91,
-      "y": 17.42,
+      "x": 23.87,
+      "y": 15.01,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -140,8 +140,8 @@
     },
     "granville": {
       "name": "Granville",
-      "x": 23.64,
-      "y": 20.43,
+      "x": 23.55,
+      "y": 17.79,
       "label": {
         "angle": 90,
         "anchor": "start",
@@ -153,25 +153,25 @@
       "name": "Stadium–Chinatown",
       "short": "Stadium",
       "x": 27.47,
-      "y": 24.98
+      "y": 20.58
     },
     "main-street": {
       "name": "Main Street–Science World",
       "short": "Main St–Science World",
       "x": 31.31,
-      "y": 29.52
+      "y": 24.18
     },
     "commercial-broadway": {
       "name": "Commercial–Broadway",
       "short": "Commercial–Bdwy",
       "x": 35.14,
-      "y": 34.06,
+      "y": 27.77,
       "interchange": true
     },
     "nanaimo": {
       "name": "Nanaimo",
       "x": 35.11,
-      "y": 43.29,
+      "y": 35.06,
       "label": {
         "angle": -90,
         "anchor": "start",
@@ -183,7 +183,7 @@
       "name": "29th Avenue",
       "short": "29th Ave",
       "x": 37.88,
-      "y": 46.79,
+      "y": 37.83,
       "label": {
         "angle": -45,
         "anchor": "end",
@@ -195,7 +195,7 @@
       "name": "Joyce–Collingwood",
       "short": "Joyce",
       "x": 40.64,
-      "y": 50.29,
+      "y": 40.6,
       "label": {
         "angle": -45,
         "anchor": "end",
@@ -206,7 +206,7 @@
     "patterson": {
       "name": "Patterson",
       "x": 43.41,
-      "y": 53.8,
+      "y": 43.37,
       "label": {
         "angle": -45,
         "anchor": "end",
@@ -217,12 +217,12 @@
     "metrotown": {
       "name": "Metrotown",
       "x": 46.16,
-      "y": 57.3
+      "y": 46.14
     },
     "royal-oak": {
       "name": "Royal Oak",
       "x": 51.09,
-      "y": 61.89,
+      "y": 49.77,
       "label": {
         "angle": 90,
         "anchor": "start",
@@ -233,7 +233,7 @@
     "edmonds": {
       "name": "Edmonds",
       "x": 55.79,
-      "y": 61.91,
+      "y": 49.79,
       "label": {
         "angle": 90,
         "anchor": "start",
@@ -245,7 +245,7 @@
       "name": "22nd Street",
       "short": "22nd St",
       "x": 60.49,
-      "y": 61.89,
+      "y": 49.77,
       "label": {
         "angle": -90,
         "anchor": "start",
@@ -257,7 +257,7 @@
       "name": "New Westminster",
       "short": "New West",
       "x": 65.39,
-      "y": 57.35,
+      "y": 46.18,
       "label": {
         "angle": -90,
         "anchor": "end",
@@ -268,29 +268,29 @@
     "columbia": {
       "name": "Columbia",
       "x": 68.16,
-      "y": 53.84,
+      "y": 43.41,
       "label": {
         "angle": -90,
-        "anchor": "start",
-        "dx": 0.3,
-        "dy": -1.6
+        "anchor": "end",
+        "dx": -0.0,
+        "dy": 0.9
       }
     },
     "sapperton": {
       "name": "Sapperton",
       "x": 73.73,
-      "y": 46.79,
+      "y": 37.83,
       "label": {
-        "angle": 0,
-        "anchor": "end",
-        "dx": -1.8,
-        "dy": -0.4
+        "angle": -90,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -0.9
       }
     },
     "braid": {
       "name": "Braid",
       "x": 76.5,
-      "y": 43.29,
+      "y": 35.06,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -302,7 +302,7 @@
       "name": "Lougheed Town Centre",
       "short": "Lougheed",
       "x": 77.74,
-      "y": 35.31,
+      "y": 28.75,
       "interchange": true,
       "label": {
         "angle": 0,
@@ -315,18 +315,18 @@
       "name": "Production Way–University",
       "short": "Production Way",
       "x": 72.9,
-      "y": 34.69,
+      "y": 28.26,
       "label": {
-        "angle": 90,
+        "angle": -65,
         "anchor": "start",
-        "dx": -0.3,
-        "dy": 2.0
+        "dx": 0.38,
+        "dy": -0.82
       }
     },
     "scott-road": {
       "name": "Scott Road",
       "x": 78.88,
-      "y": 53.84,
+      "y": 43.41,
       "label": {
         "angle": -45,
         "anchor": "start",
@@ -337,7 +337,7 @@
     "gateway": {
       "name": "Gateway",
       "x": 78.86,
-      "y": 60.04,
+      "y": 48.3,
       "label": {
         "angle": -45,
         "anchor": "end",
@@ -348,7 +348,7 @@
     "surrey-central": {
       "name": "Surrey Central",
       "x": 78.86,
-      "y": 66.25,
+      "y": 53.22,
       "label": {
         "angle": -45,
         "anchor": "end",
@@ -359,7 +359,7 @@
     "king-george": {
       "name": "King George",
       "x": 78.88,
-      "y": 72.45,
+      "y": 58.11,
       "label": {
         "angle": -45,
         "anchor": "end",
@@ -370,7 +370,7 @@
     "green-timbers": {
       "name": "Green Timbers",
       "x": 80.98,
-      "y": 74.55,
+      "y": 60.21,
       "future": true,
       "label": {
         "angle": -45,
@@ -383,7 +383,7 @@
       "name": "152 Street",
       "short": "152 St",
       "x": 83.08,
-      "y": 76.65,
+      "y": 62.31,
       "future": true,
       "label": {
         "angle": -45,
@@ -395,7 +395,7 @@
     "fleetwood": {
       "name": "Fleetwood",
       "x": 85.18,
-      "y": 78.75,
+      "y": 64.41,
       "future": true,
       "label": {
         "angle": -45,
@@ -407,7 +407,7 @@
     "bakerview": {
       "name": "Bakerview",
       "x": 87.28,
-      "y": 80.85,
+      "y": 66.51,
       "future": true,
       "label": {
         "angle": 0,
@@ -419,7 +419,7 @@
     "hillcrest": {
       "name": "Hillcrest",
       "x": 87.28,
-      "y": 84.4,
+      "y": 70.06,
       "future": true,
       "label": {
         "angle": 0,
@@ -431,7 +431,7 @@
     "clayton": {
       "name": "Clayton",
       "x": 87.28,
-      "y": 87.95,
+      "y": 73.61,
       "future": true,
       "label": {
         "angle": 0,
@@ -443,7 +443,7 @@
     "willowbrook": {
       "name": "Willowbrook",
       "x": 87.28,
-      "y": 91.5,
+      "y": 77.16,
       "future": true,
       "label": {
         "angle": 0,
@@ -456,7 +456,7 @@
       "name": "Langley City Centre",
       "short": "Langley Centre",
       "x": 87.28,
-      "y": 95.05,
+      "y": 80.71,
       "future": true,
       "label": {
         "angle": 0,
@@ -468,7 +468,7 @@
     "arbutus": {
       "name": "Arbutus",
       "x": 13.57,
-      "y": 40.12,
+      "y": 32.55,
       "future": true,
       "label": {
         "angle": 90,
@@ -481,19 +481,19 @@
       "name": "South Granville",
       "short": "S Granville",
       "x": 16.38,
-      "y": 39.11,
+      "y": 31.75,
       "future": true,
       "label": {
-        "angle": 90,
-        "anchor": "start",
-        "dx": -0.3,
-        "dy": -1.6
+        "angle": -90,
+        "anchor": "end",
+        "dx": -0.0,
+        "dy": 0.9
       }
     },
     "oak-vgh": {
       "name": "Oak–VGH",
       "x": 19.19,
-      "y": 38.1,
+      "y": 30.96,
       "future": true,
       "label": {
         "angle": 90,
@@ -506,33 +506,33 @@
       "name": "Broadway–City Hall",
       "short": "Bdwy–City Hall",
       "x": 22.0,
-      "y": 37.09,
+      "y": 30.16,
       "interchange": true,
       "future": true,
       "label": {
-        "angle": -60,
+        "angle": -65,
         "anchor": "start",
-        "dx": 0.9,
-        "dy": 1.8
+        "dx": 0.38,
+        "dy": -0.82
       }
     },
     "mount-pleasant": {
       "name": "Mount Pleasant",
       "x": 24.81,
-      "y": 36.08,
+      "y": 29.36,
       "future": true,
       "label": {
-        "angle": 90,
+        "angle": 80,
         "anchor": "start",
-        "dx": -0.3,
-        "dy": -1.6
+        "dx": 0.16,
+        "dy": 0.89
       }
     },
     "great-northern-way": {
       "name": "Great Northern Way–Emily Carr",
       "short": "Gt Northern Way",
       "x": 27.62,
-      "y": 35.07,
+      "y": 28.57,
       "future": true,
       "label": {
         "angle": 90,
@@ -544,7 +544,7 @@
     "vcc-clark": {
       "name": "VCC–Clark",
       "x": 30.43,
-      "y": 34.06,
+      "y": 27.77,
       "label": {
         "angle": 90,
         "anchor": "start",
@@ -555,44 +555,44 @@
     "renfrew": {
       "name": "Renfrew",
       "x": 39.85,
-      "y": 34.06
+      "y": 27.77
     },
     "rupert": {
       "name": "Rupert",
       "x": 44.55,
-      "y": 34.06
+      "y": 27.77
     },
     "gilmore": {
       "name": "Gilmore",
       "x": 49.25,
-      "y": 34.06
+      "y": 27.77
     },
     "brentwood": {
       "name": "Brentwood Town Centre",
       "short": "Brentwood",
       "x": 53.95,
-      "y": 34.06
+      "y": 27.77
     },
     "holdom": {
       "name": "Holdom",
       "x": 58.65,
-      "y": 34.06
+      "y": 27.77
     },
     "sperling": {
       "name": "Sperling–Burnaby Lake",
       "short": "Sperling–Bby Lake",
       "x": 63.35,
-      "y": 34.06
+      "y": 27.77
     },
     "lake-city-way": {
       "name": "Lake City Way",
       "x": 68.07,
-      "y": 34.06
+      "y": 27.77
     },
     "burquitlam": {
       "name": "Burquitlam",
       "x": 78.88,
-      "y": 25.63,
+      "y": 21.1,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -603,7 +603,7 @@
     "moody-centre": {
       "name": "Moody Centre",
       "x": 81.22,
-      "y": 22.74,
+      "y": 18.82,
       "label": {
         "angle": -80,
         "anchor": "start",
@@ -614,19 +614,19 @@
     "inlet-centre": {
       "name": "Inlet Centre",
       "x": 86.62,
-      "y": 22.74,
+      "y": 18.82,
       "label": {
-        "angle": -80,
+        "angle": -55,
         "anchor": "start",
-        "dx": 0.3,
-        "dy": -1.0
+        "dx": 0.52,
+        "dy": -0.74
       }
     },
     "coquitlam-central": {
       "name": "Coquitlam Central",
       "short": "Coquitlam Ctrl",
       "x": 92.09,
-      "y": 22.74,
+      "y": 18.82,
       "label": {
         "angle": -80,
         "anchor": "end",
@@ -637,7 +637,7 @@
     "lincoln": {
       "name": "Lincoln",
       "x": 94.39,
-      "y": 17.11,
+      "y": 14.37,
       "label": {
         "angle": -45,
         "anchor": "end",
@@ -649,19 +649,19 @@
       "name": "Lafarge Lake–Douglas",
       "short": "Lafarge Lake",
       "x": 94.39,
-      "y": 12.21,
+      "y": 10.49,
       "label": {
-        "angle": 0,
-        "anchor": "end",
-        "dx": -1.8,
-        "dy": -1.0
+        "angle": -90,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -0.9
       }
     },
     "vancouver-city-centre": {
       "name": "Vancouver City Centre",
       "short": "City Centre",
       "x": 19.42,
-      "y": 20.43,
+      "y": 16.99,
       "label": {
         "angle": 0,
         "anchor": "end",
@@ -673,7 +673,7 @@
       "name": "Yaletown–Roundhouse",
       "short": "Yaletown",
       "x": 20.19,
-      "y": 25.63,
+      "y": 21.1,
       "label": {
         "angle": 0,
         "anchor": "end",
@@ -685,7 +685,7 @@
       "name": "Olympic Village",
       "short": "Olympic Vlg",
       "x": 22.0,
-      "y": 30.88,
+      "y": 25.25,
       "label": {
         "angle": 0,
         "anchor": "end",
@@ -696,31 +696,31 @@
     "king-edward": {
       "name": "King Edward",
       "x": 22.0,
-      "y": 43.29,
+      "y": 35.06,
       "label": {
-        "angle": 45,
-        "anchor": "start",
-        "dx": 0.9,
-        "dy": 0.9
+        "angle": -75,
+        "anchor": "end",
+        "dx": -0.23,
+        "dy": 0.87
       }
     },
     "oakridge": {
       "name": "Oakridge–41st Avenue",
       "short": "Oakridge–41st",
       "x": 22.0,
-      "y": 49.5,
+      "y": 39.97,
       "label": {
-        "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "angle": 5,
+        "anchor": "start",
+        "dx": 0.9,
+        "dy": 0.08
       }
     },
     "langara": {
       "name": "Langara–49th Avenue",
       "short": "Langara–49th",
       "x": 22.0,
-      "y": 55.7,
+      "y": 44.87,
       "label": {
         "angle": 0,
         "anchor": "end",
@@ -731,7 +731,7 @@
     "marine-drive": {
       "name": "Marine Drive",
       "x": 22.0,
-      "y": 61.91,
+      "y": 49.79,
       "label": {
         "angle": 0,
         "anchor": "end",
@@ -742,7 +742,7 @@
     "bridgeport": {
       "name": "Bridgeport",
       "x": 22.0,
-      "y": 68.11,
+      "y": 54.68,
       "label": {
         "angle": 0,
         "anchor": "end",
@@ -753,7 +753,7 @@
     "templeton": {
       "name": "Templeton",
       "x": 17.21,
-      "y": 71.25,
+      "y": 57.17,
       "label": {
         "angle": 90,
         "anchor": "start",
@@ -765,7 +765,7 @@
       "name": "Sea Island Centre",
       "short": "Sea Island",
       "x": 12.11,
-      "y": 71.25,
+      "y": 57.17,
       "label": {
         "angle": -90,
         "anchor": "start",
@@ -777,7 +777,7 @@
       "name": "YVR–Airport",
       "short": "YVR",
       "x": 7.04,
-      "y": 71.25,
+      "y": 57.17,
       "label": {
         "angle": -90,
         "anchor": "start",
@@ -788,7 +788,7 @@
     "capstan": {
       "name": "Capstan",
       "x": 22.0,
-      "y": 74.32,
+      "y": 59.6,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -799,7 +799,7 @@
     "aberdeen": {
       "name": "Aberdeen",
       "x": 21.98,
-      "y": 80.52,
+      "y": 64.49,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -810,7 +810,7 @@
     "lansdowne": {
       "name": "Lansdowne",
       "x": 22.0,
-      "y": 86.73,
+      "y": 69.41,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -822,7 +822,7 @@
       "name": "Richmond–Brighouse",
       "short": "Brighouse",
       "x": 22.0,
-      "y": 92.93,
+      "y": 74.3,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -835,8 +835,8 @@
     {
       "id": "seabus",
       "name": "SeaBus",
-      "x": 23.0,
-      "y": 3.0,
+      "x": 24.18,
+      "y": 4.220000000000001,
       "label": {
         "angle": 0,
         "anchor": "start",
@@ -860,103 +860,103 @@
         ],
         [
           4.0,
-          28.96
+          23.73
         ],
         [
           13.49,
-          28.96
+          23.73
         ],
         [
           15.76,
-          26.36
+          21.67
         ],
         [
           18.37,
-          28.96
+          23.73
         ],
         [
           26.7,
-          28.66
+          23.5
         ],
         [
           26.48,
-          27.58
+          22.64
         ],
         [
           18.8,
-          27.58
+          22.64
         ],
         [
           16.08,
-          24.41
+          20.14
         ],
         [
           15.92,
-          19.26
+          16.06
         ],
         [
           14.78,
-          17.22
+          14.45
         ],
         [
           14.78,
-          11.37
+          9.83
         ],
         [
           16.76,
-          8.86
+          7.84
         ],
         [
           20.33,
-          9.06
+          8.0
         ],
         [
           20.48,
-          9.52
+          8.36
         ],
         [
           19.24,
-          9.81
+          8.59
         ],
         [
           19.48,
-          10.92
+          9.47
         ],
         [
           22.6,
-          10.92
+          9.47
         ],
         [
           25.11,
-          13.52
+          11.52
         ],
         [
           35.42,
-          13.52
+          11.52
         ],
         [
           38.12,
-          10.89
+          9.45
         ],
         [
           79.45,
-          10.92
+          9.47
         ],
         [
           82.36,
-          14.31
+          12.15
         ],
         [
           85.42,
-          14.51
+          12.31
         ],
         [
           80.43,
-          7.66
+          6.9
         ],
         [
           96.0,
-          7.75
+          6.97
         ]
       ]
     },
@@ -966,183 +966,183 @@
       "points": [
         [
           96.0,
-          38.34
+          31.15
         ],
         [
           82.36,
-          38.54
+          31.31
         ],
         [
           63.72,
-          62.19
+          50.0
         ],
         [
           63.42,
-          65.21
+          52.39
         ],
         [
           62.24,
-          66.41
+          53.34
         ],
         [
           37.97,
-          66.41
+          53.34
         ],
         [
           35.88,
-          64.31
+          51.68
         ],
         [
           10.56,
-          64.31
+          51.68
         ],
         [
           4.0,
-          56.31
+          45.35
         ],
         [
           4.0,
-          96.0
+          76.73
         ],
         [
           10.31,
-          96.0
+          76.73
         ],
         [
           10.31,
-          78.39
+          62.81
         ],
         [
           4.73,
-          74.53
+          59.76
         ],
         [
           4.8,
-          65.71
+          52.79
         ],
         [
           19.05,
-          66.01
+          53.02
         ],
         [
           19.05,
-          74.03
+          59.36
         ],
         [
           17.31,
-          76.49
+          61.31
         ],
         [
           6.68,
-          76.7
+          61.47
         ],
         [
           4.73,
-          74.53
+          59.76
         ],
         [
           10.31,
-          78.39
+          62.81
         ],
         [
           17.74,
-          77.92
+          62.44
         ],
         [
           20.14,
-          74.6
+          59.81
         ],
         [
           20.37,
-          65.71
+          52.79
         ],
         [
           35.44,
-          65.71
+          52.79
         ],
         [
           37.53,
-          67.79
+          54.43
         ],
         [
           60.76,
-          67.79
+          54.43
         ],
         [
           60.83,
-          70.8
+          56.81
         ],
         [
           60.99,
-          72.85
+          58.44
         ],
         [
           60.99,
-          78.37
+          62.8
         ],
         [
           59.67,
-          80.34
+          64.35
         ],
         [
           54.91,
-          80.54
+          64.51
         ],
         [
           60.99,
-          72.85
+          58.44
         ],
         [
           60.83,
-          70.8
+          56.81
         ],
         [
           53.34,
-          80.34
+          64.35
         ],
         [
           49.2,
-          80.74
+          64.67
         ],
         [
           37.13,
-          96.0
+          76.73
         ],
         [
           40.1,
-          96.0
+          76.73
         ],
         [
           49.95,
-          83.55
+          66.89
         ],
         [
           60.2,
-          83.34
+          66.73
         ],
         [
           63.19,
-          79.95
+          64.05
         ],
         [
           63.19,
-          69.12
+          55.49
         ],
         [
           65.62,
-          65.78
+          52.84
         ],
         [
           65.94,
-          63.34
+          50.91
         ],
         [
           83.35,
-          41.32
+          33.51
         ],
         [
           96.0,
-          41.19
+          33.4
         ]
       ]
     },
@@ -1152,35 +1152,35 @@
       "points": [
         [
           72.8,
-          22.17
+          18.37
         ],
         [
           72.8,
-          11.41
+          9.86
         ],
         [
           72.41,
-          10.89
+          9.45
         ],
         [
           63.76,
-          10.89
+          9.45
         ],
         [
           63.37,
-          11.41
+          9.86
         ],
         [
           63.37,
-          22.17
+          18.37
         ],
         [
           63.76,
-          22.69
+          18.78
         ],
         [
           72.41,
-          22.69
+          18.78
         ]
       ]
     },
@@ -1190,43 +1190,43 @@
       "points": [
         [
           19.76,
-          10.92
+          9.47
         ],
         [
           19.24,
-          10.31
+          8.99
         ],
         [
           19.53,
-          9.72
+          8.52
         ],
         [
           21.67,
-          9.52
+          8.36
         ],
         [
           19.35,
-          6.87
+          6.27
         ],
         [
           16.97,
-          7.07
+          6.43
         ],
         [
           14.9,
-          10.26
+          8.95
         ],
         [
           14.76,
-          17.25
+          14.47
         ],
         [
           15.4,
-          18.31
+          15.31
         ],
         [
           21.39,
-          11.12
+          9.63
         ]
       ]
     },
@@ -1236,31 +1236,31 @@
       "points": [
         [
           63.31,
-          42.7
+          34.6
         ],
         [
           68.59,
-          42.5
+          34.43
         ],
         [
           69.66,
-          41.16
+          33.38
         ],
         [
           69.82,
-          38.95
+          31.63
         ],
         [
           59.15,
-          38.95
+          31.63
         ],
         [
           59.36,
-          40.96
+          33.22
         ],
         [
           61.49,
-          40.96
+          33.22
         ]
       ]
     },
@@ -1270,19 +1270,19 @@
       "points": [
         [
           43.57,
-          56.38
+          45.41
         ],
         [
           43.46,
-          53.82
+          43.39
         ],
         [
           40.67,
-          53.93
+          43.48
         ],
         [
           40.78,
-          56.51
+          45.51
         ]
       ]
     }

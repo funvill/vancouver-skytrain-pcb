@@ -16,12 +16,12 @@ water = board.difference(land_union)
 water = water.simplify(2.0, preserve_topology=True)
 
 MARGIN = 4.0  # must match build_vancouver_json.py's MARGIN
+SCALE = (100 - 2 * MARGIN) / PAGE_W  # uniform, matches build_vancouver_json.py
 
 
 def scale(pt):
     x, y = pt
-    return [round(MARGIN + x / PAGE_W * (100 - 2 * MARGIN), 2),
-            round(MARGIN + y / PAGE_H * (100 - 2 * MARGIN), 2)]
+    return [round(MARGIN + x * SCALE, 2), round(MARGIN + y * SCALE, 2)]
 
 
 def to_canvas_with_holes(poly):

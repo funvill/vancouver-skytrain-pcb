@@ -56,12 +56,19 @@ python build_vancouver_json.py   # writes ../input/vancouver.json
    traced direction and spacing from its last real station, not traced
    from a source.
 4. Label **angle/anchor** (which side of the dot the name sits on) still
-   has to be hand-tuned per station in `vancouver.json` afterward — the
-   PDF trace gives the *dot* position, not a usable label layout, since
-   the official map's real labels are hand-placed by a cartographer and
+   has to be tuned per station in `vancouver.json` afterward — the PDF
+   trace gives the *dot* position, not a usable label layout, since the
+   official map's real labels are hand-placed by a cartographer and
    pdfplumber's per-character extraction for angled ones isn't reliable
-   enough to reuse directly. Iterate with `../tools/check_fit.py` after
-   any position change.
+   enough to reuse directly. `../tools/auto_label.py` automates this: it
+   brute-forces every angle in `[-90, 90]` (angles outside that range
+   render the glyphs upside-down/mirrored in KiCad — rotation is rigid,
+   there's no auto-flip for readability) crossed with `start`/`end`
+   anchor for each station `check_fit.py` flags a real collision on
+   (`label-label`/`label-dot`/`label-line` — not `label-geo`, which is
+   expected for a station that's genuinely next to water or a park), and
+   keeps the option with the fewest collisions. Re-run it after any
+   position change; `check_fit.py -v` on its own shows what's left.
 
 `words.json` / `circles.json` / `geo_shapes.json` / `geo_canvas.json` /
 `station_coords.json` are the intermediate extraction artifacts (kept for

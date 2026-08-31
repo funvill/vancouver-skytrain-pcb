@@ -6,13 +6,16 @@ import json
 PAGE_W, PAGE_H = 514.8, 406.99
 
 
-MARGIN = 4.0  # canvas units of edge inset, uniform affine so all real
-              # proportions/angles from the PDF are preserved exactly
+MARGIN = 4.0  # canvas units of edge inset
+# Single uniform scale (not independent x/y) so real angles/proportions
+# from the PDF are preserved exactly - the source page is wider than
+# tall, so this leaves blank canvas at the bottom rather than stretching
+# the network vertically to fill a square.
+SCALE = (100 - 2 * MARGIN) / PAGE_W
 
 
 def c(x, y):
-    return (round(MARGIN + x / PAGE_W * (100 - 2 * MARGIN), 2),
-            round(MARGIN + y / PAGE_H * (100 - 2 * MARGIN), 2))
+    return (round(MARGIN + x * SCALE, 2), round(MARGIN + y * SCALE, 2))
 
 
 # PDF-point coordinates traced from skytrain-network-map.pdf, resolved by
@@ -112,7 +115,8 @@ for sid, (dx, dy) in zip(langley_ext, vert):
     pt = (round(pt[0] + dx, 2), round(pt[1] + dy, 2))
     CANVAS_XY[sid] = pt
 
-CANVAS_XY["seabus"] = (23.0, 3.0)  # small offset above Waterfront, unlabelled on this PDF
+wf = CANVAS_XY["waterfront"]
+CANVAS_XY["seabus"] = (wf[0], max(MARGIN, wf[1] - 8.0))  # north of Waterfront, unlabelled on this PDF
 
 for sid, (x, y) in CANVAS_XY.items():
     if sid in d["stations"]:

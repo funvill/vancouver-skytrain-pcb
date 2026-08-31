@@ -1,69 +1,69 @@
 index,ref,station,name,x_mm,y_mm,rotation
-0,LED1,seabus,SeaBus,34.5,4.5,270
-1,LED2,waterfront,Waterfront,36.27,21.6,270
-2,LED3,burrard,Burrard,35.865,26.13,270
-3,LED4,granville,Granville,35.46,30.645,315
-4,LED5,stadium,Stadium–Chinatown,41.205,37.47,315
-5,LED6,main-street,Main Street–Science World,46.965,44.28,315
-6,LED7,commercial-broadway,Commercial–Broadway,52.71,51.09,270
-7,LED8,nanaimo,Nanaimo,52.665,64.935,315
-8,LED9,29th-avenue,29th Avenue,56.82,70.185,315
-9,LED10,joyce,Joyce–Collingwood,60.96,75.435,315
-10,LED11,patterson,Patterson,65.115,80.7,315
-11,LED12,metrotown,Metrotown,69.24,85.95,315
-12,LED13,royal-oak,Royal Oak,76.635,92.835,0
-13,LED14,edmonds,Edmonds,83.685,92.865,0
-14,LED15,22nd-street,22nd Street,90.735,92.835,45
-15,LED16,new-westminster,New Westminster,98.085,86.025,45
-16,LED17,columbia,Columbia,102.24,80.76,0
-17,LED18,scott-road,Scott Road,118.32,80.76,270
-18,LED19,gateway,Gateway,118.29,90.06,270
-19,LED20,surrey-central,Surrey Central,118.29,99.375,270
-20,LED21,king-george,King George,118.32,108.675,315
-21,LED22,green-timbers,Green Timbers,121.47,111.825,315
-22,LED23,152-street,152 Street,124.62,114.975,315
-23,LED24,fleetwood,Fleetwood,127.77,118.125,315
-24,LED25,bakerview,Bakerview,130.92,121.275,270
-25,LED26,hillcrest,Hillcrest,130.92,126.6,270
-26,LED27,clayton,Clayton,130.92,131.925,270
-27,LED28,willowbrook,Willowbrook,130.92,137.25,270
-28,LED29,langley-city-centre,Langley City Centre,130.92,142.575,90
-29,LED30,sapperton,Sapperton,110.595,70.185,45
-30,LED31,braid,Braid,114.75,64.935,90
-31,LED32,lougheed,Lougheed Town Centre,116.61,52.965,180
-32,LED33,production-way,Production Way–University,109.35,52.035,45
-33,LED34,burquitlam,Burquitlam,118.32,38.445,45
-34,LED35,moody-centre,Moody Centre,121.83,34.11,0
-35,LED36,inlet-centre,Inlet Centre,129.93,34.11,0
-36,LED37,coquitlam-central,Coquitlam Central,138.135,34.11,90
-37,LED38,lincoln,Lincoln,141.585,25.665,90
-38,LED39,lafarge,Lafarge Lake–Douglas,141.585,18.315,225
-39,LED40,lake-city-way,Lake City Way,102.105,51.09,180
-40,LED41,sperling,Sperling–Burnaby Lake,95.025,51.09,180
-41,LED42,holdom,Holdom,87.975,51.09,180
-42,LED43,brentwood,Brentwood Town Centre,80.925,51.09,180
-43,LED44,gilmore,Gilmore,73.875,51.09,180
-44,LED45,rupert,Rupert,66.825,51.09,180
-45,LED46,renfrew,Renfrew,59.775,51.09,180
-46,LED47,vcc-clark,VCC–Clark,45.645,51.09,180
-47,LED48,great-northern-way,Great Northern Way–Emily Carr,41.43,52.605,180
-48,LED49,mount-pleasant,Mount Pleasant,37.215,54.12,180
-49,LED50,broadway-city-hall,Broadway–City Hall,33.0,55.635,180
-50,LED51,oak-vgh,Oak–VGH,28.785,57.15,180
-51,LED52,south-granville,South Granville,24.57,58.665,180
-52,LED53,arbutus,Arbutus,20.355,60.18,90
-53,LED54,vancouver-city-centre,Vancouver City Centre,29.13,30.645,270
-54,LED55,yaletown,Yaletown–Roundhouse,30.285,38.445,270
-55,LED56,olympic-village,Olympic Village,33.0,46.32,270
-56,LED57,king-edward,King Edward,33.0,64.935,270
-57,LED58,oakridge,Oakridge–41st Avenue,33.0,74.25,270
-58,LED59,langara,Langara–49th Avenue,33.0,83.55,270
-59,LED60,marine-drive,Marine Drive,33.0,92.865,270
-60,LED61,bridgeport,Bridgeport,33.0,102.165,225
-61,LED62,templeton,Templeton,25.815,106.875,180
-62,LED63,sea-island-centre,Sea Island Centre,18.165,106.875,180
-63,LED64,yvr,YVR–Airport,10.56,106.875,0
-64,LED65,capstan,Capstan,33.0,111.48,270
-65,LED66,aberdeen,Aberdeen,32.97,120.78,270
-66,LED67,lansdowne,Lansdowne,33.0,130.095,270
-67,LED68,richmond-brighouse,Richmond–Brighouse,33.0,139.395,270
+0,LED1,seabus,SeaBus,36.27,6.33,270
+1,LED2,waterfront,Waterfront,36.27,18.33,270
+2,LED3,burrard,Burrard,35.805,22.515,270
+3,LED4,granville,Granville,35.325,26.685,315
+4,LED5,stadium,Stadium–Chinatown,41.205,30.87,315
+5,LED6,main-street,Main Street–Science World,46.965,36.27,315
+6,LED7,commercial-broadway,Commercial–Broadway,52.71,41.655,270
+7,LED8,nanaimo,Nanaimo,52.665,52.59,315
+8,LED9,29th-avenue,29th Avenue,56.82,56.745,315
+9,LED10,joyce,Joyce–Collingwood,60.96,60.9,315
+10,LED11,patterson,Patterson,65.115,65.055,315
+11,LED12,metrotown,Metrotown,69.24,69.21,315
+12,LED13,royal-oak,Royal Oak,76.635,74.655,0
+13,LED14,edmonds,Edmonds,83.685,74.685,0
+14,LED15,22nd-street,22nd Street,90.735,74.655,45
+15,LED16,new-westminster,New Westminster,98.085,69.27,45
+16,LED17,columbia,Columbia,102.24,65.115,0
+17,LED18,scott-road,Scott Road,118.32,65.115,270
+18,LED19,gateway,Gateway,118.29,72.45,270
+19,LED20,surrey-central,Surrey Central,118.29,79.83,270
+20,LED21,king-george,King George,118.32,87.165,315
+21,LED22,green-timbers,Green Timbers,121.47,90.315,315
+22,LED23,152-street,152 Street,124.62,93.465,315
+23,LED24,fleetwood,Fleetwood,127.77,96.615,315
+24,LED25,bakerview,Bakerview,130.92,99.765,270
+25,LED26,hillcrest,Hillcrest,130.92,105.09,270
+26,LED27,clayton,Clayton,130.92,110.415,270
+27,LED28,willowbrook,Willowbrook,130.92,115.74,270
+28,LED29,langley-city-centre,Langley City Centre,130.92,121.065,90
+29,LED30,sapperton,Sapperton,110.595,56.745,45
+30,LED31,braid,Braid,114.75,52.59,90
+31,LED32,lougheed,Lougheed Town Centre,116.61,43.125,180
+32,LED33,production-way,Production Way–University,109.35,42.39,45
+33,LED34,burquitlam,Burquitlam,118.32,31.65,45
+34,LED35,moody-centre,Moody Centre,121.83,28.23,0
+35,LED36,inlet-centre,Inlet Centre,129.93,28.23,0
+36,LED37,coquitlam-central,Coquitlam Central,138.135,28.23,45
+37,LED38,lincoln,Lincoln,141.585,21.555,90
+38,LED39,lafarge,Lafarge Lake–Douglas,141.585,15.735,225
+39,LED40,lake-city-way,Lake City Way,102.105,41.655,180
+40,LED41,sperling,Sperling–Burnaby Lake,95.025,41.655,180
+41,LED42,holdom,Holdom,87.975,41.655,180
+42,LED43,brentwood,Brentwood Town Centre,80.925,41.655,180
+43,LED44,gilmore,Gilmore,73.875,41.655,180
+44,LED45,rupert,Rupert,66.825,41.655,180
+45,LED46,renfrew,Renfrew,59.775,41.655,180
+46,LED47,vcc-clark,VCC–Clark,45.645,41.655,180
+47,LED48,great-northern-way,Great Northern Way–Emily Carr,41.43,42.855,180
+48,LED49,mount-pleasant,Mount Pleasant,37.215,44.04,180
+49,LED50,broadway-city-hall,Broadway–City Hall,33.0,45.24,180
+50,LED51,oak-vgh,Oak–VGH,28.785,46.44,180
+51,LED52,south-granville,South Granville,24.57,47.625,180
+52,LED53,arbutus,Arbutus,20.355,48.825,90
+53,LED54,vancouver-city-centre,Vancouver City Centre,29.13,25.485,270
+54,LED55,yaletown,Yaletown–Roundhouse,30.285,31.65,315
+55,LED56,olympic-village,Olympic Village,33.0,37.875,270
+56,LED57,king-edward,King Edward,33.0,52.59,270
+57,LED58,oakridge,Oakridge–41st Avenue,33.0,59.955,270
+58,LED59,langara,Langara–49th Avenue,33.0,67.305,270
+59,LED60,marine-drive,Marine Drive,33.0,74.685,270
+60,LED61,bridgeport,Bridgeport,33.0,82.02,225
+61,LED62,templeton,Templeton,25.815,85.755,180
+62,LED63,sea-island-centre,Sea Island Centre,18.165,85.755,180
+63,LED64,yvr,YVR–Airport,10.56,85.755,0
+64,LED65,capstan,Capstan,33.0,89.4,270
+65,LED66,aberdeen,Aberdeen,32.97,96.735,270
+66,LED67,lansdowne,Lansdowne,33.0,104.115,270
+67,LED68,richmond-brighouse,Richmond–Brighouse,33.0,111.45,270
