@@ -82,12 +82,23 @@ for future/under-construction line segments:
   stand-in for the reference map's solid green park colour. `hatch_fill()`
   is a general scan-line polygon fill (even-odd rule, works on concave
   shapes) so it's reusable for any future city's parks too.
-- **Annotations** (`annotation_blocks`) — small F.SilkS text for
-  municipality names (VANCOUVER, BURNABY, SURREY, RICHMOND, COQUITLAM) and
-  river labels (NORTH ARM FRASER RIVER, SOUTH ARM FRASER RIVER, ENGLISH
-  BAY, BURRARD INLET), driven by `vancouver.json`'s `annotations` list —
-  the equivalent of the reference map's grey place names printed over the
-  water/land.
+- **Annotations** (`annotation_blocks`) — the code path still exists (a
+  reusable capability for any future city that wants small F.SilkS place
+  names), but `vancouver.json`'s `annotations` list is currently **empty**
+  by request — no municipality names or water-body labels are printed on
+  this map, just the coastline shapes themselves.
+
+### Geography traced from the official map
+
+`vancouver.json`'s `geo` list (coastline, False Creek, the Fraser's three
+arms, Sea Island, Lulu Island, and every park) was redrawn by hand against
+TransLink's own "Future Rapid Transit Network" PDF/map, not invented — the
+goal is a simplified but recognizable reproduction of *that* map's land,
+water, and park shapes, at the level of detail a 150 mm silkscreen can
+actually resolve. This was done by eye (no pixel-coordinate extraction
+tool was used), so treat it as a careful reference match rather than a
+pixel-exact trace — flag any station or shoreline that looks visibly off
+and it can be nudged from the source map directly.
 
 ### Keeping copper art DRC-clean: `citymap.prepared_geo`
 

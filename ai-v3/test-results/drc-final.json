@@ -1,7 +1,7 @@
 ** Drc report for vancouver-skytrain-pcb.kicad_pcb **
-** Created on 2026-08-31T08:27:59-0700 **
+** Created on 2026-08-31T08:42:45-0700 **
 
-** Found 524 DRC violations **
+** Found 518 DRC violations **
 [shorting_items]: Items shorting two nets (nets BUTTON_03 and +5V)
     Local override; error
     @(67.0000 mm, 77.5400 mm): Pad 3 [BUTTON_03] of U1 on B.Cu
@@ -34,22 +34,22 @@
     Local override; error
     @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
     @(41.2500 mm, 8.5500 mm): Pad 4 [Net-(LED1-DO)] of LED1 on F.Cu
-[shorting_items]: Items shorting two nets (nets  and GND)
-    Local override; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
-    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
 [shorting_items]: Items shorting two nets (nets  and Net-(LED55-DO))
     Local override; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
     @(36.7500 mm, 37.9500 mm): Pad 2 [Net-(LED55-DO)] of LED56 on F.Cu
 [shorting_items]: Items shorting two nets (nets  and +5V)
     Local override; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
     @(36.7500 mm, 37.0500 mm): Pad 3 [+5V] of LED56 on F.Cu
 [shorting_items]: Items shorting two nets (nets  and Net-(LED56-DO))
     Local override; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
     @(35.2500 mm, 37.0500 mm): Pad 4 [Net-(LED56-DO)] of LED56 on F.Cu
+[shorting_items]: Items shorting two nets (nets  and GND)
+    Local override; error
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
+    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
 [courtyards_overlap]: Courtyards overlap
     Rule: board setup constraints courtyard; error
     @(75.0000 mm, 75.0000 mm): Footprint U1
@@ -92,36 +92,36 @@
     @(2.5000 mm, 2.5000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
-    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
-[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
-    Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
     @(36.7500 mm, 37.9500 mm): Pad 2 [Net-(LED55-DO)] of LED56 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
     @(36.7500 mm, 37.0500 mm): Pad 3 [+5V] of LED56 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
     @(35.2500 mm, 37.0500 mm): Pad 4 [Net-(LED56-DO)] of LED56 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
+    @(35.2500 mm, 37.9500 mm): Pad 1 [GND] of LED56 on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon on F.Mask
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon on F.Mask
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
-    @(27.0000 mm, 37.5000 mm): Polygon on F.Mask
-    @(27.0000 mm, 37.5000 mm): Polygon [<no net>] on F.Cu
+    @(21.0000 mm, 36.0000 mm): Polygon on F.Mask
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(21.0000 mm, 36.0000 mm): Polygon on F.Mask
+    @(21.0000 mm, 36.0000 mm): Polygon [<no net>] on F.Cu
 [solder_mask_bridge]: Front solder mask aperture bridges items with different nets
     Rule: board setup solder mask min width; error
     @(69.7500 mm, 49.9500 mm): Pad 1 [GND] of LED8 on F.Cu
@@ -993,49 +993,43 @@
     @(18.1490 mm, 9.0980 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(2.5000 mm, 46.5000 mm): Polygon on F.Silkscreen
+    @(4.5000 mm, 42.0000 mm): Polygon on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(9.0090 mm, 45.2130 mm): Segment on F.Silkscreen
+    @(4.3790 mm, 42.8460 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(7.0290 mm, 45.4960 mm): Segment on F.Silkscreen
+    @(4.0960 mm, 44.8260 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(5.0490 mm, 45.7790 mm): Segment on F.Silkscreen
+    @(3.8130 mm, 46.8060 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(3.1060 mm, 46.0980 mm): Segment on F.Silkscreen
+    @(3.5310 mm, 48.7850 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(2.5000 mm, 47.7550 mm): Segment on F.Silkscreen
+    @(3.2480 mm, 50.7650 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(2.5000 mm, 50.0180 mm): Segment on F.Silkscreen
+    @(128.2500 mm, 22.5000 mm): Polygon on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(2.5000 mm, 52.2800 mm): Segment on F.Silkscreen
+    @(134.8980 mm, 21.7610 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(2.5000 mm, 54.5430 mm): Segment on F.Silkscreen
+    @(132.8620 mm, 21.9880 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(2.5000 mm, 56.8060 mm): Segment on F.Silkscreen
+    @(130.8250 mm, 22.2140 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(117.7500 mm, 33.7500 mm): Polygon on F.Silkscreen
+    @(128.7890 mm, 22.4400 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(122.8130 mm, 32.3030 mm): Segment on F.Silkscreen
+    @(127.7750 mm, 23.6880 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
-    @(121.0530 mm, 32.8060 mm): Segment on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(119.2930 mm, 33.3090 mm): Segment on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(117.9590 mm, 34.2370 mm): Segment on F.Silkscreen
+    @(127.1280 mm, 25.3050 mm): Segment on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(105.6000 mm, 86.4000 mm): PCB text 'New Westminster' on F.Silkscreen
@@ -1072,21 +1066,6 @@
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(43.6000 mm, 9.4000 mm): PCB text 'SeaBus' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(114.0000 mm, 30.0000 mm): PCB text 'COQUITLAM' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(1.5000 mm, 84.4500 mm): PCB text 'NORTH ARM FRASER RIVER' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(18.0000 mm, 121.9500 mm): PCB text 'SOUTH ARM FRASER RIVER' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(1.5000 mm, 18.0000 mm): PCB text 'ENGLISH BAY' on F.Silkscreen
-[silk_over_copper]: Silkscreen clipped by solder mask
-    Local override; warning
-    @(82.5000 mm, 7.5000 mm): PCB text 'BURRARD INLET' on F.Silkscreen
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(69.7400 mm, 50.5100 mm): Segment of LED8 on F.Silkscreen
@@ -1303,6 +1282,27 @@
 [silk_over_copper]: Silkscreen clipped by solder mask
     Local override; warning
     @(123.7600 mm, 51.4800 mm): Segment of LED35 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(121.5000 mm, 52.5300 mm): Circle of LED35 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(90.2450 mm, 46.0100 mm): Segment of LED42 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(91.7650 mm, 43.9800 mm): Segment of LED42 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(89.5050 mm, 45.0300 mm): Circle of LED42 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(117.7400 mm, 58.0100 mm): Segment of LED34 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(119.2600 mm, 55.9800 mm): Segment of LED34 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(117.0000 mm, 57.0300 mm): Circle of LED34 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(35.2400 mm, 16.0100 mm): Segment of LED2 on F.Silkscreen
@@ -1313,44 +1313,28 @@
     @(36.0000 mm, 15.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
+    @(36.0000 mm, 15.0000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 16.0100 mm): Segment of LED2 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.0000 mm, 15.0000 mm): Segment on F.Silkscreen
+    @(41.2600 mm, 18.4800 mm): Segment of LED3 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
     @(40.5000 mm, 19.5000 mm): Segment on F.Silkscreen
     @(39.7400 mm, 20.5100 mm): Segment of LED3 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(40.5000 mm, 19.5000 mm): Segment on F.Silkscreen
-    @(45.7600 mm, 22.9800 mm): Segment of LED4 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(35.2400 mm, 23.5100 mm): Segment of LED54 on F.Silkscreen
-    @(36.0000 mm, 22.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.7600 mm, 28.9800 mm): Segment of LED55 on F.Silkscreen
-    @(36.0000 mm, 22.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(50.2600 mm, 27.4800 mm): Segment of LED5 on F.Silkscreen
-    @(45.0000 mm, 24.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(45.0000 mm, 24.0000 mm): Segment on F.Silkscreen
     @(44.2400 mm, 25.0100 mm): Segment of LED4 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
+    @(40.5000 mm, 19.5000 mm): Segment on F.Silkscreen
+    @(45.7600 mm, 22.9800 mm): Segment of LED4 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
     @(54.0000 mm, 33.0000 mm): Segment on F.Silkscreen
     @(53.2400 mm, 34.0100 mm): Segment of LED6 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(54.0000 mm, 33.0000 mm): Segment on F.Silkscreen
-    @(66.7600 mm, 43.9800 mm): Segment of LED7 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(64.5000 mm, 45.0300 mm): Circle of LED7 on F.Silkscreen
-    @(54.0000 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(51.6000 mm, 45.0000 mm): Segment on F.Silkscreen
-    @(52.5000 mm, 45.0300 mm): Circle of LED47 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(54.7600 mm, 31.9800 mm): Segment of LED6 on F.Silkscreen
@@ -1361,196 +1345,28 @@
     @(49.5000 mm, 28.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(66.0000 mm, 45.0000 mm): Segment on F.Silkscreen
-    @(65.2400 mm, 46.0100 mm): Segment of LED7 on F.Silkscreen
+    @(50.2600 mm, 27.4800 mm): Segment of LED5 on F.Silkscreen
+    @(45.0000 mm, 24.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(66.0000 mm, 45.0000 mm): Segment on F.Silkscreen
-    @(71.2600 mm, 48.4800 mm): Segment of LED8 on F.Silkscreen
+    @(36.0000 mm, 30.0000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 31.0100 mm): Segment of LED55 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(70.5000 mm, 45.0300 mm): Circle of LED46 on F.Silkscreen
-    @(66.0000 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(36.7600 mm, 28.9800 mm): Segment of LED55 on F.Silkscreen
+    @(36.0000 mm, 22.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(70.5000 mm, 49.5000 mm): Segment on F.Silkscreen
-    @(69.7400 mm, 50.5100 mm): Segment of LED8 on F.Silkscreen
+    @(35.2400 mm, 23.5100 mm): Segment of LED54 on F.Silkscreen
+    @(36.0000 mm, 22.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(75.7600 mm, 52.9800 mm): Segment of LED9 on F.Silkscreen
-    @(70.5000 mm, 49.5000 mm): Segment on F.Silkscreen
+    @(36.0000 mm, 37.5000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 38.5100 mm): Segment of LED56 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(75.2550 mm, 45.0300 mm): Circle of LED45 on F.Silkscreen
-    @(72.0000 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(79.9950 mm, 45.0300 mm): Circle of LED44 on F.Silkscreen
-    @(76.7550 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(75.0000 mm, 54.0000 mm): Segment on F.Silkscreen
-    @(74.2400 mm, 55.0100 mm): Segment of LED9 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(75.0000 mm, 54.0000 mm): Segment on F.Silkscreen
-    @(80.2600 mm, 57.4800 mm): Segment of LED10 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(93.7600 mm, 70.9800 mm): Segment of LED13 on F.Silkscreen
-    @(88.5000 mm, 67.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(87.7400 mm, 68.5100 mm): Segment of LED12 on F.Silkscreen
-    @(88.5000 mm, 67.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(78.7400 mm, 59.5100 mm): Segment of LED10 on F.Silkscreen
-    @(79.5000 mm, 58.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(84.7600 mm, 61.9800 mm): Segment of LED11 on F.Silkscreen
-    @(79.5000 mm, 58.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(89.2600 mm, 66.4800 mm): Segment of LED12 on F.Silkscreen
-    @(84.0000 mm, 63.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(83.2400 mm, 64.0100 mm): Segment of LED11 on F.Silkscreen
-    @(84.0000 mm, 63.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
-    @(37.6000 mm, 105.4000 mm): PCB text 'Lansdowne' on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(37.6000 mm, 97.9000 mm): PCB text 'Aberdeen' on F.Silkscreen
-    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(37.6000 mm, 97.9000 mm): PCB text 'Aberdeen' on F.Silkscreen
-    @(41.2500 mm, 93.0000 mm): PCB text 'RICHMOND' on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(41.2500 mm, 93.0000 mm): PCB text 'RICHMOND' on F.Silkscreen
-    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(37.6000 mm, 90.4000 mm): PCB text 'Capstan' on F.Silkscreen
-    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(31.5000 mm, 87.0000 mm): Segment on F.Silkscreen
-    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(27.7600 mm, 90.4800 mm): Segment of LED63 on F.Silkscreen
-    @(31.5000 mm, 87.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
-    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
-    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
-    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
-    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
-    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(26.2400 mm, 92.5100 mm): Segment of LED63 on F.Silkscreen
-    @(27.0000 mm, 91.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(23.2600 mm, 94.9800 mm): Segment of LED64 on F.Silkscreen
-    @(27.0000 mm, 91.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
-    @(35.2400 mm, 83.5100 mm): Segment of LED61 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
-    @(35.2400 mm, 83.5100 mm): Segment of LED61 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.7600 mm, 88.9800 mm): Segment of LED65 on F.Silkscreen
-    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(35.2400 mm, 91.0100 mm): Segment of LED65 on F.Silkscreen
-    @(36.0000 mm, 90.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.0000 mm, 97.5000 mm): Segment on F.Silkscreen
-    @(35.2400 mm, 98.5100 mm): Segment of LED66 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.0000 mm, 90.0000 mm): Segment on F.Silkscreen
-    @(36.7600 mm, 96.4800 mm): Segment of LED66 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.7600 mm, 111.4800 mm): Segment of LED68 on F.Silkscreen
-    @(36.0000 mm, 105.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(35.2400 mm, 106.0100 mm): Segment of LED67 on F.Silkscreen
-    @(36.0000 mm, 105.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.7600 mm, 103.9800 mm): Segment of LED67 on F.Silkscreen
-    @(36.0000 mm, 97.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
-    @(37.6000 mm, 112.9000 mm): PCB text 'Richmond–Brighouse' on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(35.2400 mm, 46.0100 mm): Segment of LED50 on F.Silkscreen
-    @(36.0000 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(35.2400 mm, 53.5100 mm): Segment of LED57 on F.Silkscreen
-    @(36.0000 mm, 52.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.7600 mm, 58.9800 mm): Segment of LED58 on F.Silkscreen
-    @(36.0000 mm, 52.5000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(42.0000 mm, 57.0000 mm): Polygon on F.Silkscreen
-    @(36.9000 mm, 53.4000 mm): PCB text 'King Edward' on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.9000 mm, 53.4000 mm): PCB text 'King Edward' on F.Silkscreen
-    @(42.0000 mm, 57.8390 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(42.0000 mm, 57.0000 mm): Polygon on F.Silkscreen
-    @(36.9000 mm, 45.9000 mm): PCB text 'Broadway–City Hall' on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(35.2400 mm, 61.0100 mm): Segment of LED58 on F.Silkscreen
-    @(36.0000 mm, 60.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.7600 mm, 66.4800 mm): Segment of LED59 on F.Silkscreen
-    @(36.0000 mm, 60.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(1.5000 mm, 84.4500 mm): PCB text 'NORTH ARM FRASER RIVER' on F.Silkscreen
-    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+    @(36.0000 mm, 30.0000 mm): Segment on F.Silkscreen
+    @(36.7600 mm, 36.4800 mm): Segment of LED56 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(36.7600 mm, 81.4800 mm): Segment of LED61 on F.Silkscreen
@@ -1569,32 +1385,28 @@
     @(36.0000 mm, 67.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(34.4000 mm, 82.9000 mm): PCB text 'Bridgeport' on F.Silkscreen
-    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+    @(36.7600 mm, 66.4800 mm): Segment of LED59 on F.Silkscreen
+    @(36.0000 mm, 60.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(36.0000 mm, 15.0000 mm): Segment on F.Silkscreen
-    @(35.2400 mm, 16.0100 mm): Segment of LED2 on F.Silkscreen
+    @(42.0000 mm, 57.0000 mm): Polygon on F.Silkscreen
+    @(36.9000 mm, 45.9000 mm): PCB text 'Broadway–City Hall' on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(36.0000 mm, 15.0000 mm): Segment on F.Silkscreen
-    @(41.2600 mm, 18.4800 mm): Segment of LED3 on F.Silkscreen
+    @(36.9000 mm, 53.4000 mm): PCB text 'King Edward' on F.Silkscreen
+    @(42.0000 mm, 57.8390 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(40.5000 mm, 45.0300 mm): Circle of LED49 on F.Silkscreen
-    @(39.6000 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 61.0100 mm): Segment of LED58 on F.Silkscreen
+    @(36.0000 mm, 60.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(36.0000 mm, 37.5000 mm): Segment on F.Silkscreen
-    @(35.2400 mm, 38.5100 mm): Segment of LED56 on F.Silkscreen
+    @(36.7600 mm, 58.9800 mm): Segment of LED58 on F.Silkscreen
+    @(36.0000 mm, 52.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(36.0000 mm, 30.0000 mm): Segment on F.Silkscreen
-    @(35.2400 mm, 31.0100 mm): Segment of LED55 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(36.0000 mm, 30.0000 mm): Segment on F.Silkscreen
-    @(36.7600 mm, 36.4800 mm): Segment of LED56 on F.Silkscreen
+    @(18.0000 mm, 45.0300 mm): Circle of LED52 on F.Silkscreen
+    @(17.1000 mm, 45.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(23.1000 mm, 45.0000 mm): Segment on F.Silkscreen
@@ -1605,92 +1417,80 @@
     @(34.5000 mm, 45.0300 mm): Circle of LED50 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(45.6000 mm, 45.0000 mm): Segment on F.Silkscreen
-    @(46.5000 mm, 45.0300 mm): Circle of LED48 on F.Silkscreen
+    @(35.2400 mm, 46.0100 mm): Segment of LED50 on F.Silkscreen
+    @(36.0000 mm, 45.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(18.0000 mm, 45.0300 mm): Circle of LED52 on F.Silkscreen
-    @(17.1000 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 53.5100 mm): Segment of LED57 on F.Silkscreen
+    @(36.0000 mm, 52.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(133.5000 mm, 112.5000 mm): Segment on F.Silkscreen
-    @(132.7400 mm, 113.5100 mm): Segment of LED23 on F.Silkscreen
+    @(42.0000 mm, 57.0000 mm): Polygon on F.Silkscreen
+    @(36.9000 mm, 53.4000 mm): PCB text 'King Edward' on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(136.0460 mm, 115.0460 mm): Segment on F.Silkscreen
-    @(138.0100 mm, 115.2300 mm): Segment of LED24 on F.Silkscreen
+    @(66.0000 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(71.2600 mm, 48.4800 mm): Segment of LED8 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(134.2600 mm, 111.4800 mm): Segment of LED23 on F.Silkscreen
-    @(132.2960 mm, 111.2960 mm): Segment on F.Silkscreen
+    @(66.0000 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(65.2400 mm, 46.0100 mm): Segment of LED7 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(117.7400 mm, 98.5100 mm): Segment of LED19 on F.Silkscreen
-    @(118.5000 mm, 97.5000 mm): Segment on F.Silkscreen
+    @(70.5000 mm, 45.0300 mm): Circle of LED46 on F.Silkscreen
+    @(66.0000 mm, 45.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(118.5000 mm, 97.5000 mm): Segment on F.Silkscreen
-    @(123.0100 mm, 100.2300 mm): Segment of LED20 on F.Silkscreen
+    @(75.2550 mm, 45.0300 mm): Circle of LED45 on F.Silkscreen
+    @(72.0000 mm, 45.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(125.2400 mm, 106.0100 mm): Segment of LED21 on F.Silkscreen
-    @(126.0000 mm, 105.0000 mm): Segment on F.Silkscreen
+    @(70.5000 mm, 49.5000 mm): Segment on F.Silkscreen
+    @(69.7400 mm, 50.5100 mm): Segment of LED8 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(128.5460 mm, 107.5460 mm): Segment on F.Silkscreen
-    @(130.5100 mm, 107.7300 mm): Segment of LED22 on F.Silkscreen
+    @(75.7600 mm, 52.9800 mm): Segment of LED9 on F.Silkscreen
+    @(70.5000 mm, 49.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(126.7600 mm, 103.9800 mm): Segment of LED21 on F.Silkscreen
-    @(122.2500 mm, 101.2500 mm): Segment on F.Silkscreen
+    @(75.0000 mm, 54.0000 mm): Segment on F.Silkscreen
+    @(74.2400 mm, 55.0100 mm): Segment of LED9 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(128.9900 mm, 109.7600 mm): Segment of LED22 on F.Silkscreen
-    @(129.7500 mm, 108.7500 mm): Segment on F.Silkscreen
+    @(79.9950 mm, 45.0300 mm): Circle of LED44 on F.Silkscreen
+    @(76.7550 mm, 45.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(121.4900 mm, 102.2600 mm): Segment of LED20 on F.Silkscreen
-    @(122.2500 mm, 101.2500 mm): Segment on F.Silkscreen
+    @(87.7400 mm, 68.5100 mm): Segment of LED12 on F.Silkscreen
+    @(88.5000 mm, 67.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(137.2500 mm, 116.2500 mm): Segment on F.Silkscreen
-    @(136.4900 mm, 117.2600 mm): Segment of LED24 on F.Silkscreen
+    @(93.7600 mm, 70.9800 mm): Segment of LED13 on F.Silkscreen
+    @(88.5000 mm, 67.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(140.2400 mm, 121.0100 mm): Segment of LED25 on F.Silkscreen
-    @(141.0000 mm, 120.0000 mm): Segment on F.Silkscreen
+    @(84.7600 mm, 61.9800 mm): Segment of LED11 on F.Silkscreen
+    @(79.5000 mm, 58.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(141.7600 mm, 124.9800 mm): Segment of LED26 on F.Silkscreen
-    @(141.0000 mm, 123.6000 mm): Segment on F.Silkscreen
+    @(83.2400 mm, 64.0100 mm): Segment of LED11 on F.Silkscreen
+    @(84.0000 mm, 63.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(141.7600 mm, 118.9800 mm): Segment of LED25 on F.Silkscreen
-    @(139.7960 mm, 118.7960 mm): Segment on F.Silkscreen
+    @(89.2600 mm, 66.4800 mm): Segment of LED12 on F.Silkscreen
+    @(84.0000 mm, 63.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(140.2400 mm, 133.0100 mm): Segment of LED27 on F.Silkscreen
-    @(141.0000 mm, 132.0000 mm): Segment on F.Silkscreen
+    @(78.7400 mm, 59.5100 mm): Segment of LED10 on F.Silkscreen
+    @(79.5000 mm, 58.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(141.0000 mm, 135.6000 mm): Segment on F.Silkscreen
-    @(141.7600 mm, 136.9800 mm): Segment of LED28 on F.Silkscreen
+    @(75.0000 mm, 54.0000 mm): Segment on F.Silkscreen
+    @(80.2600 mm, 57.4800 mm): Segment of LED10 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(141.0000 mm, 126.0000 mm): Segment on F.Silkscreen
-    @(140.2400 mm, 127.0100 mm): Segment of LED26 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(141.0000 mm, 129.6000 mm): Segment on F.Silkscreen
-    @(141.7600 mm, 130.9800 mm): Segment of LED27 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(141.0000 mm, 138.0000 mm): Segment on F.Silkscreen
-    @(140.2400 mm, 139.0100 mm): Segment of LED28 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(141.0000 mm, 141.6000 mm): Segment on F.Silkscreen
-    @(141.7600 mm, 142.9800 mm): Segment of LED29 on F.Silkscreen
+    @(84.7500 mm, 45.0300 mm): Circle of LED43 on F.Silkscreen
+    @(81.4950 mm, 45.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(102.7600 mm, 79.9800 mm): Segment of LED15 on F.Silkscreen
@@ -1701,23 +1501,11 @@
     @(97.5000 mm, 76.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(101.2400 mm, 82.0100 mm): Segment of LED15 on F.Silkscreen
+    @(107.2600 mm, 84.4800 mm): Segment of LED16 on F.Silkscreen
     @(102.0000 mm, 81.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(91.5000 mm, 72.0300 mm): Circle of LED13 on F.Silkscreen
-    @(84.7500 mm, 69.0000 mm): Polygon on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(92.2400 mm, 73.0100 mm): Segment of LED13 on F.Silkscreen
-    @(93.0000 mm, 72.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(93.0000 mm, 72.0000 mm): Segment on F.Silkscreen
-    @(98.2600 mm, 75.4800 mm): Segment of LED14 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(107.2600 mm, 84.4800 mm): Segment of LED16 on F.Silkscreen
+    @(101.2400 mm, 82.0100 mm): Segment of LED15 on F.Silkscreen
     @(102.0000 mm, 81.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
@@ -1730,15 +1518,11 @@
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(111.0000 mm, 90.0000 mm): Segment on F.Silkscreen
-    @(111.7600 mm, 88.9800 mm): Segment of LED17 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(111.0000 mm, 90.0000 mm): Segment on F.Silkscreen
     @(114.7400 mm, 86.5100 mm): Segment of LED30 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(111.0000 mm, 90.0000 mm): Segment on F.Silkscreen
-    @(115.5100 mm, 92.7300 mm): Segment of LED18 on F.Silkscreen
+    @(111.7600 mm, 88.9800 mm): Segment of LED17 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(115.5000 mm, 85.5000 mm): Segment on F.Silkscreen
@@ -1753,72 +1537,12 @@
     @(115.5000 mm, 81.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(111.0000 mm, 90.0000 mm): Segment on F.Silkscreen
-    @(110.2400 mm, 91.0100 mm): Segment of LED17 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(114.7500 mm, 93.7500 mm): Segment on F.Silkscreen
-    @(119.2600 mm, 96.4800 mm): Segment of LED19 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(114.7500 mm, 93.7500 mm): Segment on F.Silkscreen
-    @(113.9900 mm, 94.7600 mm): Segment of LED18 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
-    @(116.2600 mm, 58.9800 mm): Segment of LED32 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(110.2400 mm, 56.5100 mm): Segment of LED33 on F.Silkscreen
-    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
     @(114.7400 mm, 61.0100 mm): Segment of LED32 on F.Silkscreen
     @(115.5000 mm, 81.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
-    @(116.2600 mm, 58.9800 mm): Segment of LED32 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(111.0000 mm, 55.5000 mm): Segment on F.Silkscreen
-    @(116.2600 mm, 58.9800 mm): Segment of LED32 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
-    @(117.7400 mm, 58.0100 mm): Segment of LED34 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
     @(118.5000 mm, 57.0000 mm): Segment on F.Silkscreen
     @(119.2600 mm, 55.9800 mm): Segment of LED34 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(84.7500 mm, 45.0300 mm): Circle of LED43 on F.Silkscreen
-    @(81.4950 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(89.5050 mm, 45.0300 mm): Circle of LED42 on F.Silkscreen
-    @(86.2500 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(95.7450 mm, 45.0000 mm): Segment on F.Silkscreen
-    @(99.0000 mm, 45.0300 mm): Circle of LED40 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(99.7400 mm, 46.0100 mm): Segment of LED40 on F.Silkscreen
-    @(100.5000 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(111.7600 mm, 54.4800 mm): Segment of LED33 on F.Silkscreen
-    @(100.5000 mm, 45.0000 mm): Segment on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(91.0050 mm, 45.0000 mm): Segment on F.Silkscreen
-    @(94.2450 mm, 45.0300 mm): Circle of LED41 on F.Silkscreen
-[silk_overlap]: Silkscreen overlap
-    Rule: board setup constraints silk; warning
-    @(111.0000 mm, 55.5000 mm): Segment on F.Silkscreen
-    @(110.2400 mm, 56.5100 mm): Segment of LED33 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(118.5000 mm, 57.0000 mm): Segment on F.Silkscreen
@@ -1841,32 +1565,284 @@
     @(127.5000 mm, 48.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(131.2400 mm, 40.0100 mm): Segment of LED38 on F.Silkscreen
-    @(127.5000 mm, 43.5000 mm): Segment on F.Silkscreen
+    @(93.0000 mm, 72.0000 mm): Segment on F.Silkscreen
+    @(98.2600 mm, 75.4800 mm): Segment of LED14 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(117.7500 mm, 33.7500 mm): Polygon on F.Silkscreen
-    @(134.7000 mm, 33.5000 mm): PCB text 'Lafarge Lake–Douglas' on F.Silkscreen
+    @(92.2400 mm, 73.0100 mm): Segment of LED13 on F.Silkscreen
+    @(93.0000 mm, 72.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(119.2930 mm, 33.3090 mm): Segment on F.Silkscreen
-    @(134.7000 mm, 33.5000 mm): PCB text 'Lafarge Lake–Douglas' on F.Silkscreen
+    @(91.5000 mm, 72.0300 mm): Circle of LED13 on F.Silkscreen
+    @(84.7500 mm, 69.0000 mm): Polygon on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(121.0530 mm, 32.8060 mm): Segment on F.Silkscreen
-    @(134.7000 mm, 33.5000 mm): PCB text 'Lafarge Lake–Douglas' on F.Silkscreen
+    @(37.6000 mm, 90.4000 mm): PCB text 'Capstan' on F.Silkscreen
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(40.5000 mm, 45.0300 mm): Circle of LED49 on F.Silkscreen
+    @(39.6000 mm, 45.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(45.6000 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(46.5000 mm, 45.0300 mm): Circle of LED48 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(54.0000 mm, 33.0000 mm): Segment on F.Silkscreen
+    @(66.7600 mm, 43.9800 mm): Segment of LED7 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(64.5000 mm, 45.0300 mm): Circle of LED7 on F.Silkscreen
+    @(54.0000 mm, 45.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(51.6000 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(52.5000 mm, 45.0300 mm): Circle of LED47 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(23.2600 mm, 94.9800 mm): Segment of LED64 on F.Silkscreen
+    @(27.0000 mm, 91.5000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(26.2400 mm, 92.5100 mm): Segment of LED63 on F.Silkscreen
+    @(27.0000 mm, 91.5000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(34.4000 mm, 82.9000 mm): PCB text 'Bridgeport' on F.Silkscreen
+    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.7600 mm, 111.4800 mm): Segment of LED68 on F.Silkscreen
+    @(36.0000 mm, 105.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(35.2400 mm, 106.0100 mm): Segment of LED67 on F.Silkscreen
+    @(36.0000 mm, 105.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.0000 mm, 97.5000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 98.5100 mm): Segment of LED66 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.7600 mm, 103.9800 mm): Segment of LED67 on F.Silkscreen
+    @(36.0000 mm, 97.5000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(35.2400 mm, 91.0100 mm): Segment of LED65 on F.Silkscreen
+    @(36.0000 mm, 90.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.0000 mm, 90.0000 mm): Segment on F.Silkscreen
+    @(36.7600 mm, 96.4800 mm): Segment of LED66 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 83.5100 mm): Segment of LED61 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
+    @(32.2600 mm, 85.9800 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
+    @(35.2400 mm, 83.5100 mm): Segment of LED61 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(36.7600 mm, 88.9800 mm): Segment of LED65 on F.Silkscreen
+    @(36.0000 mm, 82.5000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(31.5000 mm, 87.0000 mm): Segment on F.Silkscreen
+    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(30.7400 mm, 88.0100 mm): Segment of LED62 on F.Silkscreen
+    @(12.0000 mm, 82.9500 mm): Polygon on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(27.7600 mm, 90.4800 mm): Segment of LED63 on F.Silkscreen
+    @(31.5000 mm, 87.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(37.6000 mm, 97.9000 mm): PCB text 'Aberdeen' on F.Silkscreen
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(37.6000 mm, 105.4000 mm): PCB text 'Lansdowne' on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(33.4500 mm, 84.3000 mm): Polygon on F.Silkscreen
+    @(37.6000 mm, 112.9000 mm): PCB text 'Richmond–Brighouse' on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(125.2400 mm, 106.0100 mm): Segment of LED21 on F.Silkscreen
+    @(126.0000 mm, 105.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(128.5460 mm, 107.5460 mm): Segment on F.Silkscreen
+    @(130.5100 mm, 107.7300 mm): Segment of LED22 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(126.7600 mm, 103.9800 mm): Segment of LED21 on F.Silkscreen
+    @(122.2500 mm, 101.2500 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(114.7500 mm, 93.7500 mm): Segment on F.Silkscreen
+    @(119.2600 mm, 96.4800 mm): Segment of LED19 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(114.7500 mm, 93.7500 mm): Segment on F.Silkscreen
+    @(113.9900 mm, 94.7600 mm): Segment of LED18 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(117.7400 mm, 98.5100 mm): Segment of LED19 on F.Silkscreen
+    @(118.5000 mm, 97.5000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(118.5000 mm, 97.5000 mm): Segment on F.Silkscreen
+    @(123.0100 mm, 100.2300 mm): Segment of LED20 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(121.4900 mm, 102.2600 mm): Segment of LED20 on F.Silkscreen
+    @(122.2500 mm, 101.2500 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(111.0000 mm, 90.0000 mm): Segment on F.Silkscreen
+    @(110.2400 mm, 91.0100 mm): Segment of LED17 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(111.0000 mm, 90.0000 mm): Segment on F.Silkscreen
+    @(115.5100 mm, 92.7300 mm): Segment of LED18 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(128.9900 mm, 109.7600 mm): Segment of LED22 on F.Silkscreen
+    @(129.7500 mm, 108.7500 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(134.2600 mm, 111.4800 mm): Segment of LED23 on F.Silkscreen
+    @(132.2960 mm, 111.2960 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(133.5000 mm, 112.5000 mm): Segment on F.Silkscreen
+    @(132.7400 mm, 113.5100 mm): Segment of LED23 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(136.0460 mm, 115.0460 mm): Segment on F.Silkscreen
+    @(138.0100 mm, 115.2300 mm): Segment of LED24 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(137.2500 mm, 116.2500 mm): Segment on F.Silkscreen
+    @(136.4900 mm, 117.2600 mm): Segment of LED24 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(140.2400 mm, 121.0100 mm): Segment of LED25 on F.Silkscreen
+    @(141.0000 mm, 120.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(141.7600 mm, 124.9800 mm): Segment of LED26 on F.Silkscreen
+    @(141.0000 mm, 123.6000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(141.7600 mm, 118.9800 mm): Segment of LED25 on F.Silkscreen
+    @(139.7960 mm, 118.7960 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(141.0000 mm, 126.0000 mm): Segment on F.Silkscreen
+    @(140.2400 mm, 127.0100 mm): Segment of LED26 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(141.0000 mm, 129.6000 mm): Segment on F.Silkscreen
+    @(141.7600 mm, 130.9800 mm): Segment of LED27 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(140.2400 mm, 133.0100 mm): Segment of LED27 on F.Silkscreen
+    @(141.0000 mm, 132.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(141.0000 mm, 135.6000 mm): Segment on F.Silkscreen
+    @(141.7600 mm, 136.9800 mm): Segment of LED28 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(141.0000 mm, 138.0000 mm): Segment on F.Silkscreen
+    @(140.2400 mm, 139.0100 mm): Segment of LED28 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(141.0000 mm, 141.6000 mm): Segment on F.Silkscreen
+    @(141.7600 mm, 142.9800 mm): Segment of LED29 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(89.5050 mm, 45.0300 mm): Circle of LED42 on F.Silkscreen
+    @(86.2500 mm, 45.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(91.0050 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(94.2450 mm, 45.0300 mm): Circle of LED41 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(95.7450 mm, 45.0000 mm): Segment on F.Silkscreen
+    @(99.0000 mm, 45.0300 mm): Circle of LED40 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(99.7400 mm, 46.0100 mm): Segment of LED40 on F.Silkscreen
+    @(100.5000 mm, 45.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(111.7600 mm, 54.4800 mm): Segment of LED33 on F.Silkscreen
+    @(100.5000 mm, 45.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
+    @(116.2600 mm, 58.9800 mm): Segment of LED32 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(110.2400 mm, 56.5100 mm): Segment of LED33 on F.Silkscreen
+    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
+    @(117.7400 mm, 58.0100 mm): Segment of LED34 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(115.5000 mm, 60.0000 mm): Segment on F.Silkscreen
+    @(116.2600 mm, 58.9800 mm): Segment of LED32 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(111.0000 mm, 55.5000 mm): Segment on F.Silkscreen
+    @(116.2600 mm, 58.9800 mm): Segment of LED32 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(111.0000 mm, 55.5000 mm): Segment on F.Silkscreen
+    @(110.2400 mm, 56.5100 mm): Segment of LED33 on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(128.2600 mm, 42.4800 mm): Segment of LED37 on F.Silkscreen
     @(127.5000 mm, 43.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
-    @(132.7600 mm, 37.9800 mm): Segment of LED38 on F.Silkscreen
-    @(132.0000 mm, 39.0000 mm): Segment on F.Silkscreen
+    @(131.2400 mm, 40.0100 mm): Segment of LED38 on F.Silkscreen
+    @(127.5000 mm, 43.5000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(132.0000 mm, 39.0000 mm): Segment on F.Silkscreen
     @(135.7400 mm, 35.5100 mm): Segment of LED39 on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(132.7600 mm, 37.9800 mm): Segment of LED38 on F.Silkscreen
+    @(132.0000 mm, 39.0000 mm): Segment on F.Silkscreen
 [silk_overlap]: Silkscreen overlap
     Rule: board setup constraints silk; warning
     @(66.1000 mm, 72.1000 mm): Segment of GND on B.Silkscreen
