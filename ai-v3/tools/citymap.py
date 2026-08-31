@@ -91,7 +91,7 @@ def is_octilinear(p1, p2, tol=0.01):
     return (abs(dx) < tol or abs(dy) < tol or abs(abs(dx) - abs(dy)) < tol)
 
 
-LONG_NAME_THRESHOLD = 24  # names longer than this always use the short form,
+LONG_NAME_THRESHOLD = 17  # names longer than this always use the short form,
                           # even in "full name" mode - see fit-report.md
 
 

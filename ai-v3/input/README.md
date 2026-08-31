@@ -1,0 +1,70 @@
+# Input data
+
+- **`skytrain-network-map.pdf`** — TransLink's official current-network map
+  (Expo/Millennium/Canada Line only, no Broadway or Surrey–Langley
+  extensions — that's what the linked URL points to). The tracing source
+  for `vancouver.json`'s station positions and coastline/park geometry.
+- **`vancouver.json`** — the city data file the whole `ai-v3/tools/`
+  pipeline reads (schema documented in `../docs/plan.md`).
+
+## How `vancouver.json` was traced from the PDF
+
+Station positions and land/water/park shapes are **not hand-drawn** — they
+were extracted from the PDF's actual vector content (text + path data),
+not eyeballed from a rendered image. Rerun this pipeline after swapping in
+a newer PDF (a future TransLink map revision, or the Broadway/Surrey–Langley
+version once it exists):
+
+```
+pip install pdfplumber pymupdf shapely   # one-time
+python match_stations.py     # words.json + circles.json -> station_coords.json
+python build_geo.py          # geo_shapes.json -> geo_canvas.json (water/park polygons)
+python build_vancouver_json.py   # writes ../input/vancouver.json
+```
+
+1. **`match_stations.py`** — `pdfplumber` extracts every text label's exact
+   (x, y); `pymupdf` (`fitz`) extracts every station-dot circle (drawn as a
+   small filled circle, colour-coded by line — teal `(0,0.61,0.78)` =
+   Canada Line, medium blue `(0,0.37,0.67)` = Expo Line, yellow
+   `(1,0.83,0)` = Millennium Line, navy `(0,0.21,0.37)` = an
+   interchange/major-hub marker). Each station gets one reliable,
+   document-unique anchor word (`ANCHOR` in `match_stations.py`) and is
+   matched to its nearest circle. Diagonal/angled labels near line
+   junctions (Commercial–Broadway, Lougheed Town Centre, Sapperton, Lake
+   City Way, VCC–Clark…) came out as garbled individual characters from
+   pdfplumber (the angled text confuses its word-grouping) — those were
+   resolved by hand against the known real line topology (station order,
+   even spacing along a row/diagonal) instead of by text matching; see
+   `build_vancouver_json.py`'s `PDF_XY` table for the final values used.
+2. **`build_geo.py`** — the PDF draws land as opaque cream polygons over a
+   full-page water-blue background, the opposite of our board (water is
+   the explicit exposed-copper shape, land is just the bare board). This
+   script extracts every land polygon's vector points, unions them with
+   Shapely, and subtracts that union from the page rectangle — the
+   remainder *is* the water, matching the PDF exactly, including the
+   Fraser's arms and Sea Island / Lulu Island falling out as holes
+   automatically (no river/island shape was hand-drawn or guessed).
+   Park polygons are extracted the same way and kept separate for the
+   hatch-fill treatment.
+3. **`build_vancouver_json.py`** — converts every PDF-point coordinate to
+   the 0–100 canvas with a uniform affine transform (a fixed margin inset
+   + independent-axis scale to fill the square board — the real network
+   is wider than it is tall, so this is the one deliberate distortion;
+   everything else preserves the source proportions exactly). The Broadway
+   Extension and Surrey–Langley Extension stations aren't on this PDF (not
+   built yet) — they're extrapolated by continuing each real corridor's
+   traced direction and spacing from its last real station, not traced
+   from a source.
+4. Label **angle/anchor** (which side of the dot the name sits on) still
+   has to be hand-tuned per station in `vancouver.json` afterward — the
+   PDF trace gives the *dot* position, not a usable label layout, since
+   the official map's real labels are hand-placed by a cartographer and
+   pdfplumber's per-character extraction for angled ones isn't reliable
+   enough to reuse directly. Iterate with `../tools/check_fit.py` after
+   any position change.
+
+`words.json` / `circles.json` / `geo_shapes.json` / `geo_canvas.json` /
+`station_coords.json` are the intermediate extraction artifacts (kept for
+inspection/debugging) — none of them are hand-authored, and none should be
+edited directly; edit `vancouver.json` instead, or rerun the pipeline
+against a new PDF.

@@ -1,0 +1,290 @@
+{
+  "waterfront": {
+    "x": 116.1,
+    "y": 38.3,
+    "dist": 21.4,
+    "circle_i": 64
+  },
+  "burrard": {
+    "x": 73.9,
+    "y": 34.5,
+    "dist": 12.2,
+    "circle_i": 0
+  },
+  "granville": {
+    "x": 109.9,
+    "y": 72.7,
+    "dist": 19.6,
+    "circle_i": 50
+  },
+  "stadium": {
+    "x": 156.1,
+    "y": 118.9,
+    "dist": 29.2,
+    "circle_i": 51
+  },
+  "main-street": {
+    "x": 174.3,
+    "y": 133.1,
+    "dist": 15.8,
+    "circle_i": 59
+  },
+  "nanaimo": {
+    "x": 174.1,
+    "y": 173.8,
+    "dist": 19.3,
+    "circle_i": 18
+  },
+  "patterson": {
+    "x": 205.0,
+    "y": 204.8,
+    "dist": 17.5,
+    "circle_i": 20
+  },
+  "metrotown": {
+    "x": 220.5,
+    "y": 220.3,
+    "dist": 18.1,
+    "circle_i": 21
+  },
+  "royal-oak": {
+    "x": 263.5,
+    "y": 256.1,
+    "dist": 9.0,
+    "circle_i": 38
+  },
+  "edmonds": {
+    "x": 289.8,
+    "y": 256.2,
+    "dist": 6.9,
+    "circle_i": 39
+  },
+  "22nd-street": {
+    "x": 316.1,
+    "y": 256.1,
+    "dist": 9.0,
+    "circle_i": 40
+  },
+  "new-westminster": {
+    "x": 343.5,
+    "y": 236.0,
+    "dist": 25.1,
+    "circle_i": 26
+  },
+  "columbia": {
+    "x": 359.0,
+    "y": 220.5,
+    "dist": 21.1,
+    "circle_i": 25
+  },
+  "braid": {
+    "x": 405.7,
+    "y": 173.8,
+    "dist": 14.0,
+    "circle_i": 23
+  },
+  "production-way": {
+    "x": 358.5,
+    "y": 133.0,
+    "dist": 27.1,
+    "circle_i": 32
+  },
+  "scott-road": {
+    "x": 426.2,
+    "y": 228.1,
+    "dist": 9.0,
+    "circle_i": 72
+  },
+  "gateway": {
+    "x": 418.9,
+    "y": 247.9,
+    "dist": 19.2,
+    "circle_i": 14
+  },
+  "surrey-central": {
+    "x": 426.4,
+    "y": 283.3,
+    "dist": 10.7,
+    "circle_i": 68
+  },
+  "king-george": {
+    "x": 426.4,
+    "y": 310.8,
+    "dist": 26.3,
+    "circle_i": 67
+  },
+  "vcc-clark": {
+    "x": 147.9,
+    "y": 133.0,
+    "dist": 22.0,
+    "circle_i": 27
+  },
+  "renfrew": {
+    "x": 200.6,
+    "y": 133.0,
+    "dist": 9.1,
+    "circle_i": 28
+  },
+  "rupert": {
+    "x": 226.9,
+    "y": 133.0,
+    "dist": 6.8,
+    "circle_i": 29
+  },
+  "gilmore": {
+    "x": 253.2,
+    "y": 133.0,
+    "dist": 9.1,
+    "circle_i": 30
+  },
+  "brentwood": {
+    "x": 279.5,
+    "y": 133.0,
+    "dist": 14.3,
+    "circle_i": 31
+  },
+  "holdom": {
+    "x": 305.8,
+    "y": 133.0,
+    "dist": 9.1,
+    "circle_i": 33
+  },
+  "sperling": {
+    "x": 332.1,
+    "y": 133.0,
+    "dist": 14.3,
+    "circle_i": 34
+  },
+  "burquitlam": {
+    "x": 419.0,
+    "y": 95.7,
+    "dist": 22.8,
+    "circle_i": 4
+  },
+  "moody-centre": {
+    "x": 432.1,
+    "y": 82.9,
+    "dist": 14.3,
+    "circle_i": 35
+  },
+  "inlet-centre": {
+    "x": 462.3,
+    "y": 82.9,
+    "dist": 14.3,
+    "circle_i": 36
+  },
+  "coquitlam-central": {
+    "x": 492.9,
+    "y": 82.9,
+    "dist": 8.2,
+    "circle_i": 37
+  },
+  "lincoln": {
+    "x": 505.8,
+    "y": 58.0,
+    "dist": 16.6,
+    "circle_i": 49
+  },
+  "lafarge": {
+    "x": 505.8,
+    "y": 36.3,
+    "dist": 38.5,
+    "circle_i": 48
+  },
+  "vancouver-city-centre": {
+    "x": 66.0,
+    "y": 35.5,
+    "dist": 52.5,
+    "circle_i": 69
+  },
+  "yaletown": {
+    "x": 90.6,
+    "y": 95.7,
+    "dist": 42.5,
+    "circle_i": 43
+  },
+  "olympic-village": {
+    "x": 75.1,
+    "y": 154.3,
+    "dist": 37.9,
+    "circle_i": 66
+  },
+  "broadway-city-hall": {
+    "x": 100.7,
+    "y": 146.4,
+    "dist": 44.3,
+    "circle_i": 41
+  },
+  "king-edward": {
+    "x": 100.7,
+    "y": 173.8,
+    "dist": 16.7,
+    "circle_i": 17
+  },
+  "oakridge": {
+    "x": 100.7,
+    "y": 201.3,
+    "dist": 55.3,
+    "circle_i": 16
+  },
+  "langara": {
+    "x": 100.7,
+    "y": 228.7,
+    "dist": 53.8,
+    "circle_i": 11
+  },
+  "marine-drive": {
+    "x": 100.7,
+    "y": 256.2,
+    "dist": 34.9,
+    "circle_i": 10
+  },
+  "bridgeport": {
+    "x": 100.7,
+    "y": 283.6,
+    "dist": 22.3,
+    "circle_i": 9
+  },
+  "templeton": {
+    "x": 73.9,
+    "y": 297.5,
+    "dist": 6.8,
+    "circle_i": 54
+  },
+  "sea-island-centre": {
+    "x": 45.4,
+    "y": 297.5,
+    "dist": 11.3,
+    "circle_i": 53
+  },
+  "yvr": {
+    "x": 8.3,
+    "y": 282.0,
+    "dist": 12.9,
+    "circle_i": 57
+  },
+  "capstan": {
+    "x": 100.7,
+    "y": 311.1,
+    "dist": 18.5,
+    "circle_i": 8
+  },
+  "aberdeen": {
+    "x": 100.6,
+    "y": 338.5,
+    "dist": 20.5,
+    "circle_i": 7
+  },
+  "lansdowne": {
+    "x": 100.7,
+    "y": 366.0,
+    "dist": 23.2,
+    "circle_i": 6
+  },
+  "richmond-brighouse": {
+    "x": 100.7,
+    "y": 393.4,
+    "dist": 39.1,
+    "circle_i": 5
+  }
+}

@@ -88,17 +88,29 @@ for future/under-construction line segments:
   by request — no municipality names or water-body labels are printed on
   this map, just the coastline shapes themselves.
 
-### Geography traced from the official map
+### Station positions and geography traced from the official map
 
-`vancouver.json`'s `geo` list (coastline, False Creek, the Fraser's three
-arms, Sea Island, Lulu Island, and every park) was redrawn by hand against
-TransLink's own "Future Rapid Transit Network" PDF/map, not invented — the
-goal is a simplified but recognizable reproduction of *that* map's land,
-water, and park shapes, at the level of detail a 150 mm silkscreen can
-actually resolve. This was done by eye (no pixel-coordinate extraction
-tool was used), so treat it as a careful reference match rather than a
-pixel-exact trace — flag any station or shoreline that looks visibly off
-and it can be nudged from the source map directly.
+Both station positions and `vancouver.json`'s `geo` list (coastline,
+Fraser River arms, Sea Island, Lulu Island, every park) are extracted
+from `../input/skytrain-network-map.pdf`'s actual vector content — real
+text/circle coordinates and real polygon points pulled with `pdfplumber`
+/ `pymupdf` / `shapely`, not eyeballed from a picture. See
+`../input/README.md` for the full extraction pipeline and how to rerun it
+against a future PDF revision. Two things are *not* literal trace, by
+necessity:
+
+- The Broadway Extension and Surrey–Langley Extension aren't on the
+  current-network PDF (not built yet), so those 14 stations are
+  extrapolated by continuing each real corridor's traced direction and
+  spacing from its last real station.
+- Every station's label **direction** (which side of the dot the name
+  sits on) is hand-tuned in `vancouver.json`, not traced — the PDF gives
+  dot positions, not a reusable label layout. Real station spacing is
+  tight enough in a few spots (the airport branch, the Coquitlam bend,
+  New Westminster/Columbia/22nd Street) that some labels sit close to a
+  neighbour's dot or to the water fill; `check_fit.py` calls these out
+  as `label-geo` (expected for coastal stations) vs. real overlaps
+  (`label-label`/`label-dot`/`label-line`, hand-fixed one at a time).
 
 ### Keeping copper art DRC-clean: `citymap.prepared_geo`
 
