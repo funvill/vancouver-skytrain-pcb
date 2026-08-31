@@ -1,0 +1,221 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150.0mm" height="150.0mm" viewBox="0 0 150.0 150.0" font-family="sans-serif">
+<rect x="0" y="0" width="150.0" height="150.0" rx="4" fill="#161616"/>
+<polygon points="0.00,0.00 150.00,0.00 150.00,13.50 87.00,13.50 57.00,6.00 40.50,6.00 34.50,12.00 19.50,12.00 0.00,6.00" fill="#0a2333"/>
+<polygon points="31.50,34.50 45.00,37.50 40.50,40.50 31.50,37.50" fill="#0a2333"/>
+<polyline points="0.00,78.75 82.50,78.75 139.50,112.50" fill="none" stroke="#0a2333" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon points="6.00,87.00 22.50,88.50 27.00,93.00 18.00,103.50 6.00,102.00" fill="none" stroke="#666" stroke-width="0.2"/>
+<polyline points="28.50,15.00 33.00,19.50 37.50,24.00 42.00,28.50 46.50,33.00 58.50,45.00 63.00,49.50 67.50,54.00 72.00,58.50 76.50,63.00 81.00,67.50 85.50,72.00 90.00,76.50 94.50,81.00 99.00,85.50 103.50,90.00" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="103.50,90.00 108.00,85.50 108.00,81.00 108.00,60.00 103.50,55.50" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="103.50,90.00 107.25,93.75 111.00,97.50 114.75,101.25 118.50,105.00 122.25,108.75 126.00,112.50 129.75,116.25 133.50,120.00 137.25,123.75 141.00,127.50 141.00,134.25 141.00,141.00" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="6.00,45.00 12.00,45.00 18.00,45.00 28.50,45.00 34.50,45.00 40.50,45.00 46.50,45.00 58.50,45.00 64.50,45.00 69.25,45.00 74.00,45.00 78.75,45.00 83.50,45.00 88.25,45.00 93.00,45.00 103.50,55.50 108.00,60.00 112.50,55.50 117.00,51.00 121.50,46.50 126.00,42.00 130.50,37.50 135.00,33.00" fill="none" stroke="#FDD005" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="28.50,15.00 28.50,22.50 28.50,30.00 28.50,37.50 28.50,45.00 28.50,52.50 28.50,60.00 28.50,67.50 28.50,75.00 28.50,82.50" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="28.50,82.50 24.00,87.00 19.50,91.50 15.00,96.00" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="28.50,82.50 28.50,90.00 28.50,97.50 28.50,105.00 28.50,112.50" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="66.10" y="64.50" width="17.8" height="21.0" fill="none" stroke="#444" stroke-width="0.25" stroke-dasharray="1,1"/>
+<rect x="70.40" y="82.50" width="9.2" height="3.2" fill="none" stroke="#444" stroke-width="0.25" stroke-dasharray="1,1"/>
+<rect x="27.70" y="14.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="15.00" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="32.20" y="18.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="33.00" cy="19.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="36.70" y="23.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="37.50" cy="24.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="41.20" y="27.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="42.00" cy="28.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="45.70" y="32.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="46.50" cy="33.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="57.70" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="58.50" cy="45.00" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="62.20" y="48.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="63.00" cy="49.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="66.70" y="53.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="67.50" cy="54.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="71.20" y="57.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="72.00" cy="58.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="75.70" y="62.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="76.50" cy="63.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="80.20" y="66.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="81.00" cy="67.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="84.70" y="71.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="85.50" cy="72.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="89.20" y="75.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="90.00" cy="76.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="93.70" y="80.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="94.50" cy="81.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="98.20" y="84.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="99.00" cy="85.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="102.70" y="89.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="103.50" cy="90.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="107.20" y="84.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="108.00" cy="85.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="107.20" y="80.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="108.00" cy="81.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="107.20" y="59.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="108.00" cy="60.00" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="102.70" y="54.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="103.50" cy="55.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="106.45" y="93.00" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="107.25" cy="93.75" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="110.20" y="96.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="111.00" cy="97.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="113.95" y="100.50" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="114.75" cy="101.25" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="117.70" y="104.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="118.50" cy="105.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="121.45" y="108.00" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="122.25" cy="108.75" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="125.20" y="111.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="126.00" cy="112.50" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="128.95" y="115.50" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="129.75" cy="116.25" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="132.70" y="119.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="133.50" cy="120.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="136.45" y="123.00" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="137.25" cy="123.75" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="140.20" y="126.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="141.00" cy="127.50" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="140.20" y="133.50" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="141.00" cy="134.25" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="140.20" y="140.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="141.00" cy="141.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="5.20" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="6.00" cy="45.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="11.20" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="12.00" cy="45.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="17.20" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="18.00" cy="45.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="27.70" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="45.00" r="1.05" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="33.70" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="34.50" cy="45.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="39.70" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="40.50" cy="45.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="45.70" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="46.50" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="63.70" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="64.50" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="68.45" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="69.25" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="73.20" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="74.00" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="77.95" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="78.75" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="82.70" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="83.50" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="87.45" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="88.25" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="92.20" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="93.00" cy="45.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="111.70" y="54.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="112.50" cy="55.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="116.20" y="50.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="117.00" cy="51.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="120.70" y="45.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="121.50" cy="46.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="125.20" y="41.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="126.00" cy="42.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="129.70" y="36.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="130.50" cy="37.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="134.20" y="32.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="135.00" cy="33.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="21.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="22.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="29.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="30.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="36.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="37.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="51.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="52.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="59.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="60.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="66.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="67.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="74.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="75.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="81.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="82.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="23.20" y="86.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="24.00" cy="87.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="18.70" y="90.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="19.50" cy="91.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="14.20" y="95.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="15.00" cy="96.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="89.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="90.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="96.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="97.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="104.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="105.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="27.70" y="111.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="28.50" cy="112.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="33.70" y="8.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="34.50" cy="9.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<text transform="translate(26.90,15.40) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Waterfront</text>
+<text transform="translate(33.90,18.60) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Burrard</text>
+<text transform="translate(38.40,23.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Granville</text>
+<text transform="translate(42.90,27.60) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Stadium–Chinatown</text>
+<text transform="translate(47.40,32.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Main Street–Science World</text>
+<text transform="translate(59.40,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Commercial–Broadway</text>
+<text transform="translate(62.10,50.40) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Nanaimo</text>
+<text transform="translate(66.60,54.90) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">29th Avenue</text>
+<text transform="translate(71.10,59.40) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Joyce–Collingwood</text>
+<text transform="translate(75.60,63.90) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Patterson</text>
+<text transform="translate(81.90,66.60) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Metrotown</text>
+<text transform="translate(86.40,71.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Royal Oak</text>
+<text transform="translate(90.90,75.60) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Edmonds</text>
+<text transform="translate(95.40,80.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">22nd Street</text>
+<text transform="translate(98.10,86.40) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">New Westminster</text>
+<text transform="translate(102.60,90.90) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Columbia</text>
+<text transform="translate(109.80,85.90) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Sapperton</text>
+<text transform="translate(109.80,81.40) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Braid</text>
+<text transform="translate(109.80,60.60) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Lougheed Town Centre</text>
+<text transform="translate(104.40,54.60) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Production Way–University</text>
+<text transform="translate(106.35,94.65) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Scott Road</text>
+<text transform="translate(110.10,98.40) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Gateway</text>
+<text transform="translate(113.85,102.15) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Surrey Central</text>
+<text transform="translate(117.60,105.90) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">King George</text>
+<text transform="translate(121.35,109.65) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Green Timbers</text>
+<text transform="translate(125.10,113.40) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">152 Street</text>
+<text transform="translate(128.85,117.15) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Fleetwood</text>
+<text transform="translate(132.60,120.90) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Bakerview</text>
+<text transform="translate(136.35,124.65) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Hillcrest</text>
+<text transform="translate(140.10,128.40) rotate(-45)" text-anchor="end" font-size="1.62" fill="#eee">Clayton</text>
+<text transform="translate(139.40,134.65) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Willowbrook</text>
+<text transform="translate(139.40,141.40) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Langley City Centre</text>
+<text transform="translate(6.90,45.90) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">Arbutus</text>
+<text transform="translate(12.90,45.90) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">South Granville</text>
+<text transform="translate(18.90,45.90) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">Oak–VGH</text>
+<text transform="translate(29.40,45.90) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">Broadway–City Hall</text>
+<text transform="translate(35.40,45.90) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">Mount Pleasant</text>
+<text transform="translate(41.40,45.90) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">Great Northern Way–Emily Carr</text>
+<text transform="translate(47.40,45.90) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">VCC–Clark</text>
+<text transform="translate(65.40,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Renfrew</text>
+<text transform="translate(70.16,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Rupert</text>
+<text transform="translate(74.90,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Gilmore</text>
+<text transform="translate(79.65,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Brentwood Town Centre</text>
+<text transform="translate(84.41,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Holdom</text>
+<text transform="translate(89.15,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Sperling–Burnaby Lake</text>
+<text transform="translate(93.90,44.10) rotate(-45)" text-anchor="start" font-size="1.62" fill="#eee">Lake City Way</text>
+<text transform="translate(114.30,56.10) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Burquitlam</text>
+<text transform="translate(118.80,51.60) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Moody Centre</text>
+<text transform="translate(123.30,47.10) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Inlet Centre</text>
+<text transform="translate(127.80,42.60) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Coquitlam Central</text>
+<text transform="translate(132.30,38.10) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Lincoln</text>
+<text transform="translate(133.20,33.60) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Lafarge Lake–Douglas</text>
+<text transform="translate(26.90,22.90) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Vancouver City Centre</text>
+<text transform="translate(26.90,30.40) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Yaletown–Roundhouse</text>
+<text transform="translate(26.90,37.90) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Olympic Village</text>
+<text transform="translate(29.40,53.40) rotate(45)" text-anchor="start" font-size="1.62" fill="#eee">King Edward</text>
+<text transform="translate(26.90,60.40) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Oakridge–41st Avenue</text>
+<text transform="translate(26.90,67.90) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Langara–49th Avenue</text>
+<text transform="translate(26.90,75.40) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Marine Drive</text>
+<text transform="translate(26.90,82.90) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Bridgeport</text>
+<text transform="translate(22.40,87.40) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Templeton</text>
+<text transform="translate(17.90,91.90) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">Sea Island Centre</text>
+<text transform="translate(13.40,96.40) rotate(0)" text-anchor="end" font-size="1.62" fill="#eee">YVR–Airport</text>
+<text transform="translate(30.10,90.40) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Capstan</text>
+<text transform="translate(30.10,97.90) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Aberdeen</text>
+<text transform="translate(30.10,105.40) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Lansdowne</text>
+<text transform="translate(30.10,112.90) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">Richmond–Brighouse</text>
+<text transform="translate(36.10,9.40) rotate(0)" text-anchor="start" font-size="1.62" fill="#eee">SeaBus</text>
+<text x="2.5" y="148.0" font-size="2.2" fill="#555">vancouver v3 preview — board 150 mm, text 1.2 mm</text>
+</svg>
