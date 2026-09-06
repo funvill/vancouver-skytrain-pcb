@@ -31,8 +31,8 @@ import citymap
 import reposition_board as rb
 
 ART_NAMESPACE = uuid.UUID("6f1b0b1a-b1a1-4a7a-9a1a-76616e636f75")  # fixed, arbitrary
-TEXT_H = 1.2
-TEXT_THICKNESS = 0.15  # 1:8 at 1.2 mm keeps the stroke font's counters open
+TEXT_H = citymap.TEXT_H
+TEXT_THICKNESS = 0.14  # ~1:8 keeps the stroke font's counters open
 ROUTE_W = 1.5          # route stroke; the LEDs are the stars, this is the
                        # connective tissue and has to out-weigh the labels
 RING_R, RING_W = 1.25, 0.25            # silk ring behind every station LED

@@ -100,23 +100,32 @@ for future/under-construction line segments:
   labels, CANADA / USA at the border) or copper text (the wordmark). No
   municipality names or water-body labels are printed, by request.
 
-### Station positions and geography traced from the official map
+### Station positions and geography: the v1 natural map
 
-Both station positions and `vancouver.json`'s `geo` list (coastline,
-Fraser River arms, Sea Island, Lulu Island, every park) are extracted
-from `../input/skytrain-network-map.pdf`'s actual vector content — real
-text/circle coordinates and real polygon points pulled with `pdfplumber`
-/ `pymupdf` / `shapely`, not eyeballed from a picture. See
-`../input/README.md` for the full extraction pipeline and how to rerun it
-against a future PDF revision. Three things are *not* literal trace, by
-necessity:
+Station positions and `vancouver.json`'s water shapes come from the v1
+project's natural-geography map (`v1/input/natrual/map.svg`) via
+`../input/build_from_v1.py` — real coastline, real Fraser, Point Grey and
+Boundary Bay, with v1's station layout drawn over it. (An earlier
+revision traced TransLink's schematic PDF instead; that page is 1.26:1
+where the region is ~2:1, so the map looked stretched — see
+`../input/README.md`.) The region is about twice as wide as tall, so at
+one uniform scale the map fills the top half of the 150 mm square and
+the wordmark / border / legend take the band below; a ~150 × 105 mm board
+would fit this map with no dead band. Things that are deliberately not
+literal:
 
-- The PDF draws no coastline west of the Cambie corridor and nothing
-  below Richmond, so `build_geo.py` adds — in the PDF's own 45° idiom —
-  the Point Grey tip (English Bay / Sturgeon Bank cuts so the left edge
-  ends in water, as v2 did) and Delta / Boundary Bay below the page, so
-  the South Arm makes Lulu Island an island and the bottom band carries
-  the wordmark, legend and border instead of dead space.
+- Runs whose real spacing is under the 2.8 mm LED pitch at this scale
+  (downtown, the Richmond and Sea Island branches) are spread outward
+  along their own direction, and any remaining too-close pair is
+  separated symmetrically.
+- The Surrey–Langley Extension postdates v1: its stations are placed
+  from lat/lon at the map's own east–west scale, with the southward
+  slope capped so Langley City Centre stays on the page (it really is
+  7 km south of Brighouse, which the map already draws at its bottom
+  edge). Capstan (2024) is set midway between Bridgeport and Aberdeen.
+- Every LED gets a 2.4 mm clearance disk carved out of the copper water
+  (`PAD_CLEAR_MM`), since a real coastline puts SeaBus, the river-bank
+  stations and Sea Island *inside* the water.
 - The Broadway Extension and Surrey–Langley Extension aren't on the
   current-network PDF (not built yet), so those 14 stations are
   extrapolated by continuing each real corridor's traced direction and

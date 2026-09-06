@@ -1,13 +1,23 @@
 # Input data
 
-- **`skytrain-network-map.pdf`** — TransLink's official current-network map
-  (Expo/Millennium/Canada Line only, no Broadway or Surrey–Langley
-  extensions — that's what the linked URL points to). The tracing source
-  for `vancouver.json`'s station positions and coastline/park geometry.
 - **`vancouver.json`** — the city data file the whole `ai-v3/tools/`
   pipeline reads (schema documented in `../docs/plan.md`).
+- **`build_from_v1.py`** — **the current source of station positions and
+  geography.** Builds `vancouver.json` from the v1 project's *natural*
+  map (`../../v1/input/natrual/map.svg` + `map.png`): the real coastline
+  (Burrard Inlet with the North Shore, Point Grey, the Fraser's arms,
+  Boundary Bay) and v1's station layout, which was drawn over it. See
+  the script's docstring for the exact sources; the `v1_*.json` files
+  beside it are the extracted intermediates (v1 LED-pair midpoints, the
+  map.png↔board similarity fit, the lat/lon-fitted Langley stations).
+  Run it, then `../tools/auto_label.py`, then the hardware pipeline.
+- **`skytrain-network-map.pdf`** — TransLink's official current-network
+  map. It was the tracing source for an earlier revision (below); its
+  schematic page is 1.26:1 where the real region is ~2:1, so everything
+  south of Broadway came out stretched and the Fraser turned into a
+  45° band — which is why the v1 natural map replaced it.
 
-## How `vancouver.json` was traced from the PDF
+## (Superseded) How `vancouver.json` was traced from the PDF
 
 Station positions and land/water/park shapes are **not hand-drawn** — they
 were extracted from the PDF's actual vector content (text + path data),

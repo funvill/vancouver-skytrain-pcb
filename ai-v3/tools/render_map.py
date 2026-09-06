@@ -126,7 +126,7 @@ def main():
     ap.add_argument("data")
     ap.add_argument("out")
     ap.add_argument("--scale", type=float, default=1.0)
-    ap.add_argument("--text", type=float, default=1.2)
+    ap.add_argument("--text", type=float, default=citymap.TEXT_H)
     ap.add_argument("--short", action="store_true")
     ap.add_argument("--collisions", action="store_true")
     args = ap.parse_args()

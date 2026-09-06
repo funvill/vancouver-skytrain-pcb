@@ -34,7 +34,7 @@ class Context:
     scaled route rectangles, LED dots, prepared geo - built once so a
     label optimiser can re-check one station cheaply."""
 
-    def __init__(self, city, scale=1.0, text_h=1.2, use_short=False):
+    def __init__(self, city, scale=1.0, text_h=citymap.TEXT_H, use_short=False):
         self.city, self.scale, self.text_h, self.use_short = (
             city, scale, text_h, use_short)
         self.size = city.canvas_mm * scale
@@ -107,7 +107,7 @@ class Context:
         return out
 
 
-def find_collisions(city, scale=1.0, text_h=1.2, use_short=False):
+def find_collisions(city, scale=1.0, text_h=citymap.TEXT_H, use_short=False):
     ctx = Context(city, scale, text_h, use_short)
     boxes = {st.id: ctx.box(st) for st in ctx.all_st}
     ids = [st.id for st in ctx.all_st]
@@ -135,7 +135,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("data")
     ap.add_argument("--scale", type=float)
-    ap.add_argument("--text", type=float, default=1.2)
+    ap.add_argument("--text", type=float, default=citymap.TEXT_H)
     ap.add_argument("--short", action="store_true")
     ap.add_argument("-v", "--verbose", action="store_true")
     args = ap.parse_args()

@@ -23,6 +23,7 @@ LINE_PITCH = 1.6  # KiCad stroke-font interline pitch (multiple of size)
 # end. The anchor sits LABEL_STANDOFF mm from the LED centre along the
 # label's own direction - clear of the 1.6 mm pad and the station ring.
 LABEL_STANDOFF = 1.9
+TEXT_H = 1.1   # station label height, mm - the one place it is set
 WRAP_OVER = 13  # names longer than this are set on two lines
 
 

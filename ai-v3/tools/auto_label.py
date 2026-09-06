@@ -26,7 +26,7 @@ import check_fit
 
 PATH = "../input/vancouver.json"
 ANGLES = [0, -45, 45, -90, 90, -60, 60, -30, 30, -75, 75]
-LEADER_RING = [6.0, 9.0]
+LEADER_RING = [6.0, 9.0, 12.0, 15.0]
 LEADER_DIRS = [(1, 0), (-1, 0), (0.7, 0.7), (-0.7, 0.7), (0.7, -0.7),
                (-0.7, -0.7), (0, 1), (0, -1)]
 
@@ -65,7 +65,7 @@ def score(ctx, sid, prev_angle):
     if prev_angle is not None and st.label["angle"] != prev_angle:
         s += 2
     if st.label.get("leader"):
-        s += 5 + 0.3 * math.hypot(st.label["dx"], st.label["dy"])
+        s += 12 + 0.5 * math.hypot(st.label["dx"], st.label["dy"])
     return s
 
 
@@ -105,7 +105,7 @@ def main():
 
     d = json.load(open(PATH, encoding="utf-8"))
     city = citymap.load(PATH)
-    ctx = check_fit.Context(city, 1.5, 1.2, False)
+    ctx = check_fit.Context(city, 1.5, citymap.TEXT_H, False)
     order, prev = path_order(city)
     for p in range(args.passes):
         total = 0
@@ -121,7 +121,7 @@ def main():
             target["label"] = label
         print(f"pass {p}: total score {total:.0f}")
     json.dump(d, open(PATH, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-    cols = [c for c in check_fit.find_collisions(city, 1.5, 1.2, False)
+    cols = [c for c in check_fit.find_collisions(city, 1.5, citymap.TEXT_H, False)
             if c.kind != "label-geo"]
     print(f"remaining real collisions: {len(cols)}")
     for c in cols:

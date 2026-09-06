@@ -62,8 +62,11 @@ def main():
         if not st.name.strip():
             errors.append(f"'{st.id}' has empty name")
 
-    # No two LEDs closer than 2.5 mm (1615 package + courtyard)
-    pts = [(s.id, s.x, s.y) for s in list(city.stations.values()) + city.extras]
+    # No two LEDs closer than 2.5 mm on the 150 mm board (1615 package +
+    # courtyard) - canvas units are 1.5 mm each
+    BOARD_SCALE = 1.5
+    pts = [(s.id, s.x * BOARD_SCALE, s.y * BOARD_SCALE)
+           for s in list(city.stations.values()) + city.extras]
     for i in range(len(pts)):
         for j in range(i + 1, len(pts)):
             d = ((pts[i][1] - pts[j][1]) ** 2 + (pts[i][2] - pts[j][2]) ** 2) ** 0.5
