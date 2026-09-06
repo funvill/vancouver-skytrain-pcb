@@ -26,9 +26,9 @@ import check_fit
 
 PATH = "../input/vancouver.json"
 ANGLES = [0, -45, 45, -90, 90, -60, 60, -30, 30, -75, 75]
-LEADER_RING = [6.0, 9.0, 12.0, 15.0]
-LEADER_DIRS = [(1, 0), (-1, 0), (0.7, 0.7), (-0.7, 0.7), (0.7, -0.7),
-               (-0.7, -0.7), (0, 1), (0, -1)]
+LEADER_RING = [5.0, 7.0, 9.0, 12.0, 15.0, 18.0]
+LEADER_DIRS = [(math.cos(math.radians(a)), math.sin(math.radians(a)))
+               for a in range(0, 360, 22)]
 
 
 def find_station(city, sid):
@@ -66,19 +66,27 @@ def score(ctx, sid, prev_angle):
         s += 2
     if st.label.get("leader"):
         s += 12 + 0.5 * math.hypot(st.label["dx"], st.label["dy"])
+    if st.label.get("short"):
+        s += 8
     return s
 
 
 def candidates(st):
-    for angle in ANGLES:
-        for anchor in ("start", "end"):
-            dx, dy = citymap.label_offset(angle, anchor)
-            yield {"angle": angle, "anchor": anchor, "dx": dx, "dy": dy}
-    for r in LEADER_RING:
-        for ux, uy in LEADER_DIRS:
-            anchor = "end" if ux < 0 else "start"
-            yield {"angle": 0, "anchor": anchor, "dx": round(ux * r, 2),
-                   "dy": round(uy * r, 2), "leader": True}
+    for short in (False, True):
+        if short and not (len(st.name) > citymap.WRAP_OVER and
+                          any(dd in st.name for dd in citymap.DASHES)):
+            continue
+        for angle in ANGLES:
+            for anchor in ("start", "end"):
+                dx, dy = citymap.label_offset(angle, anchor)
+                yield {"angle": angle, "anchor": anchor, "dx": dx, "dy": dy,
+                       **({"short": True} if short else {})}
+        for r in LEADER_RING:
+            for ux, uy in LEADER_DIRS:
+                anchor = "end" if ux < -0.05 else "start"
+                yield {"angle": 0, "anchor": anchor, "dx": round(ux * r, 2),
+                       "dy": round(uy * r, 2), "leader": True,
+                       **({"short": True} if short else {})}
 
 
 def best_label(ctx, sid, prev_angle):
@@ -99,7 +107,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", default="",
                     help="comma-separated station ids to (re)place; default all")
-    ap.add_argument("--passes", type=int, default=2)
+    ap.add_argument("--passes", type=int, default=4)
     args = ap.parse_args()
     only = set(filter(None, args.only.split(",")))
 

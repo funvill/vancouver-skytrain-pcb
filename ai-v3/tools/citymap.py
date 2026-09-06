@@ -51,12 +51,17 @@ class Line:
 @dataclass
 class City:
     name: str
-    canvas_mm: float
+    canvas_mm: float          # canvas width (board width = canvas_mm * scale)
     lines: list
     stations: dict  # id -> Station
     extras: list    # list of Station (SeaBus etc.)
     geo: list       # raw geo dicts
     annotations: list = field(default_factory=list)  # river/municipality labels
+    canvas_h: float = None    # canvas height; None = square
+
+    @property
+    def height(self):
+        return self.canvas_h if self.canvas_h else self.canvas_mm
 
 
 def load(path):
@@ -80,7 +85,8 @@ def load(path):
         extras.append(Station(id=e["id"], name=e["name"], x=e["x"], y=e["y"],
                               short=e.get("short", e["name"]), label=label))
     return City(raw["city"], raw["canvas_mm"], lines, stations, extras,
-                raw.get("geo", []), raw.get("annotations", []))
+                raw.get("geo", []), raw.get("annotations", []),
+                raw.get("canvas_h_mm"))
 
 
 def led_count(city):
@@ -115,6 +121,13 @@ def display_lines(st, use_short=False):
     if isinstance(st.wrap, list):
         return list(st.wrap)
     name = st.name
+    if st.label.get("short"):
+        # optimiser fallback: the name's first part ("Great Northern
+        # Way", "Sperling") where the full two-part name has no room
+        for dash in DASHES:
+            if dash in name:
+                return [name.split(dash, 1)[0].strip()]
+        return [st.short]
     if st.wrap is False or len(name) <= WRAP_OVER:
         return [name]
     for dash in DASHES:
@@ -271,21 +284,43 @@ def simplify(points, tol):
     return rdp(points)
 
 
-def clamp_to_board(points, board_mm, margin):
-    """Keep vertices at least `margin` inside the board outline - needed
-    where art is meant to touch the coastline/canvas edge (bleeds off the
-    top of the map) but copper still needs edge clearance."""
-    return [(min(max(x, margin), board_mm - margin),
-             min(max(y, margin), board_mm - margin)) for x, y in points]
+CORNER_R = 5.0  # board outline corner radius (reposition_board.CORNER_R)
+
+
+def clamp_to_board(points, board_w, margin, board_h=None, corner_r=CORNER_R):
+    """Keep vertices at least `margin` inside the board outline - art that
+    bleeds off the map edge still needs copper-to-edge clearance. The
+    outline has rounded corners, so a vertex in a corner square is also
+    pulled inside the corner arc."""
+    board_h = board_h if board_h is not None else board_w
+    out = []
+    rr = corner_r - margin
+    for x, y in points:
+        x = min(max(x, margin), board_w - margin)
+        y = min(max(y, margin), board_h - margin)
+        cx = corner_r if x < corner_r else (board_w - corner_r if x > board_w - corner_r else None)
+        cy = corner_r if y < corner_r else (board_h - corner_r if y > board_h - corner_r else None)
+        if cx is not None and cy is not None:
+            dx, dy = x - cx, y - cy
+            dd = math.hypot(dx, dy)
+            if dd > rr:
+                x, y = cx + dx / dd * rr, cy + dy / dd * rr
+        out.append((x, y))
+    return out
+
+
+# Copper may run right to the board edge (the water forms no border);
+# 0.4 mm is comfortably over the fab's copper-to-edge minimum.
+EDGE_MARGIN = 0.4
 
 
 def prepared_geo(city, scale, avoid_pts, water_keepout=2.0, land_keepout=1.0,
-                 edge_margin=2.5, densify_step=2.0):
+                 edge_margin=EDGE_MARGIN, densify_step=2.0):
     """Every geo shape from the city file, scaled to board mm and adjusted
     to clear LED pads and the board edge. Same output feeds the SVG
     preview, the collision checker, and the PCB art exporter, so what you
     see in the preview is exactly what ends up on copper."""
-    board_mm = city.canvas_mm * scale
+    board_w, board_h = city.canvas_mm * scale, city.height * scale
     out = []
     for g in city.geo:
         pts = [(x * scale, y * scale) for x, y in g["points"]]
@@ -301,7 +336,7 @@ def prepared_geo(city, scale, avoid_pts, water_keepout=2.0, land_keepout=1.0,
         if keepout > 0:
             pts = densify(pts, closed, densify_step)
             pts = repel(pts, avoid_pts, keepout)
-        pts = clamp_to_board(pts, board_mm, edge_margin)
+        pts = clamp_to_board(pts, board_w, edge_margin, board_h)
         if not closed and keepout > 0:
             pts = simplify(pts, tol=0.4)
         out.append({**g, "points": pts, "_prepared": True})
@@ -385,6 +420,14 @@ def segs_intersect(p1, p2, p3, p4):
     o1, o2 = orient(p1, p2, p3), orient(p1, p2, p4)
     o3, o4 = orient(p3, p4, p1), orient(p3, p4, p2)
     return o1 != o2 and o3 != o4
+
+
+def seg_box_overlap(seg, box):
+    """True if segment (p1, p2) touches the convex 4-point box."""
+    (p1, p2) = seg
+    if point_in_polygon(p1, box) or point_in_polygon(p2, box):
+        return True
+    return any(segs_intersect(p1, p2, box[i], box[(i + 1) % 4]) for i in range(4))
 
 
 def box_poly_overlap(box, poly, closed=True):

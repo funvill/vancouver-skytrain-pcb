@@ -2,15 +2,21 @@
 
 - **`vancouver.json`** — the city data file the whole `ai-v3/tools/`
   pipeline reads (schema documented in `../docs/plan.md`).
-- **`build_from_v1.py`** — **the current source of station positions and
-  geography.** Builds `vancouver.json` from the v1 project's *natural*
-  map (`../../v1/input/natrual/map.svg` + `map.png`): the real coastline
-  (Burrard Inlet with the North Shore, Point Grey, the Fraser's arms,
-  Boundary Bay) and v1's station layout, which was drawn over it. See
-  the script's docstring for the exact sources; the `v1_*.json` files
-  beside it are the extracted intermediates (v1 LED-pair midpoints, the
-  map.png↔board similarity fit, the lat/lon-fitted Langley stations).
-  Run it, then `../tools/auto_label.py`, then the hardware pipeline.
+- **`build_from_osm.py`** — **the current source of station positions and
+  geography.** Builds `vancouver.json` from OpenStreetMap: real station
+  nodes, the `natural=coastline` ways (land is on the left of a coastline
+  way — that's how sea and land are told apart), the Fraser/Pitt river
+  centrelines buffered where the coastline stops, and only the large
+  named lakes (Burnaby, Deer, Trout, Como, Lost Lagoon…). The shoreline
+  is smoothed (morphological open/close + simplify) so it reads clean at
+  3 mm/km. The frame is a lat/lon box (Point Grey → past Langley, North
+  Shore → below Langley) and the board takes its aspect: **150 × 86.2 mm**,
+  water running to the board edge. Raw Overpass responses are cached in
+  `osm/` (queries listed at the bottom of the script) so it runs offline.
+  Run it, then `../tools/auto_label.py`, then the hardware pipeline with
+  `reposition_board.py --board 150 --height 86.2`.
+- `build_from_v1.py` — superseded: built the map from the v1 project's
+  hand-drawn natural map, kept for reference (its `v1_*.json` inputs too).
 - **`skytrain-network-map.pdf`** — TransLink's official current-network
   map. It was the tracing source for an earlier revision (below); its
   schematic page is 1.26:1 where the real region is ~2:1, so everything

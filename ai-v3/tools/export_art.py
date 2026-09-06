@@ -33,8 +33,8 @@ import reposition_board as rb
 ART_NAMESPACE = uuid.UUID("6f1b0b1a-b1a1-4a7a-9a1a-76616e636f75")  # fixed, arbitrary
 TEXT_H = citymap.TEXT_H
 TEXT_THICKNESS = 0.14  # ~1:8 keeps the stroke font's counters open
-ROUTE_W = 1.5          # route stroke; the LEDs are the stars, this is the
-                       # connective tissue and has to out-weigh the labels
+ROUTE_W = 1.0          # route stroke - one style for every segment, built
+                       # or not, and slimmer than the station rings
 RING_R, RING_W = 1.25, 0.25            # silk ring behind every station LED
 RING_R_INT, RING_W_INT = 1.55, 0.4     # ... and a heavier one at interchanges
 DASH_STYLES = {  # (dash, gap) in mm for "line" geo and future routes
@@ -177,7 +177,9 @@ def water_blocks(city, scale, geo=None):
                 a = (p1[0] - ux, p1[1] - uy)
                 b = (p2[0] + ux, p2[1] + uy)
                 rect = citymap.seg_rect(a, b, half)
-                rect = citymap.clamp_to_board(rect, city.canvas_mm * scale, 2.5)
+                rect = citymap.clamp_to_board(rect, city.canvas_mm * scale,
+                                              citymap.EDGE_MARGIN,
+                                              city.height * scale)
                 closest = min(citymap.poly_point_min_dist(rect, pt)
                              for pt in avoid)
                 if closest < RIVER_SAFE_FLOOR:
@@ -229,21 +231,14 @@ def land_outline_blocks(city, scale, geo=None):
 
 def route_blocks(city, scale):
     """The transit lines themselves, as F.SilkS strokes between adjacent
-    stations - solid for the current network, dashed for segments not
-    built yet (either endpoint has future=true), mirroring how the
-    official map distinguishes future lines from the current network."""
+    stations - one solid style for every segment (future extensions are
+    drawn like the rest; the map shows the network as it will be)."""
     blocks = []
     for i, (line_id, p1, p2, a, b) in enumerate(citymap.segments(city)):
-        future = city.stations[a].future or city.stations[b].future
         p1s = (p1[0] * scale, p1[1] * scale)
         p2s = (p2[0] * scale, p2[1] * scale)
-        if future:
-            for j, (da, db) in enumerate(dash_points(p1s, p2s)):
-                blocks.append(line_block(da, db, "F.SilkS",
-                                         f"route:{i}:{a}:{b}:{j}", width=ROUTE_W))
-        else:
-            blocks.append(line_block(p1s, p2s, "F.SilkS",
-                                     f"route:{i}:{a}:{b}", width=ROUTE_W))
+        blocks.append(line_block(p1s, p2s, "F.SilkS",
+                                 f"route:{i}:{a}:{b}", width=ROUTE_W))
     return blocks
 
 

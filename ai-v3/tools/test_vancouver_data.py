@@ -56,7 +56,7 @@ def main():
     # Coordinates on canvas with margin
     for st in list(city.stations.values()) + city.extras:
         if not (MARGIN_MM <= st.x <= city.canvas_mm - MARGIN_MM and
-                MARGIN_MM <= st.y <= city.canvas_mm - MARGIN_MM):
+                MARGIN_MM <= st.y <= city.height - MARGIN_MM):
             errors.append(f"'{st.id}' at ({st.x},{st.y}) violates "
                           f"{MARGIN_MM}mm margin")
         if not st.name.strip():

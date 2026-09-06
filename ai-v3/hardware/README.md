@@ -100,32 +100,30 @@ for future/under-construction line segments:
   labels, CANADA / USA at the border) or copper text (the wordmark). No
   municipality names or water-body labels are printed, by request.
 
-### Station positions and geography: the v1 natural map
+### Station positions and geography: OpenStreetMap
 
-Station positions and `vancouver.json`'s water shapes come from the v1
-project's natural-geography map (`v1/input/natrual/map.svg`) via
-`../input/build_from_v1.py` — real coastline, real Fraser, Point Grey and
-Boundary Bay, with v1's station layout drawn over it. (An earlier
-revision traced TransLink's schematic PDF instead; that page is 1.26:1
-where the region is ~2:1, so the map looked stretched — see
-`../input/README.md`.) The region is about twice as wide as tall, so at
-one uniform scale the map fills the top half of the 150 mm square and
-the wordmark / border / legend take the band below; a ~150 × 105 mm board
-would fit this map with no dead band. Things that are deliberately not
-literal:
+Station positions and `vancouver.json`'s water shapes come from
+OpenStreetMap via `../input/build_from_osm.py` — real station nodes, the
+real shoreline (smoothed), the Fraser and Pitt rivers, and the large
+lakes. The board is **150 × 86.2 mm**, the aspect of the lat/lon frame
+(Point Grey → Langley, North Shore → below Langley) at 3.1 mm/km; water
+runs to the board edge (0.4 mm copper-to-edge, corners pulled inside
+the 5 mm radius) — there is no border. Earlier revisions used
+TransLink's schematic PDF and then v1's hand-drawn map; see
+`../input/README.md`. Deliberately not literal:
 
-- Runs whose real spacing is under the 2.8 mm LED pitch at this scale
-  (downtown, the Richmond and Sea Island branches) are spread outward
-  along their own direction, and any remaining too-close pair is
-  separated symmetrically.
-- The Surrey–Langley Extension postdates v1: its stations are placed
-  from lat/lon at the map's own east–west scale, with the southward
-  slope capped so Langley City Centre stays on the page (it really is
-  7 km south of Brighouse, which the map already draws at its bottom
-  edge). Capstan (2024) is set midway between Bridgeport and Aberdeen.
-- Every LED gets a 2.4 mm clearance disk carved out of the copper water
-  (`PAD_CLEAR_MM`), since a real coastline puts SeaBus, the river-bank
-  stations and Sea Island *inside* the water.
+- Runs whose real spacing is under the LED pitch (downtown, Richmond,
+  Sea Island, Coquitlam) are spread outward along their own direction,
+  then any remaining too-close pair is separated symmetrically. The
+  pitch floor is **3.3 mm**: LED footprints rotate to aim DOUT at the
+  next LED, and two diagonal neighbours' pads need that to keep 0.2 mm.
+- A station the smoothing leaves inside water (a river-bank station) is
+  nudged onto land, as the real map shows it; every LED then gets a
+  2.2 mm clearance disk carved out of the copper water.
+- The "VANCOUVER" wordmark is exposed-copper lettering placed on land
+  (Delta), at the first candidate spot clear of water and track.
+
+Routes are one solid 1.0 mm style for every segment, built or not.
 - The Broadway Extension and Surrey–Langley Extension aren't on the
   current-network PDF (not built yet), so those 14 stations are
   extrapolated by continuing each real corridor's traced direction and

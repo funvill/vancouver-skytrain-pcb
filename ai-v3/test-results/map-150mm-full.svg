@@ -1,277 +1,256 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="150.0mm" height="150.0mm" viewBox="0 0 150.0 150.0" font-family="sans-serif">
-<rect x="0" y="0" width="150.0" height="150.0" rx="4" fill="#161616"/>
-<polygon points="43.66,56.64 43.79,56.43 43.92,56.23 44.03,56.13 43.94,56.04 43.23,55.97 42.05,55.09 40.86,54.22 39.45,53.43 39.06,53.47 38.17,52.12 37.18,51.21 36.18,50.30 34.94,49.75 33.70,49.20 32.69,49.07 31.68,48.95 29.93,48.25 28.17,47.55 26.42,46.85 24.66,46.16 23.58,44.98 23.27,43.68 21.93,42.49 20.59,41.31 19.26,40.12 17.74,39.20 16.21,38.28 15.22,37.48 14.23,36.69 12.86,35.92 11.48,35.16 10.68,33.88 10.08,32.12 9.14,30.59 8.20,29.07 7.26,27.54 7.81,26.10 8.67,24.86 9.53,24.12 10.39,23.38 11.28,22.08 12.59,21.45 13.72,21.62 14.85,21.79 15.75,22.32 17.33,22.16 19.26,22.60 21.19,23.05 23.12,23.49 25.11,23.45 26.22,24.11 27.33,24.77 28.61,24.59 29.88,24.41 31.76,24.82 33.63,25.23 34.72,24.96 35.64,24.33 36.74,24.36 37.84,24.39 38.40,23.96 38.80,22.80 39.41,22.48 41.04,22.30 41.87,22.89 42.16,23.58 42.16,23.45 42.18,23.21 42.21,22.98 42.27,22.75 42.34,22.53 42.45,22.32 42.55,22.12 42.45,21.86 40.77,21.81 39.10,21.77 37.42,21.72 37.42,20.10 39.23,20.03 41.03,19.95 40.98,18.64 40.25,17.87 39.53,17.09 39.20,15.88 38.27,14.60 37.08,14.02 36.72,13.11 37.30,11.80 37.46,10.64 37.62,9.48 38.39,8.57 39.15,7.67 40.14,7.34 41.13,7.00 41.74,7.05 42.54,7.68 43.16,8.84 43.79,9.99 45.00,11.49 45.77,11.69 47.01,12.66 48.69,12.54 48.81,13.42 48.03,14.13 46.09,14.19 45.16,14.77 44.64,14.46 43.74,14.67 44.92,15.85 46.09,17.02 46.71,17.13 46.74,17.13 46.98,17.12 47.22,17.13 47.45,17.16 47.67,17.22 47.89,17.29 48.05,17.37 48.55,17.46 48.66,17.40 48.87,17.29 49.09,17.22 49.32,17.16 49.55,17.13 49.78,17.12 50.03,17.13 50.25,17.16 50.47,17.22 50.70,17.29 50.79,17.34 52.17,16.02 53.56,14.69 54.94,13.37 56.32,12.04 57.45,13.20 57.44,13.23 57.47,13.23 57.70,13.25 57.93,13.27 58.16,13.34 58.38,13.41 58.59,13.52 58.80,13.63 58.99,13.77 59.16,13.93 59.32,14.10 59.46,14.29 59.58,14.50 59.69,14.71 59.76,14.94 59.82,15.16 59.85,15.39 59.86,15.63 59.85,15.87 59.82,16.09 59.76,16.32 59.69,16.54 59.58,16.75 59.46,16.96 59.32,17.16 59.16,17.33 58.99,17.49 58.80,17.62 58.59,17.75 58.38,17.85 58.16,17.92 57.93,17.98 57.70,18.02 57.47,18.03 57.24,18.02 57.33,19.47 57.77,19.56 57.86,18.84 58.24,18.79 58.43,19.23 58.97,19.17 59.05,18.55 59.78,18.41 59.84,17.50 61.65,17.89 62.23,17.36 62.43,17.52 62.32,18.52 62.56,18.57 62.76,18.27 63.53,18.24 64.25,17.26 64.98,16.27 65.22,16.46 66.99,15.64 67.50,15.93 68.19,15.64 68.85,16.48 69.60,16.23 70.26,16.83 71.23,17.07 72.39,16.93 73.25,16.40 74.10,15.87 75.18,15.62 76.26,15.73 77.34,15.86 78.44,16.37 79.53,16.89 80.70,16.94 81.87,16.98 83.11,16.27 84.34,15.57 85.08,15.43 86.60,16.48 88.12,17.54 89.82,18.06 91.52,18.59 93.24,18.03 94.97,17.48 96.79,17.12 98.61,16.75 100.50,16.84 102.39,16.92 103.95,17.79 105.78,17.75 107.06,17.97 108.34,18.20 109.48,17.98 110.28,17.36 111.07,16.74 112.40,16.86 113.73,16.98 115.11,16.53 116.16,16.53 117.48,17.02 118.48,18.20 119.48,19.36 120.48,20.54 120.52,20.73 119.31,21.39 120.09,22.08 120.66,21.46 121.56,21.27 121.86,20.87 122.28,21.41 123.03,21.18 124.29,22.14 124.98,21.33 126.07,20.91 126.44,20.84 126.96,21.21 127.08,20.02 126.42,19.32 125.06,18.61 123.71,17.89 122.35,17.17 121.03,16.11 119.70,15.05 118.37,13.99 117.05,12.93 115.89,12.59 114.94,13.21 113.28,12.90 112.22,13.80 110.75,14.46 109.27,15.12 107.53,15.11 106.48,16.07 105.30,16.07 104.11,16.08 103.59,15.18 103.06,14.28 101.90,13.98 102.02,13.35 101.41,12.43 101.19,10.90 101.36,9.35 101.54,7.79 101.72,6.24 100.08,6.24 98.44,6.24 96.80,6.24 96.63,6.66 95.72,7.04 95.89,8.64 96.06,10.25 94.78,11.50 93.51,12.75 91.80,11.93 90.39,11.89 88.98,11.87 88.23,11.15 87.48,10.44 86.41,10.09 85.35,9.75 84.12,10.10 83.40,9.78 82.41,9.84 81.18,11.05 80.10,11.46 79.02,11.87 78.89,12.88 78.47,13.41 78.16,13.25 78.15,12.64 77.67,12.78 77.66,13.53 77.10,13.70 75.96,13.38 75.68,13.63 75.16,11.96 74.64,11.83 75.02,13.35 74.76,13.75 74.37,13.07 74.07,13.11 73.22,13.27 73.11,14.00 71.47,13.75 69.84,13.50 69.36,12.87 67.89,12.00 68.41,11.32 68.07,11.13 67.17,11.65 65.73,10.94 65.47,10.43 63.66,10.70 61.84,10.96 60.66,10.30 59.47,9.64 59.23,9.99 58.99,9.90 59.09,9.38 57.94,8.60 56.80,7.83 56.04,6.98 55.34,7.49 54.14,7.48 52.94,7.47 52.80,8.43 52.45,8.38 52.36,7.27 51.97,7.27 51.49,7.67 51.45,8.56 49.76,8.31 49.76,7.04 49.30,7.47 48.72,7.29 49.03,8.88 47.73,8.07 47.61,8.29 46.74,7.80 45.89,7.20 45.05,6.60 43.96,6.24 41.97,6.24 39.97,6.24 37.97,6.24 35.97,6.24 33.97,6.24 31.98,6.24 29.98,6.24 27.98,6.24 25.98,6.24 23.98,6.24 21.99,6.24 19.99,6.24 17.99,6.24 15.99,6.24 13.99,6.24 11.99,6.24 10.00,6.24 8.00,6.24 6.00,6.24 6.00,8.22 6.00,10.19 6.00,12.17 6.00,14.14 6.00,16.12 6.00,18.09 6.00,20.07 6.00,22.04 6.00,24.02 6.00,25.99 6.00,27.97 6.00,29.94 6.00,31.92 6.00,33.89 6.00,35.87 6.00,37.84 6.00,39.82 6.00,41.80 6.00,43.77 6.00,45.75 6.00,47.72 6.00,49.70 6.00,51.67 6.00,53.65 6.00,55.62 6.00,57.60 6.00,59.57 6.00,61.55 6.00,63.52 6.00,65.50 6.00,67.47 6.00,69.45 6.00,71.42 6.00,73.40 6.00,75.38 7.87,75.38 9.74,75.38 11.60,75.38 13.47,75.38 15.34,75.38 17.21,75.38 19.08,75.38 20.95,75.38 22.81,75.38 24.68,75.38 26.55,75.38 26.51,73.92 26.48,72.45 26.45,71.00 25.96,69.27 25.47,67.55 25.84,66.63 27.33,66.53 29.24,66.69 31.16,66.86 33.07,67.03 34.98,67.20 36.41,66.89 37.83,66.59 39.59,65.64 40.39,64.98 41.20,64.32 41.05,64.17 40.92,63.97 40.80,63.77 40.70,63.55 40.65,63.42 39.74,64.26 38.84,65.10 37.64,65.44 36.45,65.79 36.39,65.40 35.09,65.52 33.78,65.64 32.70,65.43 32.10,64.95 31.26,65.23 30.77,65.09 29.45,64.19 28.12,63.29 26.80,62.39 25.58,62.34 23.96,61.88 22.34,61.43 22.43,59.63 22.54,57.84 22.63,56.04 23.41,54.52 24.18,52.99 24.21,51.99 24.24,50.98 24.60,49.71 24.41,49.30 23.61,49.56 23.88,49.03 22.08,49.28 20.38,49.81 18.68,50.35 16.98,50.89 15.27,51.42 13.57,51.96 11.87,52.50 10.17,53.03 8.47,53.57 6.76,54.11 7.04,53.64 8.81,53.06 10.58,52.48 12.35,51.91 14.12,51.33 15.89,50.75 17.67,50.17 19.44,49.60 21.21,49.02 21.30,48.27 20.88,47.23 20.22,46.79 19.61,46.80 18.75,46.07 17.89,45.34 16.84,44.69 15.78,44.03 15.50,43.02 16.60,43.91 17.70,44.79 18.80,45.34 19.91,45.90 21.41,46.44 22.91,46.98 24.41,47.52 25.97,47.92 27.54,48.31 28.63,48.98 29.73,49.64 31.12,49.98 29.68,50.12 28.25,50.25 26.80,50.39 25.48,49.92 25.16,51.36 25.65,51.75 27.27,51.67 28.89,51.59 30.01,51.21 31.12,50.84 31.93,50.10 32.85,50.03 33.53,50.51 33.73,50.10 35.24,51.02 36.75,51.95 36.13,52.11 37.34,53.18 38.55,54.25 39.77,55.32 41.39,56.00 43.02,56.67 43.35,57.21 43.09,57.77 43.38,57.81 43.38,57.77 43.39,57.53 43.42,57.30 43.48,57.07 43.56,56.85" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="147.50,44.07 147.50,42.48 147.50,41.90 147.50,41.33 147.50,40.09 147.50,38.85 147.50,39.38 147.50,38.85 147.50,38.85 147.50,40.80 146.66,41.50 145.71,42.20 144.63,43.63 143.53,44.07 143.76,45.29 143.98,46.52 145.00,46.99 146.01,47.47 146.20,48.82 145.98,49.38 144.97,49.46 143.95,49.55 142.69,49.18 141.42,48.81 142.17,47.28 142.74,46.91 143.98,46.52 143.76,45.29 143.53,44.07 141.72,44.38 139.91,44.70 138.10,45.02 136.29,45.33 135.54,44.82 135.52,44.30 136.31,42.91 135.28,43.91 135.34,45.41 133.50,45.84 131.65,46.28 129.80,46.72 128.07,46.71 126.34,46.70 124.48,46.25 122.61,45.81 120.77,45.60 118.94,45.39 117.10,45.18 115.34,45.44 115.11,45.20 113.87,45.91 112.64,46.63 111.68,47.67 111.27,49.39 110.86,51.11 109.74,52.64 109.53,53.41 110.95,53.95 111.76,52.97 112.57,51.99 113.40,51.28 114.23,50.58 115.66,50.03 117.09,49.48 118.95,49.19 120.81,48.90 122.59,48.82 124.38,48.73 126.17,48.65 127.95,48.56 129.74,48.48 131.52,48.39 133.45,48.80 135.38,49.20 137.31,49.61 139.24,50.02 141.17,50.43 143.10,50.84 144.51,50.98 145.92,51.12 147.25,50.95 147.50,50.78 147.50,50.61 147.50,48.97 147.50,47.34 147.50,46.07 147.50,44.80" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="101.18,61.11 101.06,60.90 100.95,60.69 100.94,60.64 100.16,61.23 99.30,62.20 98.44,63.16 96.92,64.08 95.39,65.00 93.87,65.92 92.34,66.84 91.65,67.88 90.96,68.91 90.38,69.36 88.75,69.97 87.12,70.59 85.50,71.20 83.87,71.82 82.25,72.44 82.38,72.89 81.55,74.18 80.98,74.41 81.70,73.09 82.38,72.89 82.25,72.44 81.30,73.02 80.56,73.86 79.83,74.70 78.63,75.38 80.60,75.38 82.58,75.38 84.55,75.38 86.53,75.38 88.50,75.38 90.48,75.38 92.45,75.38 94.43,75.38 96.41,75.38 97.19,74.75 97.38,74.01 98.20,73.15 99.02,72.28 100.39,71.20 101.76,70.12 101.62,70.11 101.40,70.08 101.18,70.02 100.95,69.95 100.74,69.84 100.53,69.72 100.34,69.59 100.17,69.42 100.00,69.25 99.87,69.06 99.75,68.85 99.65,68.64 99.57,68.41 99.51,68.19 99.48,67.97 99.47,67.72 99.48,67.48 99.51,67.26 99.57,67.03 99.65,66.81 99.75,66.60 99.87,66.39 100.00,66.20 100.17,66.03 100.34,65.86 100.53,65.73 100.74,65.61 100.89,65.53 100.81,65.46 100.65,65.30 100.52,65.10 100.40,64.89 100.29,64.68 100.22,64.45 100.16,64.23 100.12,64.00 100.11,63.77 100.12,63.53 100.16,63.30 100.22,63.07 100.29,62.85 100.40,62.64 100.52,62.43 100.65,62.23 100.81,62.07 100.98,61.91 101.18,61.77 101.39,61.65 101.56,61.56 101.48,61.47 101.31,61.30" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="69.54,53.73 68.16,53.75 66.77,53.76 65.39,53.78 64.34,53.62 63.30,53.47 62.06,52.90 60.81,52.32 59.39,52.49 57.97,52.65 56.59,53.19 55.22,53.73 53.35,53.75 51.48,53.76 49.62,53.78 48.69,54.09 48.60,55.70 50.07,56.09 51.53,56.49 53.00,56.89 54.47,57.28 55.81,57.36 57.52,56.53 59.23,55.71 60.47,55.35 60.97,55.47 62.11,54.90 63.87,54.57 65.69,54.65 67.52,54.73 69.34,54.81 71.06,55.43 72.77,56.05 72.75,55.89 72.73,55.65 72.75,55.41 72.78,55.19 72.81,55.03 71.84,54.80 70.69,54.26" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="80.91,59.79 80.78,59.59 80.66,59.39 80.55,59.18 80.47,58.95 80.41,58.72 80.41,58.72 80.34,58.84 80.20,59.04 80.04,59.20 79.88,59.37 79.86,59.37 81.10,60.73 82.35,62.09 83.85,63.14 85.35,64.19 87.05,64.91 88.33,64.66 89.61,64.41 90.91,63.80 91.84,62.68 92.76,61.56 91.98,61.92 91.35,62.79 90.34,63.48 90.87,62.55 91.81,61.76 92.76,60.97 93.18,61.09 93.27,60.48 94.43,59.37 95.69,58.43 96.96,57.49 98.45,57.58 99.93,57.66 101.72,57.44 101.52,57.30 101.35,57.14 101.19,56.97 101.07,56.79 101.04,56.95 99.24,57.00 97.89,56.69 98.35,56.32 100.00,56.14 101.00,56.67 100.94,56.56 100.83,56.36 100.75,56.13 100.69,55.91 100.68,55.83 100.16,55.62 98.56,55.80 97.40,56.54 96.23,57.27 95.07,58.01 95.00,58.12 94.83,58.29 94.66,58.45 94.47,58.59 94.26,58.71 94.05,58.81 93.82,58.89 93.60,58.95 93.57,58.95 92.78,59.46 91.51,60.84 90.25,62.22 88.98,63.60 87.96,64.08 87.05,64.12 85.88,63.68 84.55,62.66 83.56,61.65 82.56,60.64 82.53,60.64 82.30,60.61 82.08,60.55 81.86,60.48 81.64,60.38 81.44,60.26 81.24,60.12 81.07,59.95" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="104.11,61.98 104.20,62.07 104.37,62.23 104.50,62.43 104.62,62.64 104.73,62.85 104.81,63.07 104.82,63.14 105.59,61.50 106.36,59.86 107.44,58.56 108.51,57.25 109.58,55.94 110.66,54.63 109.02,54.03 107.90,55.05 106.78,56.06 105.66,57.07 104.86,57.02 104.75,57.14 104.58,57.30 104.39,57.44 104.18,57.55 104.13,57.59 104.30,57.66 104.50,57.78 104.70,57.91 104.86,58.08 105.03,58.24 105.16,58.44 105.28,58.65 105.39,58.86 105.47,59.09 105.52,59.31 105.56,59.53 105.57,59.78 105.56,60.02 105.52,60.24 105.47,60.47 105.39,60.69 105.28,60.90 105.16,61.11 105.03,61.30 104.86,61.47 104.70,61.64 104.50,61.77 104.30,61.89" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="52.06,18.79 52.08,18.83 52.14,19.05 52.17,19.27 52.17,19.30 52.56,19.30 52.71,18.63 52.99,18.63 53.10,19.30 53.47,19.30 53.52,18.24 53.76,18.24 54.07,19.02 54.41,18.84 53.95,17.64 55.70,18.06 55.94,17.54 56.09,17.59 55.94,17.49 55.77,17.33 55.61,17.16 55.47,16.96 55.35,16.75 55.24,16.54 55.17,16.32 55.11,16.09 55.08,15.87 55.08,15.79 54.07,16.79 53.07,17.79" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="99.54,38.14 98.64,38.20 97.20,37.66 95.75,37.10 94.30,36.55 93.57,35.89 93.38,36.26 92.46,35.87 92.67,36.57 93.03,36.73 94.77,37.36 96.51,37.99 98.25,38.61 99.99,39.24 100.31,39.02 99.48,38.62" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="52.17,25.05 52.08,23.91 50.86,23.67 50.41,24.26 49.65,24.36 49.64,24.55 49.61,24.78 49.55,25.01 49.47,25.23 49.45,25.26 49.45,25.26 49.68,25.34 49.89,25.44 49.92,25.45 50.93,25.02" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polygon points="88.95,40.92 89.18,40.84 89.40,40.79 89.62,40.76 89.86,40.74 90.11,40.76 90.33,40.79 90.54,40.84 89.85,39.87 88.17,39.80 87.53,40.11 87.50,41.03 88.47,41.19 88.53,41.14 88.74,41.03" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
-<polyline points="49.78,19.52 57.47,15.63" fill="none" stroke="#eee" stroke-width="0.5" stroke-dasharray="0.5,0.9"/>
-<polyline points="4.50,84.00 145.50,84.00" fill="none" stroke="#eee" stroke-width="0.3" stroke-dasharray="3,1,0.4,1"/>
-<polyline points="93.00,116.25 102.00,116.25" fill="none" stroke="#eee" stroke-width="1.5"/>
-<polyline points="93.00,120.30 102.00,120.30" fill="none" stroke="#eee" stroke-width="1.5" stroke-dasharray="2.2,1.4"/>
-<polyline points="93.00,124.35 102.00,124.35" fill="none" stroke="#eee" stroke-width="0.5" stroke-dasharray="0.5,0.9"/>
-<polyline points="49.78,19.52 46.98,19.52 47.25,24.32 48.77,27.55 53.10,31.62 62.88,38.56 65.97,42.84 68.22,46.01 70.48,49.17 72.73,52.26 75.14,55.65 78.34,57.51 82.77,58.26 87.25,58.98 93.14,56.59 96.30,54.39" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="96.30,54.39 99.41,52.11 102.65,49.76 102.18,45.24 98.73,44.59" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="96.30,54.39 103.05,55.44 103.17,59.78 102.51,63.77 101.86,67.72 105.75,68.50 110.40,69.30 113.41,69.96 116.25,70.57 123.61,72.27 126.36,72.96 129.91,73.84 137.52,75.07" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="37.91,34.53 41.38,35.12 44.71,35.78 47.40,34.91 52.12,36.96 55.34,34.65 59.56,35.33 62.88,38.56 67.84,39.46 71.97,39.53 77.40,41.07 80.97,41.62 85.39,42.39 89.86,43.14 94.34,43.88 98.73,44.59 102.18,45.24 106.81,37.68 112.16,35.59 116.30,36.26 121.02,36.73 121.77,33.53 122.28,30.36" fill="none" stroke="#FDD005" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="49.78,19.52 44.56,23.45 45.97,28.56 50.20,34.92 47.40,34.91 48.44,41.49 48.45,44.92 46.11,50.78 45.59,54.30 45.78,57.77" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="45.78,57.77 36.90,58.89 33.80,58.89 31.05,58.32" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<polyline points="45.78,57.77 44.34,60.21 42.91,62.64 42.95,66.60 42.91,69.50" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
-<rect x="66.10" y="64.50" width="17.8" height="21.0" fill="none" stroke="#444" stroke-width="0.25" stroke-dasharray="1,1"/>
-<rect x="70.40" y="82.50" width="9.2" height="3.2" fill="none" stroke="#444" stroke-width="0.25" stroke-dasharray="1,1"/>
-<rect x="48.98" y="18.77" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="49.78" cy="19.52" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="46.18" y="18.77" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="46.98" cy="19.52" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="46.45" y="23.57" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="47.25" cy="24.32" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="47.97" y="26.80" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="48.77" cy="27.55" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="52.30" y="30.87" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="53.10" cy="31.62" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="62.08" y="37.81" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="62.88" cy="38.56" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="65.17" y="42.09" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="65.97" cy="42.84" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="67.42" y="45.26" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="68.22" cy="46.01" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="69.69" y="48.42" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="70.48" cy="49.17" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="71.94" y="51.51" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="72.73" cy="52.26" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="74.34" y="54.90" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="75.14" cy="55.65" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="77.55" y="56.76" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="78.34" cy="57.51" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="81.97" y="57.51" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="82.77" cy="58.26" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="86.45" y="58.23" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="87.25" cy="58.98" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="92.34" y="55.84" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="93.14" cy="56.59" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="95.50" y="53.64" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="96.30" cy="54.39" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="98.61" y="51.36" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="99.41" cy="52.11" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="101.85" y="49.01" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="102.65" cy="49.76" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="101.38" y="44.49" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="102.18" cy="45.24" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="97.93" y="43.84" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="98.73" cy="44.59" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="102.25" y="54.69" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="103.05" cy="55.44" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="102.37" y="59.03" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="103.17" cy="59.78" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="101.71" y="63.02" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="102.51" cy="63.77" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="101.06" y="66.97" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="101.86" cy="67.72" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="104.95" y="67.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="105.75" cy="68.50" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="109.60" y="68.55" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="110.40" cy="69.30" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="112.61" y="69.21" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="113.41" cy="69.96" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="115.45" y="69.82" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="116.25" cy="70.57" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="122.81" y="71.52" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="123.61" cy="72.27" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="125.56" y="72.21" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="126.36" cy="72.96" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="129.11" y="73.09" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="129.91" cy="73.84" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="136.72" y="74.32" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="137.52" cy="75.07" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="37.11" y="33.78" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="37.91" cy="34.53" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="40.59" y="34.37" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="41.38" cy="35.12" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="43.91" y="35.03" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="44.71" cy="35.78" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="46.60" y="34.16" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="47.40" cy="34.91" r="1.05" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="51.33" y="36.21" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="52.12" cy="36.96" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="54.54" y="33.90" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="55.34" cy="34.65" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
-<rect x="58.77" y="34.58" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="59.56" cy="35.33" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="67.05" y="38.71" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="67.84" cy="39.46" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="71.17" y="38.78" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="71.97" cy="39.53" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="76.60" y="40.32" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="77.40" cy="41.07" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="80.17" y="40.88" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="80.97" cy="41.62" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="84.59" y="41.64" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="85.39" cy="42.39" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="89.06" y="42.39" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="89.86" cy="43.14" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="93.54" y="43.12" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="94.34" cy="43.88" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="106.02" y="36.93" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="106.81" cy="37.68" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="111.36" y="34.84" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="112.16" cy="35.59" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="115.50" y="35.51" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="116.30" cy="36.26" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="120.22" y="35.98" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="121.02" cy="36.73" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="120.97" y="32.78" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="121.77" cy="33.53" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="121.48" y="29.61" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="122.28" cy="30.36" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="43.77" y="22.70" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="44.56" cy="23.45" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="45.17" y="27.81" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="45.97" cy="28.56" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="49.41" y="34.17" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="50.20" cy="34.92" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="47.64" y="40.74" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="48.44" cy="41.49" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="47.65" y="44.17" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="48.45" cy="44.92" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="45.31" y="50.03" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="46.11" cy="50.78" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="44.79" y="53.55" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="45.59" cy="54.30" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="44.98" y="57.02" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="45.78" cy="57.77" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="36.10" y="58.14" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="36.90" cy="58.89" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="33.00" y="58.14" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="33.80" cy="58.89" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="30.25" y="57.57" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="31.05" cy="58.32" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="43.54" y="59.46" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="44.34" cy="60.21" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="42.12" y="61.89" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="42.91" cy="62.64" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="42.15" y="65.85" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="42.95" cy="66.60" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="42.12" y="68.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="42.91" cy="69.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<rect x="56.67" y="14.88" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
-<circle cx="57.47" cy="15.63" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
-<text transform="translate(64.78,19.52) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Waterfront</tspan></text>
-<line x1="51.18" y1="19.52" x2="64.38" y2="19.52" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(40.68,25.82) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Burrard</tspan></text>
-<line x1="45.99" y1="20.50" x2="40.96" y2="25.53" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(53.25,24.32) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Granville</tspan></text>
-<line x1="48.65" y1="24.32" x2="52.85" y2="24.32" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(55.06,21.25) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Stadium</tspan><tspan x="0" y="0.88">Chinatown</tspan></text>
-<line x1="49.75" y1="26.57" x2="54.78" y2="21.54" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(57.30,27.42) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Main Street</tspan><tspan x="0" y="0.88">Science World</tspan></text>
-<line x1="54.09" y1="30.63" x2="57.02" y2="27.70" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(62.88,40.46) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Commercial</tspan><tspan x="0" y="0.88">Broadway</tspan></text>
-<text transform="translate(67.87,42.84) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Nanaimo</tspan></text>
-<text transform="translate(70.12,46.01) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">29th Avenue</tspan></text>
-<text transform="translate(76.48,49.17) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Joyce</tspan><tspan x="0" y="0.88">Collingwood</tspan></text>
-<line x1="71.89" y1="49.17" x2="76.08" y2="49.17" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(74.64,52.26) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Patterson</tspan></text>
-<text transform="translate(75.14,57.55) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Metrotown</tspan></text>
-<text transform="translate(74.14,61.71) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Royal Oak</tspan></text>
-<line x1="77.36" y1="58.50" x2="74.43" y2="61.43" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(82.77,67.26) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Edmonds</tspan></text>
-<line x1="82.77" y1="59.66" x2="82.77" y2="66.86" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(78.85,67.38) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">22nd Street</tspan></text>
-<line x1="86.27" y1="59.97" x2="79.14" y2="67.10" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(93.14,58.49) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">New</tspan><tspan x="0" y="0.88">Westminster</tspan></text>
-<text transform="translate(90.30,54.39) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Columbia</tspan></text>
-<line x1="94.90" y1="54.39" x2="90.70" y2="54.39" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(95.20,47.91) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Sapperton</tspan></text>
-<line x1="98.42" y1="51.12" x2="95.49" y2="48.19" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(104.55,49.76) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Braid</tspan></text>
-<text transform="translate(108.18,45.24) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Lougheed</tspan><tspan x="0" y="0.88">Town Centre</tspan></text>
-<line x1="103.58" y1="45.24" x2="107.78" y2="45.24" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(98.73,42.70) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Production Way</tspan><tspan x="0" y="0.88">University</tspan></text>
-<text transform="translate(112.05,55.44) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Scott Road</tspan></text>
-<line x1="104.45" y1="55.44" x2="111.65" y2="55.44" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(118.17,59.78) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Gateway</tspan></text>
-<line x1="104.57" y1="59.78" x2="117.77" y2="59.78" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(94.11,72.17) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Surrey</tspan><tspan x="0" y="0.88">Central</tspan></text>
-<line x1="101.52" y1="64.75" x2="94.39" y2="71.88" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(110.27,76.12) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">King George</tspan></text>
-<line x1="102.85" y1="68.71" x2="109.98" y2="75.84" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(105.75,70.41) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Green Timbers</tspan></text>
-<text transform="translate(110.40,67.40) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">152 Street</tspan></text>
-<text transform="translate(113.41,68.06) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Fleetwood</tspan></text>
-<text transform="translate(116.25,68.67) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Bakerview</tspan></text>
-<text transform="translate(123.61,70.37) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Hillcrest</tspan></text>
-<text transform="translate(126.36,71.06) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Clayton</tspan></text>
-<text transform="translate(129.91,71.94) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Willowbrook</tspan></text>
-<text transform="translate(137.52,73.17) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Langley</tspan><tspan x="0" y="0.88">City Centre</tspan></text>
-<text transform="translate(36.01,34.53) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Arbutus</tspan></text>
-<text transform="translate(29.38,35.12) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">South</tspan><tspan x="0" y="0.88">Granville</tspan></text>
-<line x1="39.98" y1="35.12" x2="29.78" y2="35.12" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(44.71,37.68) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Oak–VGH</tspan></text>
-<text transform="translate(41.10,41.20) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Broadway</tspan><tspan x="0" y="0.88">City Hall</tspan></text>
-<line x1="46.41" y1="35.89" x2="41.38" y2="40.92" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(52.12,45.96) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Mount</tspan><tspan x="0" y="0.88">Pleasant</tspan></text>
-<line x1="52.12" y1="38.36" x2="52.12" y2="45.56" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(65.84,24.15) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Great Northern Way</tspan><tspan x="0" y="0.88">Emily Carr</tspan></text>
-<line x1="56.32" y1="33.66" x2="65.55" y2="24.43" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(61.46,35.33) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">VCC–Clark</tspan></text>
-<text transform="translate(67.84,30.46) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Renfrew</tspan></text>
-<line x1="67.84" y1="38.06" x2="67.84" y2="30.86" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(71.97,37.63) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Rupert</tspan></text>
-<text transform="translate(77.40,39.17) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Gilmore</tspan></text>
-<text transform="translate(80.97,39.73) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Brentwood</tspan><tspan x="0" y="0.88">Town Centre</tspan></text>
-<text transform="translate(85.39,40.49) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Holdom</tspan></text>
-<text transform="translate(89.86,41.24) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Sperling</tspan><tspan x="0" y="0.88">Burnaby Lake</tspan></text>
-<text transform="translate(94.34,41.98) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lake City Way</tspan></text>
-<text transform="translate(106.81,35.78) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Burquitlam</tspan></text>
-<text transform="translate(112.16,33.70) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Moody Centre</tspan></text>
-<text transform="translate(116.30,34.36) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Inlet Centre</tspan></text>
-<text transform="translate(122.92,36.73) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Coquitlam Central</tspan></text>
-<text transform="translate(123.67,33.53) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lincoln</tspan></text>
-<text transform="translate(124.18,30.36) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lafarge Lake–Douglas</tspan></text>
-<text transform="translate(42.66,23.45) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Vancouver</tspan><tspan x="0" y="0.88">City Centre</tspan></text>
-<text transform="translate(36.97,28.56) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Yaletown</tspan><tspan x="0" y="0.88">Roundhouse</tspan></text>
-<line x1="44.57" y1="28.56" x2="37.37" y2="28.56" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(43.91,28.62) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Olympic</tspan><tspan x="0" y="0.88">Village</tspan></text>
-<line x1="49.22" y1="33.93" x2="44.19" y2="28.90" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(50.34,41.49) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">King Edward</tspan></text>
-<text transform="translate(46.55,44.92) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Oakridge–41st Avenue</tspan></text>
-<text transform="translate(48.01,50.78) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Langara–49th Avenue</tspan></text>
-<text transform="translate(49.79,58.50) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Marine Drive</tspan></text>
-<line x1="46.57" y1="55.29" x2="49.50" y2="58.22" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(52.08,64.06) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Bridgeport</tspan></text>
-<line x1="46.77" y1="58.75" x2="51.80" y2="63.78" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(32.70,54.69) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Templeton</tspan></text>
-<line x1="35.91" y1="57.90" x2="32.98" y2="54.97" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(33.80,73.89) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Sea Island Centre</tspan></text>
-<line x1="33.80" y1="60.29" x2="33.80" y2="73.49" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(31.05,46.32) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">YVR–Airport</tspan></text>
-<line x1="31.05" y1="56.92" x2="31.05" y2="46.72" stroke="#eee" stroke-width="0.15"/>
-<text transform="translate(46.24,60.21) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Capstan</tspan></text>
-<text transform="translate(44.81,62.64) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Aberdeen</tspan></text>
-<text transform="translate(44.84,66.60) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lansdowne</tspan></text>
-<text transform="translate(44.81,69.50) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Richmond–Brighouse</tspan></text>
-<text transform="translate(63.77,9.33) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">SeaBus</tspan></text>
-<line x1="58.45" y1="14.64" x2="63.48" y2="9.61" stroke="#eee" stroke-width="0.15"/>
-<text x="75.00" y="100.50" text-anchor="middle" dominant-baseline="middle" font-size="12.15" fill="#c9a227" font-weight=bold>VANCOUVER</text>
-<text x="104.25" y="116.25" text-anchor="start" dominant-baseline="middle" font-size="1.76" fill="#eee" >Existing line</text>
-<text x="104.25" y="120.30" text-anchor="start" dominant-baseline="middle" font-size="1.76" fill="#eee" >Future (2027-2029)</text>
-<text x="104.25" y="124.35" text-anchor="start" dominant-baseline="middle" font-size="1.76" fill="#eee" >SeaBus</text>
-<text x="132.00" y="81.90" text-anchor="start" dominant-baseline="middle" font-size="1.62" fill="#eee" >CANADA</text>
-<text x="132.00" y="86.10" text-anchor="start" dominant-baseline="middle" font-size="1.62" fill="#eee" >USA</text>
-<polygon points="64.45,49.81 64.45,40.46 61.31,40.46 61.31,49.81" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="94.70,68.78 94.70,58.50 91.57,58.50 91.57,68.78" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="94.70,68.78 94.70,58.50 91.57,58.50 91.57,68.78" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="108.18,46.81 118.47,46.81 118.47,43.67 108.18,43.67" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="100.30,42.70 100.30,29.60 97.16,29.60 97.16,42.70" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="87.56,73.73 94.11,73.73 94.11,70.60 87.56,70.60" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="91.43,41.24 91.43,30.02 88.30,30.02 88.30,41.24" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="95.02,41.98 95.02,29.82 93.65,29.82 93.65,41.98" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="32.38,25.01 42.66,25.01 42.66,21.88 32.38,21.88" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<polygon points="37.36,30.19 43.91,30.19 43.91,27.05 37.36,27.05" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
-<text x="2.5" y="148.0" font-size="2.2" fill="#555">vancouver v3 preview — board 150 mm, text 1.1 mm</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="150.0mm" height="86.235mm" viewBox="0 0 150.0 86.235" font-family="sans-serif">
+<rect x="0" y="0" width="150.0" height="86.235" rx="4" fill="#161616"/>
+<polygon points="33.03,14.29 33.31,14.33 33.60,14.37 33.87,14.46 34.12,14.60 34.37,14.76 34.59,14.94 34.76,15.13 34.79,14.94 34.88,14.67 35.01,14.41 35.17,14.17 35.36,13.95 35.58,13.77 35.82,13.61 36.08,13.47 36.34,13.38 36.63,13.34 36.91,13.30 37.20,13.34 37.48,13.38 37.76,13.47 38.01,13.61 38.25,13.77 38.47,13.95 38.66,14.17 38.82,14.41 38.95,14.67 39.05,14.94 39.09,15.23 39.12,15.51 39.09,15.79 39.05,16.08 38.95,16.35 38.82,16.61 38.66,16.84 38.47,17.07 38.25,17.25 38.20,17.29 39.03,17.54 39.03,17.54 39.08,17.54 40.41,17.33 39.18,16.46 39.44,15.84 41.19,16.53 41.70,16.21 42.45,16.50 43.39,17.85 44.15,17.03 44.91,16.21 46.28,16.54 47.66,16.86 48.44,16.10 49.23,15.35 50.76,14.60 52.46,15.19 54.16,15.78 55.91,15.25 57.64,14.73 59.12,15.08 60.60,15.42 62.09,15.77 63.56,14.96 65.04,14.16 66.47,15.02 67.89,15.88 68.79,16.00 69.09,16.50 70.72,16.91 71.79,16.39 72.86,15.87 74.41,15.63 75.95,15.40 77.50,15.16 79.14,15.18 80.61,16.37 82.03,15.83 83.05,16.19 84.07,16.56 85.23,16.30 86.23,15.29 87.75,15.28 89.27,15.26 90.78,15.25 91.82,16.27 92.86,17.27 93.90,18.29 93.50,19.02 94.08,19.71 94.53,18.98 95.31,18.93 95.43,18.77 95.61,18.54 95.84,18.36 96.07,18.20 96.33,18.06 96.60,17.97 96.89,17.92 97.17,17.89 97.45,17.92 97.74,17.97 98.01,18.06 98.27,18.20 98.50,18.36 98.67,18.50 99.51,17.96 99.33,17.49 97.81,17.28 97.60,16.50 96.32,15.76 95.05,15.03 93.77,14.29 92.52,13.09 91.28,11.89 89.72,12.04 88.16,12.20 87.13,12.89 86.10,13.59 84.85,13.76 83.61,13.93 82.57,14.75 81.54,14.71 80.50,14.68 79.95,13.46 79.03,12.99 78.62,11.96 78.21,10.94 78.55,8.98 78.89,7.02 78.12,5.97 78.68,4.94 79.64,3.95 80.61,2.97 80.72,2.15 81.57,1.83 82.57,2.29 82.53,2.70 81.48,3.12 80.98,4.14 81.30,5.52 80.74,6.50 80.18,7.49 80.76,7.57 81.95,6.37 83.13,5.17 84.31,3.96 85.19,2.79 86.06,1.61 86.94,0.43 86.84,0.40 85.07,0.40 83.31,0.40 81.55,0.40 79.79,0.40 78.03,0.40 76.88,1.08 75.49,1.52 74.10,1.95 73.72,2.44 74.01,3.44 75.19,3.58 76.36,3.72 76.53,4.96 76.00,5.85 74.94,6.18 74.82,6.82 73.92,7.25 73.92,8.98 73.92,10.71 73.06,11.48 72.20,12.25 70.80,11.34 69.74,11.29 68.69,11.25 67.06,10.08 65.72,9.92 64.36,9.76 63.02,9.60 62.27,10.64 61.52,11.67 60.49,11.70 60.00,12.50 59.20,12.33 59.01,13.07 57.87,13.47 57.34,12.79 56.74,13.00 55.97,12.59 55.22,13.44 53.46,13.11 53.18,12.52 51.51,11.77 51.34,11.23 50.46,11.34 49.36,10.41 47.73,10.59 46.09,10.77 45.15,9.99 45.05,10.12 44.87,10.35 44.64,10.53 44.40,10.70 44.14,10.83 43.88,10.92 43.59,10.96 43.30,11.00 43.02,10.96 42.73,10.92 42.46,10.83 42.21,10.70 41.97,10.53 41.74,10.35 41.56,10.12 41.40,9.88 41.27,9.63 41.17,9.36 41.13,9.07 41.10,8.79 41.13,8.50 41.17,8.22 41.27,7.95 41.40,7.70 41.46,7.59 40.70,7.92 39.57,7.76 38.45,7.61 37.81,8.73 36.49,8.71 36.00,9.40 34.41,8.46 32.82,7.52 31.23,6.57 30.90,5.43 29.77,5.12 28.63,4.80 27.62,3.29 25.76,3.14 23.89,3.00 23.08,2.23 22.26,1.46 20.93,0.94 19.61,0.42 18.15,0.40 17.85,0.40 15.95,0.40 14.05,0.40 12.15,0.40 10.25,0.40 8.35,0.40 6.45,0.40 4.55,0.42 4.14,1.05 3.13,1.19 2.97,1.81 2.39,2.07 1.85,1.65 2.21,1.34 1.75,1.75 1.08,2.60 0.48,4.15 0.40,6.09 0.40,8.04 0.40,10.00 0.40,11.95 0.40,13.91 0.40,15.86 0.40,17.82 0.40,19.77 0.40,21.73 0.40,23.68 0.40,25.64 0.40,27.59 0.40,29.55 0.40,31.50 0.40,33.46 0.40,35.41 0.40,37.37 0.40,39.32 0.40,41.28 0.40,43.23 0.40,45.18 0.40,47.14 0.40,49.09 0.40,51.05 0.40,53.00 0.40,54.96 0.40,56.91 0.40,58.87 0.40,60.82 0.40,62.78 0.40,64.73 0.40,66.69 0.40,68.64 0.40,70.60 0.40,72.55 0.40,74.51 0.40,76.46 0.40,78.42 0.40,80.37 0.52,82.30 1.16,83.77 1.75,84.49 2.55,85.13 4.06,85.74 5.97,85.83 7.90,85.83 9.83,85.83 11.76,85.83 13.69,85.83 15.62,85.83 17.55,85.83 19.48,85.83 21.41,85.83 21.66,85.81 21.47,84.72 21.29,83.62 20.34,83.22 19.97,82.24 19.61,81.25 20.71,80.41 19.96,79.80 19.86,78.48 19.32,78.09 18.54,76.39 17.75,74.70 16.96,73.00 15.29,72.10 13.61,71.20 14.14,70.39 14.71,70.56 16.00,69.72 16.74,69.87 17.04,69.09 16.93,67.32 16.82,65.55 16.72,63.77 16.61,62.00 16.50,60.23 16.39,58.45 16.01,56.89 15.62,55.32 15.23,53.76 14.85,52.19 14.46,50.62 13.58,50.05 14.33,49.14 14.39,48.11 14.46,47.09 15.55,45.44 15.89,44.37 16.23,43.30 16.09,41.94 15.30,41.38 13.80,41.43 13.44,39.95 12.55,39.34 11.67,38.73 12.54,37.75 13.41,36.77 13.62,35.64 12.20,34.60 10.79,33.55 9.37,32.51 7.95,31.47 6.53,30.43 5.12,29.38 4.34,27.82 3.57,26.27 2.85,26.07 2.63,25.07 2.42,24.08 2.91,22.58 3.94,21.66 4.96,20.75 5.99,19.83 7.43,19.42 9.36,19.59 10.88,19.87 12.40,20.15 13.92,20.43 14.76,21.00 16.48,20.68 17.32,21.31 18.16,21.95 19.77,21.64 21.56,21.96 23.36,22.27 24.31,21.84 25.26,21.41 26.97,21.60 27.84,20.23 29.59,19.79 30.43,20.37 30.59,21.41 30.73,22.44 31.62,21.83 31.50,21.77 31.26,21.60 31.04,21.42 30.86,21.20 30.69,20.96 30.55,20.70 30.46,20.43 30.42,20.14 30.39,19.86 30.42,19.58 30.46,19.29 30.48,19.27 30.27,19.04 29.67,17.85 29.74,16.47 28.54,14.89 27.34,13.32 26.51,13.14 26.74,11.36 26.97,9.57 28.26,8.12 30.03,7.62 30.64,8.01 31.63,9.62 32.62,11.22 33.79,11.93 34.95,12.63 35.78,12.71 35.58,13.12 33.88,13.25 33.26,13.77 32.61,13.29 31.76,13.59 31.63,14.02 32.33,14.41 32.46,14.37 32.74,14.33" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polygon points="89.27,39.44 89.13,39.69 88.97,39.93 88.78,40.16 88.56,40.34 88.32,40.50 88.06,40.63 87.80,40.72 87.51,40.77 87.22,40.80 86.94,40.77 86.66,40.72 86.39,40.63 86.18,40.53 85.84,41.45 85.97,42.69 85.52,43.39 85.57,43.44 85.75,43.66 85.92,43.91 86.05,44.16 86.14,44.43 86.19,44.71 86.22,45.00 86.19,45.29 86.14,45.57 86.05,45.84 85.92,46.09 85.89,46.14 85.95,46.12 86.87,44.94 87.80,43.76 89.48,42.99 91.16,42.23 92.85,41.46 94.65,41.66 96.45,41.85 97.46,41.58 98.48,41.31 100.22,41.31 101.96,41.31 103.70,41.31 105.44,41.31 107.18,41.31 108.60,42.39 110.34,42.73 112.07,43.07 113.81,43.41 115.17,43.11 116.53,42.80 117.90,42.49 119.30,42.98 120.70,43.47 122.10,43.95 122.54,44.92 122.98,45.88 123.14,47.22 123.30,48.55 123.47,49.89 124.19,51.72 125.17,52.53 126.15,53.34 127.06,51.57 126.31,50.78 125.55,49.99 125.28,48.28 125.01,46.58 124.74,44.87 125.01,44.51 126.72,44.89 128.22,45.65 129.72,46.41 131.21,47.17 132.71,47.93 134.21,48.70 135.70,49.45 134.84,50.14 133.98,50.84 133.00,51.18 132.02,51.53 130.37,51.72 128.72,51.91 127.06,51.57 126.15,53.34 127.41,53.62 128.67,53.91 130.26,53.75 131.85,53.59 133.24,53.17 134.62,52.74 136.00,51.74 137.37,50.74 138.44,49.32 140.08,48.45 141.72,47.57 143.36,46.70 145.00,45.83 146.64,44.95 148.11,44.71 149.58,44.47 149.60,44.52 149.60,42.55 148.02,42.55 146.68,43.01 145.33,43.45 143.98,43.91 142.56,44.75 141.13,45.59 139.71,46.42 138.28,47.27 136.43,47.25 134.97,46.75 133.52,46.26 131.99,45.45 130.47,44.64 128.95,43.83 127.43,43.02 126.01,42.76 124.60,42.50 123.18,42.24 121.66,41.70 120.14,41.17 118.62,40.63 117.66,39.34 116.69,38.03 115.73,36.73 116.76,35.62 117.80,34.50 119.39,33.74 120.97,32.98 122.56,32.22 123.92,30.91 125.27,29.61 126.14,27.94 127.01,26.26 127.88,24.59 128.76,22.91 129.63,21.24 131.16,20.01 132.68,18.78 134.20,17.55 135.52,17.13 136.84,16.71 138.16,16.29 139.03,15.66 139.89,15.03 139.78,13.90 139.66,12.77 138.15,11.94 136.63,11.12 136.17,10.03 135.70,8.94 136.23,7.02 136.96,6.32 137.70,5.62 138.48,4.37 139.26,3.12 140.34,2.01 141.42,0.90 143.18,0.40 141.79,0.40 140.40,0.40 139.31,1.10 138.23,2.21 137.44,3.48 136.65,4.75 135.84,5.55 135.03,6.35 134.69,7.67 134.34,9.00 134.84,10.35 135.34,11.70 136.65,12.86 138.48,13.52 138.66,14.38 136.97,15.03 135.29,15.68 133.60,16.32 132.37,17.31 131.13,18.29 129.89,19.28 128.66,20.27 127.91,21.59 127.16,22.90 126.41,24.22 125.84,25.72 125.28,27.21 124.11,28.50 122.95,29.80 121.78,31.09 120.18,31.86 118.58,32.62 116.98,33.39 116.01,34.44 115.03,35.49 114.06,36.54 112.66,36.83 111.25,37.11 109.67,37.88 108.08,38.64 106.50,39.41 104.59,39.38 102.68,39.35 100.76,39.33 98.85,39.30 97.63,39.58 96.41,39.86 94.95,39.63 93.50,39.41 92.98,38.41 92.16,37.95 90.77,38.03 89.37,38.12 89.40,38.31 89.43,38.59 89.40,38.88 89.36,39.16" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polygon points="76.03,32.09 75.86,32.33 75.69,31.96 75.51,32.17 75.05,31.86 74.67,31.92 74.55,31.68 73.55,31.59 72.89,31.12 72.82,30.80 71.93,30.36 71.78,29.85 71.23,29.47 71.49,30.45 71.20,30.77 71.28,31.29 72.20,31.71 71.73,32.23 72.84,32.91 73.53,33.18 72.84,32.34 73.55,32.12 75.07,33.00 75.27,32.85 75.20,33.29 75.64,32.87 75.61,33.29 75.87,33.03 75.93,33.34 76.28,33.18 76.48,33.59 76.75,33.62 77.70,33.38 77.69,33.03 77.40,32.80 77.55,32.56 78.72,32.76 78.41,32.45 78.53,32.07 79.35,31.37 80.25,31.09 80.66,30.80 80.49,30.80 78.79,31.61 77.10,32.41 76.88,32.13 76.28,32.33" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polygon points="92.56,85.83 92.27,85.48 90.56,85.24 88.84,85.00 87.14,84.75 86.06,85.23 84.99,85.71 85.06,85.83 86.88,85.52 87.31,85.83 89.06,85.83 90.81,85.83" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polygon points="86.43,3.72 86.10,4.11 86.28,4.25 86.09,4.60 86.62,5.76 87.31,6.46 87.36,7.47 87.63,7.39 88.12,6.33 88.05,5.55 88.30,4.94 87.75,4.49 87.84,3.96" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polygon points="67.47,33.91 67.16,34.48 67.36,34.95 69.12,35.33 69.99,34.94 69.25,33.81" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polygon points="29.28,13.83 30.26,14.60 31.11,14.36 31.28,13.88 31.11,13.38" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polygon points="94.29,26.76 94.57,26.85 94.66,26.34 94.44,25.91 93.95,25.98" fill="#0a2333" stroke="#3d5a6e" stroke-width="0.15"/>
+<polyline points="36.91,15.51 43.30,8.79" fill="none" stroke="#eee" stroke-width="0.5" stroke-dasharray="0.5,0.9"/>
+<polyline points="36.91,15.51 33.03,16.50 35.64,18.59 38.74,19.71 40.58,22.48 47.56,26.16 49.29,30.15 52.08,31.95 55.03,33.81 58.97,36.53 61.71,38.41 64.84,40.16 71.45,42.90 73.74,47.09 81.41,47.05 84.02,45.00" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="84.02,45.00 87.22,38.59 88.74,35.64 85.56,30.32 80.73,28.61" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="84.02,45.00 90.69,45.57 95.97,47.07 96.48,50.34 97.09,53.61 100.23,54.69 107.27,58.84 112.47,61.92 115.94,64.00 127.11,71.62 130.95,74.30 134.87,76.94 139.45,79.64" fill="none" stroke="#005DAA" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="27.02,25.01 30.32,24.69 33.22,26.28 36.46,26.95 39.49,25.62 42.77,25.02 45.67,23.43 47.56,26.16 51.73,26.74 54.97,26.01 58.88,24.64 62.14,24.05 66.27,24.67 70.38,26.61 76.02,28.18 80.73,28.61 85.56,30.32 87.14,25.84 97.17,20.10 101.19,20.38 105.36,22.00 108.41,20.68 109.34,17.49" fill="none" stroke="#FDD005" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="36.91,15.51 32.59,19.86 33.80,22.93 37.12,23.21 36.46,26.95 35.98,30.24 35.80,35.14 35.98,38.46 35.74,43.74 33.73,48.60" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="33.73,48.60 29.09,48.26 26.12,49.70 21.87,49.08" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="33.73,48.60 32.04,51.47 30.41,54.34 32.13,57.20 30.09,59.84" fill="none" stroke="#009AC7" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="66.10" y="32.62" width="17.8" height="21.0" fill="none" stroke="#444" stroke-width="0.25" stroke-dasharray="1,1"/>
+<rect x="70.40" y="50.62" width="9.2" height="3.2" fill="none" stroke="#444" stroke-width="0.25" stroke-dasharray="1,1"/>
+<rect x="36.12" y="14.76" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="36.91" cy="15.51" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="32.23" y="15.75" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="33.03" cy="16.50" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="34.84" y="17.84" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="35.64" cy="18.59" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="37.95" y="18.96" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="38.74" cy="19.71" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="39.78" y="21.73" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="40.58" cy="22.48" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="46.77" y="25.41" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="47.56" cy="26.16" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="48.49" y="29.40" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="49.29" cy="30.15" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="51.28" y="31.20" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="52.08" cy="31.95" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="54.23" y="33.06" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="55.03" cy="33.81" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="58.17" y="35.78" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="58.97" cy="36.53" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="60.91" y="37.66" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="61.71" cy="38.41" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="64.05" y="39.41" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="64.84" cy="40.16" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="70.65" y="42.15" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="71.45" cy="42.90" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="72.94" y="46.34" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="73.74" cy="47.09" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="80.61" y="46.30" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="81.41" cy="47.05" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="83.22" y="44.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="84.02" cy="45.00" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="86.42" y="37.84" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="87.22" cy="38.59" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="87.94" y="34.89" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="88.74" cy="35.64" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="84.76" y="29.57" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="85.56" cy="30.32" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="79.93" y="27.86" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="80.73" cy="28.61" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="89.89" y="44.82" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="90.69" cy="45.57" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="95.17" y="46.32" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="95.97" cy="47.07" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="95.68" y="49.59" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="96.48" cy="50.34" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="96.30" y="52.86" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="97.09" cy="53.61" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="99.43" y="53.94" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="100.23" cy="54.69" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="106.47" y="58.09" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="107.27" cy="58.84" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="111.67" y="61.17" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="112.47" cy="61.92" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="115.14" y="63.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="115.94" cy="64.00" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="126.31" y="70.88" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="127.11" cy="71.62" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="130.15" y="73.55" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="130.95" cy="74.30" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="134.06" y="76.19" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="134.87" cy="76.94" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="138.65" y="78.89" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="139.45" cy="79.64" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="26.21" y="24.26" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="27.02" cy="25.01" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="29.52" y="23.94" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="30.32" cy="24.69" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="32.42" y="25.53" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="33.22" cy="26.28" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="35.66" y="26.20" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="36.46" cy="26.95" r="1.05" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="38.70" y="24.87" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="39.49" cy="25.62" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="41.97" y="24.27" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="42.77" cy="25.02" r="0.75" fill="none" stroke="#999" stroke-width="0.35" stroke-dasharray="0.6,0.45"/>
+<rect x="44.88" y="22.68" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="45.67" cy="23.43" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="50.94" y="25.99" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="51.73" cy="26.74" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="54.17" y="25.26" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="54.97" cy="26.01" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="58.08" y="23.89" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="58.88" cy="24.64" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="61.34" y="23.30" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="62.14" cy="24.05" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="65.47" y="23.92" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="66.27" cy="24.67" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="69.58" y="25.86" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="70.38" cy="26.61" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="75.22" y="27.43" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="76.02" cy="28.18" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="86.34" y="25.09" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="87.14" cy="25.84" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="96.37" y="19.35" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="97.17" cy="20.10" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="100.39" y="19.63" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="101.19" cy="20.38" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="104.56" y="21.25" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="105.36" cy="22.00" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="107.61" y="19.93" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="108.41" cy="20.68" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="108.54" y="16.74" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="109.34" cy="17.49" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="31.79" y="19.11" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="32.59" cy="19.86" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="33.00" y="22.18" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="33.80" cy="22.93" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="36.33" y="22.46" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="37.12" cy="23.21" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="35.19" y="29.49" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="35.98" cy="30.24" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="35.01" y="34.39" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="35.80" cy="35.14" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="35.19" y="37.71" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="35.98" cy="38.46" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="34.95" y="42.99" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="35.74" cy="43.74" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="32.94" y="47.85" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="33.73" cy="48.60" r="1.05" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="28.29" y="47.51" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="29.09" cy="48.26" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="25.32" y="48.95" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="26.12" cy="49.70" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="21.07" y="48.33" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="21.87" cy="49.08" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="31.24" y="50.72" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="32.04" cy="51.47" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="29.61" y="53.59" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="30.41" cy="54.34" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="31.33" y="56.45" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="32.13" cy="57.20" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="29.29" y="59.09" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="30.09" cy="59.84" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<rect x="42.51" y="8.04" width="1.6" height="1.5" fill="#222" stroke="#777" stroke-width="0.1"/>
+<circle cx="43.30" cy="8.79" r="0.75" fill="none" stroke="#fff" stroke-width="0.35"/>
+<text transform="translate(36.91,13.61) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Waterfront</tspan></text>
+<text transform="translate(33.03,14.60) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Burrard</tspan></text>
+<text transform="translate(46.72,4.41) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Granville</tspan></text>
+<line x1="36.50" y1="17.48" x2="46.47" y2="4.72" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(40.67,12.98) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Stadium</tspan></text>
+<line x1="39.13" y1="18.36" x2="40.56" y2="13.36" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(51.66,8.30) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Main Street</tspan></text>
+<line x1="41.44" y1="21.38" x2="51.41" y2="8.62" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(48.09,41.15) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Commercial</tspan><tspan x="0" y="0.88">Broadway</tspan></text>
+<line x1="47.61" y1="27.56" x2="48.07" y2="40.75" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(49.29,32.05) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Nanaimo</tspan></text>
+<text transform="translate(59.01,30.98) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">29th Avenue</tspan></text>
+<line x1="53.47" y1="31.76" x2="58.61" y2="31.04" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(61.96,32.84) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Joyce</tspan></text>
+<line x1="56.42" y1="33.62" x2="61.57" y2="32.90" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(58.97,38.43) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Patterson</tspan></text>
+<text transform="translate(61.71,40.31) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Metrotown</tspan></text>
+<text transform="translate(64.84,42.05) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Royal Oak</tspan></text>
+<text transform="translate(71.45,41.00) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Edmonds</tspan></text>
+<text transform="translate(73.74,48.98) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">22nd Street</tspan></text>
+<text transform="translate(81.41,48.95) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">New</tspan><tspan x="0" y="0.88">Westminster</tspan></text>
+<text transform="translate(84.02,46.90) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Columbia</tspan></text>
+<text transform="translate(85.32,38.59) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Sapperton</tspan></text>
+<text transform="translate(90.64,35.64) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Braid</tspan></text>
+<text transform="translate(90.51,29.62) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Lougheed</tspan><tspan x="0" y="0.88">Town Centre</tspan></text>
+<line x1="86.95" y1="30.12" x2="90.11" y2="29.67" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(80.73,26.71) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Production Way</tspan><tspan x="0" y="0.88">University</tspan></text>
+<text transform="translate(90.69,47.47) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Scott Road</tspan></text>
+<text transform="translate(97.87,47.07) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Gateway</tspan></text>
+<text transform="translate(98.38,50.34) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Surrey</tspan><tspan x="0" y="0.88">Central</tspan></text>
+<text transform="translate(97.09,55.51) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">King George</tspan></text>
+<text transform="translate(100.23,56.59) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Green Timbers</tspan></text>
+<text transform="translate(107.27,56.95) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">152 Street</tspan></text>
+<text transform="translate(112.47,60.02) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Fleetwood</tspan></text>
+<text transform="translate(115.94,62.10) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Bakerview</tspan></text>
+<text transform="translate(127.11,69.72) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Hillcrest</tspan></text>
+<text transform="translate(130.95,72.39) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Clayton</tspan></text>
+<text transform="translate(134.87,75.03) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Willowbrook</tspan></text>
+<text transform="translate(134.96,81.83) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Langley</tspan><tspan x="0" y="0.88">City Centre</tspan></text>
+<line x1="138.20" y1="80.25" x2="135.32" y2="81.65" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(22.52,27.20) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Arbutus</tspan></text>
+<line x1="25.76" y1="25.62" x2="22.88" y2="27.02" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(19.53,29.95) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">South</tspan><tspan x="0" y="0.88">Granville</tspan></text>
+<line x1="29.06" y1="25.30" x2="19.88" y2="29.77" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(19.74,32.86) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Oak–VGH</tspan></text>
+<line x1="31.97" y1="26.89" x2="20.10" y2="32.68" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(33.11,30.67) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Broadway</tspan></text>
+<line x1="35.53" y1="28.00" x2="33.38" y2="30.38" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(39.49,27.52) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Mount</tspan><tspan x="0" y="0.88">Pleasant</tspan></text>
+<text transform="translate(42.77,26.92) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Great Northern Way</tspan><tspan x="0" y="0.88">Emily Carr</tspan></text>
+<text transform="translate(47.60,16.70) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">VCC–Clark</tspan></text>
+<line x1="46.06" y1="22.08" x2="47.49" y2="17.08" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(51.73,24.84) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Renfrew</tspan></text>
+<text transform="translate(54.97,24.11) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Rupert</tspan></text>
+<text transform="translate(58.88,22.75) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Gilmore</tspan></text>
+<text transform="translate(62.14,22.15) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Brentwood</tspan><tspan x="0" y="0.88">Town Centre</tspan></text>
+<text transform="translate(66.27,22.77) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Holdom</tspan></text>
+<text transform="translate(70.38,24.71) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Sperling</tspan></text>
+<text transform="translate(76.02,26.29) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lake City Way</tspan></text>
+<text transform="translate(92.09,25.14) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Burquitlam</tspan></text>
+<line x1="88.52" y1="25.65" x2="91.69" y2="25.20" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(96.23,11.15) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Moody Centre</tspan></text>
+<line x1="97.02" y1="18.71" x2="96.27" y2="11.55" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(101.19,18.48) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Inlet Centre</tspan></text>
+<text transform="translate(105.36,20.11) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Coquitlam Central</tspan></text>
+<text transform="translate(108.41,22.58) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lincoln</tspan></text>
+<text transform="translate(111.24,17.49) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lafarge Lake–Douglas</tspan></text>
+<text transform="translate(30.70,19.86) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Vancouver</tspan><tspan x="0" y="0.88">City Centre</tspan></text>
+<text transform="translate(28.17,12.33) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Yaletown</tspan><tspan x="0" y="0.88">Roundhouse</tspan></text>
+<line x1="33.14" y1="21.70" x2="28.35" y2="12.69" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(22.16,24.26) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="-0.88">Olympic</tspan><tspan x="0" y="0.88">Village</tspan></text>
+<line x1="35.73" y1="23.30" x2="22.56" y2="24.23" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(32.63,33.96) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">King Edward</tspan></text>
+<line x1="35.05" y1="31.28" x2="32.90" y2="33.66" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(30.81,35.49) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Oakridge</tspan></text>
+<line x1="34.41" y1="35.24" x2="31.21" y2="35.47" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(34.09,38.46) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Langara–49th Avenue</tspan></text>
+<text transform="translate(33.84,43.74) rotate(0)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Marine Drive</tspan></text>
+<text transform="translate(35.63,48.60) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Bridgeport</tspan></text>
+<text transform="translate(29.71,66.25) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Templeton</tspan></text>
+<line x1="29.13" y1="49.65" x2="29.70" y2="65.85" stroke="#eee" stroke-width="0.15"/>
+<text transform="translate(26.12,51.60) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Sea Island Centre</tspan></text>
+<text transform="translate(21.87,50.98) rotate(-90)" text-anchor="end" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">YVR–Airport</tspan></text>
+<text transform="translate(33.94,51.47) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Capstan</tspan></text>
+<text transform="translate(32.30,54.34) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Aberdeen</tspan></text>
+<text transform="translate(34.03,57.20) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Lansdowne</tspan></text>
+<text transform="translate(31.99,59.84) rotate(0)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">Richmond–Brighouse</tspan></text>
+<text transform="translate(43.30,6.89) rotate(-90)" text-anchor="start" dominant-baseline="middle" font-size="1.49" fill="#eee"><tspan x="0" y="0.00">SeaBus</tspan></text>
+<text x="57.69" y="72.03" text-anchor="middle" dominant-baseline="middle" font-size="8.10" fill="#c9a227" font-weight=bold>VANCOUVER</text>
+<polygon points="37.60,13.61 37.60,4.26 36.23,4.26 36.23,13.61" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="33.72,14.60 33.72,8.05 32.34,8.05 32.34,14.60" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="40.67,13.67 47.22,13.67 47.22,12.29 40.67,12.29" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="82.30,26.71 82.30,13.62 79.16,13.62 79.16,26.71" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="47.60,17.39 56.02,17.39 56.02,16.01 47.60,16.01" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="63.71,22.15 63.71,11.86 60.58,11.86 60.58,22.15" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="76.71,26.29 76.71,14.13 75.33,14.13 75.33,26.29" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="20.41,21.43 30.70,21.43 30.70,18.29 20.41,18.29" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<polygon points="18.82,13.90 28.17,13.90 28.17,10.77 18.82,10.77" fill="rgba(255,40,40,0.45)" stroke="#ff2828" stroke-width="0.15"/>
+<text x="2.5" y="84.235" font-size="2.2" fill="#555">vancouver v3 preview — board 150 mm, text 1.1 mm</text>
 </svg>

@@ -24,12 +24,13 @@ def _fmt(pts):
 
 def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
     size = city.canvas_mm * scale
+    size_h = city.height * scale
     s = []
     s.append(f'<svg xmlns="http://www.w3.org/2000/svg" width="{size}mm" '
-             f'height="{size}mm" viewBox="0 0 {size} {size}" '
+             f'height="{size_h}mm" viewBox="0 0 {size} {size_h}" '
              f'font-family="sans-serif">')
     # board (black soldermask)
-    s.append(f'<rect x="0" y="0" width="{size}" height="{size}" rx="4" '
+    s.append(f'<rect x="0" y="0" width="{size}" height="{size_h}" rx="4" '
              f'fill="#161616"/>')
     # geography (repelled from LED pads + inset from the board edge - the
     # same adjusted shapes that go on copper, so preview == physical board)
@@ -65,7 +66,7 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
                      f'stroke="{line.color}" stroke-width="{LINE_W}" '
                      f'stroke-linejoin="round" stroke-linecap="round"/>')
     # XIAO ghost (back side, centered, USB-C down)
-    cx = cy = size / 2
+    cx, cy = size / 2, size_h / 2
     s.append(f'<rect x="{cx - XIAO_W/2:.2f}" y="{cy - XIAO_H/2:.2f}" '
              f'width="{XIAO_W}" height="{XIAO_H}" fill="none" stroke="#444" '
              f'stroke-width="0.25" stroke-dasharray="1,1"/>')
@@ -114,7 +115,7 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
         s.append(f'<polygon points="{_fmt(c.poly)}" fill="rgba(255,40,40,0.45)" '
                  f'stroke="#ff2828" stroke-width="0.15"/>')
     # caption
-    s.append(f'<text x="2.5" y="{size - 2}" font-size="2.2" fill="#555">'
+    s.append(f'<text x="2.5" y="{size_h - 2}" font-size="2.2" fill="#555">'
              f'{city.name} v3 preview — board {size:.0f} mm, text '
              f'{text_h} mm{" (short names)" if use_short else ""}</text>')
     s.append('</svg>')

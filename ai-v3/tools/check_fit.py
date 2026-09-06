@@ -38,6 +38,7 @@ class Context:
         self.city, self.scale, self.text_h, self.use_short = (
             city, scale, text_h, use_short)
         self.size = city.canvas_mm * scale
+        self.size_h = city.height * scale
         self.all_st = list(city.stations.values()) + city.extras
         self.segs = []
         for lid, p1, p2, a, b in citymap.segments(city):
@@ -62,16 +63,24 @@ class Context:
         out = []
         for x, y in box:
             if not (EDGE_MARGIN <= x <= self.size - EDGE_MARGIN and
-                    EDGE_MARGIN <= y <= self.size - EDGE_MARGIN):
+                    EDGE_MARGIN <= y <= self.size_h - EDGE_MARGIN):
                 out.append(Collision("off-board", sid, "", box))
                 break
+        leader = citymap.leader_segment(st, self.scale)
         for o in self.all_st:
             if o.id == sid:
                 continue
             ob = boxes[o.id] if boxes else self.box(o)
             if citymap.polys_intersect(box, ob):
                 out.append(Collision("label-label", sid, o.id, box))
-        leader = citymap.leader_segment(st, self.scale)
+            # a leader may not cross another label, nor another leader
+            ol = citymap.leader_segment(o, self.scale)
+            if leader and citymap.seg_box_overlap(leader, ob):
+                out.append(Collision("leader-label", sid, o.id, box))
+            if ol and citymap.seg_box_overlap(ol, box):
+                out.append(Collision("leader-label", o.id, sid, box))
+            if leader and ol and citymap.segs_intersect(leader[0], leader[1], ol[0], ol[1]):
+                out.append(Collision("leader-leader", sid, o.id, box))
         for oid, (cx, cy) in self.dots.items():
             if oid == sid:
                 r = OWN_R
