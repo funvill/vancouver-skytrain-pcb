@@ -11,23 +11,50 @@ park_names = [k for k in shapes if k.startswith("park_")]
 land_polys = [Polygon(shapes[n]).buffer(0) for n in land_names]
 land_union = unary_union(land_polys)
 
-board = box(0, 0, PAGE_W, PAGE_H)
-water = board.difference(land_union)
-
 MARGIN = 4.0  # must match build_vancouver_json.py's MARGIN
 SCALE = (100 - 2 * MARGIN) / PAGE_W  # uniform, matches build_vancouver_json.py
 
+# The source page is wider than tall; the board is square. Everything the
+# PDF draws ends at PAGE_H, but the frame we cut water out of runs down to
+# the bottom of the square canvas so the map can carry on below the page
+# edge (Delta, the South Arm, Boundary Bay) instead of stopping dead.
+FRAME_H = (100 - 2 * MARGIN) / SCALE  # = PAGE_W: square canvas in pt
 
-# Two earlier passes tried to patch extra water down the whole left edge,
-# assuming the gap between the top (English Bay) and bottom (Sea Island)
-# traced water was a tracing gap to fill. Re-checking the source PDF
-# directly: it isn't a gap - that whole middle band (Vancouver City
-# Centre down through Marine Drive) really is solid land colour all the
-# way to the page edge in the original map, no coastline drawn there at
-# all (west of the Cambie corridor is off the detail this map bothers
-# with). Both patches, including the invented "Point Grey peninsula",
-# were fixing a mismatch with the PDF that didn't exist. Left as a pure
-# trace: water = page minus every traced land polygon, nothing added.
+# --- Cartographic licence, deliberately ---------------------------------
+# The PDF draws no coastline west of the Cambie corridor: Point Grey / UBC
+# is off its detail, so a pure trace has solid land running into the left
+# board edge from English Bay down to the North Arm. The earlier v2 board
+# and the real geography both end that edge in water (English Bay above,
+# Sturgeon Bank / the Strait below, with the Point Grey tip between). The
+# PDF's own idiom is 45-degree shorelines, so the tip is drawn the same
+# way: two cuts out of the traced land, continuing the traced English Bay
+# shore and meeting the traced Fraser North Arm diagonal exactly.
+point_grey_cuts = [
+    # Spanish Banks: continue the English Bay shore (traced vertex
+    # (53.1,110.4)) down-left at 45 deg to the left edge.
+    Polygon([(53.1, 110.4), (-10, 110.4), (-10, 173.4)]),
+    # Sturgeon Bank: near-vertical bank from the edge down to (14,245.4),
+    # which lies on the traced North Arm bank (-6.6,224.8)->(34.5,265.9).
+    Polygon([(-10, 195), (0, 201.4), (14, 245.4), (-10, 245.4)]),
+]
+
+# Below the PDF page: Delta. Its north edge is the South Arm's south bank -
+# continuing land_SE_surrey's traced diagonal (257,352)->(196,413) down-left
+# to (183,426) then running west, parallel to Richmond's flat south shore
+# at y~412, so Lulu Island reads as the island it is. Boundary Bay is the
+# 45-degree bite out of Delta's south-west corner; the Strait strip west
+# of Richmond (x<35) carries on down to meet it.
+FRAME_B = FRAME_H + 10  # a little past the frame so the union is clean
+land_delta = Polygon([
+    (183, 426), (196, 413), (520, 413), (520, FRAME_B),
+    (105, FRAME_B), (95, FRAME_H), (48, FRAME_H - 47), (48, 426),
+])
+
+land_union = unary_union([land_union, land_delta])
+land_union = land_union.difference(unary_union(point_grey_cuts))
+
+board = box(0, 0, PAGE_W, FRAME_H)
+water = board.difference(land_union)
 water = water.simplify(2.0, preserve_topology=True)
 
 

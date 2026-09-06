@@ -32,7 +32,16 @@ import reposition_board as rb
 
 ART_NAMESPACE = uuid.UUID("6f1b0b1a-b1a1-4a7a-9a1a-76616e636f75")  # fixed, arbitrary
 TEXT_H = 1.2
-TEXT_THICKNESS = 0.2
+TEXT_THICKNESS = 0.15  # 1:8 at 1.2 mm keeps the stroke font's counters open
+ROUTE_W = 1.5          # route stroke; the LEDs are the stars, this is the
+                       # connective tissue and has to out-weigh the labels
+RING_R, RING_W = 1.25, 0.25            # silk ring behind every station LED
+RING_R_INT, RING_W_INT = 1.55, 0.4     # ... and a heavier one at interchanges
+DASH_STYLES = {  # (dash, gap) in mm for "line" geo and future routes
+    "dash": (2.2, 1.4),
+    "dot": (0.5, 0.9),
+    "dashdot": None,  # handled specially: long dash, gap, dot, gap
+}
 RIVER_MITRE = 1.0  # extra length added at each river segment end, to close gaps
 # citymap.repel() only pushes vertices, not the edges between them, so two
 # adjacent vertices each individually clear of a station can still bound an
@@ -84,15 +93,54 @@ def dash_points(p1, p2, dash=2.2, gap=1.4):
     return out
 
 
-def text_block(text, x, y, angle, anchor, layer, key, size=None):
+def circle_block(cx, cy, r, layer, key, width):
+    return (f"(gr_circle\n\t\t(center {cx:.3f} {cy:.3f})\n\t\t"
+            f"(end {cx + r:.3f} {cy:.3f})\n\t\t(stroke\n\t\t\t"
+            f"(width {width})\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t"
+            f"(layer \"{layer}\")\n\t\t(uuid \"{art_uuid(key)}\")\n\t)")
+
+
+def dashdot_points(p1, p2, dash=3.0, dot=0.4, gap=1.0):
+    """Long dash, gap, dot, gap - the cartographic international border."""
+    ln = math.hypot(p2[0] - p1[0], p2[1] - p1[1])
+    if ln < 1e-6:
+        return []
+    ux, uy = (p2[0] - p1[0]) / ln, (p2[1] - p1[1]) / ln
+    out, d = [], 0.0
+    while d < ln:
+        for seg in (dash, dot):
+            if d >= ln:
+                break
+            end = min(d + seg, ln)
+            out.append(((p1[0] + ux * d, p1[1] + uy * d),
+                        (p1[0] + ux * end, p1[1] + uy * end)))
+            d = end + gap
+    return out
+
+
+def styled_line_blocks(p1, p2, layer, key, width, dash=None):
+    """One solid gr_line, or a run of real short segments for a dashed /
+    dotted / dash-dot style (stroke line styles don't survive to fab)."""
+    if not dash:
+        return [line_block(p1, p2, layer, key, width=width)]
+    if dash == "dashdot":
+        pairs = dashdot_points(p1, p2)
+    else:
+        pairs = dash_points(p1, p2, *DASH_STYLES[dash])
+    return [line_block(a, b, layer, f"{key}:{j}", width=width)
+            for j, (a, b) in enumerate(pairs)]
+
+
+def text_block(text, x, y, angle, anchor, layer, key, size=None, bold=False):
     justify = ""
     if anchor == "start":
         justify = "\n\t\t\t(justify left)"
     elif anchor == "end":
         justify = "\n\t\t\t(justify right)"
-    text = text.replace('"', "'")
+    text = text.replace('"', "'").replace("\n", "\\n")
     h = size if size is not None else TEXT_H
-    thickness = max(0.12, h * (TEXT_THICKNESS / TEXT_H))
+    ratio = 0.22 if bold else TEXT_THICKNESS / TEXT_H
+    thickness = max(0.12, h * ratio)
     return (f'(gr_text "{text}"\n\t\t(at {x:.3f} {y:.3f} {angle % 360:.1f})\n'
             f'\t\t(layer "{layer}")\n\t\t(uuid "{art_uuid(key)}")\n\t\t'
             f'(effects\n\t\t\t(font\n\t\t\t\t(size {h} {h})\n'
@@ -160,6 +208,13 @@ def land_outline_blocks(city, scale, geo=None):
         city, scale, avoid_points(city, scale))
     blocks = []
     for g in geo:
+        if g["type"] == "line":
+            pts = g["points"]
+            for i, (p1, p2) in enumerate(zip(pts, pts[1:])):
+                blocks += styled_line_blocks(
+                    p1, p2, "F.SilkS", f"line:{g['name']}:{i}",
+                    g.get("width", 0.3), g.get("dash"))
+            continue
         if g["type"] not in ("island", "park"):
             continue
         blocks.append(poly_block("gr_poly", g["points"], "F.SilkS", False,
@@ -185,10 +240,23 @@ def route_blocks(city, scale):
         if future:
             for j, (da, db) in enumerate(dash_points(p1s, p2s)):
                 blocks.append(line_block(da, db, "F.SilkS",
-                                         f"route:{i}:{a}:{b}:{j}", width=1.0))
+                                         f"route:{i}:{a}:{b}:{j}", width=ROUTE_W))
         else:
             blocks.append(line_block(p1s, p2s, "F.SilkS",
-                                     f"route:{i}:{a}:{b}", width=1.0))
+                                     f"route:{i}:{a}:{b}", width=ROUTE_W))
+    return blocks
+
+
+def station_ring_blocks(city, scale):
+    """A white silk ring behind every LED so a station reads as the classic
+    circle-on-line marker rather than a bare pad interrupting the route;
+    interchanges get a visibly heavier ring. Rings sit inside the route
+    stroke width at the tightest (2.8 mm) pitches downtown."""
+    blocks = []
+    for st in list(city.stations.values()) + city.extras:
+        r, w = (RING_R_INT, RING_W_INT) if st.interchange else (RING_R, RING_W)
+        blocks.append(circle_block(st.x * scale, st.y * scale, r, "F.SilkS",
+                                   f"ring:{st.id}", w))
     return blocks
 
 
@@ -199,20 +267,28 @@ def annotation_blocks(city, scale):
     blocks = []
     for i, a in enumerate(city.annotations):
         x, y = a["x"] * scale, a["y"] * scale
-        blocks.append(text_block(a["text"], x, y, a.get("angle", 0), "start",
-                                 "F.SilkS", f"annotation:{i}:{a['text']}",
-                                 size=a.get("size", 1.4)))
+        # "copper": exposed-copper lettering (F.Cu + matching F.Mask opening,
+        # the same trick as the water) - the wordmark, gold with ENIG.
+        layers = ("F.Cu", "F.Mask") if a.get("copper") else ("F.SilkS",)
+        for layer in layers:
+            blocks.append(text_block(
+                a["text"], x, y, a.get("angle", 0), a.get("anchor", "start"),
+                layer, f"annotation:{i}:{a['text']}:{layer}",
+                size=a.get("size", 1.4), bold=a.get("bold", False)))
     return blocks
 
 
 def label_blocks(city, scale):
     blocks = []
     for st in list(city.stations.values()) + city.extras:
-        x = st.x * scale + st.label["dx"]
-        y = st.y * scale + st.label["dy"]
+        x, y = citymap.label_anchor(st, scale)
         blocks.append(text_block(citymap.display_name(st), x, y, -st.label["angle"],
                                  st.label["anchor"], "F.SilkS",
                                  f"label:{st.id}"))
+        seg = citymap.leader_segment(st, scale)
+        if seg:
+            blocks.append(line_block(seg[0], seg[1], "F.SilkS",
+                                     f"leader:{st.id}", width=0.15))
     return blocks
 
 
@@ -237,7 +313,7 @@ def main():
     city = citymap.load(args.data)
     geo = citymap.prepared_geo(city, args.scale, avoid_points(city, args.scale))
     water = water_blocks(city, args.scale, geo)
-    routes = route_blocks(city, args.scale)
+    routes = route_blocks(city, args.scale) + station_ring_blocks(city, args.scale)
     land = land_outline_blocks(city, args.scale, geo)
     labels = label_blocks(city, args.scale)
     annotations = annotation_blocks(city, args.scale)

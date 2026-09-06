@@ -121,10 +121,10 @@
       "y": 12.22,
       "interchange": true,
       "label": {
-        "angle": -90,
+        "angle": 0,
         "anchor": "start",
-        "dx": 0.0,
-        "dy": -0.9
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "burrard": {
@@ -134,8 +134,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 1.6,
-        "dy": 0.4
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "granville": {
@@ -143,40 +143,61 @@
       "x": 23.55,
       "y": 17.78,
       "label": {
-        "angle": 90,
+        "angle": 0,
         "anchor": "start",
-        "dx": -0.3,
-        "dy": -1.6
+        "dx": 6.0,
+        "dy": 0.0,
+        "leader": true
       }
     },
     "stadium": {
       "name": "Stadium–Chinatown",
       "short": "Stadium",
       "x": 27.47,
-      "y": 20.58
+      "y": 20.58,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
+      }
     },
     "main-street": {
       "name": "Main Street–Science World",
       "short": "Main St–Science World",
       "x": 31.31,
-      "y": 24.18
+      "y": 24.18,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 6.3,
+        "dy": -6.3,
+        "leader": true
+      }
     },
     "commercial-broadway": {
       "name": "Commercial–Broadway",
       "short": "Commercial–Bdwy",
       "x": 35.14,
       "y": 27.77,
-      "interchange": true
+      "interchange": true,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -6.0,
+        "leader": true
+      }
     },
     "nanaimo": {
       "name": "Nanaimo",
       "x": 35.11,
       "y": 35.06,
       "label": {
-        "angle": -90,
+        "angle": 0,
         "anchor": "start",
-        "dx": 0.3,
-        "dy": -1.6
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "29th-avenue": {
@@ -185,10 +206,10 @@
       "x": 37.88,
       "y": 37.83,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "joyce": {
@@ -197,10 +218,11 @@
       "x": 40.64,
       "y": 40.6,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 9.0,
+        "dy": 0.0,
+        "leader": true
       }
     },
     "patterson": {
@@ -208,26 +230,33 @@
       "x": 43.41,
       "y": 43.37,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "metrotown": {
       "name": "Metrotown",
       "x": 46.16,
-      "y": 46.14
+      "y": 46.14,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.0
+      }
     },
     "royal-oak": {
       "name": "Royal Oak",
       "x": 51.09,
       "y": 49.77,
       "label": {
-        "angle": 90,
+        "angle": 0,
         "anchor": "start",
-        "dx": -0.3,
-        "dy": 1.8
+        "dx": 4.2,
+        "dy": 4.2,
+        "leader": true
       }
     },
     "edmonds": {
@@ -235,10 +264,10 @@
       "x": 55.79,
       "y": 49.79,
       "label": {
-        "angle": 90,
+        "angle": -90,
         "anchor": "start",
-        "dx": -0.3,
-        "dy": 1.8
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "22nd-street": {
@@ -249,8 +278,8 @@
       "label": {
         "angle": -90,
         "anchor": "start",
-        "dx": 0.3,
-        "dy": -1.8
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "new-westminster": {
@@ -259,10 +288,11 @@
       "x": 65.39,
       "y": 46.18,
       "label": {
-        "angle": -90,
-        "anchor": "end",
-        "dx": 0.3,
-        "dy": -1.6
+        "angle": 0,
+        "anchor": "start",
+        "dx": 4.2,
+        "dy": 4.2,
+        "leader": true
       }
     },
     "columbia": {
@@ -270,21 +300,22 @@
       "x": 68.16,
       "y": 43.41,
       "label": {
-        "angle": -90,
+        "angle": 0,
         "anchor": "end",
-        "dx": -0.0,
-        "dy": 0.9
-      }
+        "dx": -1.9,
+        "dy": -0.0
+      },
+      "interchange": true
     },
     "sapperton": {
       "name": "Sapperton",
       "x": 73.73,
       "y": 37.83,
       "label": {
-        "angle": -90,
-        "anchor": "start",
-        "dx": 0.0,
-        "dy": -0.9
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.0
       }
     },
     "braid": {
@@ -293,9 +324,9 @@
       "y": 35.06,
       "label": {
         "angle": 0,
-        "anchor": "start",
-        "dx": 1.8,
-        "dy": -0.4
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.0
       }
     },
     "lougheed": {
@@ -307,8 +338,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 1.8,
-        "dy": 0.6
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "production-way": {
@@ -317,21 +348,22 @@
       "x": 72.9,
       "y": 28.26,
       "label": {
-        "angle": -85,
+        "angle": -90,
         "anchor": "start",
-        "dx": 0.08,
-        "dy": -0.9
-      }
+        "dx": 0.0,
+        "dy": -1.9
+      },
+      "interchange": true
     },
     "scott-road": {
       "name": "Scott Road",
       "x": 78.88,
       "y": 43.41,
       "label": {
-        "angle": -45,
+        "angle": 0,
         "anchor": "start",
-        "dx": 0.9,
-        "dy": -1.6
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "gateway": {
@@ -339,10 +371,10 @@
       "x": 78.86,
       "y": 48.3,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "surrey-central": {
@@ -350,10 +382,10 @@
       "x": 78.86,
       "y": 53.22,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "king-george": {
@@ -361,10 +393,10 @@
       "x": 78.88,
       "y": 58.11,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "green-timbers": {
@@ -373,10 +405,10 @@
       "y": 60.21,
       "future": true,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "152-street": {
@@ -386,10 +418,10 @@
       "y": 62.31,
       "future": true,
       "label": {
-        "angle": -45,
-        "anchor": "end",
-        "dx": -0.9,
-        "dy": 0.9
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "fleetwood": {
@@ -398,10 +430,10 @@
       "y": 64.41,
       "future": true,
       "label": {
-        "angle": -45,
+        "angle": 0,
         "anchor": "start",
-        "dx": 0.9,
-        "dy": -0.9
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "bakerview": {
@@ -411,9 +443,9 @@
       "future": true,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "hillcrest": {
@@ -423,9 +455,9 @@
       "future": true,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "clayton": {
@@ -435,9 +467,9 @@
       "future": true,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "willowbrook": {
@@ -447,9 +479,9 @@
       "future": true,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "langley-city-centre": {
@@ -460,9 +492,9 @@
       "future": true,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "arbutus": {
@@ -471,10 +503,10 @@
       "y": 30.16,
       "future": true,
       "label": {
-        "angle": 90,
-        "anchor": "start",
-        "dx": -0.3,
-        "dy": -1.6
+        "angle": -90,
+        "anchor": "end",
+        "dx": -0.0,
+        "dy": 1.9
       }
     },
     "south-granville": {
@@ -487,7 +519,7 @@
         "angle": -90,
         "anchor": "end",
         "dx": -0.0,
-        "dy": 0.9
+        "dy": 1.9
       }
     },
     "oak-vgh": {
@@ -496,10 +528,10 @@
       "y": 30.16,
       "future": true,
       "label": {
-        "angle": 90,
+        "angle": -90,
         "anchor": "start",
-        "dx": -0.3,
-        "dy": -1.6
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "broadway-city-hall": {
@@ -510,10 +542,11 @@
       "interchange": true,
       "future": true,
       "label": {
-        "angle": -65,
-        "anchor": "start",
-        "dx": 0.38,
-        "dy": -0.82
+        "angle": 0,
+        "anchor": "end",
+        "dx": -6.3,
+        "dy": -6.3,
+        "leader": true
       }
     },
     "mount-pleasant": {
@@ -525,7 +558,7 @@
         "angle": -90,
         "anchor": "end",
         "dx": -0.0,
-        "dy": 0.9
+        "dy": 1.9
       }
     },
     "great-northern-way": {
@@ -538,7 +571,7 @@
         "angle": -90,
         "anchor": "end",
         "dx": -0.0,
-        "dy": 0.9
+        "dy": 1.9
       }
     },
     "vcc-clark": {
@@ -546,43 +579,80 @@
       "x": 30.43,
       "y": 30.16,
       "label": {
-        "angle": 90,
-        "anchor": "start",
-        "dx": -0.3,
-        "dy": -1.6
+        "angle": -90,
+        "anchor": "end",
+        "dx": -0.0,
+        "dy": 1.9
       }
     },
     "renfrew": {
       "name": "Renfrew",
       "x": 39.85,
-      "y": 30.16
+      "y": 30.16,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 4.2,
+        "dy": 4.2,
+        "leader": true
+      }
     },
     "rupert": {
       "name": "Rupert",
       "x": 44.55,
-      "y": 30.16
+      "y": 30.16,
+      "label": {
+        "angle": -90,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -1.9
+      }
     },
     "gilmore": {
       "name": "Gilmore",
       "x": 49.25,
-      "y": 30.16
+      "y": 30.16,
+      "label": {
+        "angle": -90,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -1.9
+      }
     },
     "brentwood": {
       "name": "Brentwood Town Centre",
       "short": "Brentwood",
       "x": 53.95,
-      "y": 30.16
+      "y": 30.16,
+      "label": {
+        "angle": -90,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -1.9
+      }
     },
     "holdom": {
       "name": "Holdom",
       "x": 58.65,
-      "y": 30.16
+      "y": 30.16,
+      "label": {
+        "angle": -90,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -1.9
+      }
     },
     "sperling": {
       "name": "Sperling–Burnaby Lake",
       "short": "Sperling–Bby Lake",
       "x": 63.35,
-      "y": 30.16
+      "y": 30.16,
+      "label": {
+        "angle": -90,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -1.9
+      }
     },
     "lake-city-way": {
       "name": "Lake City Way",
@@ -590,9 +660,9 @@
       "y": 30.16,
       "label": {
         "angle": -90,
-        "anchor": "end",
-        "dx": -0.0,
-        "dy": 0.9
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "burquitlam": {
@@ -600,10 +670,10 @@
       "x": 78.88,
       "y": 21.1,
       "label": {
-        "angle": 0,
+        "angle": -90,
         "anchor": "start",
-        "dx": 1.8,
-        "dy": 0.6
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "moody-centre": {
@@ -611,10 +681,11 @@
       "x": 81.22,
       "y": 18.82,
       "label": {
-        "angle": -80,
+        "angle": 0,
         "anchor": "start",
-        "dx": 0.3,
-        "dy": -2.6
+        "dx": 4.2,
+        "dy": 4.2,
+        "leader": true
       }
     },
     "inlet-centre": {
@@ -622,10 +693,10 @@
       "x": 86.62,
       "y": 18.82,
       "label": {
-        "angle": -55,
+        "angle": -90,
         "anchor": "start",
-        "dx": 0.52,
-        "dy": -0.74
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "coquitlam-central": {
@@ -634,10 +705,11 @@
       "x": 92.09,
       "y": 18.82,
       "label": {
-        "angle": -80,
-        "anchor": "end",
-        "dx": -0.3,
-        "dy": -1.0
+        "angle": 0,
+        "anchor": "start",
+        "dx": 0.0,
+        "dy": 9.0,
+        "leader": true
       }
     },
     "lincoln": {
@@ -645,10 +717,10 @@
       "x": 94.39,
       "y": 14.37,
       "label": {
-        "angle": -45,
+        "angle": 0,
         "anchor": "end",
-        "dx": -0.9,
-        "dy": -0.9
+        "dx": -1.9,
+        "dy": -0.0
       }
     },
     "lafarge": {
@@ -660,7 +732,7 @@
         "angle": -90,
         "anchor": "start",
         "dx": 0.0,
-        "dy": -0.9
+        "dy": -1.9
       }
     },
     "vancouver-city-centre": {
@@ -671,8 +743,8 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "dx": -1.9,
+        "dy": -0.0
       }
     },
     "yaletown": {
@@ -683,8 +755,8 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "dx": -1.9,
+        "dy": -0.0
       }
     },
     "olympic-village": {
@@ -694,9 +766,9 @@
       "y": 25.25,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "king-edward": {
@@ -704,10 +776,11 @@
       "x": 22.0,
       "y": 35.06,
       "label": {
-        "angle": -75,
+        "angle": 0,
         "anchor": "end",
-        "dx": -0.23,
-        "dy": 0.87
+        "dx": -6.3,
+        "dy": 6.3,
+        "leader": true
       }
     },
     "oakridge": {
@@ -716,10 +789,11 @@
       "x": 22.0,
       "y": 39.97,
       "label": {
-        "angle": 35,
-        "anchor": "start",
-        "dx": 0.74,
-        "dy": 0.52
+        "angle": 0,
+        "anchor": "end",
+        "dx": -4.2,
+        "dy": 4.2,
+        "leader": true
       }
     },
     "langara": {
@@ -729,9 +803,9 @@
       "y": 44.87,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "marine-drive": {
@@ -740,9 +814,9 @@
       "y": 49.79,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "bridgeport": {
@@ -751,20 +825,22 @@
       "y": 54.68,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.6,
-        "dy": 0.4
-      }
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
+      },
+      "interchange": true
     },
     "templeton": {
       "name": "Templeton",
       "x": 17.21,
       "y": 57.17,
       "label": {
-        "angle": 90,
-        "anchor": "start",
-        "dx": -0.3,
-        "dy": 1.8
+        "angle": 0,
+        "anchor": "end",
+        "dx": -4.2,
+        "dy": 4.2,
+        "leader": true
       }
     },
     "sea-island-centre": {
@@ -775,8 +851,8 @@
       "label": {
         "angle": -90,
         "anchor": "start",
-        "dx": 0.3,
-        "dy": -1.6
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "yvr": {
@@ -787,8 +863,8 @@
       "label": {
         "angle": -90,
         "anchor": "start",
-        "dx": 0.3,
-        "dy": -1.6
+        "dx": 0.0,
+        "dy": -1.9
       }
     },
     "capstan": {
@@ -798,8 +874,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 1.6,
-        "dy": 0.4
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "aberdeen": {
@@ -809,8 +885,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 1.6,
-        "dy": 0.4
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "lansdowne": {
@@ -820,8 +896,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 1.6,
-        "dy": 0.4
+        "dx": 1.9,
+        "dy": 0.0
       }
     },
     "richmond-brighouse": {
@@ -832,8 +908,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 1.6,
-        "dy": 0.4
+        "dx": 1.9,
+        "dy": 0.0
       }
     }
   },
@@ -844,10 +920,10 @@
       "x": 21.2,
       "y": 13.2,
       "label": {
-        "angle": -90,
-        "anchor": "start",
-        "dx": 0.0,
-        "dy": -0.9
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.0
       }
     }
   ],
@@ -866,11 +942,7 @@
         ],
         [
           4.0,
-          23.73
-        ],
-        [
-          13.49,
-          23.73
+          33.2
         ],
         [
           15.76,
@@ -1003,32 +1075,24 @@
           51.68
         ],
         [
-          4.0,
-          45.35
+          17.31,
+          61.31
         ],
         [
-          4.0,
-          76.73
+          6.29,
+          61.31
         ],
         [
-          10.31,
-          76.73
+          4.57,
+          59.38
         ],
         [
-          10.31,
-          62.81
-        ],
-        [
-          4.73,
-          59.76
-        ],
-        [
-          4.8,
-          52.79
-        ],
-        [
-          19.05,
+          4.57,
           53.02
+        ],
+        [
+          18.82,
+          52.79
         ],
         [
           19.05,
@@ -1039,12 +1103,76 @@
           61.31
         ],
         [
-          6.68,
-          61.47
+          10.56,
+          51.68
         ],
         [
-          4.73,
-          59.76
+          6.5,
+          47.86
+        ],
+        [
+          4.0,
+          39.99
+        ],
+        [
+          4.0,
+          96.0
+        ],
+        [
+          20.98,
+          96.0
+        ],
+        [
+          12.58,
+          87.6
+        ],
+        [
+          12.58,
+          80.13
+        ],
+        [
+          36.7,
+          80.13
+        ],
+        [
+          49.95,
+          66.89
+        ],
+        [
+          60.6,
+          66.57
+        ],
+        [
+          59.67,
+          64.35
+        ],
+        [
+          54.84,
+          64.35
+        ],
+        [
+          60.99,
+          58.44
+        ],
+        [
+          60.83,
+          56.81
+        ],
+        [
+          53.34,
+          64.35
+        ],
+        [
+          49.2,
+          64.67
+        ],
+        [
+          35.95,
+          77.68
+        ],
+        [
+          10.31,
+          77.45
         ],
         [
           10.31,
@@ -1091,40 +1219,8 @@
           64.35
         ],
         [
-          54.91,
-          64.51
-        ],
-        [
-          60.99,
-          58.44
-        ],
-        [
-          60.83,
-          56.81
-        ],
-        [
-          53.34,
-          64.35
-        ],
-        [
-          49.2,
-          64.67
-        ],
-        [
-          37.13,
-          76.73
-        ],
-        [
-          40.1,
-          76.73
-        ],
-        [
-          49.95,
-          66.89
-        ],
-        [
-          60.2,
-          66.73
+          60.6,
+          66.57
         ],
         [
           63.19,
@@ -1291,6 +1387,86 @@
           45.51
         ]
       ]
+    },
+    {
+      "name": "seabus-route",
+      "type": "line",
+      "dash": "dot",
+      "width": 0.5,
+      "points": [
+        [
+          21.2,
+          12.0
+        ],
+        [
+          21.2,
+          5.0
+        ]
+      ]
+    },
+    {
+      "name": "us-border",
+      "type": "line",
+      "dash": "dashdot",
+      "width": 0.3,
+      "points": [
+        [
+          21.0,
+          94.3
+        ],
+        [
+          97.0,
+          94.3
+        ]
+      ]
+    },
+    {
+      "name": "legend-0",
+      "type": "line",
+      "dash": null,
+      "width": 1.5,
+      "points": [
+        [
+          73.0,
+          85.5
+        ],
+        [
+          79.0,
+          85.5
+        ]
+      ]
+    },
+    {
+      "name": "legend-1",
+      "type": "line",
+      "dash": "dash",
+      "width": 1.5,
+      "points": [
+        [
+          73.0,
+          88.2
+        ],
+        [
+          79.0,
+          88.2
+        ]
+      ]
+    },
+    {
+      "name": "legend-2",
+      "type": "line",
+      "dash": "dot",
+      "width": 0.5,
+      "points": [
+        [
+          73.0,
+          90.9
+        ],
+        [
+          79.0,
+          90.9
+        ]
+      ]
     }
   ],
   "chain": [
@@ -1363,5 +1539,46 @@
     "lansdowne",
     "richmond-brighouse"
   ],
-  "annotations": []
+  "annotations": [
+    {
+      "text": "VANCOUVER",
+      "x": 42.0,
+      "y": 85.0,
+      "size": 7.5,
+      "angle": 0,
+      "anchor": "center",
+      "copper": true,
+      "bold": true
+    },
+    {
+      "text": "Existing line",
+      "x": 80.5,
+      "y": 85.5,
+      "size": 1.3
+    },
+    {
+      "text": "Future (2027-2029)",
+      "x": 80.5,
+      "y": 88.2,
+      "size": 1.3
+    },
+    {
+      "text": "SeaBus",
+      "x": 80.5,
+      "y": 90.9,
+      "size": 1.3
+    },
+    {
+      "text": "CANADA",
+      "x": 88.0,
+      "y": 93.0,
+      "size": 1.2
+    },
+    {
+      "text": "USA",
+      "x": 88.0,
+      "y": 95.7,
+      "size": 1.2
+    }
+  ]
 }

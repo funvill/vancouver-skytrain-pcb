@@ -10,13 +10,20 @@ import math
 from dataclasses import dataclass, field
 
 
-DEFAULT_LABEL = {"angle": -45, "anchor": "start", "dx": 0.9, "dy": -0.9}
+DEFAULT_LABEL = {"angle": -45, "anchor": "start", "dx": 1.2, "dy": -1.2}
 
 # Stroke-font metrics (KiCad-like): average advance per char and total box
 # height (ascenders + descenders) as multiples of the nominal text height.
 CHAR_W = 0.85  # calibrated against KiCad's stroke font + a safety margin
 BOX_H = 1.25
-DESCENT = 0.25
+LINE_PITCH = 1.6  # KiCad stroke-font interline pitch (multiple of size)
+
+# Labels: the text block is vertically centred on its anchor point (KiCad's
+# default vertical justification), horizontally anchored at its start or
+# end. The anchor sits LABEL_STANDOFF mm from the LED centre along the
+# label's own direction - clear of the 1.6 mm pad and the station ring.
+LABEL_STANDOFF = 1.9
+WRAP_OVER = 13  # names longer than this are set on two lines
 
 
 @dataclass
@@ -29,6 +36,7 @@ class Station:
     future: bool = False
     interchange: bool = False
     label: dict = field(default_factory=lambda: dict(DEFAULT_LABEL))
+    wrap: object = None  # None = auto, False = never, or explicit [lines]
 
 
 @dataclass
@@ -60,7 +68,8 @@ def load(path):
         stations[sid] = Station(
             id=sid, name=s["name"], x=s["x"], y=s["y"],
             short=s.get("short", s["name"]), future=s.get("future", False),
-            interchange=s.get("interchange", False), label=label)
+            interchange=s.get("interchange", False), label=label,
+            wrap=s.get("wrap"))
     lines = [Line(l["id"], l["name"], l["color"], l["paths"])
              for l in raw["lines"]]
     extras = []
@@ -91,38 +100,95 @@ def is_octilinear(p1, p2, tol=0.01):
     return (abs(dx) < tol or abs(dy) < tol or abs(abs(dx) - abs(dy)) < tol)
 
 
-LONG_NAME_THRESHOLD = 17  # names longer than this always use the short form,
-                          # even in "full name" mode - see fit-report.md
+DASHES = "–—-"
+
+
+def display_lines(st, use_short=False):
+    """The label text as a list of lines. Long multi-part names are set on
+    two lines (split at the en-dash the official names use, else at the
+    space nearest the middle) - 'Joyce / Collingwood' reads at a glance
+    where 'Joyce–Collingwood' as one 17 mm ribbon does not, and the short
+    forms ('Bdwy', 'Bby') are no longer needed to make things fit."""
+    if use_short:
+        return [st.short]
+    if isinstance(st.wrap, list):
+        return list(st.wrap)
+    name = st.name
+    if st.wrap is False or len(name) <= WRAP_OVER:
+        return [name]
+    for dash in DASHES:
+        if dash in name:
+            a, b = name.split(dash, 1)
+            return [a.strip(), b.strip()]
+    if " " in name:
+        mid = len(name) / 2
+        cut = min((i for i, ch in enumerate(name) if ch == " "),
+                  key=lambda i: abs(i - mid))
+        return [name[:cut], name[cut + 1:]]
+    return [name]
 
 
 def display_name(st, use_short=False):
-    if use_short or len(st.name) > LONG_NAME_THRESHOLD:
-        return st.short
-    return st.name
+    return "\n".join(display_lines(st, use_short))
+
+
+def label_anchor(st, scale=1.0):
+    """Board-mm position of the label's anchor point: LED centre plus the
+    label's dx/dy. auto_label sets dx/dy from LABEL_STANDOFF along the
+    text direction; a leader label just has a bigger dx/dy."""
+    return st.x * scale + st.label["dx"], st.y * scale + st.label["dy"]
 
 
 def label_box(st, text_h, scale=1.0, use_short=False):
     """Rotated-rectangle polygon [(x,y)*4] of a station's label, in board mm.
 
     Station coords scale with the board; text height and label offset do not.
+    The block is vertically centred on the anchor (KiCad's default).
     """
-    text = display_name(st, use_short)
-    w = max(1.0, len(text) * CHAR_W * text_h)
+    lines = display_lines(st, use_short)
+    w = max(1.0, max(len(t) for t in lines) * CHAR_W * text_h)
+    h = (BOX_H + (len(lines) - 1) * LINE_PITCH) * text_h
     ang = math.radians(st.label["angle"])
     d = (math.cos(ang), math.sin(ang))
     n = (math.sin(ang), -math.cos(ang))  # 'above baseline' direction
-    px = st.x * scale + st.label["dx"]
-    py = st.y * scale + st.label["dy"]
+    px, py = label_anchor(st, scale)
     if st.label["anchor"] == "end":
         px -= d[0] * w
         py -= d[1] * w
-    lo, hi = -DESCENT * text_h, (BOX_H - DESCENT) * text_h
+    lo, hi = -h / 2, h / 2
     return [
         (px + n[0] * lo, py + n[1] * lo),
         (px + d[0] * w + n[0] * lo, py + d[1] * w + n[1] * lo),
         (px + d[0] * w + n[0] * hi, py + d[1] * w + n[1] * hi),
         (px + n[0] * hi, py + n[1] * hi),
     ]
+
+
+def label_offset(angle, anchor, standoff=LABEL_STANDOFF):
+    """dx/dy that puts a label's anchor `standoff` mm from the LED centre,
+    along the text direction, on the side the anchor implies (start: text
+    runs away from the pad; end: text runs toward it)."""
+    a = math.radians(angle)
+    dx, dy = math.cos(a) * standoff, math.sin(a) * standoff
+    if anchor == "end":
+        dx, dy = -dx, -dy
+    return round(dx, 2), round(dy, 2)
+
+
+def leader_segment(st, scale=1.0, pad_r=1.4, gap=0.4):
+    """(p1, p2) for a leader hairline from just outside the LED ring to just
+    short of the label anchor, or None when the label has no leader."""
+    if not st.label.get("leader"):
+        return None
+    cx, cy = st.x * scale, st.y * scale
+    ax, ay = label_anchor(st, scale)
+    dx, dy = ax - cx, ay - cy
+    ln = math.hypot(dx, dy)
+    if ln <= pad_r + gap:
+        return None
+    ux, uy = dx / ln, dy / ln
+    return ((cx + ux * pad_r, cy + uy * pad_r),
+            (ax - ux * gap, ay - uy * gap))
 
 
 def seg_rect(p1, p2, half_w):
@@ -222,17 +288,20 @@ def prepared_geo(city, scale, avoid_pts, water_keepout=2.0, land_keepout=1.0,
     out = []
     for g in city.geo:
         pts = [(x * scale, y * scale) for x, y in g["points"]]
-        closed = g["type"] != "river"
+        closed = g["type"] not in ("river", "line")
         if g["type"] == "river":
             keepout = water_keepout + g.get("width", 2.5) * scale / 2
         elif g["type"] in ("water", "lake"):
             keepout = water_keepout
+        elif g["type"] == "line":
+            keepout = 0.0  # silk furniture: authored where it goes
         else:
             keepout = land_keepout
-        pts = densify(pts, closed, densify_step)
-        pts = repel(pts, avoid_pts, keepout)
+        if keepout > 0:
+            pts = densify(pts, closed, densify_step)
+            pts = repel(pts, avoid_pts, keepout)
         pts = clamp_to_board(pts, board_mm, edge_margin)
-        if not closed:
+        if not closed and keepout > 0:
             pts = simplify(pts, tol=0.4)
         out.append({**g, "points": pts, "_prepared": True})
     return out

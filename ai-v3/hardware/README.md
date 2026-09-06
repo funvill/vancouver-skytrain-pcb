@@ -65,10 +65,24 @@ for future/under-construction line segments:
   from literal short solid segments with real gaps, which is what
   `dash_points()` does.
 - **Station names** — `gr_text` on F.SilkS, same position/rotation math as
-  the SVG preview (`citymap.label_box`). Names longer than 24 characters
-  automatically fall back to their `short` form (only "Great Northern
-  Way–Emily Carr" → "Gt Northern Way" on this map) — see
-  `citymap.display_name`.
+  the SVG preview (`citymap.label_box`), 0.15 mm stroke at 1.2 mm. Names
+  longer than 13 characters are set on **two lines** (split at the
+  official en-dash, else at the middle space — `citymap.display_lines`;
+  override per station with `"wrap": [...]` or `"wrap": false`), so the
+  abbreviated `short` forms are no longer used on the board. Every label
+  anchor sits `LABEL_STANDOFF` (1.9 mm) from the LED centre, clear of the
+  pad and ring. A label with `"leader": true` is floated out to its dx/dy
+  and joined to the LED by a 0.15 mm hairline — `auto_label.py` uses that
+  as a last resort for stations with no clean spot beside the pad, and
+  prefers one angle per corridor so the eye tracks a single direction.
+- **Station rings** (`station_ring_blocks`) — a silk ring behind every LED
+  (r 1.25) so the station reads as circle-on-line; interchanges (`
+  "interchange": true`) get a heavier r 1.55 ring. Routes are 1.5 mm.
+- **Map furniture** — `geo` entries of `"type": "line"` are plain silk
+  polylines with an optional `"dash"` of `dash` / `dot` / `dashdot`
+  (SeaBus ferry route, the 49th-parallel border, legend swatches); an
+  annotation with `"copper": true` is exposed-copper lettering (F.Cu +
+  F.Mask, the gold "VANCOUVER" wordmark from v2).
 - **Water** (sea, False Creek, Fraser River) — a filled polygon on **F.Cu**
   with a matching filled polygon on **F.Mask**, so the soldermask opens
   over the copper and it reads as bare copper (gold with ENIG) against the
@@ -82,11 +96,9 @@ for future/under-construction line segments:
   stand-in for the reference map's solid green park colour. `hatch_fill()`
   is a general scan-line polygon fill (even-odd rule, works on concave
   shapes) so it's reusable for any future city's parks too.
-- **Annotations** (`annotation_blocks`) — the code path still exists (a
-  reusable capability for any future city that wants small F.SilkS place
-  names), but `vancouver.json`'s `annotations` list is currently **empty**
-  by request — no municipality names or water-body labels are printed on
-  this map, just the coastline shapes themselves.
+- **Annotations** (`annotation_blocks`) — small F.SilkS text (legend
+  labels, CANADA / USA at the border) or copper text (the wordmark). No
+  municipality names or water-body labels are printed, by request.
 
 ### Station positions and geography traced from the official map
 
@@ -96,9 +108,15 @@ from `../input/skytrain-network-map.pdf`'s actual vector content — real
 text/circle coordinates and real polygon points pulled with `pdfplumber`
 / `pymupdf` / `shapely`, not eyeballed from a picture. See
 `../input/README.md` for the full extraction pipeline and how to rerun it
-against a future PDF revision. Two things are *not* literal trace, by
+against a future PDF revision. Three things are *not* literal trace, by
 necessity:
 
+- The PDF draws no coastline west of the Cambie corridor and nothing
+  below Richmond, so `build_geo.py` adds — in the PDF's own 45° idiom —
+  the Point Grey tip (English Bay / Sturgeon Bank cuts so the left edge
+  ends in water, as v2 did) and Delta / Boundary Bay below the page, so
+  the South Arm makes Lulu Island an island and the bottom band carries
+  the wordmark, legend and border instead of dead space.
 - The Broadway Extension and Surrey–Langley Extension aren't on the
   current-network PDF (not built yet), so those 14 stations are
   extrapolated by continuing each real corridor's traced direction and

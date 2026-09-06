@@ -204,7 +204,38 @@ park_names = {
 }
 for key, pts in geo_canvas["parks"].items():
     new_geo.append({"name": park_names[key], "type": "park", "points": pts})
+
+# --- Map furniture (canvas units; board mm = canvas * 1.5) ---------------
+# "line" geo = a silkscreen polyline (optionally dashed/dotted) - used for
+# things that are neither water nor land: the SeaBus ferry route, the
+# 49th-parallel border along the bottom, and the legend swatches.
+sb = CANVAS_XY["seabus"]
+new_geo.append({"name": "seabus-route", "type": "line", "dash": "dot",
+                "width": 0.5,
+                "points": [[sb[0], sb[1] - 1.2], [sb[0], 5.0]]})
+new_geo.append({"name": "us-border", "type": "line", "dash": "dashdot",
+                "width": 0.3, "points": [[21.0, 94.3], [97.0, 94.3]]})
+LEG_X, LEG_Y = 73.0, 85.5   # legend block, bottom-right (below Langley)
+for i, (dash, w) in enumerate([(None, 1.5), ("dash", 1.5), ("dot", 0.5)]):
+    y = LEG_Y + i * 2.7
+    new_geo.append({"name": f"legend-{i}", "type": "line", "dash": dash,
+                    "width": w, "points": [[LEG_X, y], [LEG_X + 6.0, y]]})
 d["geo"] = new_geo
+
+# Text furniture. "copper": exposed-copper lettering (F.Cu + F.Mask), the
+# v2 board's gold "VANCOUVER" wordmark; everything else is white silk.
+d["annotations"] = [
+    {"text": "VANCOUVER", "x": 42.0, "y": 85.0, "size": 7.5, "angle": 0,
+     "anchor": "center", "copper": True, "bold": True},
+    {"text": "Existing line", "x": LEG_X + 7.5, "y": LEG_Y, "size": 1.3},
+    {"text": "Future (2027-2029)", "x": LEG_X + 7.5, "y": LEG_Y + 2.7,
+     "size": 1.3},
+    {"text": "SeaBus", "x": LEG_X + 7.5, "y": LEG_Y + 5.4, "size": 1.3},
+    {"text": "CANADA", "x": 88.0, "y": 93.0, "size": 1.2},
+    {"text": "USA", "x": 88.0, "y": 95.7, "size": 1.2},
+]
+for sid in ("columbia", "bridgeport", "production-way"):
+    d["stations"][sid]["interchange"] = True
 
 json.dump(d, open("../input/vancouver.json", "w", encoding="utf-8"),
           indent=2, ensure_ascii=False)

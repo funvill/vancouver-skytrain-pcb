@@ -47,6 +47,12 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
         elif g["type"] == "park":
             s.append(f'<polygon points="{_fmt(pts)}" fill="#12331c" '
                      f'stroke="#3f6647" stroke-width="0.15"/>')
+        elif g["type"] == "line":
+            dash = {"dash": "2.2,1.4", "dot": "0.5,0.9",
+                    "dashdot": "3,1,0.4,1"}.get(g.get("dash"))
+            da = f' stroke-dasharray="{dash}"' if dash else ""
+            s.append(f'<polyline points="{_fmt(pts)}" fill="none" '
+                     f'stroke="#eee" stroke-width="{g.get("width", 0.3)}"{da}/>')
         else:  # island / land outline: white silk outline
             s.append(f'<polygon points="{_fmt(pts)}" fill="none" '
                      f'stroke="#666" stroke-width="0.2"/>')
@@ -77,15 +83,32 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
         dash = ' stroke-dasharray="0.6,0.45"' if st.future else ''
         s.append(f'<circle cx="{x:.2f}" cy="{y:.2f}" r="{r}" fill="none" '
                  f'stroke="{ring}" stroke-width="0.35"{dash}/>')
-    # labels (white silk)
+    # labels (white silk) - block vertically centred on the anchor, as KiCad
     for st in list(city.stations.values()) + city.extras:
-        text = citymap.display_name(st, use_short)
-        lx = st.x * scale + st.label["dx"]
-        ly = st.y * scale + st.label["dy"]
+        lines = citymap.display_lines(st, use_short)
+        lx, ly = citymap.label_anchor(st, scale)
         anchor = st.label["anchor"]
+        pitch = text_h * citymap.LINE_PITCH
+        y0 = -(len(lines) - 1) * pitch / 2
+        spans = "".join(
+            f'<tspan x="0" y="{y0 + i * pitch:.2f}">{t}</tspan>'
+            for i, t in enumerate(lines))
         s.append(f'<text transform="translate({lx:.2f},{ly:.2f}) '
                  f'rotate({st.label["angle"]})" text-anchor="{anchor}" '
-                 f'font-size="{text_h * 1.35:.2f}" fill="#eee">{text}</text>')
+                 f'dominant-baseline="middle" '
+                 f'font-size="{text_h * 1.35:.2f}" fill="#eee">{spans}</text>')
+        seg = citymap.leader_segment(st, scale)
+        if seg:
+            s.append(f'<line x1="{seg[0][0]:.2f}" y1="{seg[0][1]:.2f}" '
+                     f'x2="{seg[1][0]:.2f}" y2="{seg[1][1]:.2f}" '
+                     f'stroke="#eee" stroke-width="0.15"/>')
+    for a in city.annotations:
+        fill = "#c9a227" if a.get("copper") else "#eee"
+        anchor = {"center": "middle", "end": "end"}.get(a.get("anchor"), "start")
+        s.append(f'<text x="{a["x"] * scale:.2f}" y="{a["y"] * scale:.2f}" '
+                 f'text-anchor="{anchor}" dominant-baseline="middle" '
+                 f'font-size="{a.get("size", 1.4) * 1.35:.2f}" fill="{fill}" '
+                 f'{"font-weight=bold" if a.get("bold") else ""}>{a["text"]}</text>')
     # collision overlay
     for c in collisions or []:
         s.append(f'<polygon points="{_fmt(c.poly)}" fill="rgba(255,40,40,0.45)" '
