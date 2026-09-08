@@ -31,11 +31,16 @@ Writes `board-top.png` and `board-bottom.png`. Pass `--kicad-cli` if
 Regenerate placements after any layout change:
 
 ```
+cd ../input && python build_from_fwa.py      # geography + stations + city labels -> vancouver.json
 cd ../tools
-python export_placement.py ../input/vancouver.json ../hardware --scale 1.5
-python reposition_board.py ../hardware/vancouver-skytrain-pcb.kicad_pcb ../hardware/leds.csv --board 150
-python export_art.py ../input/vancouver.json ../hardware/vancouver-skytrain-pcb.kicad_pcb --scale 1.5
+python export_placement.py ../input/vancouver.json ../hardware --scale 2.0
+python reposition_board.py ../hardware/vancouver-skytrain-pcb.kicad_pcb ../hardware/leds.csv --board 200 --height 109
+python export_art.py ../input/vancouver.json ../hardware/vancouver-skytrain-pcb.kicad_pcb --scale 2.0
 ```
+
+The board is **200 × 109 mm** (`board_scale` 2.0 in `vancouver.json`: board mm =
+canvas units × 2). Preview the layout without KiCad with
+`python preview_map.py ../input/vancouver.json ../test-results/preview.png --collisions`.
 
 Run them in that order (placement first, art second — art positions itself
 relative to the current LED footprint locations). `export_art.py` is

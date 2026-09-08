@@ -197,16 +197,24 @@ for st in list(_city.stations.values()) + _city.extras:
 avoid = unary_union([routes_km.buffer(0.35), water.buffer(0.12), station_pts.buffer(0.6)])
 
 
-def text_box(x, y, text, size_mm):
-    w = len(text) * 0.85 * size_mm / MM_PER_KM
+def text_box(x, y, text, size_mm, char_w=0.85):
+    w = len(text) * char_w * size_mm / MM_PER_KM
     h = 1.3 * size_mm / MM_PER_KM
     return box(x - w / 2, y - h / 2, x + w / 2, y + h / 2)
 
 
 # --- wordmark bottom-centre, placed first so the city labels avoid it ----
-tx, ty = CANVAS_W / 2, CANVAS_H - 1.3 * TITLE_MM / BOARD / 2 - 2.0
-title_box = text_box(*c_inv(tx, ty), "VANCOUVER", TITLE_MM)
-if not land.contains(title_box):
+ty = CANVAS_H - 1.3 * TITLE_MM / BOARD / 2 - 2.0
+# centred, unless the river runs into the lettering: try small shifts
+# right/left and take the first with 0.3 km of land around the box (KiCad's
+# bold stroke font is a little wider than the estimate)
+for shift in (0, 2, -2, 4, -4, 6, -6, 8):
+    tx = CANVAS_W / 2 + shift
+    # KiCad's bold stroke font measures ~0.95 of size per character
+    title_box = text_box(*c_inv(tx, ty), "VANCOUVER", TITLE_MM, char_w=0.95)
+    if land.contains(title_box.buffer(0.3)):
+        break
+else:
     print("  warning: wordmark box is not entirely on land")
 placed.append(title_box.buffer(0.4))
 annotations.append({"text": "VANCOUVER", "x": round(tx, 2), "y": round(ty, 2),

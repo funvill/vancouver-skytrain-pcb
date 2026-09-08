@@ -13,7 +13,7 @@ DATA = os.path.join(HERE, "..", "input", "vancouver.json")
 
 EXPECTED_LEDS = 68          # 67 unique stations + SeaBus
 EXPECTED_STATIONS = 67
-MARGIN_MM = 3.0
+MARGIN_MM = 2.0   # canvas units (4 mm at board_scale 2.0) - LED body is 1.6 mm
 
 SHARED = ["waterfront", "commercial-broadway", "broadway-city-hall",
           "lougheed", "production-way"]
