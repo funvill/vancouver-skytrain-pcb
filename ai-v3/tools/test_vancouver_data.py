@@ -64,7 +64,7 @@ def main():
 
     # No two LEDs closer than 2.5 mm on the 150 mm board (1615 package +
     # courtyard) - canvas units are 1.5 mm each
-    BOARD_SCALE = 1.5
+    BOARD_SCALE = city.scale
     pts = [(s.id, s.x * BOARD_SCALE, s.y * BOARD_SCALE)
            for s in list(city.stations.values()) + city.extras]
     for i in range(len(pts)):

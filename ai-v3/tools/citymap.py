@@ -58,6 +58,7 @@ class City:
     geo: list       # raw geo dicts
     annotations: list = field(default_factory=list)  # river/municipality labels
     canvas_h: float = None    # canvas height; None = square
+    scale: float = 1.5        # board mm per canvas unit ("board_scale")
 
     @property
     def height(self):
@@ -86,7 +87,7 @@ def load(path):
                               short=e.get("short", e["name"]), label=label))
     return City(raw["city"], raw["canvas_mm"], lines, stations, extras,
                 raw.get("geo", []), raw.get("annotations", []),
-                raw.get("canvas_h_mm"))
+                raw.get("canvas_h_mm"), raw.get("board_scale", 1.5))
 
 
 def led_count(city):
@@ -330,7 +331,9 @@ def prepared_geo(city, scale, avoid_pts, water_keepout=2.0, land_keepout=1.0,
         elif g["type"] in ("water", "lake"):
             keepout = water_keepout
         elif g["type"] == "line":
-            keepout = 0.0  # silk furniture: authored where it goes
+            # silk furniture goes where authored; a copper hairline (city
+            # boundary) must clear the LED pads like the water does
+            keepout = water_keepout + 0.2 if g.get("copper") else 0.0
         else:
             keepout = land_keepout
         if keepout > 0:

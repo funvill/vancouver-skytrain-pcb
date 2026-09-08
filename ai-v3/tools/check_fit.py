@@ -18,6 +18,19 @@ EDGE_MARGIN = 1.0  # labels must stay this far inside the board edge
 DOT_R = 1.1
 OWN_R = 1.7        # own LED + ring: a label may not start on top of it
 LEADER_DOT_R = 2.8 # a leader-floated label keeps this far from other LEDs
+LABEL_GAP = 0.4    # breathing room between any two labels, mm
+
+
+def inflate(poly, d):
+    """Grow a convex 4-point box by d on every side (about its centre)."""
+    cx = sum(p[0] for p in poly) / 4
+    cy = sum(p[1] for p in poly) / 4
+    out = []
+    for x, y in poly:
+        vx, vy = x - cx, y - cy
+        L = math.hypot(vx, vy) or 1
+        out.append((x + vx / L * d * 1.4, y + vy / L * d * 1.4))
+    return out
 LINE_HALF_W = 1.1  # half the route stroke (0.75) plus 0.35 mm breathing room
 
 
@@ -47,8 +60,24 @@ class Context:
             self.segs.append((f"{lid}:{a}-{b}", a, b, p1, p2,
                               citymap.seg_rect(p1, p2, LINE_HALF_W)))
         avoid_pts = [(st.x * scale, st.y * scale) for st in self.all_st]
-        self.geo = [g for g in citymap.prepared_geo(city, scale, avoid_pts)
-                    if g["type"] not in ("river", "line")]
+        prepared = citymap.prepared_geo(city, scale, avoid_pts)
+        self.geo = [g for g in prepared if g["type"] not in ("river", "line")]
+        # silk furniture lines (SeaBus route) are obstacles like routes;
+        # copper hairlines (boundaries) are not - silk may cross them
+        self.furniture = [(g["name"], citymap.seg_rect(p1, p2, 0.6))
+                          for g in prepared if g["type"] == "line" and not g.get("copper")
+                          for p1, p2 in zip(g["points"], g["points"][1:])]
+        # annotation text (city names, wordmark) as boxes
+        self.annots = []
+        for a in city.annotations:
+            size = a.get("size", 1.4)
+            w = len(a["text"]) * citymap.CHAR_W * size
+            h = citymap.BOX_H * size
+            x, y = a["x"] * scale, a["y"] * scale
+            anchor = a.get("anchor", "start")
+            x0 = x - w / 2 if anchor == "center" else (x - w if anchor == "end" else x)
+            self.annots.append((a["text"], [(x0, y - h / 2), (x0 + w, y - h / 2),
+                                            (x0 + w, y + h / 2), (x0, y + h / 2)]))
         self.dots = {st.id: (st.x * scale, st.y * scale) for st in self.all_st}
 
     def box(self, st):
@@ -67,11 +96,12 @@ class Context:
                 out.append(Collision("off-board", sid, "", box))
                 break
         leader = citymap.leader_segment(st, self.scale)
+        gap_box = inflate(box, LABEL_GAP)
         for o in self.all_st:
             if o.id == sid:
                 continue
             ob = boxes[o.id] if boxes else self.box(o)
-            if citymap.polys_intersect(box, ob):
+            if citymap.polys_intersect(gap_box, ob):
                 out.append(Collision("label-label", sid, o.id, box))
             # a leader may not cross another label, nor another leader
             ol = citymap.leader_segment(o, self.scale)
@@ -90,6 +120,17 @@ class Context:
                 r = DOT_R
             if citymap.polys_intersect(box, citymap.circle_rect(cx, cy, r)):
                 out.append(Collision("label-dot", sid, oid, box))
+            if leader and oid != sid and citymap.seg_box_overlap(
+                    leader, citymap.circle_rect(cx, cy, OWN_R)):
+                out.append(Collision("leader-dot", sid, oid, box))
+        for name, rect in self.furniture:
+            if citymap.polys_intersect(box, rect) or (
+                    leader and citymap.seg_box_overlap(leader, rect)):
+                out.append(Collision("label-line", sid, name, box))
+        for text, ab in self.annots:
+            if citymap.polys_intersect(gap_box, ab) or (
+                    leader and citymap.seg_box_overlap(leader, ab)):
+                out.append(Collision("label-annot", sid, text, box))
         for name, a, b, p1, p2, rect in self.segs:
             if sid in (a, b):
                 # own segment: the part beyond the standoff still counts -

@@ -212,10 +212,14 @@ def land_outline_blocks(city, scale, geo=None):
     for g in geo:
         if g["type"] == "line":
             pts = g["points"]
-            for i, (p1, p2) in enumerate(zip(pts, pts[1:])):
-                blocks += styled_line_blocks(
-                    p1, p2, "F.SilkS", f"line:{g['name']}:{i}",
-                    g.get("width", 0.3), g.get("dash"))
+            # copper hairlines (city boundaries) expose like the water:
+            # the same stroke on F.Cu and on F.Mask
+            layers = ("F.Cu", "F.Mask") if g.get("copper") else ("F.SilkS",)
+            for layer in layers:
+                for i, (p1, p2) in enumerate(zip(pts, pts[1:])):
+                    blocks += styled_line_blocks(
+                        p1, p2, layer, f"line:{g['name']}:{i}:{layer}",
+                        g.get("width", 0.3), g.get("dash"))
             continue
         if g["type"] not in ("island", "park"):
             continue
