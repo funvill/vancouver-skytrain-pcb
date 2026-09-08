@@ -28,8 +28,12 @@ from shapely.geometry import MultiPolygon, Polygon, box, shape
 from shapely.ops import unary_union
 
 # --- frame ------------------------------------------------------------------
-LON0, LON1 = -123.275, -122.612      # west .. east
-LAT0, LAT1 = 49.336, 49.087          # north .. south
+# Cropped to the network: Point Grey's tip to just past Langley City
+# Centre's label, a sliver of North Shore above Lonsdale Quay to ~1 km
+# below Langley. On a 200 mm-wide board that is 200 x ~111 mm, 4.4 mm/km.
+LON0, LON1 = -123.262, -122.627      # west .. east
+LAT0, LAT1 = 49.322, 49.096          # north .. south
+BOARD_W_MM = 200.0
 LAT_MID = (LAT0 + LAT1) / 2
 KX, KY = 111.32 * math.cos(math.radians(LAT_MID)), 111.32   # km per degree
 W_KM, H_KM = (LON1 - LON0) * KX, (LAT0 - LAT1) * KY
@@ -73,14 +77,30 @@ def land_raw():
     return unary_union([_project(f["geometry"]) for f in _features("FWA_WATERSHED_GROUPS_POLY")])
 
 
+MIN_RIVER_WIDTH_KM = 0.10   # mean width (2*area/perimeter); drops creeks
+
+
 def rivers_raw():
-    return unary_union([_project(f["geometry"]) for f in _features("FWA_RIVERS_POLY")
-                        if (f["properties"].get("AREA_HA") or 0) >= MIN_RIVER_HA])
+    out = []
+    for f in _features("FWA_RIVERS_POLY"):
+        if (f["properties"].get("AREA_HA") or 0) < MIN_RIVER_HA:
+            continue
+        g = _project(f["geometry"])
+        if g.length and 2 * g.area / g.length >= MIN_RIVER_WIDTH_KM:
+            out.append(g)
+    return unary_union(out)
+
+
+KEEP_LAKES = {"Burnaby Lake", "Deer Lake", "Trout Lake", "Como Lake",
+              "Lost Lagoon", "Lafarge Lake", "Sasamat Lake", "Buntzen Lake"}
 
 
 def lakes_raw():
+    """Only the lakes worth showing at this scale - by name, so a 10 ha
+    pond doesn't sneak in on area alone."""
     return unary_union([_project(f["geometry"]) for f in _features("FWA_LAKES_POLY")
-                        if (f["properties"].get("AREA_HA") or 0) >= MIN_LAKE_HA])
+                        if f["properties"].get("GNIS_NAME_1") in KEEP_LAKES
+                        and (f["properties"].get("AREA_HA") or 0) >= MIN_LAKE_HA])
 
 
 def _fill_small_holes(geom, min_km2):
@@ -97,8 +117,11 @@ MIN_PIECE_KM2 = 0.5   # a sea/river piece must be at least this (lakes exempt)
 def water(smooth=True):
     sea = FRAME.difference(land_raw())
     flow = unary_union([sea, rivers_raw()]).intersection(FRAME)
-    # creeks and clipped bay tips that don't connect to the main water
-    flow = unary_union([g for g in getattr(flow, "geoms", [flow]) if g.area >= MIN_PIECE_KM2])
+    # creeks, and bays that are mostly outside the frame (Mud Bay's tip at
+    # the bottom edge): keep the big connected water, drop the rest
+    flow = unary_union([g for g in getattr(flow, "geoms", [flow])
+                        if g.area >= MIN_PIECE_KM2 and
+                        not (g.area < 3.0 and g.intersects(FRAME.boundary))])
     w = unary_union([flow, lakes_raw().intersection(FRAME)])
     if smooth:
         w = w.buffer(-OPEN_CLOSE_KM).buffer(2 * OPEN_CLOSE_KM).buffer(-OPEN_CLOSE_KM)
@@ -140,6 +163,9 @@ def render(path, water_geom, stations=None, dpi=110):
 if __name__ == "__main__":
     import sys
     w = water()
+    mm_per_km = BOARD_W_MM / W_KM
+    print(f"frame {W_KM:.1f} x {H_KM:.1f} km -> board {BOARD_W_MM:.0f} x "
+          f"{H_KM * mm_per_km:.1f} mm at {mm_per_km:.2f} mm/km")
     print(f"water: {len(getattr(w, 'geoms', [w]))} piece(s), "
           f"{w.area:.0f} km^2 of {W_KM * H_KM:.0f}")
     stations = {}
