@@ -175,6 +175,25 @@ LABEL = {"UBC": "UBC",
 random.seed(4)
 annotations = []
 placed = []   # shapely boxes of placed text, km
+
+# Station labels already in vancouver.json (hand-placed or annealed) are
+# obstacles for the city labels, so a rebuild never drops a city name on
+# top of one; leaders count too.
+import sys
+sys.path.insert(0, "../tools")
+import citymap
+_tmp = dict(d)
+_tmp["canvas_h_mm"], _tmp["board_scale"] = CANVAS_H, BOARD
+json.dump(_tmp, open("_tmp_city.json", "w", encoding="utf-8"))
+_city = citymap.load("_tmp_city.json")
+import os
+os.remove("_tmp_city.json")
+for st in list(_city.stations.values()) + _city.extras:
+    bx = citymap.label_box(st, citymap.TEXT_H, BOARD)
+    placed.append(Polygon([(x / MM_PER_KM, y / MM_PER_KM) for x, y in bx]).buffer(0.25))
+    seg = citymap.leader_segment(st, BOARD)
+    if seg:
+        placed.append(LineString([(p[0] / MM_PER_KM, p[1] / MM_PER_KM) for p in seg]).buffer(0.2))
 avoid = unary_union([routes_km.buffer(0.35), water.buffer(0.12), station_pts.buffer(0.6)])
 
 
