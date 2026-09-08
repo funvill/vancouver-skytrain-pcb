@@ -42,6 +42,24 @@ The board is **200 × 109 mm** (`board_scale` 2.0 in `vancouver.json`: board mm 
 canvas units × 2). Preview the layout without KiCad with
 `python preview_map.py ../input/vancouver.json ../test-results/preview.png --collisions`.
 
+**Hand-editing labels in KiCad.** Station labels, their leader lines and the
+copper city names / wordmark are ordinary `gr_text` / `gr_line` items — move,
+rotate, re-justify, retext or delete them in the PCB editor. Then pull the
+edits back into the data file **before** the next `export_art.py` run (which
+regenerates every label from `vancouver.json` and would otherwise overwrite
+them):
+
+```
+python import_labels.py ../input/vancouver.json ../hardware/vancouver-skytrain-pcb.kicad_pcb
+```
+
+Each item is found by the deterministic uuid the exporter gave it, so the
+import is exact: position/rotation/justification → `label.dx/dy/angle/anchor`,
+a deleted leader line → `leader: false`, an edited text → the station's
+`wrap` (or `label.short`), a moved city name → `annotations[i].x/y`. A
+pre-edit copy of the board and data lives in `backups/` (and git tag
+`v3-pre-label-edit`).
+
 Run them in that order (placement first, art second — art positions itself
 relative to the current LED footprint locations). `export_art.py` is
 idempotent: it tracks every block it writes in

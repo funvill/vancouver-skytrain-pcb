@@ -79,7 +79,7 @@ def render(city, scale, out, collisions=False, dpi=300):
     for st in list(city.stations.values()) + city.extras:
         lx, ly = citymap.label_anchor(st, scale)
         text = "\n".join(citymap.display_lines(st))
-        ha = "left" if st.label["anchor"] == "start" else "right"
+        ha = {"start": "left", "end": "right"}.get(st.label["anchor"], "center")
         ax.text(lx, ly, text, fontsize=font_pt(citymap.TEXT_H), color=SILK,
                 rotation=-st.label["angle"], rotation_mode="anchor", ha=ha,
                 va="center", family=FONT, linespacing=1.15, zorder=5)

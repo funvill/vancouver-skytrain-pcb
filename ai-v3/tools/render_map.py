@@ -88,7 +88,7 @@ def render(city, scale=1.0, text_h=1.2, use_short=False, collisions=None):
     for st in list(city.stations.values()) + city.extras:
         lines = citymap.display_lines(st, use_short)
         lx, ly = citymap.label_anchor(st, scale)
-        anchor = st.label["anchor"]
+        anchor = {"center": "middle"}.get(st.label["anchor"], st.label["anchor"])
         pitch = text_h * citymap.LINE_PITCH
         y0 = -(len(lines) - 1) * pitch / 2
         spans = "".join(

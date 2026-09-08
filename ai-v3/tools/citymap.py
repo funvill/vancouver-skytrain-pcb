@@ -170,6 +170,9 @@ def label_box(st, text_h, scale=1.0, use_short=False):
     if st.label["anchor"] == "end":
         px -= d[0] * w
         py -= d[1] * w
+    elif st.label["anchor"] == "center":   # KiCad's default justification
+        px -= d[0] * w / 2
+        py -= d[1] * w / 2
     lo, hi = -h / 2, h / 2
     return [
         (px + n[0] * lo, py + n[1] * lo),
@@ -187,6 +190,8 @@ def label_offset(angle, anchor, standoff=LABEL_STANDOFF):
     dx, dy = math.cos(a) * standoff, math.sin(a) * standoff
     if anchor == "end":
         dx, dy = -dx, -dy
+    elif anchor == "center":
+        dx, dy = 0.0, 0.0
     return round(dx, 2), round(dy, 2)
 
 

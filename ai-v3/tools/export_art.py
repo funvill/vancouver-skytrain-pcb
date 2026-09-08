@@ -53,8 +53,13 @@ RIVER_MITRE = 1.0  # extra length added at each river segment end, to close gaps
 RIVER_SAFE_FLOOR = 1.5
 
 
+KEYS = {}   # uuid -> key, for the manifest and for suppression by key
+
+
 def art_uuid(key):
-    return str(uuid.uuid5(ART_NAMESPACE, key))
+    u = str(uuid.uuid5(ART_NAMESPACE, key))
+    KEYS[u] = key
+    return u
 
 
 def poly_block(kind, points, layer, fill, key, width=0.1):
@@ -292,15 +297,18 @@ def label_blocks(city, scale):
 
 
 def load_manifest(path):
+    """{uuid: key} of the blocks the last run wrote (older manifests were a
+    bare uuid list - accepted, keys unknown)."""
     if os.path.exists(path):
         with open(path, encoding="utf-8") as f:
-            return set(json.load(f))
-    return set()
+            m = json.load(f)
+        return m if isinstance(m, dict) else {u: None for u in m}
+    return {}
 
 
-def save_manifest(path, uuids):
+def save_manifest(path, uuid_keys):
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(sorted(uuids), f, indent=2)
+        json.dump(dict(sorted(uuid_keys.items())), f, indent=2)
 
 
 def main():
@@ -317,12 +325,21 @@ def main():
     labels = label_blocks(city, args.scale)
     annotations = annotation_blocks(city, args.scale)
     blocks = water + routes + land + labels + annotations
-    new_uuids = set()
-    for b in blocks:
-        new_uuids.add(b[b.index('(uuid "') + 7: b.index('"', b.index('(uuid "') + 7)])
+
+    # art deleted by hand in KiCad (recorded by import_labels.py as keys in
+    # vancouver.json "suppressed_art") is not regenerated
+    with open(args.data, encoding="utf-8") as f:
+        suppressed = set(json.load(f).get("suppressed_art", []))
+
+    def block_uuid(b):
+        i = b.index('(uuid "') + 7
+        return b[i: b.index('"', i)]
+
+    blocks = [b for b in blocks if KEYS.get(block_uuid(b)) not in suppressed]
+    new_manifest = {block_uuid(b): KEYS.get(block_uuid(b)) for b in blocks}
 
     manifest_path = args.pcb + ".art-manifest.json"
-    old_uuids = load_manifest(manifest_path)
+    old_uuids = set(load_manifest(manifest_path))
 
     with open(args.pcb, encoding="utf-8") as f:
         text = f.read()
@@ -333,12 +350,13 @@ def main():
     body = "\t" + "\n\t".join(kept + blocks) + "\n"
     with open(args.pcb, "w", encoding="utf-8", newline="\n") as f:
         f.write(header + body + footer)
-    save_manifest(manifest_path, new_uuids)
+    save_manifest(manifest_path, new_manifest)
     print(f"removed {len(top_blocks) - len(kept)} stale art block(s), "
           f"wrote {len(blocks)} art block(s) "
           f"({len(water)} water, {len(routes)} route segments, "
           f"{len(land)} land outline/hatch, {len(labels)} labels, "
-          f"{len(annotations)} annotations)")
+          f"{len(annotations)} annotations"
+          f"{f', {len(suppressed)} suppressed by hand' if suppressed else ''})")
 
 
 if __name__ == "__main__":

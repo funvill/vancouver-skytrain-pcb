@@ -10,7 +10,18 @@ import os
 import subprocess
 import sys
 
-DEFAULT_KICAD_CLI = r"C:\Program Files\KiCad\9.0\bin\kicad-cli.exe"
+import glob
+
+
+def newest_kicad_cli():
+    """The newest installed KiCad's kicad-cli - a board saved by KiCad 10
+    can't be loaded by the 9.0 CLI."""
+    found = sorted(glob.glob(r"C:\Program Files\KiCad\*\bin\kicad-cli.exe"),
+                   key=lambda p: [int(x) for x in p.split("\\")[3].split(".") if x.isdigit()])
+    return found[-1] if found else r"C:\Program Files\KiCad\9.0\bin\kicad-cli.exe"
+
+
+DEFAULT_KICAD_CLI = newest_kicad_cli()
 
 
 def render(kicad_cli, pcb, out_png, side, size=1400, quality="high"):
