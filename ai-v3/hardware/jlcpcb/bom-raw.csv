@@ -1,0 +1,5 @@
+"Reference","Value","Footprint","LCSC Part","LCSC","DNP"
+"+5V1,+5V2,GND1,LED_IN1,LED_OUT1","TestPoint","TestPoint:TestPoint_Pad_3.0x3.0mm","","",""
+"LED1-LED68","XL-1615RGBC-WS2812B","C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1","C5349954","",""
+"ROW0-ROW7","10uF,10V,X5R","Capacitor_SMD:C_0402_1005Metric","","C52923",""
+"U1","XIAO-RP2040-DIP","Seeed Studio XIAO:XIAO-RP2040-SMD","","",""
