@@ -123,7 +123,7 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 5.86,
+        "dx": 6.16,
         "dy": 2.16,
         "leader": true
       }
@@ -147,8 +147,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 4.82,
-        "dy": 0.68,
+        "dx": 4.02,
+        "dy": 0.38,
         "leader": true
       }
     },
@@ -200,8 +200,8 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": 2.52,
-        "dy": 5.64
+        "dx": 3.22,
+        "dy": 4.94
       }
     },
     "29th-avenue": {
@@ -258,13 +258,10 @@
       "label": {
         "angle": 0,
         "anchor": "center",
-        "dx": 0.64,
-        "dy": 3.56
+        "dx": 5.54,
+        "dy": -1.14
       },
-      "wrap": [
-        "Royal",
-        "Oak"
-      ]
+      "wrap": false
     },
     "edmonds": {
       "name": "Edmonds",
@@ -285,13 +282,10 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": -2.26,
-        "dy": 0.2
+        "dx": -2.16,
+        "dy": 0.1
       },
-      "wrap": [
-        "22nd",
-        "Street"
-      ]
+      "wrap": false
     },
     "new-westminster": {
       "name": "New Westminster",
@@ -300,9 +294,9 @@
       "y": 29.19,
       "label": {
         "angle": 0,
-        "anchor": "start",
-        "dx": -10.24,
-        "dy": -3.78,
+        "anchor": "end",
+        "dx": -1.24,
+        "dy": -2.98,
         "leader": true
       }
     },
@@ -313,8 +307,8 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": 0.76,
-        "dy": -5.08,
+        "dx": -0.44,
+        "dy": -4.98,
         "leader": true
       },
       "interchange": true
@@ -350,9 +344,10 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 2.1,
-        "dy": -0.06
-      }
+        "dx": 2.3,
+        "dy": -0.16
+      },
+      "wrap": false
     },
     "production-way": {
       "name": "Production Way–University",
@@ -377,10 +372,14 @@
       "y": 28.34,
       "label": {
         "angle": 0,
-        "anchor": "start",
-        "dx": -1.16,
-        "dy": -2.48
-      }
+        "anchor": "center",
+        "dx": -0.16,
+        "dy": 3.22
+      },
+      "wrap": [
+        "Scott",
+        "Road"
+      ]
     },
     "gateway": {
       "name": "Gateway",
@@ -389,8 +388,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": -7.28,
-        "dy": 1.76
+        "dx": 1.62,
+        "dy": -0.34
       }
     },
     "surrey-central": {
@@ -401,7 +400,8 @@
         "angle": 0,
         "anchor": "start",
         "dx": 1.9,
-        "dy": 0.0
+        "dy": -0.08,
+        "short": true
       }
     },
     "king-george": {
@@ -411,8 +411,8 @@
       "label": {
         "angle": 0,
         "anchor": "center",
-        "dx": -3.22,
-        "dy": 1.98
+        "dx": -3.82,
+        "dy": 0.98
       },
       "wrap": [
         "King",
@@ -427,13 +427,10 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 2.28,
-        "dy": -1.02
+        "dx": 1.78,
+        "dy": -0.82
       },
-      "wrap": [
-        "Green",
-        "Timbers"
-      ]
+      "wrap": false
     },
     "152-street": {
       "name": "152 Street",
@@ -444,8 +441,8 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": 0.86,
-        "dy": 2.32
+        "dx": 10.36,
+        "dy": -0.98
       }
     },
     "fleetwood": {
@@ -468,8 +465,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": -7.0,
-        "dy": 2.44
+        "dx": 2.1,
+        "dy": -0.56
       }
     },
     "hillcrest": {
@@ -480,8 +477,8 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": -1.56,
-        "dy": 1.34
+        "dx": 8.74,
+        "dy": -0.56
       }
     },
     "clayton": {
@@ -492,8 +489,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": -0.1,
-        "dy": -2.16
+        "dx": 1.7,
+        "dy": -0.56
       }
     },
     "willowbrook": {
@@ -504,8 +501,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": -10.86,
-        "dy": 1.44
+        "dx": 1.64,
+        "dy": -0.66
       }
     },
     "langley-city-centre": {
@@ -516,9 +513,9 @@
       "future": true,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": 8.16,
-        "dy": -3.52
+        "anchor": "center",
+        "dx": -0.24,
+        "dy": 2.98
       }
     },
     "arbutus": {
@@ -529,8 +526,8 @@
       "label": {
         "angle": -45,
         "anchor": "end",
-        "dx": -1.88,
-        "dy": 0.84
+        "dx": -1.68,
+        "dy": 1.44
       }
     },
     "south-granville": {
@@ -542,10 +539,10 @@
       "label": {
         "angle": -45,
         "anchor": "end",
-        "dx": -1.64,
-        "dy": 2.54,
-        "leader": true
-      }
+        "dx": -1.24,
+        "dy": 1.44
+      },
+      "wrap": false
     },
     "oak-vgh": {
       "name": "Oak–VGH",
@@ -555,8 +552,8 @@
       "label": {
         "angle": -45,
         "anchor": "end",
-        "dx": 0.42,
-        "dy": 1.86
+        "dx": -0.88,
+        "dy": 1.66
       }
     },
     "broadway-city-hall": {
@@ -569,10 +566,12 @@
       "label": {
         "angle": -45,
         "anchor": "end",
-        "dx": -3.52,
-        "dy": 4.08,
-        "short": true
-      }
+        "dx": -1.72,
+        "dy": 1.48
+      },
+      "wrap": [
+        "Broadway City Hall"
+      ]
     },
     "mount-pleasant": {
       "name": "Mount Pleasant",
@@ -582,8 +581,8 @@
       "label": {
         "angle": 90,
         "anchor": "start",
-        "dx": 0.1,
-        "dy": 2.14
+        "dx": -0.7,
+        "dy": 1.64
       }
     },
     "great-northern-way": {
@@ -594,9 +593,9 @@
       "future": true,
       "label": {
         "angle": 90,
-        "anchor": "start",
-        "dx": 0.1,
-        "dy": 2.2
+        "anchor": "center",
+        "dx": -0.6,
+        "dy": 7.9
       },
       "wrap": [
         "Great Northern",
@@ -610,8 +609,8 @@
       "label": {
         "angle": 90,
         "anchor": "start",
-        "dx": 0.0,
-        "dy": 1.9
+        "dx": -0.12,
+        "dy": 1.74
       }
     },
     "renfrew": {
@@ -643,8 +642,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": -3.0,
-        "dy": 2.72
+        "dx": -0.2,
+        "dy": 3.22
       }
     },
     "brentwood": {
@@ -747,13 +746,10 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 3.78,
-        "dy": -1.62
+        "dx": 4.08,
+        "dy": -2.12
       },
-      "wrap": [
-        "Coquitlam",
-        "Central"
-      ]
+      "wrap": false
     },
     "lincoln": {
       "name": "Lincoln",
@@ -774,13 +770,12 @@
       "y": 8.81,
       "label": {
         "angle": 0,
-        "anchor": "center",
-        "dx": 4.98,
-        "dy": -2.02
+        "anchor": "start",
+        "dx": 1.68,
+        "dy": -0.52
       },
       "wrap": [
-        "Lafarge Lake",
-        "Douglas"
+        "Lafarge Lake Douglas"
       ]
     },
     "vancouver-city-centre": {
@@ -791,8 +786,8 @@
       "label": {
         "angle": 45,
         "anchor": "end",
-        "dx": -2.52,
-        "dy": -2.68,
+        "dx": -2.12,
+        "dy": -2.98,
         "leader": true
       },
       "wrap": [
@@ -808,8 +803,8 @@
       "label": {
         "angle": 45,
         "anchor": "end",
-        "dx": -1.28,
-        "dy": -0.24,
+        "dx": -1.48,
+        "dy": -0.74,
         "leader": true,
         "short": true
       }
@@ -833,13 +828,10 @@
       "label": {
         "angle": -45,
         "anchor": "end",
-        "dx": -2.32,
-        "dy": 2.98
+        "dx": -1.42,
+        "dy": 0.78
       },
-      "wrap": [
-        "King",
-        "Edward"
-      ]
+      "wrap": false
     },
     "oakridge": {
       "name": "Oakridge–41st Avenue",
@@ -849,7 +841,7 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": 8.8,
+        "dx": 9.1,
         "dy": 0.08,
         "short": true
       },
@@ -862,14 +854,11 @@
       "y": 23.08,
       "label": {
         "angle": 0,
-        "anchor": "end",
-        "dx": -1.66,
-        "dy": 0.84
+        "anchor": "start",
+        "dx": 1.74,
+        "dy": 0.04
       },
-      "wrap": [
-        "Langara–49th",
-        "Avenue"
-      ]
+      "wrap": false
     },
     "marine-drive": {
       "name": "Marine Drive",
@@ -878,8 +867,8 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": -11.58,
-        "dy": -1.54
+        "dx": 1.62,
+        "dy": -0.04
       },
       "wrap": false
     },
@@ -903,8 +892,8 @@
       "label": {
         "angle": 0,
         "anchor": "end",
-        "dx": -0.78,
-        "dy": 5.58,
+        "dx": 0.02,
+        "dy": 5.88,
         "leader": true
       },
       "wrap": false
@@ -961,7 +950,7 @@
       "label": {
         "angle": 0,
         "anchor": "start",
-        "dx": 1.62,
+        "dx": 1.92,
         "dy": 0.46
       },
       "wrap": false
@@ -1005,8 +994,11 @@
         "angle": 0,
         "anchor": "start",
         "dx": 1.9,
-        "dy": 0.0
-      }
+        "dy": -0.3
+      },
+      "wrap": [
+        "Lonsdale Quay"
+      ]
     }
   ],
   "geo": [
@@ -5200,17 +5192,17 @@
     },
     {
       "text": "UBC",
-      "x": 8.91,
-      "y": 16.75,
+      "x": 3.85,
+      "y": 14.5,
       "size": 1.5,
-      "angle": 0,
+      "angle": 0.0,
       "anchor": "center",
       "copper": true
     },
     {
       "text": "Vancouver",
-      "x": 15.2,
-      "y": 20.1,
+      "x": 17.2,
+      "y": 22.95,
       "size": 1.5,
       "angle": 0.0,
       "anchor": "center",
@@ -5218,10 +5210,10 @@
     },
     {
       "text": "Burnaby",
-      "x": 55.01,
-      "y": 11.04,
+      "x": 47.7,
+      "y": 10.15,
       "size": 1.5,
-      "angle": 0,
+      "angle": 0.0,
       "anchor": "center",
       "copper": true
     },
@@ -5281,8 +5273,8 @@
     },
     {
       "text": "Port Moody",
-      "x": 65.1,
-      "y": 14.4,
+      "x": 65.75,
+      "y": 15.05,
       "size": 1.5,
       "angle": 0.0,
       "anchor": "center",
