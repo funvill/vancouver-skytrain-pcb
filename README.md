@@ -10,7 +10,16 @@ with one addressable RGB LED per station. Based on
 | v2 | [`v2/`](v2/) | 100 × 83 mm schematic-style board, artwork drawn in Inkscape and imported with svg2shenzhen |
 | v1 | [`v1/`](v1/) | 320 × 210 mm board with two LEDs per station (one per direction), ESP32 |
 
-![v3 board](ai-v3/test-results/board-top.png)
+**Front** — exposed-copper water, silkscreen routes and station rings, one LED per station:
+
+![v3 board, front](ai-v3/test-results/board-top.png)
+
+**Back** — XIAO controller footprint, four buttons, LED chain in/out test points, M3 mounting holes:
+
+![v3 board, back](ai-v3/test-results/board-bottom.png)
+
+Renders are KiCad 10 `kicad-cli pcb render` output (`ai-v3/tools/render_board.py`); the
+geography-only preview is `ai-v3/test-results/geo-preview.png`.
 
 ## v3 in one paragraph
 
