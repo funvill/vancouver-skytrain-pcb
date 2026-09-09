@@ -44600,6 +44600,18 @@
 			(justify left)
 		)
 	)
+	(gr_text "Burquitlam"
+		(at 110.3 26.7 0)
+		(layer "F.SilkS")
+		(uuid "7a8e34ea-73c0-5d74-89a8-a7e3bd988069")
+		(effects
+			(font
+				(size 1.1 1.1)
+				(thickness 0.14)
+			)
+			(justify left)
+		)
+	)
 	(gr_text "Lougheed Town Centre"
 		(at 117.3 35.3 0)
 		(layer "F.SilkS")
@@ -45116,18 +45128,6 @@
 				(thickness 0.14)
 			)
 			(justify right)
-		)
-	)
-	(gr_text "Burquitlam"
-		(at 117.2 27.34 90)
-		(layer "F.SilkS")
-		(uuid "7a8e34ea-73c0-5d74-89a8-a7e3bd988069")
-		(effects
-			(font
-				(size 1.1 1.1)
-				(thickness 0.14)
-			)
-			(justify left)
 		)
 	)
 	(gr_text "Mount\nPleasant"
