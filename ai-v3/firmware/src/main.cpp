@@ -4,27 +4,47 @@
 // tools/export_placement.py -> include/firmware_tables.h. Regenerate after
 // any layout/chain change; never edit the tables by hand.
 //
-// Board: XIAO RP2040 on the back (DNP footprint).
-//   D0 -> 74AHC1G125 -> LED data chain
-//   D1..D4 -> buttons SW1..SW4 (DNP), active low, internal pull-ups
+// Board: any XIAO module on the back (U1, DNP footprint). Pin assignments
+// read off the PCB itself, not assumed - XIAO pad -> net:
+//   pad 8  = D7 -> LED_IN, straight into LED1 DI (no level shifter on v3)
+//   pad 1  = D0 -> BUTTON_01 (SW1)      pad 3 = D2 -> BUTTON_03 (SW3)
+//   pad 2  = D1 -> BUTTON_02 (SW2)      pad 4 = D3 -> BUTTON_04 (SW4)
+//   pad 13 = GND, pad 14 = 5V (VBUS) -> the LED +5V rail
+// The switches are DNP; their pins idle high on the internal pull-ups.
+// D7 is GPIO20 on the ESP32-C3 (GPIO1 on the RP2040) - the name is what
+// matters, the core maps it to the right GPIO per board.
 
 #include <Arduino.h>
 #include "FastLED.h"
 #include "firmware_tables.h"
 
-const int PIN_LED_DATA = D0;
-const int PIN_BTN_MODE = D1;
-const int PIN_BTN_BRIGHT = D2;
-const int PIN_BTN_SPEED = D3;
-const int PIN_BTN_LINE = D4;
+constexpr uint8_t PIN_LED_DATA = D7;
+constexpr uint8_t PIN_BTN_MODE = D0;    // SW1
+constexpr uint8_t PIN_BTN_BRIGHT = D1;  // SW2
+constexpr uint8_t PIN_BTN_SPEED = D2;   // SW3
+constexpr uint8_t PIN_BTN_LINE = D3;    // SW4
 const uint32_t BAUD_RATE = 115200;
-const uint8_t BUILD_NUMBER = 1;
+const uint8_t BUILD_NUMBER = 4;
+
+// Bring-up staging. The LED driver is brought up from loop() rather than
+// setup() so the heartbeat below starts printing before the RMT driver is
+// touched: on a USB-CDC board the boot banner is gone before a monitor can
+// attach, so "which stage did it reach" is the only thing you can actually
+// read back. 0 = booted, 1 = FastLED up, 2 = chain tested, 3 = animating.
+volatile uint8_t stage = 0;
+const uint32_t LED_INIT_DELAY_MS = 4000;   // let USB CDC enumerate first
 
 CRGB leds[NUM_LEDS];
 
-uint8_t brightness = 48;
+uint8_t brightness = 40;
 uint16_t stepMs = 700;          // train advance interval
 const uint8_t FADE_PER_FRAME = 24;
+
+// 68 LEDs at full white would pull ~4 A; the board is fed from the XIAO's
+// USB connector, so cap well under what a PC port and the module's VBUS
+// trace will carry. Raise it when running from a dedicated 5 V supply on
+// the +5V test point.
+const uint32_t MAX_MILLIAMPS = 900;
 
 // TransLink line colours
 const CRGB COLOR_EXPO = CRGB(0x00, 0x5D, 0xAA);
@@ -53,19 +73,45 @@ Route routes[] = {
 };
 const int ROUTE_COUNT = sizeof(routes) / sizeof(routes[0]);
 
+// Power-on chain check: walk one lit LED from the first to the last, then
+// flash every LED once. On a new board this shows at a glance that all 68
+// are alive and in chain order - if the walk stops part way, the break is
+// at the LED it stopped on.
+void chainSelfTest() {
+  for (int i = 0; i < NUM_LEDS; i++) {
+    fill_solid(leds, NUM_LEDS, CRGB::Black);
+    leds[i] = CRGB::White;
+    FastLED.show();
+    delay(18);
+  }
+  for (int f = 0; f < 2; f++) {
+    fill_solid(leds, NUM_LEDS, CRGB::White);
+    FastLED.show();
+    delay(120);
+    fill_solid(leds, NUM_LEDS, CRGB::Black);
+    FastLED.show();
+    delay(120);
+  }
+}
+
 void setup() {
   Serial.begin(BAUD_RATE);
+#if defined(ARDUINO_ARCH_ESP32)
+  Serial.setTxTimeoutMs(0);   // never block waiting for a USB host to attach
+#endif
   Serial.println("SkyTrain map v3 build " + String(BUILD_NUMBER));
 
   pinMode(PIN_BTN_MODE, INPUT_PULLUP);
   pinMode(PIN_BTN_BRIGHT, INPUT_PULLUP);
   pinMode(PIN_BTN_SPEED, INPUT_PULLUP);
   pinMode(PIN_BTN_LINE, INPUT_PULLUP);
+}
 
-  FastLED.addLeds<NEOPIXEL, PIN_LED_DATA>(leds, NUM_LEDS);
+void startLeds() {
+  FastLED.addLeds<WS2812B, PIN_LED_DATA, GRB>(leds, NUM_LEDS);
   FastLED.setBrightness(brightness);
   // USB powered: hard cap regardless of brightness/animation choices
-  FastLED.setMaxPowerInVoltsAndMilliamps(5, 1500);
+  FastLED.setMaxPowerInVoltsAndMilliamps(5, MAX_MILLIAMPS);
 
   for (int r = 0; r < ROUTE_COUNT; r++) {
     for (int t = 0; t < routes[r].trains; t++) {
@@ -107,6 +153,27 @@ void handleButtons() {
 }
 
 void loop() {
+  // Heartbeat first, so it reports even if a later stage wedges.
+  EVERY_N_MILLISECONDS(2000) {
+    Serial.printf("build %u alive %lus stage %u\n",
+                  BUILD_NUMBER, millis() / 1000, stage);
+  }
+
+  if (stage == 0) {
+    if (millis() < LED_INIT_DELAY_MS) return;
+    startLeds();
+    stage = 1;
+    return;
+  }
+  if (stage == 1) {
+    chainSelfTest();
+    stage = 2;
+    return;
+  }
+  if (stage == 2) {
+    stage = 3;
+  }
+
   handleButtons();
 
   EVERY_N_MILLISECONDS_I(trainTimer, 700) {
