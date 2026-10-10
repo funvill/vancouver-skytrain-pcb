@@ -100,6 +100,9 @@ sees.
 Use authoritative polygon sources; do not trace pictures or schematic
 maps. The current sources and why the earlier ones were dropped are in
 `ai-v3/input/README.md` and [lessons-learned.md](lessons-learned.md).
+If the task is a **new city** rather than a change to this one, follow
+[runbook-new-city.md](runbook-new-city.md) instead of adapting this board
+in place.
 The frame (lat/lon box) and board size live at the top of
 `input/geo_fwa.py`.
 

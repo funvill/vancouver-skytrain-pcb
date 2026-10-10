@@ -2,24 +2,24 @@
 
 Copied from the v2 project, then rewritten by the pipeline:
 
-- **Board outline**: 150 × 150 mm, 5 mm rounded corners (was v2's 100 × 82.9 mm)
+- **Board outline**: 200 × 109 mm, 5 mm rounded corners, set by
+  `reposition_board.py --board 200 --height 109`. The size comes from the
+  map frame's aspect (see `../input/geo_fwa.py`), not the other way round.
 - **LED1–LED68**: moved to the station positions in `leds.csv` (generated from
   `ai-v3/input/vancouver.json` by `tools/export_placement.py`). LED index =
-  ref − 1 = position in the data chain; LED1 is SeaBus, first after the shifter.
-- **U1 (XIAO, back)**: centered at (75, 75); **SW1–SW4** flank it. All DNP.
-- v2's stale svg2shenzhen art footprints were removed.
+  ref − 1 = position in the data chain; LED1 is SeaBus, the first in the
+  chain. There is no level shifter on v3 — `LED_IN` runs straight from the
+  XIAO's pad 8 (D7) into LED1's DI at 3.3 V.
+- **U1 (XIAO, back)**: centred on the board; **SW1–SW4** flank it. All DNP.
 - **Station labels + land/water art** (F.SilkS text, F.Cu/F.Mask water,
-  F.SilkS land outlines) generated directly into the board by
+  copper city names and wordmark) generated directly into the board by
   `tools/export_art.py` — no Inkscape/svg2shenzhen step needed. See below.
-- The coastline in `ai-v3/input/vancouver.json`'s `geo` list is hand-authored
-  to resemble Vancouver's real geography (Burrard Inlet with the Port Moody
-  arm, the downtown peninsula, False Creek between the Canada Line and
-  Broadway corridor, the Fraser River's islands) at the level of detail v1's
-  natural map used — not the coarse first-pass shapes from earlier in this
-  project. Render `tools/render_board.py` output before touching `geo`
-  again, so you're comparing against the current look, not an old shape.
+- The geography in `ai-v3/input/vancouver.json`'s `geo` list is **not**
+  hand-drawn: it is built from the BC Freshwater Atlas by
+  `../input/geo_fwa.py` and `../input/build_from_fwa.py`. Preview a change
+  with `python geo_fwa.py` before regenerating the board.
 
-**Render the board as images** (KiCad 9's built-in 3D renderer, top-down):
+**Render the board as images** (KiCad's built-in 3D renderer, top-down):
 
 ```
 python render_board.py ../hardware/vancouver-skytrain-pcb.kicad_pcb ../test-results
@@ -123,17 +123,16 @@ for future/under-construction line segments:
   labels, CANADA / USA at the border) or copper text (the wordmark). No
   municipality names or water-body labels are printed, by request.
 
-### Station positions and geography: OpenStreetMap
+### Station positions and geography: BC Freshwater Atlas + OSM
 
-Station positions and `vancouver.json`'s water shapes come from
-OpenStreetMap via `../input/build_from_osm.py` — real station nodes, the
-real shoreline (smoothed), the Fraser and Pitt rivers, and the large
-lakes. The board is **150 × 86.2 mm**, the aspect of the lat/lon frame
-(Point Grey → Langley, North Shore → below Langley) at 3.1 mm/km; water
-runs to the board edge (0.4 mm copper-to-edge, corners pulled inside
-the 5 mm radius) — there is no border. Earlier revisions used
-TransLink's schematic PDF and then v1's hand-drawn map; see
-`../input/README.md`. Deliberately not literal:
+Water shapes come from the **BC Freshwater Atlas** via
+`../input/geo_fwa.py`, and station positions from OpenStreetMap, combined
+by `../input/build_from_fwa.py`. The board is **200 × 109 mm**, the aspect
+of the lat/lon frame (Point Grey → Langley, North Shore → below Langley)
+at 4.33 mm/km; water runs to the board edge (0.4 mm copper-to-edge,
+corners pulled inside the 5 mm radius) — there is no border. Earlier
+revisions used TransLink's schematic PDF, then v1's hand-drawn map, then
+OSM's coastline; see `../input/README.md`. Deliberately not literal:
 
 - Runs whose real spacing is under the LED pitch (downtown, Richmond,
   Sea Island, Coquitlam) are spread outward along their own direction,

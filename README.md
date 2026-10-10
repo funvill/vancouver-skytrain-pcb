@@ -100,6 +100,13 @@ Each item is found by its deterministic uuid, so the import is exact:
 regenerates every label from the data file and would otherwise overwrite
 the board's hand edits. `import → export` reproduces the board exactly.
 
+## Starting another city
+
+[runbook-new-city.md](runbook-new-city.md) is the step-by-step guide: scope,
+station data from OSM, finding authoritative hydrography, the frame and board
+size, the data build, labels, hardware, fab and firmware — with the gates to
+stop at and a table of what carries over unchanged.
+
 ## Lessons learned
 
 See [lessons-learned.md](lessons-learned.md) — what to carry into the next

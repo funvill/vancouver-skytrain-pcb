@@ -2,19 +2,27 @@
 
 - **`vancouver.json`** — the city data file the whole `ai-v3/tools/`
   pipeline reads (schema documented in `../docs/plan.md`).
-- **`build_from_osm.py`** — **the current source of station positions and
-  geography.** Builds `vancouver.json` from OpenStreetMap: real station
-  nodes, the `natural=coastline` ways (land is on the left of a coastline
-  way — that's how sea and land are told apart), the Fraser/Pitt river
-  centrelines buffered where the coastline stops, and only the large
-  named lakes (Burnaby, Deer, Trout, Como, Lost Lagoon…). The shoreline
-  is smoothed (morphological open/close + simplify) so it reads clean at
-  3 mm/km. The frame is a lat/lon box (Point Grey → past Langley, North
-  Shore → below Langley) and the board takes its aspect: **150 × 86.2 mm**,
-  water running to the board edge. Raw Overpass responses are cached in
-  `osm/` (queries listed at the bottom of the script) so it runs offline.
-  Run it, then `../tools/auto_label.py`, then the hardware pipeline with
-  `reposition_board.py --board 150 --height 86.2`.
+- **`geo_fwa.py`** — land and water from the **BC Freshwater Atlas**, the
+  province's 1:20k hydrography, fetched from its WFS and cached in `osm/`.
+  Everything arrives as polygons — watershed groups cover land only (so
+  `sea = frame - land`, no coastline tracing), plus river and lake
+  polygons — which is why this source finally produced a correct estuary.
+  Lakes are kept by name, rivers by minimum width, and the shoreline is
+  smoothed. `python geo_fwa.py` renders a geography-only preview to
+  `../test-results/geo-preview.png`. The frame (lat/lon box) and board
+  width live at the top of the file.
+- **`build_from_fwa.py`** — **the current builder.** Combines `geo_fwa.py`'s
+  geography with OSM station positions from `osm_station_latlon.json`:
+  stations nudged onto land, spread to the 3.3 mm LED pitch, copper
+  clearance discs around every pad, the UBC boundary, copper city labels
+  and the wordmark. Preserves hand-tuned `label` fields and
+  `suppressed_art`. Board is **200 × 109 mm** (`board_scale` 2.0). Run it,
+  then `../tools/auto_label.py`, then the hardware pipeline with
+  `reposition_board.py --board 200 --height 109`.
+- `build_from_osm.py` — superseded: built the geography from OSM
+  `natural=coastline` ways. In this region that coastline stops at Burrard
+  Inlet and the Fraser's arms are riverbank polygons, so Sea Island, Lulu
+  Island and the estuary collapsed into land. Kept for reference.
 - `build_from_v1.py` — superseded: built the map from the v1 project's
   hand-drawn natural map, kept for reference (its `v1_*.json` inputs too).
 - **`skytrain-network-map.pdf`** — TransLink's official current-network
